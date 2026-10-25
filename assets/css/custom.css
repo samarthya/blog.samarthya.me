@@ -286,24 +286,24 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-v
 .dark .portal-button { border-color: rgb(var(--color-primary-400)); color: rgb(var(--color-primary-300)); }
 .dark .portal-button:first-child { background: rgb(var(--color-primary-700)); border-color: rgb(var(--color-primary-700)); color: #fff; }
 
-/* ---------- Contact tiles (shortcodes/contact-links.html) ---------- */
-.contact-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .9rem; margin: 1.75rem 0 2.25rem; }
-.contact-link { display: flex; align-items: center; gap: .9rem; padding: .9rem 1.1rem; border-radius: 14px;
-  border: 1px solid rgb(var(--color-neutral-200)); background: rgb(var(--color-neutral-50)); color: rgb(var(--color-neutral-800));
-  text-decoration: none; transition: border-color .15s, box-shadow .15s, transform .15s; }
-.contact-link:hover { border-color: rgb(var(--color-primary-600)); box-shadow: 0 8px 20px -14px rgb(var(--color-primary-700));
-  transform: translateY(-2px); color: rgb(var(--color-neutral-900)); }
-.contact-icon { flex: none; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 12px;
-  font-size: 1.35rem; color: rgb(var(--color-primary-700)); background: rgba(var(--color-primary-500), .1); }
+/* ---------- Contact icons (shortcodes/contact-links.html): icon + one-word label, no addresses ---------- */
+.contact-links { display: flex; flex-wrap: wrap; gap: 1.25rem; margin: 1.75rem 0 2.25rem; }
+.contact-link { display: flex; flex-direction: column; align-items: center; gap: .45rem; width: 5.5rem;
+  color: rgb(var(--color-neutral-700)); text-decoration: none; }
+.contact-icon { display: grid; place-items: center; width: 3.75rem; height: 3.75rem; border-radius: 50%;
+  font-size: 1.6rem; color: rgb(var(--color-primary-700)); background: rgba(var(--color-primary-500), .1);
+  border: 1px solid rgba(var(--color-primary-500), .25); transition: background .15s, color .15s, transform .15s; }
 .contact-icon .icon svg { width: 1em; height: 1em; }
-.contact-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
-.contact-text strong { font-size: 1rem; }
-.contact-text span { font-size: .85rem; color: rgb(var(--color-neutral-600)); overflow-wrap: anywhere; }
-.dark .contact-link { background: rgb(var(--color-neutral-800)); border-color: rgb(var(--color-neutral-700)); color: rgb(var(--color-neutral-100)); }
-.dark .contact-link:hover { border-color: rgb(var(--color-primary-400)); color: #fff; }
-.dark .contact-icon { color: rgb(var(--color-primary-300)); background: rgba(var(--color-primary-400), .14); }
-.dark .contact-text span { color: rgb(var(--color-neutral-300)); }
-@media (prefers-reduced-motion: reduce) { .contact-link { transition: none; } .contact-link:hover { transform: none; } }
+.contact-label { font-size: .85rem; font-weight: 600; }
+.contact-link:hover .contact-icon, .contact-link:focus-visible .contact-icon {
+  background: rgb(var(--color-primary-700)); color: #fff; transform: translateY(-2px); }
+.contact-link:focus-visible { outline-offset: 4px; border-radius: 12px; }
+.dark .contact-link { color: rgb(var(--color-neutral-200)); }
+.dark .contact-icon { color: rgb(var(--color-primary-300)); background: rgba(var(--color-primary-400), .14);
+  border-color: rgba(var(--color-primary-400), .3); }
+.dark .contact-link:hover .contact-icon, .dark .contact-link:focus-visible .contact-icon {
+  background: rgb(var(--color-primary-400)); color: rgb(var(--color-neutral-900)); }
+@media (prefers-reduced-motion: reduce) { .contact-icon { transition: none; } .contact-link:hover .contact-icon { transform: none; } }
 
 /* Fix (Phase A regression): the link override above also applied in dark mode, where primary-700 on
    near-black is too dim. Dark mode gets primary-400 (6.7:1 on neutral-800). */

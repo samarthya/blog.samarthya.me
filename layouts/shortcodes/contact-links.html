@@ -1,5 +1,8 @@
-{{/* Contact tiles: icon + label + handle, built from the profile links in
-   config/_default/languages.en.toml (params.author.links), so they stay in sync with the site. Usage: {{< contact-links >}} */}}
+{{/* Contact icons built from the profile links in config/_default/languages.en.toml (params.author.links),
+   so they stay in sync with the site. Icon + one-word label only: addresses and handles are not shown as text,
+   and the email address is never in the HTML: like Blowfish's own author icons, the link is "#" with the address
+   base64-encoded in data-email, and the theme's bundled js/email.js fills in the mailto: on page load.
+   (HTML character references don't survive: the production minifier decodes them back to "@".) */}}
 {{ $meta := dict
   "email"    (dict "label" "Email"     "icon" "envelope")
   "linkedin" (dict "label" "LinkedIn"  "icon" "linkedin")
@@ -10,15 +13,14 @@
   {{ range site.Params.author.links }}
     {{ range $kind, $url := . }}
       {{ $m := index $meta $kind | default (dict "label" (title $kind) "icon" $kind) }}
-      {{ $handle := $url | replaceRE `^mailto:` "" | replaceRE `^https?://(www\.)?` "" | strings.TrimSuffix "/" }}
-      {{ $handle = $handle | replaceRE `^linkedin\.com/` "" | replaceRE `^github\.com/` "@" }}
-      <a class="contact-link" href="{{ $url }}" {{ if not (hasPrefix $url "mailto:") }}target="_blank" rel="noopener me"{{ end }}
-         aria-label="{{ $m.label }}: {{ $handle }}">
+      {{ $isMail := hasPrefix $url "mailto:" }}
+      <a class="contact-link{{ if $isMail }} email-link{{ end }}"
+         href="{{ if $isMail }}#{{ else }}{{ $url }}{{ end }}"
+         {{ with $isMail }}data-email="{{ $url | base64Encode }}"{{ end }}
+         {{ if not $isMail }}target="_blank" rel="noopener me"{{ end }}
+         title="{{ $m.label }}" aria-label="{{ $m.label }}">
         <span class="contact-icon" aria-hidden="true">{{ partial "icon.html" $m.icon }}</span>
-        <span class="contact-text">
-          <strong>{{ $m.label }}</strong>
-          <span>{{ $handle }}</span>
-        </span>
+        <span class="contact-label">{{ $m.label }}</span>
       </a>
     {{ end }}
   {{ end }}
