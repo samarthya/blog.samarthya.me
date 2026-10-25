@@ -216,3 +216,72 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-v
   .topic-chip, .portal-button, .topic-strip-more { transition: none; }
   .topic-chip:hover, .portal-button:hover { transform: none; }
 }
+
+/* =====================================================================================
+   Phase B (2026-10-25): colour restraint, footer, daily cards. See STYLING-PLAN.md.
+   Rule: orange = action (links, buttons). Topic colour = identity marker only; the full
+   gradients stay on the cover images and the /topics/ tiles.
+   ===================================================================================== */
+
+/* Homepage stats: neutral tiles, ink numbers */
+.portal-stats div { background: rgb(var(--color-neutral-50)); border-color: rgb(var(--color-neutral-200)); }
+.portal-stats strong { color: rgb(var(--color-neutral-900)); }
+.portal-stats span { color: rgb(var(--color-neutral-600)); }
+.dark .portal-stats div { background: rgb(var(--color-neutral-800)); border-color: rgb(var(--color-neutral-700)); }
+.dark .portal-stats strong { color: rgb(var(--color-neutral-50)); }
+.dark .portal-stats span { color: rgb(var(--color-neutral-300)); }
+.portal-kicker { color: rgb(var(--color-neutral-600)); }
+.dark .portal-kicker { color: rgb(var(--color-neutral-300)); }
+
+/* Homepage topic chips: neutral pills; the topic colour lives in the symbol */
+.topic-chips:not(.is-large) .topic-chip { background: rgb(var(--color-neutral-100)); color: rgb(var(--color-neutral-800));
+  box-shadow: none; border: 1px solid rgb(var(--color-neutral-200)); }
+.topic-chips:not(.is-large) .topic-chip:hover { color: rgb(var(--color-neutral-900)); border-color: var(--to);
+  box-shadow: 0 6px 14px -10px var(--to); }
+.topic-chips:not(.is-large) .topic-chip-glyph { color: var(--to); opacity: 1; }
+.topic-chips:not(.is-large) .topic-chip-count { background: rgb(var(--color-neutral-200)); color: rgb(var(--color-neutral-700)); }
+.dark .topic-chips:not(.is-large) .topic-chip { background: rgb(var(--color-neutral-800)); color: rgb(var(--color-neutral-100));
+  border-color: rgb(var(--color-neutral-700)); }
+.dark .topic-chips:not(.is-large) .topic-chip-glyph { color: var(--from); }
+.dark .topic-chips:not(.is-large) .topic-chip-count { background: rgb(var(--color-neutral-700)); color: rgb(var(--color-neutral-200)); }
+
+/* Article topic strip -> a slim label: neutral pill, coloured edge and symbol */
+.topic-strip { display: inline-flex; height: auto; gap: .55rem; padding: .4rem .9rem .4rem .75rem; margin: 1.5rem 0 0;
+  border-radius: 999px; background: rgb(var(--color-neutral-100)); color: rgb(var(--color-neutral-800));
+  border: 1px solid rgb(var(--color-neutral-200)); border-left: 4px solid var(--to); }
+.topic-strip:hover { color: rgb(var(--color-neutral-900)); border-color: var(--to); }
+.topic-strip-label { font-size: .9rem; font-weight: 700; }
+.topic-strip .topic-glyph { position: static; transform: none; order: -1; font-size: 1rem; opacity: 1; color: var(--to); }
+.topic-strip-more { font-size: .8rem; color: rgb(var(--color-neutral-600)); }
+.dark .topic-strip { background: rgb(var(--color-neutral-800)); color: rgb(var(--color-neutral-100));
+  border-color: rgb(var(--color-neutral-700)); border-left-color: var(--from); }
+.dark .topic-strip .topic-glyph { color: var(--from); }
+.dark .topic-strip-more { color: rgb(var(--color-neutral-300)); }
+
+/* Card tag pills: quiet ink instead of orange on every card (they stay orange on article pages) */
+.article-link--card .border-primary-400 { border-color: rgb(var(--color-neutral-300)); color: rgb(var(--color-neutral-600)); }
+.dark .article-link--card .border-primary-400 { border-color: rgb(var(--color-neutral-600)); color: rgb(var(--color-neutral-300)); }
+
+/* Daily cards (no cover image): a labelled, tinted card so the empty space reads as intentional */
+.article-link--card:not(:has(.thumbnail_card)) { background: rgba(var(--color-primary-500), .05);
+  border-color: rgba(var(--color-primary-500), .3); }
+.article-link--card:not(:has(.thumbnail_card))::before { content: "Daily"; display: block; padding: 1rem 1rem 0;
+  font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgb(var(--color-primary-800)); }
+.dark .article-link--card:not(:has(.thumbnail_card)) { background: rgba(var(--color-primary-400), .08); }
+.dark .article-link--card:not(:has(.thumbnail_card))::before { color: rgb(var(--color-primary-300)); }
+
+/* Footer extras (layouts/partials/extend-footer.html) */
+.site-footer-extra { margin-top: 1rem; font-size: .85rem; color: rgb(var(--color-neutral-600)); }
+.site-footer-tagline { margin: 0 0 .25rem; font-weight: 700; color: rgb(var(--color-neutral-800)); }
+.site-footer-meta { margin: 0; }
+.site-footer-extra a { color: rgb(var(--color-neutral-700)); text-decoration: underline; text-underline-offset: .18em; }
+.site-footer-extra a:hover { color: rgb(var(--color-primary-700)); }
+.dark .site-footer-extra { color: rgb(var(--color-neutral-400)); }
+.dark .site-footer-tagline { color: rgb(var(--color-neutral-100)); }
+.dark .site-footer-extra a { color: rgb(var(--color-neutral-300)); }
+/* The "more … posts →" hint takes no space until hover/focus (it left the label pill half empty) */
+.topic-strip-more { display: none; }
+.topic-strip:hover .topic-strip-more, .topic-strip:focus-visible .topic-strip-more { display: inline; opacity: 1; transform: none; }
+/* Dark mode: the outline button used primary-700 text on near-black (too dim); filled button stays */
+.dark .portal-button { border-color: rgb(var(--color-primary-400)); color: rgb(var(--color-primary-300)); }
+.dark .portal-button:first-child { background: rgb(var(--color-primary-700)); border-color: rgb(var(--color-primary-700)); color: #fff; }

@@ -1,0 +1,10 @@
+{{/* Blowfish hook (partials/footer.html includes it at the end of the footer).
+   Tagline + feed links; the feed URLs come from Hugo, so they also work under a sub-path. */}}
+<div class="site-footer-extra">
+  <p class="site-footer-tagline">Fall. Get up. Build again.</p>
+  <p class="site-footer-meta">
+    {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS: everything</a>{{ end }}
+    {{ with site.GetPage "/daily" }}{{ with .OutputFormats.Get "rss" }} · <a href="{{ .RelPermalink }}">RSS: daily</a>{{ end }}{{ end }}
+    · Built with <a href="https://gohugo.io/">Hugo</a> and <a href="https://blowfish.page/">Blowfish</a>
+  </p>
+</div>
