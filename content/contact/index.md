@@ -21,3 +21,10 @@ Happy to hear from you, whether it's a question about a post, a correction, an i
   experience.
 
 *No forms here: just a plain email link, and your message goes straight to me.*
+
+## Privacy
+
+This site uses **Google Analytics** to see which pages are read. It sets cookies and sends Google details such
+as the pages you visit, your browser and an approximate location. How Google handles that data is described in
+[Google's privacy policy](https://policies.google.com/privacy). There are no comments, accounts, forms or
+other trackers.

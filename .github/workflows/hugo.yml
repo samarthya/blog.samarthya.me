@@ -40,6 +40,13 @@ jobs:
           submodules: recursive
           fetch-depth: 0 # full history so .Lastmod can come from git
 
+      # Pushes go straight to main, so the privacy check must gate the deploy here too (validate.yml only
+      # covers pull requests). Standard library only: no setup step needed.
+      - name: Privacy check (secrets, local paths, image metadata)
+        run: |
+          python3 -m unittest discover -s tools/privacy
+          python3 tools/privacy/check.py
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

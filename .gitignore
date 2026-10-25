@@ -46,3 +46,18 @@ __pycache__/
 /tools/wp2hugo/pseudonym.local.txt
 /STYLING-PLAN.md
 /MISSING-MEDIA.md
+
+# Migration exports, dumps and archives under any name (repo root: the Hugo tree never holds these).
+# .gitignore only prevents commits; keep raw exports outside the repo (see docs/privacy.md).
+/*.xml
+*.sql.*
+*.dump
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.bz2
+*.xz
+# local review notes
+/comments.md
+/.local-backups/

@@ -67,6 +67,24 @@ remote-publishing endpoint (`xmlrpc.php`) the site didn't need, and an account w
 
 Not an exotic exploit. That's almost more uncomfortable, because no plugin update would have prevented it.
 
+## Shared responsibility: what the platform didn't catch
+
+The password was my part. But I was on shared hosting with a typical hosting provider, and I had assumed that security there was partly
+implicit: that the platform watched for the obvious. Looking at the evidence, several layers that a hosting
+setup can provide either weren't there or didn't speak up:
+
+| What happened | What a hosting platform can do about it |
+|---|---|
+| A week of password guessing, then logins from **nine different addresses in three days** | Rate-limit or block brute force on `wp-login.php`/`xmlrpc.php` at the server, and flag logins from unusual places. Ironically, the firewall later blocked *my* home connection for a few retries; the rotating attackers never tripped it |
+| **PHP files written into the uploads folder** | A common hardening default: uploads is for images, so PHP isn't allowed to run there |
+| A new administrator account, 20 plugins switched off in one second, a file manager installed | Notify the account owner about new admins and mass plugin changes |
+| Backdoors that sat on the server for days | Scan automatically and alert. The host's malware scanner did find more infected files, **but only when I ran it myself** |
+
+None of this excuses a reused password. Without that, there was no way in. But security on a shared host is
+**shared responsibility**. Each side tends to assume the other has it covered, and that's exactly the gap an
+attacker walks through. So the honest conclusion is both: *my* weakest link was the password, and the
+*platform's* safety nets didn't catch what came after.
+
 ## The first hours
 
 {{< alert "circle-info" >}}
@@ -108,6 +126,7 @@ So the plan became:
 - **27 plugins was 26 too many.** Every one was code I didn't read, running with full access. Half of them I
   couldn't have named.
 - **Backups saved me, by accident.** The copy that rescued most of my images was one I'd forgotten I had.
+- **"The host handles security" was an assumption, not a fact.** I never asked what my plan actually included.
 
 ## Tips for you
 
@@ -123,7 +142,10 @@ Five minutes today beats five weekends later.
    minute.
 4. **Running WordPress?** No user called `admin`; disable `xmlrpc.php` if you don't post from apps; keep only
    the plugins you actually use; and *look* at your security plugin's dashboard once a month.
-5. **If you're hit: contain, preserve, then rebuild.** Take the site offline, keep a copy of everything, change
+5. **Ask your host what they actually protect**, in writing: brute-force limits on login pages, PHP blocked in
+   upload folders, automatic malware scans *with alerts*, notifications for new admin accounts. Whatever the answer
+   is "no", add yourself (a security plugin, a few server rules), choose a host that does it, or go static.
+6. **If you're hit: contain, preserve, then rebuild.** Take the site offline, keep a copy of everything, change
    passwords, and rebuild somewhere clean rather than "cleaning" in place.
 
 The hardest part wouldn't be the new site. It would be getting six years of posts out of the old one intact.

@@ -41,6 +41,12 @@ INTERNAL_POST = re.compile(
 UPLOAD_KEY = re.compile(r"wp-content/uploads/(\d{4}/\d{2})/([^/?#]+)$")
 # Kubernetes service-account tokens and other JWTs pasted into posts.
 JWT = re.compile(r"eyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}")
+# A whole private-key block is never documentation, so it is redacted like a JWT.
+PRIVATE_KEY = re.compile(r"-----BEGIN ([A-Z ]*)PRIVATE KEY(?: BLOCK)?-----.*?-----END \1PRIVATE KEY(?: BLOCK)?-----", re.S)
+# Everything else credential-shaped is only *reported* for manual review, using the same detectors and
+# allowlist as the publish-time check (tools/privacy/check.py); auto-redacting it would mangle real examples.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "privacy"))
+import check as privacy_check  # noqa: E402
 # The site is published under a screen name; old posts used the real name as sample data
 # (LDAP dc=..., index names, Go structs). The mapping is kept out of git in pseudonym.local.txt
 # ("<regex> => <replacement>" per line, applied in order), so the public repo doesn't spell it out.
@@ -177,6 +183,8 @@ class Post:
         self.bundle, self.images, self.known_slugs = bundle, images, known_slugs
         self.files = {}  # filename -> bytes
         self.missing, self.notes, self.langs = [], [], []
+        self.privacy = {"jwt": 0, "private-key": 0, "pseudonym": 0}  # counts, filled in by convert()
+        self.review = []  # privacy_check.Finding items left for a human to look at
         self.stash = []
 
     def token(self, md):
@@ -417,9 +425,12 @@ def escape_shortcodes(text):
 
 
 def pseudonymise(text):
+    """Apply the pseudonym rules; return (text, number of replacements)."""
+    total = 0
     for pattern, repl in PSEUDONYM:
-        text = pattern.sub(repl, text)
-    return text
+        text, n = pattern.subn(repl, text)
+        total += n
+    return text, total
 
 
 def scrub_photo(data):
@@ -459,10 +470,13 @@ def convert(item, out_root, images, known_slugs):
         html = wpautop(html)
     body = html_to_md(html, post)
 
-    redacted = len(JWT.findall(body))
-    body = JWT.sub("<REDACTED-TOKEN>", body)
-    if redacted:
-        post.notes.append(f"redacted {redacted} JWT/service-account token(s)")
+    body, jwts = JWT.subn("<REDACTED-TOKEN>", body)
+    body, keys = PRIVATE_KEY.subn("<REDACTED-PRIVATE-KEY>", body)
+    post.privacy = {"jwt": jwts, "private-key": keys}
+    if jwts:
+        post.notes.append(f"redacted {jwts} JWT/service-account token(s)")
+    if keys:
+        post.notes.append(f"redacted {keys} private-key block(s)")
 
     fm = front_matter({
         "title": (item.findtext("title") or slug).strip(),
@@ -475,7 +489,11 @@ def convert(item, out_root, images, known_slugs):
         "draft": True if status != "publish" else None,
         "wp_id": int(item.findtext("wp:post_id", namespaces=NS)),
     })
-    return slug, bundle, pseudonymise(fm + "\n" + body + "\n"), post
+    text, post.privacy["pseudonym"] = pseudonymise(fm + "\n" + body + "\n")
+    allowed = privacy_check.load_allowlist(privacy_check.ALLOWLIST)
+    post.review = [f for f in privacy_check.scan_text(text, f"{slug}/index.md")
+                   if (f.rule, f.fingerprint) not in allowed]
+    return slug, bundle, text, post
 
 
 def main():
@@ -492,6 +510,8 @@ def main():
     ap.add_argument("--skip", default="", help="comma-separated post IDs or slugs to leave out")
     ap.add_argument("--drafts", action="store_true", help="also import drafts (as draft: true)")
     ap.add_argument("--force", action="store_true", help="overwrite bundles that already exist")
+    ap.add_argument("--allow-unredacted", action="store_true",
+                    help=f"convert even if {PSEUDONYM_FILE.name} is missing (real names stay in the output)")
     args = ap.parse_args()
 
     channel = ET.parse(args.xml).getroot().find("channel")
@@ -516,12 +536,13 @@ def main():
     if dupes:
         sys.exit(f"duplicate slugs would overwrite each other: {dupes}; use --skip")
 
-    if not PSEUDONYM:
-        print(f"warning: {PSEUDONYM_FILE.name} missing; real names in old posts will NOT be replaced")
+    if not PSEUDONYM and not args.allow_unredacted:
+        sys.exit(f"error: no pseudonym rules loaded ({PSEUDONYM_FILE} is missing or empty), so real names in old "
+                 f"posts would be published. Create it, or pass --allow-unredacted to convert anyway.")
     images = ImageSource(args.zip, args.images)
     known = {slug_of(i) for i in items}
     out_root = Path(args.out)
-    report = ["# WordPress import report", ""]
+    report, totals, review = [], {"jwt": 0, "private-key": 0, "pseudonym": 0}, []
     for item in items:
         slug, bundle, text, post = convert(item, out_root, images, known)
         target = bundle / "index.md"
@@ -533,14 +554,32 @@ def main():
         for name, data in post.files.items():
             (bundle / name).write_bytes(scrub_photo(data))
         langs = {l: post.langs.count(l) for l in sorted(set(post.langs))}
-        print(f"wrote  {slug}: {len(post.files)} images, {len(post.missing)} missing, code {langs}")
+        for k in totals:
+            totals[k] += post.privacy[k]
+        review += post.review
+        print(f"wrote  {slug}: {len(post.files)} images, {len(post.missing)} missing, code {langs}"
+              + (f", {len(post.review)} for privacy review" if post.review else ""))
         report += [f"## {item.findtext('title')}  (`{slug}`, wp #{item.findtext('wp:post_id', namespaces=NS)})",
                    f"- images copied: {len(post.files)}; missing: {len(post.missing)}",
                    *[f"  - missing: `{u}`" for u in post.missing],
                    f"- code blocks by language: {langs}",
-                   *[f"- note: {n}" for n in post.notes], ""]
+                   *[f"- note: {n}" for n in post.notes],
+                   *[f"- privacy review: line {f.line} [{f.rule}] {f.detail} (fp {f.fingerprint})" for f in post.review],
+                   ""]
+
+    skipped = sorted(skip)
+    summary = ["# WordPress import report", "", "## Privacy summary", "",
+               (f"- Pseudonym rules: **{len(PSEUDONYM)} loaded**, {totals['pseudonym']} replacement(s) made"
+                if PSEUDONYM else "- Pseudonym rules: **NONE loaded (--allow-unredacted): real names were NOT replaced**"),
+               f"- Redacted automatically: {totals['jwt']} JWT(s), {totals['private-key']} private-key block(s)",
+               f"- Left for manual review (credential-shaped, not in tools/privacy/allowlist.txt): **{len(review)}**",
+               *[f"  - {f}" for f in review],
+               f"- Skipped posts (ALWAYS_SKIP + --skip): {', '.join(skipped) if skipped else 'none'}",
+               "- Images: JPEGs with personal EXIF (owner, GPS, serial) were re-encoded without it", ""]
     Path(args.report).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.report).write_text("\n".join(report), encoding="utf-8")
+    Path(args.report).write_text("\n".join(summary + report), encoding="utf-8")
+    print(f"privacy: {totals['jwt']} JWT + {totals['private-key']} key redactions, "
+          f"{totals['pseudonym']} pseudonym replacements, {len(review)} item(s) for manual review")
     print(f"report -> {args.report}")
 
 

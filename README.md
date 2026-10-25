@@ -72,14 +72,16 @@ mise exec -- hugo server -D     # http://localhost:1313, includes drafts
 Set `draft: false` when it is ready, then commit and push to `main`. The GitHub Actions workflow in
 `.github/workflows/hugo.yml` builds the site and deploys it to GitHub Pages in about a minute.
 
-Before pushing, the same build the CI runs should finish without errors:
+Before pushing, the same checks the CI runs should pass:
 ```sh
-mise exec -- hugo --gc --minify
+python tools/privacy/check.py        # secrets, local paths, photo metadata (see docs/privacy.md)
+mise exec -- hugo --gc --minify      # production build, no errors
 ```
 
 ### Photos and galleries
 - Keep photos to roughly 2000 px wide and a few hundred KB (JPG or WebP); GitHub Pages limits sites to 1 GB.
 - **Strip location and personal metadata (EXIF) from phone photos before committing**: the repository is public.
+  The privacy check reports any photo that still has it; [docs/privacy.md](docs/privacy.md) shows how to strip it.
 - For a few related pictures inside a post, use the theme's gallery shortcode:
   ```
   {{</* gallery */>}}
@@ -93,6 +95,18 @@ mise exec -- hugo --gc --minify
 Full list: <https://blowfish.page/docs/shortcodes/>.
 
 ---
+
+### When something goes wrong
+
+| Problem | Fix |
+|---|---|
+| Post doesn't appear locally | Still `draft: true`, or the date is in the future. Run with `-D -F`, or fix the date |
+| Post doesn't appear online | Draft? Did `git push` succeed? The repo's **Actions** tab shows a red ✗ with the error |
+| Deploy stopped at "Privacy check" | The log lists `file:line: [rule]`. Remove the secret or photo metadata (see [docs/privacy.md](docs/privacy.md)) |
+| Typo after publishing | Edit the file, commit, push again. Same URL, updated page |
+| Remove a post | `git rm -r content/posts/the-post`, commit, push |
+| Undo the last commit (not pushed yet) | `git reset --soft HEAD~1` (keeps your changes) |
+| Build error mentions a shortcode | A `{{</* ... */>}}` is misspelled or not closed |
 
 ## Topics and covers
 
@@ -114,6 +128,10 @@ A new topic page appears at `/topics/<name>/` on the next build.
 
 Posts imported from WordPress carry `aliases:` in their front matter, so every
 `/wps/YYYY/MM/DD/slug/` address redirects to `/posts/slug/`. Keep those lines when editing an old post.
+
+## Privacy
+
+What is checked before publishing, and how to handle migration files safely: [docs/privacy.md](docs/privacy.md).
 
 ## Licence
 
