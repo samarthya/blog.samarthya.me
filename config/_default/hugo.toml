@@ -77,3 +77,8 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+# GA4 property carried over from the WordPress site (ExactMetrics). Blowfish adds the gtag snippet
+# only to production builds (hugo.IsProduction), so local previews are not counted.
+[services.googleAnalytics]
+  ID = "G-7JK3JP8ZB6"
