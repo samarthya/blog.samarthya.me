@@ -2,7 +2,7 @@
    Colours come from the active scheme (params.toml colorScheme) as "r, g, b" triplets. */
 
 /* ---------- Homepage portal (layouts/partials/home/custom.html) ---------- */
-.portal { --p: var(--color-primary-600); --n: var(--color-neutral-500); max-width: 52rem; margin: 0 auto; }
+.portal { --p: var(--color-primary-700); --n: var(--color-neutral-500); max-width: 52rem; margin: 0 auto; }
 
 .portal-hero { display: flex; align-items: center; gap: 1.5rem; padding: 2rem 0 1rem; }
 .portal-logo { width: 96px; height: 96px; border-radius: 22px; flex: none;
@@ -11,7 +11,7 @@
   color: rgb(var(--p)); font-weight: 700; }
 .portal-headline { margin: .2rem 0 .3rem; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.05;
   font-weight: 800; letter-spacing: -.02em;
-  background: linear-gradient(90deg, rgb(var(--color-primary-500)), rgb(var(--color-primary-800)));
+  background: linear-gradient(90deg, rgb(var(--color-primary-600)), rgb(var(--color-primary-800)));
   -webkit-background-clip: text; background-clip: text; color: transparent; }
 .portal-links { text-align: left; }
 
@@ -104,7 +104,7 @@ header img.logo { max-height: 2.75rem; max-width: 2.75rem; border-radius: 10px; 
 .topic-chips { display: flex; flex-wrap: wrap; gap: .6rem; }
 .topic-chip { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .5rem .45rem .9rem;
   border-radius: 999px; color: #fff; text-decoration: none; font-weight: 600;
-  background: linear-gradient(135deg, var(--from), var(--to)); box-shadow: 0 6px 16px -10px var(--to);
+  background: linear-gradient(135deg, var(--start), var(--to)); box-shadow: 0 6px 16px -10px var(--to);
   transition: transform .15s, box-shadow .15s; }
 .topic-chip:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -10px var(--to); color: #fff; }
 .topic-chip-glyph { opacity: .85; }
@@ -117,7 +117,7 @@ header img.logo { max-height: 2.75rem; max-width: 2.75rem; border-radius: 10px; 
 
 /* ---------- Topic page banner (topics/single.html) ---------- */
 .topic-banner { position: relative; overflow: hidden; margin: 1rem 0 2rem; padding: 2rem 2rem 1.5rem;
-  border-radius: 18px; color: #fff; background: linear-gradient(135deg, var(--from), var(--to)); }
+  border-radius: 18px; color: #fff; background: linear-gradient(135deg, var(--start), var(--to)); }
 .topic-banner h1 { margin: .2rem 0; font-size: 2.5rem; font-weight: 800; color: #fff; }
 .topic-banner p { margin: 0; opacity: .9; }
 .topic-banner a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
@@ -128,9 +128,91 @@ header img.logo { max-height: 2.75rem; max-width: 2.75rem; border-radius: 10px; 
 /* ---------- Article topic strip (hero/topic.html) ---------- */
 .topic-strip { position: relative; overflow: hidden; display: flex; align-items: center; gap: 1rem;
   height: 4.5rem; margin: 1.25rem 0 0; padding: 0 1.5rem; border-radius: 14px; color: #fff; text-decoration: none;
-  background: linear-gradient(120deg, var(--from), var(--to)); }
+  background: linear-gradient(120deg, var(--start), var(--to)); }
 .topic-strip:hover { color: #fff; }
 .topic-strip-label { font-size: 1.25rem; font-weight: 800; }
 .topic-strip-more { font-size: .85rem; opacity: 0; transform: translateX(-6px); transition: all .2s; }
 .topic-strip:hover .topic-strip-more, .topic-strip:focus-visible .topic-strip-more { opacity: .9; transform: none; }
 .topic-strip .topic-glyph { font-size: 4.5rem; right: 1.25rem; }
+
+/* =====================================================================================
+   Phase A (2026-10-25): contrast, reading comfort, daily vs posts. See STYLING-PLAN.md.
+   ===================================================================================== */
+
+/* Topic gradients start at a 30% mix toward the dark end: white text is >= 4.95:1 on every topic
+   (worst case java). Solid fallback for browsers without color-mix(). */
+.topic-chip, .topic-banner, .topic-strip { background-color: var(--to);
+  --start: color-mix(in srgb, var(--from) 30%, var(--to)); }
+
+/* Links: primary-700 is 5.18:1 on white (primary-600 was 3.56:1). Underlines keep links findable
+   without relying on colour alone. */
+.prose { --tw-prose-links: rgba(var(--color-primary-700), 1); }
+.prose a { text-underline-offset: .18em; text-decoration-thickness: 1px; }
+.prose a:hover { text-decoration-thickness: 2px; }
+
+/* Keyboard focus: one visible ring everywhere, including the custom chips, cards and buttons */
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-visible {
+  outline: 2px solid rgb(var(--color-primary-700)); outline-offset: 2px; border-radius: 4px; }
+.dark a:focus-visible, .dark button:focus-visible, .dark [tabindex]:focus-visible {
+  outline-color: rgb(var(--color-primary-400)); }
+
+/* ---------- Article reading ---------- */
+.article-content { font-size: 1.0625rem; line-height: 1.75; }
+.article-content > h2 { margin: 2.4em 0 .6em; padding-top: .9em; border-top: 1px solid rgb(var(--color-neutral-200)); }
+.article-content > h2:first-child { margin-top: .5em; padding-top: 0; border-top: 0; }
+.article-content > h3 { margin: 1.9em 0 .5em; }
+.article-content > h4 { margin: 1.6em 0 .4em; }
+.dark .article-content > h2 { border-top-color: rgb(var(--color-neutral-700)); }
+
+/* Inline code: ink on a light pill instead of crimson text */
+.prose { --tw-prose-code: rgba(var(--color-neutral-800), 1); --tw-prose-invert-code: rgba(var(--color-neutral-100), 1); }
+.prose :where(code):not(:where(pre *)) { padding: .12em .38em; border-radius: 5px; font-size: .86em; font-weight: 500;
+  background: rgb(var(--color-neutral-100)); }
+.dark .prose :where(code):not(:where(pre *)) { background: rgb(var(--color-neutral-700)); }
+
+/* Code blocks: smaller mono text, and on wide screens top-level blocks may extend into the gutter
+   beside the text column (long commands are common: 116 posts have lines > 100 chars). */
+.article-content pre { font-size: .84rem; line-height: 1.6; border: 1px solid rgb(var(--color-neutral-200)); }
+.dark .article-content pre { border-color: rgb(var(--color-neutral-700)); }
+@media (min-width: 1280px) {
+  .article-content > .highlight-wrapper, .article-content > .highlight { width: calc(100% + 11rem); }
+}
+
+/* Tables scroll inside themselves on small screens instead of widening the page */
+.article-content table { display: block; overflow-x: auto; font-size: .92em; }
+
+/* "lead" (the old WordPress pull quotes): a quiet quote, readable contrast (neutral-700 = 10:1) */
+.article-content .lead { font-size: 1.15rem; line-height: 1.65; color: rgb(var(--color-neutral-700));
+  border-left: 3px solid rgb(var(--color-primary-300)); padding-left: 1rem; }
+.dark .article-content .lead { color: rgb(var(--color-neutral-300)); border-left-color: rgb(var(--color-primary-700)); }
+
+/* ---------- Daily (layouts/daily/*.html) ---------- */
+.daily-month { margin-bottom: 2.5rem; }
+.daily-month-title { font-size: .85rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: rgb(var(--color-neutral-600)); margin: 0 0 1rem; }
+.dark .daily-month-title { color: rgb(var(--color-neutral-300)); }
+.daily-list { list-style: none; margin: 0; padding: 0; border-left: 2px solid rgb(var(--color-neutral-200)); }
+.dark .daily-list { border-left-color: rgb(var(--color-neutral-700)); }
+.daily-item { display: grid; grid-template-columns: 3.5rem 1fr; gap: 1rem; padding: .75rem 0 .75rem 1rem; }
+.daily-day { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 3.5rem;
+  border-radius: 12px; background: rgba(var(--color-primary-500), .1); color: rgb(var(--color-primary-800)); }
+.dark .daily-day { background: rgba(var(--color-primary-400), .15); color: rgb(var(--color-primary-200)); }
+.daily-day span { font-size: 1.4rem; font-weight: 800; line-height: 1; }
+.daily-day small { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
+.daily-item h3 { margin: .1rem 0 .25rem; font-size: 1.15rem; font-weight: 700; }
+.daily-item h3 a { text-decoration: none; }
+.daily-item h3 a:hover { text-decoration: underline; }
+.daily-item p { margin: 0; color: rgb(var(--color-neutral-600)); }
+.dark .daily-item p { color: rgb(var(--color-neutral-300)); }
+.daily-kicker { margin: 0 0 .4rem; font-size: .85rem; font-weight: 600; color: rgb(var(--color-neutral-600)); }
+.daily-kicker a { color: rgb(var(--color-primary-700)); }
+.dark .daily-kicker { color: rgb(var(--color-neutral-300)); }
+.dark .daily-kicker a { color: rgb(var(--color-primary-400)); }
+.daily-tags a { margin-right: .6rem; font-size: .9rem; color: rgb(var(--color-neutral-600)); }
+.dark .daily-tags a { color: rgb(var(--color-neutral-300)); }
+
+/* Motion: no hover lifts or pulses for people who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+  .topic-chip, .portal-button, .topic-strip-more { transition: none; }
+  .topic-chip:hover, .portal-button:hover { transform: none; }
+}

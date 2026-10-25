@@ -1,0 +1,20 @@
+{{/* A daily entry: date, title, text, tags, prev/next. Lighter than an article on purpose:
+   no topic strip, TOC, reading time or author box. */}}
+{{ define "main" }}
+  <article class="daily-entry">
+    <header class="mt-5 max-w-prose">
+      <p class="daily-kicker">
+        <a href="{{ "daily/" | relURL }}">Daily</a> ·
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Monday, 2 January 2006" }}</time>
+      </p>
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title | emojify }}</h1>
+    </header>
+    <div class="article-content prose dark:prose-invert max-w-prose mt-6 mb-10">{{ .Content }}</div>
+    {{ with .GetTerms "tags" }}
+      <p class="daily-tags max-w-prose">
+        {{ range . }}<a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a> {{ end }}
+      </p>
+    {{ end }}
+    <footer class="pt-8 max-w-prose print:hidden">{{ partial "article-pagination.html" . }}</footer>
+  </article>
+{{ end }}

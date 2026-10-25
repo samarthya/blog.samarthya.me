@@ -1,0 +1,27 @@
+{{/* /daily/: a compact, dated list (newest first), so short entries read differently from Posts. */}}
+{{ define "main" }}
+  <header class="mb-8">
+    <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
+    {{ with .Description }}<p class="mt-2 text-neutral-600 dark:text-neutral-300">{{ . }}</p>{{ end }}
+  </header>
+  {{ range .Pages.ByDate.Reverse.GroupByDate "January 2006" }}
+    <section class="daily-month">
+      <h2 class="daily-month-title">{{ .Key }}</h2>
+      <ol class="daily-list">
+        {{ range .Pages }}
+          <li class="daily-item">
+            <time class="daily-day" datetime="{{ .Date.Format "2006-01-02" }}">
+              <span>{{ .Date.Format "2" }}</span><small>{{ .Date.Format "Mon" }}</small>
+            </time>
+            <div>
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{ with .Description | default (.Summary | plainify) }}<p>{{ . }}</p>{{ end }}
+            </div>
+          </li>
+        {{ end }}
+      </ol>
+    </section>
+  {{ else }}
+    <p>No entries yet.</p>
+  {{ end }}
+{{ end }}

@@ -14,7 +14,7 @@ refLinksNotFoundURL = "/posts/"
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
-summaryLength = 0
+summaryLength = 30 # words; feeds card teasers, RSS <description> and meta descriptions
 
 buildDrafts = false
 buildFuture = false
