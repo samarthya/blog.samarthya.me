@@ -8,7 +8,7 @@ topics:
   - { name: security,   label: "Security",    glyph: "⛨",     from: "#ef4444", to: "#7f1d1d", match: [security, siem, cissp, cism, oauth, crypto, cipher, identity, openldap, realms] }
   - { name: elastic,    label: "Elastic",     glyph: "{ }",   from: "#14b8a6", to: "#134e4a", match: [elasticsearch, elastic, ilm, ecs, snapshot, analyze, query, alerting, painless, kibana, logstash, reindex] }
   - { name: kafka,      label: "Streams",     glyph: "≋",     from: "#64748b", to: "#0f172a", match: [kafka, streams, consumer] }
-  - { name: devops,     label: "DevOps",      glyph: "∞",     from: "#6366f1", to: "#312e81", match: [spinnaker, devops, cd, pipeline, git, github, scm, postman, newman, artifacts] }
+  - { name: devops,     label: "DevOps",      glyph: "∞",     from: "#6366f1", to: "#312e81", match: [spinnaker, devops, cd, pipeline, git, github, scm, postman, newman, artifacts, dns, cloudflare, ci] }
   - { name: kubernetes, label: "Kubernetes",  glyph: "⎈",     from: "#3b82f6", to: "#1e3a8a", match: [k8s, kubernetes, helm, helmv3, kubeadm, kubectl, pods, ingress, calico, cni, rbac, pv, pvc, configmap, taint, networkpolicy, metricserver, probes, deployments, cluster, network, controller, kubelet, node] }
   - { name: docker,     label: "Containers",  glyph: "▣",     from: "#0ea5e9", to: "#0c4a6e", match: [docker, container, registry, storage, volumes, multicontainer] }
   - { name: golang,     label: "Go",          glyph: "go",    from: "#06b6d4", to: "#155e75", match: [golang, go, channels, concurrency, exercism, race] }
