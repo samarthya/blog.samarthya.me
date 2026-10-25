@@ -1,0 +1,25 @@
+{{/* Contact tiles: icon + label + handle, built from the profile links in
+   config/_default/languages.en.toml (params.author.links), so they stay in sync with the site. Usage: {{< contact-links >}} */}}
+{{ $meta := dict
+  "email"    (dict "label" "Email"     "icon" "envelope")
+  "linkedin" (dict "label" "LinkedIn"  "icon" "linkedin")
+  "github"   (dict "label" "GitHub"    "icon" "github")
+  "link"     (dict "label" "Portfolio" "icon" "globe")
+}}
+<div class="contact-links not-prose">
+  {{ range site.Params.author.links }}
+    {{ range $kind, $url := . }}
+      {{ $m := index $meta $kind | default (dict "label" (title $kind) "icon" $kind) }}
+      {{ $handle := $url | replaceRE `^mailto:` "" | replaceRE `^https?://(www\.)?` "" | strings.TrimSuffix "/" }}
+      {{ $handle = $handle | replaceRE `^linkedin\.com/` "" | replaceRE `^github\.com/` "@" }}
+      <a class="contact-link" href="{{ $url }}" {{ if not (hasPrefix $url "mailto:") }}target="_blank" rel="noopener me"{{ end }}
+         aria-label="{{ $m.label }}: {{ $handle }}">
+        <span class="contact-icon" aria-hidden="true">{{ partial "icon.html" $m.icon }}</span>
+        <span class="contact-text">
+          <strong>{{ $m.label }}</strong>
+          <span>{{ $handle }}</span>
+        </span>
+      </a>
+    {{ end }}
+  {{ end }}
+</div>
