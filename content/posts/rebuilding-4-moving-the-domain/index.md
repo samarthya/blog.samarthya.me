@@ -6,6 +6,7 @@ categories: ["technical"]
 tags: ["dns", "cloudflare", "github", "email"]
 series: ["Rebuilding samarthya.me"]
 series_order: 4
+heroStyle: "big"  # full-width feature.jpg above the title (series artwork)
 draft: false
 ---
 

@@ -6,6 +6,7 @@ categories: ["technical"]
 tags: ["hugo", "github", "css", "accessibility"]
 series: ["Rebuilding samarthya.me"]
 series_order: 3
+heroStyle: "big"  # full-width feature.jpg above the title (series artwork)
 draft: false
 ---
 

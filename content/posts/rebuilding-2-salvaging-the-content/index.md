@@ -6,6 +6,7 @@ categories: ["technical"]
 tags: ["wordpress", "hugo", "migration", "python"]
 series: ["Rebuilding samarthya.me"]
 series_order: 2
+heroStyle: "big"  # full-width feature.jpg above the title (series artwork)
 draft: false
 ---
 

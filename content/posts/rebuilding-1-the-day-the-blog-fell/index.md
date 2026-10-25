@@ -6,6 +6,7 @@ categories: ["technical"]
 tags: ["security", "wordpress", "incident"]
 series: ["Rebuilding samarthya.me"]
 series_order: 1
+heroStyle: "big"  # full-width feature.jpg above the title (series artwork)
 draft: false
 ---
 
