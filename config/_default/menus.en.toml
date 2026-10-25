@@ -22,6 +22,11 @@
   weight = 40
 
 [[main]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 55
+
+[[main]]
   name = "About"
   url = "https://samarthya.github.io/about.html"
   weight = 50
@@ -54,6 +59,11 @@
   name = "Tags"
   pageRef = "tags"
   weight = 40
+
+[[footer]]
+  name = "Contact"
+  pageRef = "contact"
+  weight = 45
 
 [[footer]]
   name = "GitHub"

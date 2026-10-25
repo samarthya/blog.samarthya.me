@@ -45,8 +45,15 @@ enableEmoji = true
   filename = 'sitemap.xml'
   priority = 0.5
 
+# /latest.json: newest posts with card images, consumed by the portfolio site (layouts/index.latest.json)
+[outputFormats.Latest]
+  mediaType = "application/json"
+  baseName = "latest"
+  isPlainText = true
+  notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "Latest"]
 
 [related]
   threshold = 0
