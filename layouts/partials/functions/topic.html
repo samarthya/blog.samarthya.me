@@ -1,0 +1,15 @@
+{{/* Return the data/covers.yaml topic (a map: name, label, glyph, from, to, match) for a page:
+   the first topic whose `match` shares a tag, category or title word with it; `notes` otherwise. */}}
+{{ $terms := slice }}
+{{ range (.Params.tags | default slice) | append (.Params.categories | default slice) }}
+  {{ $terms = $terms | append (lower .) }}
+{{ end }}
+{{/* many WordPress posts are only tagged "technical"; title words ("Ansible: Async & Poll") fill the gap */}}
+{{ $terms = $terms | append (split (replaceRE "[^a-z0-9]+" " " (lower .Title)) " ") }}
+{{ $topic := false }}
+{{ range hugo.Data.covers.topics }}
+  {{ if and (not $topic) (or (intersect .match $terms) (eq .name "notes")) }}
+    {{ $topic = . }}
+  {{ end }}
+{{ end }}
+{{ return $topic }}

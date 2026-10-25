@@ -1,0 +1,11 @@
+{{/* Article hero (params.toml: article.heroStyle = "topic"): a slim strip in the post's topic colours
+   linking to its topic page. Deliberately not the post's own image: those are mostly screenshots that
+   appear again in the body. */}}
+{{ with partial "functions/topic.html" . }}
+  <a class="topic-strip not-prose" href="{{ printf "topics/%s/" .name | relURL }}"
+     style="--from: {{ .from }}; --to: {{ .to }}" aria-label="More {{ .label }} posts">
+    <span class="topic-strip-label">{{ .label }}</span>
+    <span class="topic-strip-more" aria-hidden="true">more {{ .label }} posts →</span>
+    <span class="topic-glyph" aria-hidden="true">{{ .glyph }}</span>
+  </a>
+{{ end }}

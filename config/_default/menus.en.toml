@@ -1,0 +1,41 @@
+# -- Main Menu --
+# Mirrors the nav on samarthya.github.io; Projects/About live on the portfolio site.
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Daily"
+  pageRef = "daily"
+  weight = 20
+
+[[main]]
+  name = "Topics"
+  pageRef = "topics"
+  weight = 30
+
+[[main]]
+  name = "Projects"
+  url = "https://samarthya.github.io/projects.html"
+  weight = 40
+
+[[main]]
+  name = "About"
+  url = "https://samarthya.github.io/about.html"
+  weight = 50
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/samarthya"
+  weight = 60
+
+# -- Footer Menu --
+
+[[footer]]
+  name = "Categories"
+  pageRef = "categories"
+  weight = 10
+

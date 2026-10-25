@@ -1,0 +1,136 @@
+/* Site styles, loaded automatically by Blowfish after its own CSS.
+   Colours come from the active scheme (params.toml colorScheme) as "r, g, b" triplets. */
+
+/* ---------- Homepage portal (layouts/partials/home/custom.html) ---------- */
+.portal { --p: var(--color-primary-600); --n: var(--color-neutral-500); max-width: 52rem; margin: 0 auto; }
+
+.portal-hero { display: flex; align-items: center; gap: 1.5rem; padding: 2rem 0 1rem; }
+.portal-logo { width: 96px; height: 96px; border-radius: 22px; flex: none;
+  box-shadow: 0 12px 30px -10px rgba(var(--color-primary-700), .55); }
+.portal-kicker { margin: 0; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
+  color: rgb(var(--p)); font-weight: 700; }
+.portal-headline { margin: .2rem 0 .3rem; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.05;
+  font-weight: 800; letter-spacing: -.02em;
+  background: linear-gradient(90deg, rgb(var(--color-primary-500)), rgb(var(--color-primary-800)));
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+.portal-links { text-align: left; }
+
+.portal-story { max-width: none; font-size: 1.1rem; }
+
+.portal-buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0 2rem; }
+.portal-button { padding: .6rem 1.2rem; border-radius: 999px; font-weight: 600; text-decoration: none;
+  border: 2px solid rgb(var(--p)); color: rgb(var(--p)); transition: all .2s; }
+.portal-button:first-child { background: rgb(var(--p)); color: #fff; }
+.portal-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -8px rgba(var(--p), .6); }
+
+.portal-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0 0 2.5rem; }
+.portal-stats div { border-radius: 14px; padding: 1rem; text-align: center;
+  background: rgba(var(--color-primary-500), .08); border: 1px solid rgba(var(--color-primary-500), .25); }
+.portal-stats strong { display: block; font-size: 1.9rem; font-weight: 800; color: rgb(var(--p)); }
+.portal-stats span { font-size: .85rem; color: rgb(var(--n)); }
+
+/* Timeline: a vertical line with dots; the incident gets a red card, the rebuild a green one */
+.portal-timeline { list-style: none; margin: 0 0 1rem; padding: 0 0 0 1.75rem; position: relative; }
+.portal-timeline::before { content: ""; position: absolute; left: .45rem; top: .4rem; bottom: .4rem; width: 2px;
+  background: linear-gradient(rgb(var(--color-neutral-300)), rgb(var(--color-primary-500))); }
+.portal-milestone { position: relative; margin: 0 0 1.25rem; padding: .75rem 1rem; border-radius: 12px; }
+.portal-milestone h3 { margin: .1rem 0 .2rem; font-size: 1.1rem; font-weight: 700; }
+.portal-milestone p { margin: 0; color: rgb(var(--color-neutral-600)); }
+.portal-milestone time { font-size: .8rem; font-weight: 600; color: rgb(var(--n)); text-transform: uppercase; letter-spacing: .06em; }
+.portal-dot { position: absolute; left: -1.62rem; top: 1.05rem; width: .9rem; height: .9rem; border-radius: 50%;
+  background: rgb(var(--color-neutral-400)); box-shadow: 0 0 0 4px rgb(var(--color-neutral)); }
+.portal-milestone.is-incident { background: rgba(220, 38, 38, .08); border: 1px solid rgba(220, 38, 38, .35); }
+.portal-milestone.is-incident .portal-dot { background: #dc2626; }
+.portal-milestone.is-incident h3, .portal-milestone.is-incident time { color: #b91c1c; }
+.portal-milestone.is-rebuild { background: rgba(22, 163, 74, .08); border: 1px solid rgba(22, 163, 74, .35); }
+.portal-milestone.is-rebuild .portal-dot { background: #16a34a; }
+.portal-milestone.is-rebuild h3 { color: #15803d; }
+.portal-milestone.is-next .portal-dot { background: rgb(var(--color-primary-500));
+  animation: portal-pulse 2s infinite; }
+@keyframes portal-pulse { 50% { box-shadow: 0 0 0 8px rgba(var(--color-primary-500), .2); } }
+
+.dark .portal-milestone p { color: rgb(var(--color-neutral-300)); }
+.dark .portal-dot { box-shadow: 0 0 0 4px rgb(var(--color-neutral-800)); }
+.dark .portal-milestone.is-incident h3, .dark .portal-milestone.is-incident time { color: #f87171; }
+.dark .portal-milestone.is-rebuild h3 { color: #4ade80; }
+
+@media (max-width: 640px) {
+  .portal-hero { flex-direction: column; text-align: center; }
+  .portal-links { text-align: center; }
+  .portal-logo { width: 80px; height: 80px; }
+  .portal-stats strong { font-size: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) { .portal-milestone.is-next .portal-dot { animation: none; } }
+
+/* ---------- Header: the logo badge is a compact mark, not a second hero ---------- */
+header img.logo { max-height: 2.75rem; max-width: 2.75rem; border-radius: 10px; }
+
+/* ---------- Homepage sections (trophy shelf, topics) ---------- */
+.portal-section { margin: 3rem 0 0; }
+.portal-h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 1.25rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* Chart + milestones side by side on wide screens */
+.portal-story-grid { display: grid; gap: 2rem; align-items: start; }
+@media (min-width: 900px) { .portal-story-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); } }
+
+/* ---------- "Writing over the years" bar chart (home/years-chart.html) ----------
+   One series: the scheme's primary hue; text stays in neutral ink; 4px rounded tops on a shared baseline. */
+.years-chart { margin: 0; padding: 1rem 1rem .75rem; border-radius: 14px;
+  border: 1px solid rgb(var(--color-neutral-200)); background: rgb(var(--color-neutral)); }
+.dark .years-chart { border-color: rgb(var(--color-neutral-700)); background: rgb(var(--color-neutral-800)); }
+.years-chart figcaption { font-weight: 700; margin-bottom: .75rem; }
+.years-bars { display: flex; gap: 2px; border-bottom: 1px solid rgb(var(--color-neutral-300)); }
+.years-col { position: relative; flex: 1; display: grid; grid-template-rows: 1.2rem 140px auto;
+  justify-items: center; outline: none; }
+.years-value { font-size: .8rem; font-weight: 700; color: rgb(var(--color-neutral-700)); align-self: end; }
+.dark .years-value { color: rgb(var(--color-neutral-200)); }
+.years-track { width: 100%; height: 140px; display: flex; align-items: flex-end; justify-content: center; }
+.years-bar { width: min(70%, 28px); border-radius: 4px 4px 0 0; background: rgb(var(--color-primary-400));
+  transition: background .15s; }
+.years-col.is-now .years-bar { background: rgb(var(--color-primary-600)); }
+.years-col.is-empty .years-bar { background: rgb(var(--color-neutral-300)); }
+.years-year { position: absolute; bottom: -1.4rem; font-size: .7rem; color: rgb(var(--color-neutral-500)); }
+.years-chart { padding-bottom: 2rem; }
+.years-col:hover .years-bar, .years-col:focus-visible .years-bar { background: rgb(var(--color-primary-700)); }
+.years-col::after { content: attr(data-tip); position: absolute; bottom: calc(100% - .5rem); left: 50%;
+  transform: translateX(-50%); padding: .25rem .5rem; border-radius: 6px; font-size: .75rem; white-space: nowrap;
+  background: rgb(var(--color-neutral-800)); color: #fff; opacity: 0; pointer-events: none; transition: opacity .12s; z-index: 5; }
+.years-col:hover::after, .years-col:focus-visible::after { opacity: 1; }
+@media (max-width: 640px) { .years-year { font-size: .6rem; } .years-col:nth-child(even) .years-year { visibility: hidden; } }
+
+/* ---------- Topic chips (home/topic-chips.html, /topics/) ---------- */
+.topic-chips { display: flex; flex-wrap: wrap; gap: .6rem; }
+.topic-chip { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .5rem .45rem .9rem;
+  border-radius: 999px; color: #fff; text-decoration: none; font-weight: 600;
+  background: linear-gradient(135deg, var(--from), var(--to)); box-shadow: 0 6px 16px -10px var(--to);
+  transition: transform .15s, box-shadow .15s; }
+.topic-chip:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -10px var(--to); color: #fff; }
+.topic-chip-glyph { opacity: .85; }
+.topic-chip-count { min-width: 1.6rem; padding: 0 .45rem; border-radius: 999px; text-align: center;
+  font-size: .8rem; background: rgba(255, 255, 255, .25); }
+.topic-chips.is-large { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 1rem; }
+.topic-chips.is-large .topic-chip { border-radius: 16px; padding: 1.25rem 1.25rem; font-size: 1.2rem;
+  justify-content: space-between; min-height: 6rem; align-items: flex-end; }
+.topic-chips.is-large .topic-chip-glyph { font-size: 2rem; align-self: flex-start; order: 3; }
+
+/* ---------- Topic page banner (topics/single.html) ---------- */
+.topic-banner { position: relative; overflow: hidden; margin: 1rem 0 2rem; padding: 2rem 2rem 1.5rem;
+  border-radius: 18px; color: #fff; background: linear-gradient(135deg, var(--from), var(--to)); }
+.topic-banner h1 { margin: .2rem 0; font-size: 2.5rem; font-weight: 800; color: #fff; }
+.topic-banner p { margin: 0; opacity: .9; }
+.topic-banner a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.topic-kicker { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; }
+.topic-glyph { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); font-size: 7rem;
+  font-weight: 800; opacity: .2; line-height: 1; }
+
+/* ---------- Article topic strip (hero/topic.html) ---------- */
+.topic-strip { position: relative; overflow: hidden; display: flex; align-items: center; gap: 1rem;
+  height: 4.5rem; margin: 1.25rem 0 0; padding: 0 1.5rem; border-radius: 14px; color: #fff; text-decoration: none;
+  background: linear-gradient(120deg, var(--from), var(--to)); }
+.topic-strip:hover { color: #fff; }
+.topic-strip-label { font-size: 1.25rem; font-weight: 800; }
+.topic-strip-more { font-size: .85rem; opacity: 0; transform: translateX(-6px); transition: all .2s; }
+.topic-strip:hover .topic-strip-more, .topic-strip:focus-visible .topic-strip-more { opacity: .9; transform: none; }
+.topic-strip .topic-glyph { font-size: 4.5rem; right: 1.25rem; }

@@ -1,0 +1,57 @@
+{{/* Homepage (params.toml: homepage.layout = "custom"). Words live in content/_index.md
+   (front matter `intro` + `timeline`, body = the story); styles in assets/css/custom.css.
+   Blowfish's layouts/index.html appends the "recent articles" grid after this partial. */}}
+{{ $intro := .Params.intro }}
+{{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
+<article class="portal">
+  <header class="portal-hero">
+    {{ with site.Params.logo }}
+      {{ with resources.Get . }}
+        <img class="portal-logo nozoom" src="{{ .RelPermalink }}" width="96" height="96" alt="{{ site.Title }}">
+      {{ end }}
+    {{ end }}
+    <div class="portal-hero-text">
+      {{ with $intro.kicker }}<p class="portal-kicker">{{ . }}</p>{{ end }}
+      <h1 class="portal-headline">{{ $intro.headline | default site.Title }}</h1>
+      <div class="portal-links text-2xl">{{ partialCached "author-links.html" . }}</div>
+    </div>
+  </header>
+
+  <section class="portal-story prose dark:prose-invert">{{ .Content }}</section>
+
+  {{ with $intro.buttons }}
+    <nav class="portal-buttons">
+      {{ range . }}<a class="portal-button" href="{{ .url | relURL }}">{{ .label }}</a>{{ end }}
+    </nav>
+  {{ end }}
+
+  <section class="portal-stats" aria-label="At a glance">
+    {{ $first := index ($posts.ByDate) 0 }}
+    <div><strong>{{ len $posts }}</strong><span>posts &amp; entries</span></div>
+    <div><strong>{{ with $first }}{{ .Date.Year }}{{ end }}</strong><span>writing since</span></div>
+    <div><strong>{{ len (partialCached "functions/topic-index.html" site.Home) }}</strong><span>topics</span></div>
+  </section>
+
+  <div class="portal-story-grid">
+  {{ partial "home/years-chart.html" . }}
+  {{ with .Params.timeline }}
+    <ol class="portal-timeline">
+      {{ range . }}
+        <li class="portal-milestone {{ with .kind }}is-{{ . }}{{ end }}">
+          <span class="portal-dot" aria-hidden="true"></span>
+          {{ with .date }}<time datetime="{{ . }}">{{ time.Format ":date_long" . }}</time>{{ end }}
+          <h3>{{ if eq .kind "incident" }}⚠ {{ end }}{{ .title }}</h3>
+          <p>{{ .text | markdownify }}</p>
+        </li>
+      {{ end }}
+    </ol>
+  {{ end }}
+  </div>
+</article>
+
+{{ partial "home/trophy-shelf.html" . }}
+
+<section class="portal-section">
+  <h2 class="portal-h2">Explore by topic</h2>
+  {{ partial "home/topic-chips.html" (dict "size" "small") }}
+</section>

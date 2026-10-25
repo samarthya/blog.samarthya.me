@@ -1,0 +1,46 @@
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# WordPress export & SQL dumps: contain drafts, author emails, trashed posts
+*.WordPress.*.xml
+*.xml.gz
+*.sql
+*.sql.gz
+/wp-import/
+/wp-uploads/
+# uploads.zip from the hacked server contains PHP backdoors; never commit/publish it
+*.zip
+
+# Local-only notes (not published)
+/LOCAL-README.md
+/notes/
+
+# Claude Code per-machine settings
+/.claude/settings.local.json
+
+# Secrets, just in case
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Python venv for tools/
+/tools/.venv/
+__pycache__/
+
+# review folder: things Claude moved aside; delete after review
+/to_be_deleted/
+/TODO.md
+/PUBLISHING.md
+/dns-directadmin.txt
+/Actions.md
+/samarthya.me.cloudflare-import.txt
+/tools/wp2hugo/pseudonym.local.txt

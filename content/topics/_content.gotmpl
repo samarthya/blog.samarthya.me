@@ -1,0 +1,12 @@
+{{/* Content adapter: one page per topic in data/covers.yaml (/topics/<name>/).
+   The posts listed on each page are worked out at render time (layouts/topics/single.html),
+   so new posts appear under their topic without any front matter. */}}
+{{ range hugo.Data.covers.topics }}
+  {{ $.AddPage (dict
+    "path" .name
+    "title" .label
+    "kind" "page"
+    "params" (dict "topic" .name "featureimage" (printf "img/covers/%s.svg" .name) "showDate" false "showReadingTime" false "showTableOfContents" false)
+    "content" (dict "mediaType" "text/markdown" "value" "")
+  ) }}
+{{ end }}

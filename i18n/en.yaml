@@ -1,0 +1,3 @@
+# Site overrides of Blowfish's i18n/en.yaml (only the keys listed here change).
+shortcode:
+  recent_articles: "Sneak peek: the latest"

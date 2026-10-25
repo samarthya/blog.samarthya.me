@@ -1,0 +1,22 @@
+{{/* Site override of Blowfish's functions/feature-image.html (used by cards and heroes).
+   Imported WordPress posts have no *feature* image, so every card was blank. Order:
+   1. front matter `featureimage` (or a translation's), as in the theme
+   2. the first image in the page bundle
+   3. the topic cover (functions/topic.html, data/covers.yaml) */}}
+{{ $featureImage := .Params.featureimage }}
+{{ if not $featureImage }}
+  {{ range .Translations }}
+    {{ with .Params.featureimage }}{{ $featureImage = . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if and (not $featureImage) .IsPage }}
+  {{ with .Resources.ByType "image" }}
+    {{ $featureImage = (index . 0).Name }}
+  {{ end }}
+{{ end }}
+{{ if and (not $featureImage) .IsPage }}
+  {{ with partial "functions/topic.html" . }}
+    {{ $featureImage = printf "img/covers/%s.svg" .name }}
+  {{ end }}
+{{ end }}
+{{ return $featureImage }}

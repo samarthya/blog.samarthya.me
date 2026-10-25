@@ -1,0 +1,20 @@
+{{/* Topic chips in each topic's cover colours, linking to /topics/<name>/, sorted by post count.
+   Context: dict "size" ("small" on the homepage, "large" on /topics/). */}}
+{{ $size := .size | default "small" }}
+{{ $index := partialCached "functions/topic-index.html" site.Home }}
+{{ $rows := slice }}
+{{ range $t := hugo.Data.covers.topics }}
+  {{ with index $index $t.name }}
+    {{ $rows = $rows | append (dict "topic" $t "n" (len .)) }}
+  {{ end }}
+{{ end }}
+<nav class="topic-chips is-{{ $size }}" aria-label="Topics">
+  {{ range sort $rows "n" "desc" }}
+    {{ $t := .topic }}
+    <a class="topic-chip" href="{{ printf "topics/%s/" $t.name | relURL }}" style="--from: {{ $t.from }}; --to: {{ $t.to }}">
+      <span class="topic-chip-glyph" aria-hidden="true">{{ $t.glyph }}</span>
+      <span class="topic-chip-label">{{ $t.label }}</span>
+      <span class="topic-chip-count">{{ .n }}</span>
+    </a>
+  {{ end }}
+</nav>

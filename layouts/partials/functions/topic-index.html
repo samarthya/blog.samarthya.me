@@ -1,0 +1,9 @@
+{{/* Map of topic name -> posts/entries in that topic (newest first). Call with partialCached;
+   it walks every page once per build. */}}
+{{ $index := dict }}
+{{ range $p := (where site.RegularPages "Section" "in" site.Params.mainSections).ByDate.Reverse }}
+  {{ with partial "functions/topic.html" $p }}
+    {{ $index = merge $index (dict .name ((index $index .name) | default slice | append $p)) }}
+  {{ end }}
+{{ end }}
+{{ return $index }}

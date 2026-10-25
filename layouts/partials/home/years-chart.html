@@ -1,0 +1,30 @@
+{{/* "Writing over the years": one bar per year from the first post to this year, empty years included
+   so the gap before the comeback shows. Single series, so one hue and no legend; numbers sit on the
+   peak and the latest year only, and every bar has a hover/focus tooltip plus a screen-reader table. */}}
+{{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
+{{ $counts := dict }}
+{{ range $posts.GroupByDate "2006" }}{{ $counts = merge $counts (dict .Key (len .Pages)) }}{{ end }}
+{{ $first := (index $posts.ByDate 0).Date.Year }}
+{{ $last := now.Year }}
+{{ $max := 1 }}
+{{ range $y := seq $first $last }}{{ $max = math.Max $max (index $counts (string $y) | default 0) }}{{ end }}
+<figure class="years-chart">
+  <figcaption>Writing over the years</figcaption>
+  <div class="years-bars" role="img" aria-label="Posts per year, {{ $first }} to {{ $last }}">
+    {{ range $y := seq $first $last }}
+      {{ $n := index $counts (string $y) | default 0 }}
+      {{ $label := cond (or (eq $n $max) (eq $y $last)) (string $n) "" }}
+      <div class="years-col{{ if eq $n 0 }} is-empty{{ end }}{{ if eq $y $last }} is-now{{ end }}" tabindex="0"
+           data-tip="{{ $y }}: {{ $n }} {{ cond (eq $n 1) "post" "posts" }}">
+        <span class="years-value">{{ $label }}</span>
+        <span class="years-track"><span class="years-bar" style="height: {{ cond (eq $n 0) "2px" (printf "%.1f%%" (mul 100 (div (float $n) $max))) }}"></span></span>
+        <span class="years-year">{{ $y }}</span>
+      </div>
+    {{ end }}
+  </div>
+  <table class="sr-only">
+    <caption>Posts per year</caption>
+    <tr><th scope="col">Year</th><th scope="col">Posts</th></tr>
+    {{ range $y := seq $first $last }}<tr><td>{{ $y }}</td><td>{{ index $counts (string $y) | default 0 }}</td></tr>{{ end }}
+  </table>
+</figure>

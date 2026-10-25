@@ -1,0 +1,8 @@
+{{/* /topics/: every topic as a coloured tile, biggest first. */}}
+{{ define "main" }}
+  <header class="mb-8">
+    <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
+    {{ with .Description }}<p class="mt-2 text-neutral-500 dark:text-neutral-400">{{ . }}</p>{{ end }}
+  </header>
+  {{ partial "home/topic-chips.html" (dict "size" "large") }}
+{{ end }}
