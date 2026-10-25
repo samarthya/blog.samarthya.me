@@ -103,6 +103,13 @@ python tools/covers/make_covers.py      # needs PyYAML and Pillow
 ```
 A new topic page appears at `/topics/<name>/` on the next build.
 
+## Feeds other sites depend on
+
+- `/index.xml`, `/posts/index.xml`, `/daily/index.xml`: RSS.
+- **`/latest.json`** (`layouts/index.latest.json`): the 9 newest posts with title, url, date, summary, topic and a
+  600×400 image. **The portfolio at samarthya.github.io reads it** to show "latest blogs", so keep its field
+  names stable.
+
 ## Old links
 
 Posts imported from WordPress carry `aliases:` in their front matter, so every
