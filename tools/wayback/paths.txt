@@ -137,7 +137,6 @@
 /wps/2023/06/29/kernel/
 /wps/2023/06/30/letters-in-sanskrit/
 /wps/2023/07/05/gallery/
-/wps/2023/07/05/whales/
 /wps/2023/07/11/snmp/
 /wps/2023/10/10/consul/
 /wps/2023/10/30/keystore-vs-truststore/

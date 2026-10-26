@@ -5,3 +5,5 @@
 /wps/2022/02/04/spinnaker-creating-application/
 /wps/2021/05/05/certprof-a-good-start/
 /wps/2022/02/03/wireshark-tracking-the-syn-syn-ack-handshake/
+# Duplicate: same photos as /posts/whale/ (its old address redirects there via overrides.yaml)
+/wps/2023/07/05/whales/

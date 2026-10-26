@@ -111,6 +111,11 @@ class Overrides(unittest.TestCase):
         self.mod.apply_overrides("p", "text", fields, {"tags": ["ai", "llm"]})
         self.assertEqual(fields["tags"], ["ai", "llm"])
 
+    def test_aliases_are_added(self):
+        fields = {"aliases": ["/wps/a/"]}
+        self.mod.apply_overrides("p", "text", fields, {"aliases": ["/wps/b/"]})
+        self.assertEqual(fields["aliases"], ["/wps/a/", "/wps/b/"])
+
     def test_unmatched_entries_are_reported(self):
         _, unmatched = self.mod.apply_overrides("p", "no images here", {}, {
             "alt": {"gone.png": "x"}, "replace": [{"from": "absent", "to": "y"}]})

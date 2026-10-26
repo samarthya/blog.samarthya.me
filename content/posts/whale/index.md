@@ -4,7 +4,7 @@ date: "2023-06-29"
 slug: "whale"
 description: "Photos from a whale-watching trip: whales surfacing and blowing spouts in the open sea."
 categories: ["technical"]
-aliases: ["/wps/2023/06/29/whale/", "/wps/2026/10/23/whale/"]
+aliases: ["/wps/2023/06/29/whale/", "/wps/2023/07/05/whales/", "/wps/2026/10/23/whale/"]
 wp_id: 2606
 ---
 

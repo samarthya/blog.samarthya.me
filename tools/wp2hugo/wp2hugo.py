@@ -69,6 +69,8 @@ def apply_overrides(slug, body, fields, ov):
         fields["description"] = ov["description"]
     if ov.get("tags"):
         fields["tags"] = ov["tags"]
+    if ov.get("aliases"):  # extra old addresses that should land on this post (e.g. a duplicate)
+        fields["aliases"] = sorted(set(fields.get("aliases") or []) | set(ov["aliases"]))
     for name, alt in (ov.get("alt") or {}).items():
         alt_md = alt.replace("[", "(").replace("]", ")")
         alt_html = alt.replace('"', "&quot;")

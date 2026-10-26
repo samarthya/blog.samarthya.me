@@ -230,6 +230,7 @@ virtualbox-increasing-size-of-the-virtual-disk:
     screenshot-2021-02-05-at-1.39.34-pm.png: GNOME Disks showing the 34 GB virtual disk with a 32 GB ext4 partition and 2.1 GB of free space
     screenshot-2021-02-05-at-1.39.59-pm.png: GNOME Disks Resize Volume dialog to grow the partition into the free space
 whale:
+  aliases: [/wps/2023/07/05/whales/]  # 'Whale(s)' was a second gallery of the same photos
   description: 'Photos from a whale-watching trip: whales surfacing and blowing spouts in the open sea.'
   replace:
   - from: |-
