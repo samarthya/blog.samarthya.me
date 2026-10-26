@@ -17,7 +17,7 @@ Watcher is an Elasticsearch feature that facilitates alerting and can be used to
 
 Elastic Alerting is one of what are called stack features that are available as part of Gold subscription or higher. Elastic watcher has typically four components
 
-<img src="alerting.png" alt="" class="grid-w100" />
+<img src="alerting.png" alt="Elastic Watcher: a schedule triggers a check; if the condition is met an action runs, otherwise nothing happens" class="grid-w100" />
 
 ## Trigger - Schedule
 

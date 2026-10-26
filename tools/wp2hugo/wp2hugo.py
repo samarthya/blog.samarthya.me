@@ -47,6 +47,39 @@ PRIVATE_KEY = re.compile(r"-----BEGIN ([A-Z ]*)PRIVATE KEY(?: BLOCK)?-----.*?---
 # allowlist as the publish-time check (tools/privacy/check.py); auto-redacting it would mangle real examples.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "privacy"))
 import check as privacy_check  # noqa: E402
+
+# Hand-made fixes that must survive re-imports: per post slug, alt text (by image file name), a description,
+# and exact text replacements. Every entry must match; anything left unmatched is reported and fails the run.
+OVERRIDES_FILE = Path(__file__).with_name("overrides.yaml")
+OVERRIDES = {}  # filled by main() from OVERRIDES_FILE
+
+
+def load_overrides(path=OVERRIDES_FILE):
+    if not path.exists():
+        return {}
+    import yaml  # only needed when overrides exist
+    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+
+
+def apply_overrides(slug, body, fields, ov):
+    """Apply one post's overrides; return (body, list of entries that matched nothing)."""
+    unmatched = []
+    if ov.get("description"):
+        fields["description"] = ov["description"]
+    for name, alt in (ov.get("alt") or {}).items():
+        alt_md = alt.replace("[", "(").replace("]", ")")
+        alt_html = alt.replace('"', "&quot;")
+        body, n1 = re.subn(r"!\[[^\]]*\]\(" + re.escape(name) + r'((?:\s+"[^"]*")?)\)',
+                           lambda m: f"![{alt_md}]({name}{m[1]})", body)
+        body, n2 = re.subn(r'(<img src="' + re.escape(name) + r'" alt=")[^"]*(")',
+                           lambda m: m[1] + alt_html + m[2], body)
+        if not n1 + n2:
+            unmatched.append(f"{slug}: alt for {name}")
+    for r in ov.get("replace") or []:
+        if r["from"] not in body:
+            unmatched.append(f"{slug}: replace {r['from'][:50]!r}")
+        body = body.replace(r["from"], r["to"])
+    return body, unmatched
 # The site is published under a screen name; old posts used the real name as sample data
 # (LDAP dc=..., index names, Go structs). The mapping is kept out of git in pseudonym.local.txt
 # ("<regex> => <replacement>" per line, applied in order), so the public repo doesn't spell it out.
@@ -185,6 +218,7 @@ class Post:
         self.missing, self.notes, self.langs = [], [], []
         self.privacy = {"jwt": 0, "private-key": 0, "pseudonym": 0}  # counts, filled in by convert()
         self.review = []  # privacy_check.Finding items left for a human to look at
+        self.unmatched = []  # overrides.yaml entries that found nothing to change
         self.stash = []
 
     def token(self, md):
@@ -478,7 +512,7 @@ def convert(item, out_root, images, known_slugs):
     if keys:
         post.notes.append(f"redacted {keys} private-key block(s)")
 
-    fm = front_matter({
+    fields = {
         "title": (item.findtext("title") or slug).strip(),
         "date": date,
         "slug": slug,
@@ -488,7 +522,9 @@ def convert(item, out_root, images, known_slugs):
         "aliases": [f"{OLD_PREFIX}/{d[:4]}/{d[5:7]}/{d[8:10]}/{slug}/" for d in url_dates],
         "draft": True if status != "publish" else None,
         "wp_id": int(item.findtext("wp:post_id", namespaces=NS)),
-    })
+    }
+    body, post.unmatched = apply_overrides(slug, body, fields, OVERRIDES.get(slug) or {})
+    fm = front_matter(fields)
     text, post.privacy["pseudonym"] = pseudonymise(fm + "\n" + body + "\n")
     allowed = privacy_check.load_allowlist(privacy_check.ALLOWLIST)
     post.review = [f for f in privacy_check.scan_text(text, f"{slug}/index.md")
@@ -540,9 +576,11 @@ def main():
         sys.exit(f"error: no pseudonym rules loaded ({PSEUDONYM_FILE} is missing or empty), so real names in old "
                  f"posts would be published. Create it, or pass --allow-unredacted to convert anyway.")
     images = ImageSource(args.zip, args.images)
+    OVERRIDES.update(load_overrides())
+    unknown = sorted(set(OVERRIDES) - {slug_of(i) for i in items}) if args.all else []
     known = {slug_of(i) for i in items}
     out_root = Path(args.out)
-    report, totals, review = [], {"jwt": 0, "private-key": 0, "pseudonym": 0}, []
+    report, totals, review, unmatched = [], {"jwt": 0, "private-key": 0, "pseudonym": 0}, [], []
     for item in items:
         slug, bundle, text, post = convert(item, out_root, images, known)
         target = bundle / "index.md"
@@ -557,6 +595,7 @@ def main():
         for k in totals:
             totals[k] += post.privacy[k]
         review += post.review
+        unmatched += post.unmatched
         print(f"wrote  {slug}: {len(post.files)} images, {len(post.missing)} missing, code {langs}"
               + (f", {len(post.review)} for privacy review" if post.review else ""))
         report += [f"## {item.findtext('title')}  (`{slug}`, wp #{item.findtext('wp:post_id', namespaces=NS)})",
@@ -581,6 +620,9 @@ def main():
     print(f"privacy: {totals['jwt']} JWT + {totals['private-key']} key redactions, "
           f"{totals['pseudonym']} pseudonym replacements, {len(review)} item(s) for manual review")
     print(f"report -> {args.report}")
+    problems = unmatched + [f"{s}: no such post" for s in unknown]
+    if problems:
+        sys.exit("overrides.yaml entries that matched nothing:\n  " + "\n  ".join(problems))
 
 
 if __name__ == "__main__":

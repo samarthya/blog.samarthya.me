@@ -22,25 +22,25 @@ Go to the settings from the
 
 ![top right](screenshot-2021-09-23-at-10.07.40-pm.png "top right")
 
-![](screenshot-2021-09-23-at-10.07.00-pm.png)
+![GitHub profile menu with Settings highlighted](screenshot-2021-09-23-at-10.07.00-pm.png)
 
 Once you navigate into settings, you have to select
 
-![](screenshot-2021-09-23-at-10.08.46-pm.png)
+![GitHub Developer settings button](screenshot-2021-09-23-at-10.08.46-pm.png)
 
-![](screenshot-2021-09-23-at-10.09.31-pm.png)
+![GitHub Developer settings sidebar: GitHub Apps, OAuth Apps and Personal access tokens](screenshot-2021-09-23-at-10.09.31-pm.png)
 
 Select Personal access tokens, and then click `Generate new token` in the next scren
 
-![](screenshot-2021-09-23-at-10.10.47-pm.png)
+![GitHub Personal access tokens page with the Generate new token button](screenshot-2021-09-23-at-10.10.47-pm.png)
 
 Select the appropriate name and scope for the token.
 
-![](screenshot-2021-09-23-at-10.12.02-pm.png)
+![GitHub New personal access token form: note, 30-day expiration and scope checkboxes](screenshot-2021-09-23-at-10.12.02-pm.png)
 
 Once you are done click `Generate`
 
-![](screenshot-2021-09-23-at-10.12.46-pm.png)
+![Generated token release-plugin-test with admin:org, admin:repo_hook, delete_repo, repo and write:packages scopes, expiring 23 Oct 2021](screenshot-2021-09-23-at-10.12.46-pm.png)
 
 Once added you can use that as part of the `scm` plugin in the main pom, or use it in the `settings.xml`. In my case I am using it in `server.xml` but need to add the property `project.scm.id` so that you refer the credentials.
 

@@ -21,4 +21,4 @@ You stumble and may even fall, but you must get up, brush the dirt off the hands
 — Bhanuni
 {{< /lead >}}
 
-*[video unavailable: VID_20191027_205705.mp4]*
+

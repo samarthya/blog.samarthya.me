@@ -12,7 +12,7 @@ In this blog we will try to setup a realm for elastic authentication.
 
 `yum -y install openldap-clients openldap-servers`
 
-![](screenshot-2020-05-27-at-1.05.45-pm.png)
+![Terminal output of yum installing the openldap-clients and openldap-servers packages on CentOS 7](screenshot-2020-05-27-at-1.05.45-pm.png)
 
 ```text
 mymachine>systemctl start slapd
@@ -238,6 +238,6 @@ shadowWarning: 0
 yum install php-ldap php-mbstring php-pear php-xml
 ```
 
-![](screenshot-2020-05-27-at-1.47.26-pm.png)
+![Terminal output of yum installing php-ldap, php-mbstring, php-pear and php-xml with dependencies](screenshot-2020-05-27-at-1.47.26-pm.png)
 
 <https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7>

@@ -38,7 +38,7 @@ Just think about it; if this is for an **individual** what about an **organizati
 
 [Threat](https://www.dictionary.com/browse/threat?s=t) is always contextual, specifically in the space of security e.g.
 
-![](johndoe.png)
+![Identity card for a fictional user, John Doe: software developer in Sydney, Australia, on project AMDC](johndoe.png)
 
 ```text
 [Error: 401] Unauthorized A single authentication failure where say John Doe, operating from Australia tried to access his account in his organization and misspelled his password resulting an error.
@@ -90,7 +90,7 @@ SIEM is a process, approach or tools to monitor, analyze, evaluate and identify 
 
 > It collects security data from appliances like servers, firewalls, domain controllers, and more. It stores & normalizes data to discover trends, threats, and enable organizations to plug the gaps.
 
-![](logs-data.png)
+![Typical log sources for a SIEM: identity and access management, firewall, endpoints and a VPN gateway](logs-data.png)
 
 {{< alert "circle-info" >}}
 The heart of all analysis is the data which is refined, correlated, enriched if required and normalized.

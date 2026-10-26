@@ -8,7 +8,7 @@ aliases: ["/wps/2021/10/28/calico-cni-failures/"]
 wp_id: 1767
 ---
 
-![](screenshot-2021-10-28-at-1.15.23-pm-1.png)
+![kubectl output listing ingress, Dynatrace simulator and calico-kube-controllers pods; the Calico controller shows several restarts](screenshot-2021-10-28-at-1.15.23-pm-1.png)
 
 In my cluster things went haywire all of a sudden without a proper showcase, I tried multiple things but it was just not working. Specifically my `core-dns` and `calico-kube-controllers` were not coming up and were constantly showing `not ready` and `CrashLoop` respectively
 

@@ -34,6 +34,6 @@ wp_id: 1367
 3. Not compulsory
 4. Outline methodologies
 
-![](sps1.png)
+![Pyramid of security policy documents: standards at the top, then baselines, guidelines and procedures](sps1.png)
 
 The purpose of procedure is to ensure integrity of business process. It helps in standardization of security across systems in an organization.

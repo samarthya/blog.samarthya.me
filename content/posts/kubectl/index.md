@@ -16,7 +16,7 @@ If you wish to learn how to install a typical master, worker cluster of K8S I re
 
 My setup looks something like this.
 
-![](screenshot-2020-04-08-at-4.20.43-pm.png)
+![kubectl get nodes output: five Ready nodes running v1.18.0, one of them the master (node names hidden)](screenshot-2020-04-08-at-4.20.43-pm.png)
 
 The `**setup`** has 1 master and few slaves as shown in image above.
 

@@ -18,7 +18,7 @@ In the context of elasticsearch you can take snapshot of an individual index or 
 
 If you navigate to Snapshot and Restore in Kibana-Management you are presented the UI to execute the backup.
 
-<img src="screenshot-2020-02-26-at-1.05.31-pm.png" alt="" class="grid-w100" />
+<img src="screenshot-2020-02-26-at-1.05.31-pm.png" alt="Kibana Snapshot and Restore page with Snapshots, Repositories, Policies and Restore Status tabs" class="grid-w100" />
 
 ## Points to remember
 
@@ -72,7 +72,7 @@ In the example above you can see the GET request returns the Snapshot repo Name 
 
 The information that the Rest API showed can also be viewed from Kibana by clicking the repo-name.
 
-![](screenshot-2020-02-26-at-2.25.26-pm.png)
+![Repository repo_elastic7_5: shared file system at /home/elasticsearch/backup with one snapshot found](screenshot-2020-02-26-at-2.25.26-pm.png)
 
 ### Details
 
@@ -84,12 +84,12 @@ FS is the shared file system to store the snapshots. The location is the exact l
 
 Let's try and add a new repo.
 
-![](screenshot-2020-02-26-at-3.25.16-pm.png)
+![Kibana Register repository form with Shared file system selected](screenshot-2020-02-26-at-3.25.16-pm.png)
 
 - In step one you need to click the register the Repository button on the top left and the dialog as above should be displayed.
 - Specify a name and select the `Shared File System` and press next
 
-<img src="screenshot-2020-02-26-at-3.26.01-pm.png" alt="" class="grid-w100" />
+<img src="screenshot-2020-02-26-at-3.26.01-pm.png" alt="Settings for the new repository: location /mnt/nfs/var/nfsshare/es with snapshot compression on" class="grid-w100" />
 
 - Add the location name - this location has to be present in the `path.repo`
 
@@ -101,7 +101,7 @@ ath.repo: ["/home/elasticsearch/backup","/mnt/nfs/var/nfsshare/es"]
 
 In case you do not have the path set when you register it might fail like below
 
-![](screenshot-2020-02-26-at-3.26.14-pm.png)
+![Error Cannot register new repository: the location doesn't match any path in path.repo](screenshot-2020-02-26-at-3.26.14-pm.png)
 
 Otherwise
 

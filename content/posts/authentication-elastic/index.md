@@ -31,13 +31,13 @@ During authentication the incoming request is tried against one realm at a time.
 
 If a realm cannot authenticate the request, the next realm in the chain is consulted. If all realms in the chain cannot authenticate the request, the authentication is considered to be unsuccessful and an authentication error is returned.
 
-![](realmchain.png)
+![Elasticsearch realm chain: an authentication request is tried against each configured realm in order](realmchain.png)
 
 ### Only when the security is enabled
 
 When security features (**xpack.security.enabled: true**) are enabled, depending on the realms you’ve configured the authentication will be evaluated.
 
-![](internal-r.png)
+![Elasticsearch internal realms: native users stored in the cluster and file-based users](internal-r.png)
 
 ```text
 Internal realms are managed by elastic

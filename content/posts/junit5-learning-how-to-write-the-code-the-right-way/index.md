@@ -27,7 +27,7 @@ Let's start a basic project structure
 mvn archetype:generate -DgroupId=samarthya.me -DartifactId=learnunit -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=true
 ```
 
-![](terminal.png)
+![Terminal output of mvn archetype:generate creating the learnunit project: BUILD SUCCESS](terminal.png)
 
 {{< lead >}}
 In previous `JUnit` versions, there was **limited/no** support to allow parameters in test constructors or methods. One of the major changes in `JUnit 5` Jupiter was that both test constructors and test methods are now allowed to have parameters.
@@ -160,9 +160,9 @@ class AppTest5 {
 
 Not much is there, but you can execute the suite and see the output. I am using Visual Studio Code and launching test gives the result as below.
 
-![](launch-tests.png)
+![VS Code Testing panel listing the learn-junit project with AppTest and AppTest5](launch-tests.png)
 
-![](result-terminal.png)
+![VS Code debug console showing the output JUNIT5: Test and JUNIT4: Test](result-terminal.png)
 
 You can try some failures as below too..
 
@@ -182,7 +182,7 @@ public class SampleFunctions {
 }
 ```
 
-![](samplefunction-test.png)
+![SampleFunctionsTest class in VS Code with test_functionOne passing](samplefunction-test.png)
 
 ## Help
 

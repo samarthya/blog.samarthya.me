@@ -2,6 +2,7 @@
 title: "Installing K8S on Ubuntu"
 date: "2020-12-14"
 slug: "installing-k8s-on-ubuntu"
+description: "Step by step: installing Docker, kubeadm, kubelet and kubectl on Ubuntu 18.04, initialising the control plane and joining worker nodes."
 categories: ["docker", "technical"]
 tags: ["k8s", "ubuntu"]
 aliases: ["/wps/2020/12/14/installing-k8s-on-ubuntu/", "/wps/2026/10/23/installing-k8s-on-ubuntu/"]

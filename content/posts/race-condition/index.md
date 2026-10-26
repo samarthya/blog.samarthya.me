@@ -57,6 +57,6 @@ func main() {
 
  tried execution three times as evident in the output below.
 
-![](image.png)
+![Terminal running go run week2/week2.go three times with different output each run, showing the race condition](image.png)
 
 You can see the different output each time, which displays the race condition aptly, as we can never be sure of what will be the output each time.

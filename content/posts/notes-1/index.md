@@ -2,6 +2,7 @@
 title: "Notes: For self"
 date: "2022-02-23T07:27:42Z"
 slug: "notes-1"
+description: "Personal notes on Bash: arithmetic, = versus ==, single versus double brackets, and the bc calculator."
 categories: ["technical"]
 tags: ["bash", "linux", "notes"]
 aliases: ["/wps/2022/02/23/notes-1/"]

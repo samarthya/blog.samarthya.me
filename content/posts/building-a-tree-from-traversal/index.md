@@ -23,7 +23,7 @@ Pre Order = VLR
 
 The complexity is basically recursively finding the root of the tree/subtree and the left and right subtree and managing the relations downwards or upwards.
 
-![](findroot.png)
+![Step 1: the first pre-order element is the root, and its position in the in-order list splits the left and right subtrees](findroot.png)
 
 The Logic is a multi step process
 

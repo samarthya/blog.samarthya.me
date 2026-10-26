@@ -80,5 +80,37 @@ class ImporterPrivacy(unittest.TestCase):
         self.assertIn("**1 loaded**, 1 replacement(s) made", report)
 
 
+@unittest.skipUnless(HAS_DEPS, "importer dependencies (bs4, markdownify) not installed")
+class Overrides(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        spec = importlib.util.spec_from_file_location("wp2hugo", TOOLS / "wp2hugo" / "wp2hugo.py")
+        cls.mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cls.mod)
+
+    def test_alt_text_markdown_and_gallery(self):
+        body = '![](a.png "Caption")\n![old](b.png)\n  <img src="c.png" alt="" class="grid-w50" />'
+        ov = {"alt": {"a.png": "Chart of [x]", "b.png": "New", "c.png": 'Say "hi"'}}
+        out, unmatched = self.mod.apply_overrides("p", body, {}, ov)
+        self.assertIn('![Chart of (x)](a.png "Caption")', out)
+        self.assertIn("![New](b.png)", out)
+        self.assertIn('alt="Say &quot;hi&quot;"', out)
+        self.assertEqual(unmatched, [])
+
+    def test_description_and_replace(self):
+        fields = {"description": ""}
+        out, unmatched = self.mod.apply_overrides(
+            "p", "*[image unavailable: x.png]*", fields,
+            {"description": "One line.", "replace": [{"from": "*[image unavailable: x.png]*", "to": "See [source](https://example.com)"}]})
+        self.assertEqual(fields["description"], "One line.")
+        self.assertEqual(out, "See [source](https://example.com)")
+        self.assertEqual(unmatched, [])
+
+    def test_unmatched_entries_are_reported(self):
+        _, unmatched = self.mod.apply_overrides("p", "no images here", {}, {
+            "alt": {"gone.png": "x"}, "replace": [{"from": "absent", "to": "y"}]})
+        self.assertEqual(len(unmatched), 2)
+
+
 if __name__ == "__main__":
     unittest.main()

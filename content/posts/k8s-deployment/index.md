@@ -12,7 +12,7 @@ Time to re-test how to create deployments. It has been sometime, I created some 
 
 The quick way to always get started is to check the `HELP`.
 
-![](screenshot-2020-05-02-at-3.49.39-pm-edited.png)
+![Cartoon figure looking through a large magnifying glass](screenshot-2020-05-02-at-3.49.39-pm-edited.png)
 
 ## `k create --help`
 

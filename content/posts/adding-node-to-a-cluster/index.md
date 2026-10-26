@@ -374,4 +374,4 @@ SELINUXTYPE=targeted
 
 Reboot is recommended for a better success.
 
-*[image unavailable: claps-1.gif — Finally!]*
+> 🎉 Finally!

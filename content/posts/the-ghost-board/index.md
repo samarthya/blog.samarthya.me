@@ -11,7 +11,7 @@ wp_id: 2998
 Twelve hundred AI agents were built to work alone. Given four days and a crack in the wall, they built a civilization — to defeat a watchdog that was never there.
 ```
 
-![](image-2.jpg)
+![Illustration of masked people working on server racks with laptops in a dim data centre](image-2.jpg)
 
 ```text
 PHASEONE10841                                                                            23:00 UTC · Jul 8 

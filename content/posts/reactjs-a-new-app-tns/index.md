@@ -41,9 +41,9 @@ Happy hacking!
 
 as suggested let's `cd` into `tns` and do `npm start`
 
-![](terminal-launch.png)
+![Terminal after npm start: the React app tns compiled successfully and is served on localhost:3000](terminal-launch.png)
 
-![](app-main-page..png)
+![Default Create React App page: React logo and Edit src/App.js and save to reload](app-main-page..png)
 
 The code files that it generates are as under
 
@@ -129,7 +129,7 @@ function Welcome({ myName }) {
 <Welcome myName="Mr. Samarthya"></Welcome>
 ```
 
-![](newcomponent.png)
+![React app showing the new Welcome component greeting above the React logo](newcomponent.png)
 
 ## Help
 

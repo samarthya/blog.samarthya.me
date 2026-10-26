@@ -12,6 +12,6 @@ wp_id: 1348
 
 Identity is the link that correlates the *subject* and the authentication process. Without a valid identity the system has no way of establishing who the subject is? Identity enables the subject to be identified and validated, and only once it has been established and authorized it is accountable for any actions taken in the system.
 
-![](identity-1.png)
+![Identity and access: a subject's identity is authenticated, then authorized, and its actions are audited](identity-1.png)
 
 In the system where the actions are being executed by an identity, it the identity that is tracked, audited and not the actual subject.

@@ -122,13 +122,13 @@ It uses the three variables defined in the previous step to create the request U
 
 Click Add request from the collection `Restmon` three dots menu on the left.
 
-![](image-3.png)
+![Postman collection menu with options such as Run collection, Add request and Export](image-3.png)
 
 ### Validate Version: VersionTest Request
 
 The request is a `GET` and will use the `pm.request.url` which was defined at the collection level.
 
-![](image-5.png)
+![Postman VersionTest request: GET the version endpoint using Basic Auth inherited from the Restmon collection](image-5.png)
 
 The UI is very intuitive and you can simply explore options on which test might be applicable for your tests. In my case I am just checking the version information.
 
@@ -136,27 +136,27 @@ The UI is very intuitive and you can simply explore options on which test might 
 
 The test cases added check for Status code and the response string. You can do a quick check for the test by pressing the `Send` Button.
 
-![](image-7.png)
+![Postman VersionTest request ready to send](image-7.png)
 
 Check the results in the bottom window.
 
-![](image-8.png)
+![Postman test results: both tests pass, status code is 200 and body matches string](image-8.png)
 
 Similarly I have few other API's that I will quickly add to the collection
 
-![](image-9.png)
+![Postman SchemaTest request with tests checking status 200 and that 28 schemas are returned](image-9.png)
 
-![](image-10.png)
+![Postman ProfileTest request with tests for status 200 and an empty response; both pass](image-10.png)
 
 Once the collection is saved you can run the collection by selecting `Run collection` from the three dots menu on the left.
 
-![](image-11.png)
+![Postman collection runner with VersionTest, SchemaTest and ProfileTest selected for one iteration](image-11.png)
 
 Check the response before we export it by clicking `Export` option in the three dots menu in collection.
 
-![](image-12.png)
+![Postman run results for the Restmon collection: all six tests passed](image-12.png)
 
-![](image-13.png)
+![Postman Export Collection dialog with Collection v2.1 selected](image-13.png)
 
 {{< lead >}}
 My Project space is a maven project space so the chart is in the src/ folder. Which is critical because when you package chart you have to be careful where the file lies?

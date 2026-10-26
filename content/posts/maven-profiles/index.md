@@ -10,7 +10,7 @@ wp_id: 1724
 
 The concept of profiles let's a developer define what he wants to build and what to do in specific cases. In this blog I will talk about the problem that I solved using profiles.
 
-![](picsart_03-21-03.25.55-edited.jpg)
+![Toy figures of Peppa Pig characters on a wooden table](picsart_03-21-03.25.55-edited.jpg)
 
 ### Multiple Modules
 

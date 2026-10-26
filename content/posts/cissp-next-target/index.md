@@ -10,7 +10,7 @@ wp_id: 1355
 
 I just finished my upgrade to Safe Certification and now will be going for CISSP certification. Wish my luck guys!
 
-![](notes.png)
+![Illustration of a clipboard checklist and notebooks: study notes](notes.png)
 
 ## Some quotes
 

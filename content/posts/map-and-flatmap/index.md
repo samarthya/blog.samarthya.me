@@ -2,6 +2,7 @@
 title: "map and FlatMap"
 date: "2020-11-30"
 slug: "map-and-flatmap"
+description: "Java 8 streams: what map and flatMap do, with small examples of each."
 categories: ["technical"]
 aliases: ["/wps/2020/11/30/map-and-flatmap/", "/wps/2026/10/23/map-and-flatmap/"]
 wp_id: 1120

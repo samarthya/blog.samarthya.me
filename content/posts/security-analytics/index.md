@@ -30,7 +30,7 @@ Elastic common schema allows to normalize the data from multiple sources. Which 
 
 In version 7.2 SIEM was made available.
 
-![](screenshot-2020-01-13-at-4.42.06-pm.png)
+![Elastic SIEM architecture: Kibana SIEM app, Elasticsearch with the Elastic Common Schema, and Beats, Elastic Endpoint and Logstash](screenshot-2020-01-13-at-4.42.06-pm.png)
 
 ```text
 * Image above is from from Elastic.co

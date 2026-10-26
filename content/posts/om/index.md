@@ -8,7 +8,7 @@ aliases: ["/wps/2021/07/21/om/"]
 wp_id: 1681
 ---
 
-![](om.jpg)
+![Infographic on the benefits of chanting the Gayatri Mantra, with the mantra in Sanskrit and a seated meditating figure](om.jpg)
 
 योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय ।
 

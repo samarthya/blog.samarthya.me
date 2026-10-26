@@ -206,7 +206,7 @@ print.Print()
 
 Age only implements `Print`, so in case if we try to use it with the type `MyInterface`
 
-![](screenshot-2021-01-12-at-3.06.31-pm.png)
+![VS Code error: cannot use age (type *Age) as MyInterface value: missing method Get](screenshot-2021-01-12-at-3.06.31-pm.png)
 
 ```text
 Value: &{u:24}

@@ -215,7 +215,7 @@ Returns a mentioned pipeline
 
 Returns all the pipelines that are active in the cluster.
 
-![](screenshot-2020-04-23-at-3.15.47-pm.png)
+![Kibana Dev Tools output of GET _ingest/pipeline listing Filebeat pipelines and a custom transf_date pipeline](screenshot-2020-04-23-at-3.15.47-pm.png)
 
 > `GET _ingest/pipeline/transf_date`
 

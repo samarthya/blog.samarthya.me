@@ -2,7 +2,7 @@
 title: "Business Agility"
 date: "2020-09-20T10:03:52Z"
 slug: "business-agility-safe5"
-description: "Safe5: Business Agilitu"
+description: "SAFe 5 notes on business agility: customer centricity, design thinking and the core competencies of a lean enterprise."
 categories: ["general"]
 tags: ["agile", "safe", "scaledagile", "technical"]
 aliases: ["/wps/2020/09/20/business-agility-safe5/"]
@@ -17,7 +17,7 @@ As the hours are passing by, I have to ensure some intellectual `bon-appétite p
 
 Topic to read today is `Business Agility`, and we will go through customer centricity and design thinking before we reach there.
 
-*[image unavailable: figure2.png]*
+*The figures for this post are on Scaled Agile's site: [Customer Centricity](https://www.scaledagileframework.com/customer-centricity/), [Design Thinking](https://www.scaledagileframework.com/design-thinking/) and [Business Agility](https://www.scaledagileframework.com/business-agility/) (© Scaled Agile, Inc.).*
 
 Just a note before we get started
 
@@ -49,7 +49,7 @@ The core process of design thinking focuses thoroughly on the problem space befo
 >
 > © Scaled Agile, Inc.
 
-*[image unavailable: Design-Thinking_F01_WEB.png]*
+*Figure: design thinking; see [Design Thinking](https://www.scaledagileframework.com/design-thinking/) on Scaled Agile's site (© Scaled Agile, Inc.).*
 
 {{< lead >}}
 Please do visit Safe5 site for more on Divergent thinking, Convergent thinking, Personas and Empathy maps.
@@ -74,13 +74,13 @@ It recommends use of Lean and Agile practices to continually deliver innovative,
 7. compliance
 8. security, and others.
 
-*[image unavailable: Business-Agility_F01_WEB.png — © Scaled Agile, Inc.]*
+*Figure: business agility; see [Business Agility](https://www.scaledagileframework.com/business-agility/) on Scaled Agile's site (© Scaled Agile, Inc.).*
 
 ### How it all starts?
 
 At the beginning everything starts small, focused. It is race against time to create an impact define value and bring in the customers. As the time passes and the enterprise grows, it is usually silo'd in hierarchies and verticals. Which might be useful as it provides time tested policies and practices but with ever diminishing returns.
 
-*[image unavailable: figure4.png]*
+*Figure: how an enterprise grows; see [Business Agility](https://www.scaledagileframework.com/business-agility/) on Scaled Agile's site (© Scaled Agile, Inc.).*
 
 `John Kotter` proposed not trashing the existing knowledge but introducing a second Operating System which requires expertise over seven competencies as prescribed by Safe 5.
 
@@ -96,7 +96,7 @@ At the beginning everything starts small, focused. It is race against time to cr
 - Agile product delivery
 - Enterprise solution delivery
 
-*[image unavailable: Business-Agility_F06_WEB.png]*
+*Figure: the core competencies; see [Business Agility](https://www.scaledagileframework.com/business-agility/) on Scaled Agile's site (© Scaled Agile, Inc.).*
 
 ## References
 

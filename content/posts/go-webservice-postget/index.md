@@ -14,7 +14,7 @@ Go is a powerful yet simple language. The nuances of assembling a **workspace**
 
 In this blog, I will walk you through simple steps of writing a simple Webservice '**/users**' which will entertain GET & POST. It will respond to every other HTTP Method with a not supported error.
 
-![](getpost.png)
+![Diagram of an HTTP client calling a web service that handles GET and POST](getpost.png)
 
 ## Entity: User
 

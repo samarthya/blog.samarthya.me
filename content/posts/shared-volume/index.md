@@ -8,7 +8,7 @@ aliases: ["/wps/2020/07/31/shared-volume/"]
 wp_id: 832
 ---
 
-[![](https://docs.docker.com/storage/images/types-of-mounts-volume.png)](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
+[![Docker volume mount: the volume lives in Docker's area of the host filesystem and is mounted into the container](https://docs.docker.com/storage/images/types-of-mounts-volume.png)](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
 
 Volumes are managed by Docker and is the preferred way of persisting, sharing data.
 

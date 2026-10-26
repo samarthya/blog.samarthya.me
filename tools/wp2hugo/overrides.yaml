@@ -1,0 +1,243 @@
+# Per-post fixes applied by wp2hugo.py on every import, so re-imports keep them.
+#   alt:         image file name (or URL) as written in the post -> alt text
+#   description: front-matter description (replaces a weak auto-summary)
+#   replace:     exact text in the converted post -> new text
+# The importer stops with a list of any entry that no longer matches.
+
+a-different-take-siem:
+  alt:
+    johndoe.png: 'Identity card for a fictional user, John Doe: software developer in Sydney, Australia, on project AMDC'
+    logs-data.png: 'Typical log sources for a SIEM: identity and access management, firewall, endpoints and a VPN gateway'
+adding-node-to-a-cluster:
+  replace:
+  - from: '*[image unavailable: claps-1.gif — Finally!]*'
+    to: '> 🎉 Finally!'
+authentication-elastic:
+  alt:
+    realmchain.png: 'Elasticsearch realm chain: an authentication request is tried against each configured realm in order'
+    internal-r.png: 'Elasticsearch internal realms: native users stored in the cluster and file-based users'
+building-a-tree-from-traversal:
+  alt:
+    findroot.png: 'Step 1: the first pre-order element is the root, and its position in the in-order list splits the left and right subtrees'
+building-your-artifacts:
+  alt:
+    screenshot-2021-09-23-at-5.44.57-pm.png: JFrog Platform administration page showing one project and seven repositories, half unassigned
+    screenshot-2021-09-23-at-9.10.26-pm.png: GitHub tags list showing the automatically created tag v1.0.1
+    screenshot-2021-09-23-at-9.12.09-pm.png: GitHub new-release form for tag v1.0.1 with release notes, ready to publish
+    screenshot-2021-09-23-at-9.13.16-pm.png: GitHub releases page listing v1.0.1 and v1.0.0, with release-demo-1.0.0.jar attached to v1.0.0
+business-agility-safe5:
+  description: 'SAFe 5 notes on business agility: customer centricity, design thinking and the core competencies of a lean enterprise.'
+  replace:
+  - from: '*[image unavailable: figure2.png]*'
+    to: '*The figures for this post are on Scaled Agile''s site: [Customer Centricity](https://www.scaledagileframework.com/customer-centricity/), [Design Thinking](https://www.scaledagileframework.com/design-thinking/) and [Business Agility](https://www.scaledagileframework.com/business-agility/) (© Scaled Agile, Inc.).*'
+  - from: '*[image unavailable: Design-Thinking_F01_WEB.png]*'
+    to: '*Figure: design thinking; see [Design Thinking](https://www.scaledagileframework.com/design-thinking/) on Scaled Agile''s site (© Scaled Agile, Inc.).*'
+  - from: '*[image unavailable: Business-Agility_F01_WEB.png — © Scaled Agile, Inc.]*'
+    to: '*Figure: business agility; see [Business Agility](https://www.scaledagileframework.com/business-agility/) on Scaled Agile''s site (© Scaled Agile, Inc.).*'
+  - from: '*[image unavailable: figure4.png]*'
+    to: '*Figure: how an enterprise grows; see [Business Agility](https://www.scaledagileframework.com/business-agility/) on Scaled Agile''s site (© Scaled Agile, Inc.).*'
+  - from: '*[image unavailable: Business-Agility_F06_WEB.png]*'
+    to: '*Figure: the core competencies; see [Business Agility](https://www.scaledagileframework.com/business-agility/) on Scaled Agile''s site (© Scaled Agile, Inc.).*'
+calico-cni-failures:
+  alt:
+    screenshot-2021-10-28-at-1.15.23-pm-1.png: kubectl output listing ingress, Dynatrace simulator and calico-kube-controllers pods; the Calico controller shows several restarts
+cissp-next-target:
+  alt:
+    notes.png: 'Illustration of a clipboard checklist and notebooks: study notes'
+devbhoomi-uttarkhand:
+  alt:
+    img_20181015_100613-pano.jpg: Panorama of a river winding between forested hills in Uttarakhand, with a village on the far bank
+  description: 'A panorama from Uttarakhand, the land of the gods: a river winding between forested hills.'
+elastic-alerting:
+  alt:
+    alerting.png: 'Elastic Watcher: a schedule triggers a check; if the condition is met an action runs, otherwise nothing happens'
+elastic-realms:
+  alt:
+    screenshot-2020-05-27-at-1.05.45-pm.png: Terminal output of yum installing the openldap-clients and openldap-servers packages on CentOS 7
+    screenshot-2020-05-27-at-1.47.26-pm.png: Terminal output of yum installing php-ldap, php-mbstring, php-pear and php-xml with dependencies
+fun-with-goroutines:
+  alt:
+    screenshot-2021-02-26-at-2.11.16-pm.png: 'VS Code error: cannot convert ''a'' (untyped rune constant 97) to bool when sending to a bool channel'
+go-webservice-postget:
+  alt:
+    getpost.png: Diagram of an HTTP client calling a web service that handles GET and POST
+golang-interfaces:
+  alt:
+    screenshot-2021-01-12-at-3.06.31-pm.png: 'VS Code error: cannot use age (type *Age) as MyInterface value: missing method Get'
+golang-simplecipher:
+  alt:
+    ? https://camo.githubusercontent.com/17a2d0ae02743554139d4045a62cb943a40c8e51/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f342f34612f4361657361725f6369706865725f6c6566745f73686966745f6f665f332e7376672f33323070782d4361657361725f6369706865725f6c6566745f73686966745f6f665f332e7376672e706e67
+    : 'Caesar cipher with a left shift of 3: each letter is replaced by the one three places earlier in the alphabet'
+golang-smiplecipher-v2-0:
+  alt:
+    simplecipher.png: 'Caesar cipher diagram: each letter is shifted three positions along the alphabet'
+hashicorp-vault:
+  alt:
+    ? https://content.hashicorp.com/api/assets?product=vault&version=refs%2Fheads%2Frelease%2F1.11.x&asset=website%2Fpublic%2Fimg%2Flayers.png&width=1506&height=841
+    : Diagram from the HashiCorp documentation showing the layers of Vault
+    screen-shot-2022-09-12-at-3.44.31-pm.png: 'HashiCorp Vault overview: clients use the Vault API, which provides identity-based authentication, encryption and secrets management'
+helm-test:
+  alt:
+    image-3.png: Postman collection menu with options such as Run collection, Add request and Export
+    image-5.png: 'Postman VersionTest request: GET the version endpoint using Basic Auth inherited from the Restmon collection'
+    image-7.png: Postman VersionTest request ready to send
+    image-8.png: 'Postman test results: both tests pass, status code is 200 and body matches string'
+    image-9.png: Postman SchemaTest request with tests checking status 200 and that 28 schemas are returned
+    image-10.png: Postman ProfileTest request with tests for status 200 and an empty response; both pass
+    image-11.png: Postman collection runner with VersionTest, SchemaTest and ProfileTest selected for one iteration
+    image-12.png: 'Postman run results for the Restmon collection: all six tests passed'
+    image-13.png: Postman Export Collection dialog with Collection v2.1 selected
+identity:
+  alt:
+    identity-1.png: 'Identity and access: a subject''s identity is authenticated, then authorized, and its actions are audited'
+ingress:
+  alt:
+    ingress-1.png: 'Kubernetes Ingress: HTTP traffic enters through an Ingress, routing rules pick a Service, which forwards to a Pod'
+    screenshot-2021-08-24-at-12.58.07-pm.png: Browser showing the echo service's response through a NodePort, listing the HTTP request headers
+installing-k8s-on-ubuntu:
+  description: 'Step by step: installing Docker, kubeadm, kubelet and kubectl on Ubuntu 18.04, initialising the control plane and joining worker nodes.'
+junit5-learning-how-to-write-the-code-the-right-way:
+  alt:
+    terminal.png: 'Terminal output of mvn archetype:generate creating the learnunit project: BUILD SUCCESS'
+    launch-tests.png: VS Code Testing panel listing the learn-junit project with AppTest and AppTest5
+    result-terminal.png: 'VS Code debug console showing the output JUNIT5: Test and JUNIT4: Test'
+    samplefunction-test.png: SampleFunctionsTest class in VS Code with test_functionOne passing
+just-on-the-sides:
+  alt:
+    year-in-review-0.png: 'Duolingo 2021 Year in Review card: Learning Legend, top 2% of learners worldwide'
+  description: 'A side project: my Duolingo 2021 Year in Review.'
+k8s-deployment:
+  alt:
+    screenshot-2020-05-02-at-3.49.39-pm-edited.png: Cartoon figure looking through a large magnifying glass
+kubectl:
+  alt:
+    screenshot-2020-04-08-at-4.20.43-pm.png: 'kubectl get nodes output: five Ready nodes running v1.18.0, one of them the master (node names hidden)'
+map-and-flatmap:
+  description: 'Java 8 streams: what map and flatMap do, with small examples of each.'
+maven-profiles:
+  alt:
+    picsart_03-21-03.25.55-edited.jpg: Toy figures of Peppa Pig characters on a wooden table
+missed-opportunity:
+  replace:
+  - from: '*[video unavailable: VID_20191027_205705.mp4]*'
+    to: ''
+museum-infantry:
+  alt:
+    b0b1fec3-43f4-4c1e-98a5-a9306f4c1f83.jpg: Diorama of hundreds of model infantry soldiers in white helmets in formation, with a carved sun-faced puppet in the foreground
+  description: 'A photo from a museum visit: a diorama of hundreds of model infantry soldiers.'
+network-policy-restrictions:
+  description: 'A Kubernetes NetworkPolicy demo: deny all traffic in a namespace, then allow only labelled pods to reach nginx.'
+notes-1:
+  description: 'Personal notes on Bash: arithmetic, = versus ==, single versus double brackets, and the bc calculator.'
+oauth-2-0:
+  alt:
+    ? https://d33wubrfki0l68.cloudfront.net/21d485e203c19fedeae1bc4142f2f056b577c0fb/c3cdb/assets-jekyll/blog/oauth/oauth-clients-93fc6cc8e83fa7d885c9daa0ed88007fc44780b99682dcfa580af319894870c7.png
+    : 'Diagram of OAuth 2.0 client types: confidential clients that can keep a secret and public clients that cannot'
+    ? https://d33wubrfki0l68.cloudfront.net/99bea281c4d8758b97fe07ded0136019b0ed75f6/3da15/assets-jekyll/blog/oauth/oauth-actors-cd8b4861e839037400d8521e97c5d8cf0cb029add65d1036488991c7e85dcb72.png
+    : 'Diagram of the OAuth 2.0 actors: resource owner, client, authorization server and resource server'
+    ? https://d33wubrfki0l68.cloudfront.net/ae5a3d0fc17cec4af40096e6f67b7b93d02dcdab/17da8/assets-jekyll/blog/oauth/authorization-server-99a4ad01368a4c8e407917358d4394d573a6c0e3c9fa10c01a59d1a54c4938cf.png
+    : Diagram of the authorization server issuing tokens that the client presents to the resource server
+    screenshot-2021-03-25-at-9.02.32-pm.png: 'OAuth 2.0 implicit grant flow (RFC 6749): the access token returns to the user agent in the redirect URI fragment'
+    screenshot-2021-03-25-at-9.02.06-pm.png: 'OAuth 2.0 authorization code flow (RFC 6749): the client exchanges an authorization code for an access token'
+    screenshot-2021-03-25-at-9.13.43-pm.png: 'OAuth 2.0 client credentials flow (RFC 6749): the client authenticates directly and receives an access token'
+om:
+  alt:
+    om.jpg: Infographic on the benefits of chanting the Gayatri Mantra, with the mantra in Sanskrit and a seated meditating figure
+package-string:
+  alt:
+    img_0846.jpg: Toy blue Angry Birds figure sitting in a nest made of tissue paper
+personal-access-token:
+  alt:
+    screenshot-2021-09-23-at-10.07.00-pm.png: GitHub profile menu with Settings highlighted
+    screenshot-2021-09-23-at-10.08.46-pm.png: GitHub Developer settings button
+    screenshot-2021-09-23-at-10.09.31-pm.png: 'GitHub Developer settings sidebar: GitHub Apps, OAuth Apps and Personal access tokens'
+    screenshot-2021-09-23-at-10.10.47-pm.png: GitHub Personal access tokens page with the Generate new token button
+    screenshot-2021-09-23-at-10.12.02-pm.png: 'GitHub New personal access token form: note, 30-day expiration and scope checkboxes'
+    screenshot-2021-09-23-at-10.12.46-pm.png: Generated token release-plugin-test with admin:org, admin:repo_hook, delete_repo, repo and write:packages scopes, expiring 23 Oct 2021
+pipeline-_ingest-api:
+  alt:
+    screenshot-2020-04-23-at-3.15.47-pm.png: Kibana Dev Tools output of GET _ingest/pipeline listing Filebeat pipelines and a custom transf_date pipeline
+race-condition:
+  alt:
+    image.png: Terminal running go run week2/week2.go three times with different output each run, showing the race condition
+reactjs-a-new-app-tns:
+  alt:
+    terminal-launch.png: 'Terminal after npm start: the React app tns compiled successfully and is served on localhost:3000'
+    app-main-page..png: 'Default Create React App page: React logo and Edit src/App.js and save to reload'
+    newcomponent.png: React app showing the new Welcome component greeting above the React logo
+safe-for-lean-enterprises:
+  replace:
+  - from: '*[image unavailable: SAFe_for_Lean_Enterprises_F01_WEB-3.png — (C) ScaledAgile]*'
+    to: '*Figure: business agility; see [SAFe for Lean Enterprises](https://www.scaledagileframework.com/safe-for-lean-enterprises/) on Scaled Agile''s site (© Scaled Agile, Inc.).*'
+  - from: '*[image unavailable: SAFe_for_Lean_Enterprises_F03_WEB-2.png — (c) Scaled Agile]*'
+    to: '*Figure: the seven core competencies; see [SAFe for Lean Enterprises](https://www.scaledagileframework.com/safe-for-lean-enterprises/) on Scaled Agile''s site (© Scaled Agile, Inc.).*'
+security-analytics:
+  alt:
+    screenshot-2020-01-13-at-4.42.06-pm.png: 'Elastic SIEM architecture: Kibana SIEM app, Elasticsearch with the Elastic Common Schema, and Beats, Elastic Endpoint and Logstash'
+security-standards-baselines-and-guidelines-formalized-security-policy-structure:
+  alt:
+    sps1.png: 'Pyramid of security policy documents: standards at the top, then baselines, guidelines and procedures'
+shared-volume:
+  alt:
+    https://docs.docker.com/storage/images/types-of-mounts-volume.png: 'Docker volume mount: the volume lives in Docker''s area of the host filesystem and is mounted into the container'
+snapshot-restore:
+  alt:
+    screenshot-2020-02-26-at-1.05.31-pm.png: Kibana Snapshot and Restore page with Snapshots, Repositories, Policies and Restore Status tabs
+    screenshot-2020-02-26-at-2.25.26-pm.png: 'Repository repo_elastic7_5: shared file system at /home/elasticsearch/backup with one snapshot found'
+    screenshot-2020-02-26-at-3.25.16-pm.png: Kibana Register repository form with Shared file system selected
+    screenshot-2020-02-26-at-3.26.01-pm.png: 'Settings for the new repository: location /mnt/nfs/var/nfsshare/es with snapshot compression on'
+    screenshot-2020-02-26-at-3.26.14-pm.png: 'Error Cannot register new repository: the location doesn''t match any path in path.repo'
+spinnaker:
+  alt:
+    screenshot-2022-02-01-at-3.23.40-pm.png: 'Spinnaker New Application form: name Restmon, owner email, repository type list and instance port 80'
+storage-drivers:
+  alt:
+    https://docs.docker.com/storage/storagedriver/images/container-layers.jpg: 'Docker container layers: a thin writable container layer on top of the read-only image layers'
+sunday-lesson:
+  alt:
+    machine1.png: Illustration of a person in a blanket with a coffee mug watching a machine learning dashboard by a snowy window
+systemd-mother-of-all-processes:
+  alt:
+    https://opensource.com/sites/default/files/uploads/systemd-architecture.png: 'systemd architecture: utilities, daemons and targets built on the systemd core, its libraries and the Linux kernel'
+the-ghost-board:
+  alt:
+    image-2.jpg: Illustration of masked people working on server racks with laptops in a dim data centre
+the-probability-engine:
+  alt:
+    mathsbehing.png: 'Infographic on the mathematics of large language models: prediction, softmax, output probability distribution and cross-entropy loss'
+timeseries-index-management-ilm:
+  alt:
+    untitled-diagram-page-13.png: 'Elasticsearch index lifecycle phases: hot, warm, cold and delete'
+    screenshot-2020-08-02-at-7.43.01-pm.png: Kibana Create an index lifecycle policy form with the policy name filled in
+    screenshot-2020-08-02-at-7.45.46-pm.png: 'ILM hot phase settings: rollover at 50 gigabytes or 30 days'
+    screenshot-2020-08-02-at-8.39.48-pm.png: ILM delete phase activated 10 days after rollover
+    screenshot-2020-08-02-at-8.53.17-pm.png: 'Kibana Create template step 1 (Logistics): template name, index pattern and version'
+    screenshot-2020-08-02-at-8.55.50-pm.png: 'Create template step 2: index settings with check_on_startup and two shards'
+virtualbox-increasing-size-of-the-virtual-disk:
+  alt:
+    screenshot-2021-02-05-at-1.15.28-pm.png: VirtualBox 6.1.18 About dialog
+    screenshot-2021-02-05-at-1.17.44-pm-1.png: VirtualBox Virtual Media Manager listing the linux_mint, Ubuntu.vdi and Ubuntu.vhd disks
+    screenshot-2021-02-05-at-1.21.50-pm.png: 'VirtualBox copy-disk wizard: choosing VDI as the disk image file type'
+    screenshot-2021-02-05-at-1.23.53-pm-1.png: Disk attributes for Ubuntu.vdi showing a size of 30 GB
+    screenshot-2021-02-05-at-1.24.06-pm.png: 'Disk type dropdown: Normal, Immutable, Writethrough, Shareable, Multi-attach'
+    screenshot-2021-02-05-at-1.41.53-pm-1.png: Disk size increased to 32 GB
+    screenshot-2021-02-05-at-1.39.34-pm.png: GNOME Disks showing the 34 GB virtual disk with a 32 GB ext4 partition and 2.1 GB of free space
+    screenshot-2021-02-05-at-1.39.59-pm.png: GNOME Disks Resize Volume dialog to grow the partition into the free space
+whale:
+  alt:
+    img_1187.png: A whale's dark back arching out of the blue sea, white water along its side
+    img_1187-1.png: The same whale's back arching through the surface a moment later
+    img_1188.png: A whale blowing a misty spout as it surfaces, with a second whale alongside
+    img_1189.png: A whale's head breaking the surface, with a dorsal fin further away
+    img_1190.png: Two whales surfacing, one blowing a spout
+    img_1187-2.png: A whale's back and small dorsal fin rising above the waves
+    img_1188-1.png: A whale blowing a misty spout as it surfaces, with a second whale alongside
+    img_1189-1.png: A whale's head breaking the surface, with a dorsal fin further away
+    img_1190-1.png: Two whales surfacing, one blowing a spout
+    img_1191.png: Two whales gliding just below the surface in a swirl of white water
+    img_1198.png: A dorsal fin cutting through the open sea beside a patch of white water
+  description: 'Photos from a whale-watching trip: whales surfacing and blowing spouts in the open sea.'
+zabbix-agent:
+  alt:
+    screenshot-2021-11-10-at-11.33.31-am.png: 'Zabbix host configuration: host mynode.com, visible name master.kubernetes.cluster, Linux servers group, agent on port 10050'
+    screenshot-2021-11-10-at-11.34.37-am.png: 'Zabbix hosts list: master.kubernetes.cluster enabled with the Linux and Docker templates and the agent available'

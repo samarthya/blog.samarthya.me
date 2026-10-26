@@ -63,7 +63,7 @@ It will checkout the code in the current directory. (More information available 
 
 This repo shall have all the artifacts we wish to publish
 
-![](screenshot-2021-09-23-at-5.44.57-pm.png)
+![JFrog Platform administration page showing one project and seven repositories, half unassigned](screenshot-2021-09-23-at-5.44.57-pm.png)
 
 A shout out to @JFROG for providing the trial license that helped me build the repo a docker deployment
 
@@ -491,12 +491,12 @@ Time to `perform` release
 
 In the source repository also it has created a tag for the new build (an automated build)
 
-![](screenshot-2021-09-23-at-9.10.26-pm.png)
+![GitHub tags list showing the automatically created tag v1.0.1](screenshot-2021-09-23-at-9.10.26-pm.png)
 
 We can manually now mark a new release in the GitRepo.
 
-![](screenshot-2021-09-23-at-9.12.09-pm.png)
+![GitHub new-release form for tag v1.0.1 with release notes, ready to publish](screenshot-2021-09-23-at-9.12.09-pm.png)
 
 Finally!
 
-![](screenshot-2021-09-23-at-9.13.16-pm.png)
+![GitHub releases page listing v1.0.1 and v1.0.0, with release-demo-1.0.0.jar attached to v1.0.0](screenshot-2021-09-23-at-9.13.16-pm.png)

@@ -26,7 +26,7 @@ Go string is a sequence of variable-width characters (each 1 to 4 bytes).
 
 The package string exposes utility functions to manipulate UTF-8 encoded strings.
 
-![](img_0846.jpg)
+![Toy blue Angry Birds figure sitting in a nest made of tissue paper](img_0846.jpg)
 
 > Strings are value types and immutable, which means that once created, you cannot modify the contents of the string. In other words, strings are immutable arrays of bytes.
 >

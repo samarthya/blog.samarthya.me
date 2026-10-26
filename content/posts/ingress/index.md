@@ -16,7 +16,7 @@ All right, it has been sometime since I last wrote my blog, and it has been disa
 https://kubernetes.io/docs/concepts/services-networking/ingress/
 ```
 
-![](ingress-1.png)
+![Kubernetes Ingress: HTTP traffic enters through an Ingress, routing rules pick a Service, which forwards to a Pod](ingress-1.png)
 
 {{< lead >}}
 An API object that manages external access to the services in a cluster, typically HTTP.
@@ -28,7 +28,7 @@ Till now I had only exposed services (HTTP/HTTPS) using `NodePort` or `ClusterIP
 - Identifying the current version which in my case was 1.19 and after repeated attempts to `kubeadm upgrade plan` failed, I created a fresh cluster.
 - The fresh install was simple, I just had to reset and upgrade the binaries which were reporting the version skew.
 
-![](screenshot-2021-08-24-at-12.58.07-pm.png)
+![Browser showing the echo service's response through a NodePort, listing the HTTP request headers](screenshot-2021-08-24-at-12.58.07-pm.png)
 
 {{< lead >}}
 Current Version: v1.22.1

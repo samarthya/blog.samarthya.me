@@ -128,7 +128,7 @@ var done chan bool = make(chan bool)
 done <- 'a'
 ```
 
-![](screenshot-2021-02-26-at-2.11.16-pm.png)
+![VS Code error: cannot convert 'a' (untyped rune constant 97) to bool when sending to a bool channel](screenshot-2021-02-26-at-2.11.16-pm.png)
 
 It just does throws compile time error
 

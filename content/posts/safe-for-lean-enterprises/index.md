@@ -35,7 +35,7 @@ A disruption is always around the corner in this digital age and there are plent
 
 [Business Agility](https://www.scaledagileframework.com/business-agility/) defines the mindset of thriving in today's dynamic environment.
 
-*[image unavailable: SAFe_for_Lean_Enterprises_F01_WEB-3.png — (C) ScaledAgile]*
+*Figure: business agility; see [SAFe for Lean Enterprises](https://www.scaledagileframework.com/safe-for-lean-enterprises/) on Scaled Agile's site (© Scaled Agile, Inc.).*
 
 SAFe has seven core competencies and twenty one dimensions
 
@@ -47,4 +47,4 @@ SAFe has seven core competencies and twenty one dimensions
 6. Agile Product delivery
 7. Team and technical agility
 
-*[image unavailable: SAFe_for_Lean_Enterprises_F03_WEB-2.png — (c) Scaled Agile]*
+*Figure: the seven core competencies; see [SAFe for Lean Enterprises](https://www.scaledagileframework.com/safe-for-lean-enterprises/) on Scaled Agile's site (© Scaled Agile, Inc.).*

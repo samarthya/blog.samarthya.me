@@ -413,7 +413,7 @@ Validation in default.stats:
 
 Play around with adding a new application (Which I will cover in subsequent blog)
 
-![](screenshot-2022-02-01-at-3.23.40-pm.png)
+![Spinnaker New Application form: name Restmon, owner email, repository type list and instance port 80](screenshot-2022-02-01-at-3.23.40-pm.png)
 
 Configuring the docker-registry for the `spinnaker-hellow` information is covered in this [blog]({{< relref "/posts/spinnaker-docker-registry" >}}).
 

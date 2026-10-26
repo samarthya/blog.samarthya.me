@@ -7,7 +7,7 @@ aliases: ["/wps/2026/04/16/the-probability-engine/", "/wps/2026/10/23/the-probab
 wp_id: 2967
 ---
 
-![](mathsbehing.png)
+![Infographic on the mathematics of large language models: prediction, softmax, output probability distribution and cross-entropy loss](mathsbehing.png)
 
 From "what is autocomplete?" to the full mathematics powering Claude Sonnet 4.6; with history, intuition, worked examples and cheatsheet.
 

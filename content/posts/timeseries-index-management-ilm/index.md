@@ -37,7 +37,7 @@ Which I will discuss in detail in subsequent sections.
 
 Every index has 4 phases as explained below
 
-![](untitled-diagram-page-13.png)
+![Elasticsearch index lifecycle phases: hot, warm, cold and delete](untitled-diagram-page-13.png)
 
 Each phase shown above has a defined `age` associated with it (by default if not specified is zero)
 
@@ -115,7 +115,7 @@ The `min_age` defaults to `0ms`, so new indices enter the `hot` phase immediatel
 
 ### Step 1 - Create Policy
 
-![](screenshot-2020-08-02-at-7.43.01-pm.png)
+![Kibana Create an index lifecycle policy form with the policy name filled in](screenshot-2020-08-02-at-7.43.01-pm.png)
 
 A `lifecycle` is about actions to take for the defined 4 phases.
 
@@ -126,7 +126,7 @@ A `lifecycle` is about actions to take for the defined 4 phases.
 
 ### Defining Hot Phase
 
-![](screenshot-2020-08-02-at-7.45.46-pm.png)
+![ILM hot phase settings: rollover at 50 gigabytes or 30 days](screenshot-2020-08-02-at-7.45.46-pm.png)
 
 For out example I have defined for the rollover strategy
 
@@ -139,7 +139,7 @@ If any of the above conditions are met, rollover will be triggered.
 
 I am leaving the priority default - 100.
 
-![](screenshot-2020-08-02-at-8.39.48-pm.png)
+![ILM delete phase activated 10 days after rollover](screenshot-2020-08-02-at-8.39.48-pm.png)
 
 {{< alert "circle-info" >}}
 For `delete` phase the `min_age` is 10 days.
@@ -179,7 +179,7 @@ PUT _ilm/policy/samarthya_timeseries_policy
 
 Will define Index Pattern, Index Alias & Index Settings.
 
-![](screenshot-2020-08-02-at-8.53.17-pm.png)
+![Kibana Create template step 1 (Logistics): template name, index pattern and version](screenshot-2020-08-02-at-8.53.17-pm.png)
 
 Equivalent API representation
 
@@ -219,7 +219,7 @@ PUT _template/samarthya_timeseries_template
 }
 ```
 
-![](screenshot-2020-08-02-at-8.55.50-pm.png)
+![Create template step 2: index settings with check_on_startup and two shards](screenshot-2020-08-02-at-8.55.50-pm.png)
 
 Bootstrapping initial index
 

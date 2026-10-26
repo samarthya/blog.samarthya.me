@@ -50,7 +50,7 @@ Clients capable of maintaining the confidentiality of their credentials (e.g., c
 
 Clients incapable of maintaining the confidentiality of their credentials (e.g., clients executing on the device used by the resource owner, such as an installed native application or a web browser-based application), and incapable of secure client authentication via any other means.
 
-![](https://d33wubrfki0l68.cloudfront.net/21d485e203c19fedeae1bc4142f2f056b577c0fb/c3cdb/assets-jekyll/blog/oauth/oauth-clients-93fc6cc8e83fa7d885c9daa0ed88007fc44780b99682dcfa580af319894870c7.png)
+![Diagram of OAuth 2.0 client types: confidential clients that can keep a secret and public clients that cannot](https://d33wubrfki0l68.cloudfront.net/21d485e203c19fedeae1bc4142f2f056b577c0fb/c3cdb/assets-jekyll/blog/oauth/oauth-clients-93fc6cc8e83fa7d885c9daa0ed88007fc44780b99682dcfa580af319894870c7.png)
 
 #### 4. authorization server
 
@@ -60,7 +60,7 @@ The server issuing access tokens to the client after successfully authenticating
 
 Scopes is what you see when you are shown a confirmation dialog while requesting service from a provider that initiates the flow. These are coded by the application developer when writing the application. Scopes decouple `authorization` policy decisions from `enforcement`.
 
-![](https://d33wubrfki0l68.cloudfront.net/99bea281c4d8758b97fe07ded0136019b0ed75f6/3da15/assets-jekyll/blog/oauth/oauth-actors-cd8b4861e839037400d8521e97c5d8cf0cb029add65d1036488991c7e85dcb72.png)
+![Diagram of the OAuth 2.0 actors: resource owner, client, authorization server and resource server](https://d33wubrfki0l68.cloudfront.net/99bea281c4d8758b97fe07ded0136019b0ed75f6/3da15/assets-jekyll/blog/oauth/oauth-actors-cd8b4861e839037400d8521e97c5d8cf0cb029add65d1036488991c7e85dcb72.png)
 
 ### C. Tokens
 
@@ -87,7 +87,7 @@ Refresh tokens are credentials used to obtain access tokens.
 
 Refresh tokens are issued to the client by the `authorization server` and are used to obtain a new access token when the current access token becomes invalid or expires, or to obtain additional access tokens with identical or narrower scope.
 
-![](https://d33wubrfki0l68.cloudfront.net/ae5a3d0fc17cec4af40096e6f67b7b93d02dcdab/17da8/assets-jekyll/blog/oauth/authorization-server-99a4ad01368a4c8e407917358d4394d573a6c0e3c9fa10c01a59d1a54c4938cf.png)
+![Diagram of the authorization server issuing tokens that the client presents to the resource server](https://d33wubrfki0l68.cloudfront.net/ae5a3d0fc17cec4af40096e6f67b7b93d02dcdab/17da8/assets-jekyll/blog/oauth/authorization-server-99a4ad01368a4c8e407917358d4394d573a6c0e3c9fa10c01a59d1a54c4938cf.png)
 
 ## Flows
 
@@ -102,18 +102,18 @@ Obtaining authorization and subsequent token has 4 main flows
 - These clients are typically implemented in a browser using a scripting language such as `JavaScript`. (SPA's)
 - The implicit grant type does not include `client authentication` and relies on the presence of the `resource owner` and the registration of the `redirection URI`.
 
-![](screenshot-2021-03-25-at-9.02.32-pm.png)
+![OAuth 2.0 implicit grant flow (RFC 6749): the access token returns to the user agent in the redirect URI fragment](screenshot-2021-03-25-at-9.02.32-pm.png)
 
 ### Authorization code flow/3 legged flow
 
-![](screenshot-2021-03-25-at-9.02.06-pm.png)
+![OAuth 2.0 authorization code flow (RFC 6749): the client exchanges an authorization code for an access token](screenshot-2021-03-25-at-9.02.06-pm.png)
 
 - The authorization code grant type is used to obtain both `access tokens` and `refresh tokens` and is optimized for `confidential clients`.
 - Uses the front channel for `authorization` and the `back channel` for `tokens`.
 
 ### Client credential flow
 
-![](screenshot-2021-03-25-at-9.13.43-pm.png)
+![OAuth 2.0 client credentials flow (RFC 6749): the client authenticates directly and receives an access token](screenshot-2021-03-25-at-9.13.43-pm.png)
 
 - For server to server scenarios
 - Client is confidential

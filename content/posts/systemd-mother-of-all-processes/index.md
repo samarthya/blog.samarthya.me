@@ -17,7 +17,7 @@ GRUB: Grand Unified Boot Loader
 — /boot/grub/grub.conf
 {{< /lead >}}
 
-![](https://opensource.com/sites/default/files/uploads/systemd-architecture.png)
+![systemd architecture: utilities, daemons and targets built on the systemd core, its libraries and the Linux kernel](https://opensource.com/sites/default/files/uploads/systemd-architecture.png)
 
 Some key points
 

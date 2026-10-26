@@ -7,11 +7,11 @@ aliases: ["/wps/2022/09/13/hashicorp-vault/", "/wps/2026/10/23/hashicorp-vault/"
 wp_id: 2361
 ---
 
-![](https://content.hashicorp.com/api/assets?product=vault&version=refs%2Fheads%2Frelease%2F1.11.x&asset=website%2Fpublic%2Fimg%2Flayers.png&width=1506&height=841)
+![Diagram from the HashiCorp documentation showing the layers of Vault](https://content.hashicorp.com/api/assets?product=vault&version=refs%2Fheads%2Frelease%2F1.11.x&asset=website%2Fpublic%2Fimg%2Flayers.png&width=1506&height=841)
 
 ---
 
-<img src="screen-shot-2022-09-12-at-3.44.31-pm.png" alt="" class="grid-w100" />
+<img src="screen-shot-2022-09-12-at-3.44.31-pm.png" alt="HashiCorp Vault overview: clients use the Vault API, which provides identity-based authentication, encryption and secrets management" class="grid-w100" />
 
 > "HashiCorp Vault is an identity-based secrets and encryption management system."
 >

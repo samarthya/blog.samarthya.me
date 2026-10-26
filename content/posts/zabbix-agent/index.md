@@ -165,8 +165,8 @@ Fill in the values for IP, host and display name and select the template
 
 The values for my machine are filled in like below
 
-![](screenshot-2021-11-10-at-11.33.31-am.png)
+![Zabbix host configuration: host mynode.com, visible name master.kubernetes.cluster, Linux servers group, agent on port 10050](screenshot-2021-11-10-at-11.33.31-am.png)
 
 When you are done it will show up as below
 
-![](screenshot-2021-11-10-at-11.34.37-am.png)
+![Zabbix hosts list: master.kubernetes.cluster enabled with the Linux and Docker templates and the agent available](screenshot-2021-11-10-at-11.34.37-am.png)

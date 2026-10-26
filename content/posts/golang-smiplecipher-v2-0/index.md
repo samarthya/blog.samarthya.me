@@ -10,7 +10,7 @@ wp_id: 650
 
 So continuing from the last [blog]({{< relref "/posts/golang-simplecipher" >}}) where I wrote a crude version of SimpleCipher and was inclined on removing the duplicate code, here I am with the improved version.
 
-![](simplecipher.png)
+![Caesar cipher diagram: each letter is shifted three positions along the alphabet](simplecipher.png)
 
 ### Handy links
 

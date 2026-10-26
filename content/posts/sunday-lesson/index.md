@@ -7,7 +7,7 @@ aliases: ["/wps/2026/02/08/sunday-lesson/", "/wps/2026/10/23/sunday-lesson/"]
 wp_id: 2956
 ---
 
-![](machine1.png)
+![Illustration of a person in a blanket with a coffee mug watching a machine learning dashboard by a snowy window](machine1.png)
 
 After finishing the assignment late Saturday night, I took a moment to reflect on my progress. It was a valuable opportunity to document the key concepts and insights I gained from the experience.
 

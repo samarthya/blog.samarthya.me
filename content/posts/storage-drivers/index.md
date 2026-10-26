@@ -12,7 +12,7 @@ The storage driver allows your to create data in the writable layers of the cont
 
 The files will not be persisted after the container is deleted, and performance wise it is relatively slower than native `fs` performance.
 
-![](https://docs.docker.com/storage/storagedriver/images/container-layers.jpg)
+![Docker container layers: a thin writable container layer on top of the read-only image layers](https://docs.docker.com/storage/storagedriver/images/container-layers.jpg)
 
 E.g. Let's run a image `hello-world`
 
