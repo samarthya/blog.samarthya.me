@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/23/ansible-configuration-ansible-cfg/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---
 
-*[image unavailable: an-config.png]*
+![Common ansible.cfg settings: inventory, remote_user, become, become_user, become_method, library, forks and file location](an-config.png "Recreated in October 2026 from the post; the original image was lost")
 
 `ansible.cfg` is the main configuration file for Ansible. It is used to customize Ansible’s behavior and includes a wide range of options, including the location of inventory files, the default SSH user, and the path to the module library.
 

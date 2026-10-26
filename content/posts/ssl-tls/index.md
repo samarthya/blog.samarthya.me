@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/22/ssl-tls/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---
 
-*[image unavailable: ssl-tls.png]*
+![Five stages of SSL/TLS: handshake, authentication, key exchange, encryption and integrity](ssl-tls.png "Recreated in October 2026 from the post; the original image was lost")
 
 Secure Socket Layer and its successor TLS (Transport Layer Security) are cryptographic protocols that provide encryption, integrity, and authentication for network communication. They are commonly used to secure online transactions, such as those made in online banking, e-commerce, and other sensitive online transactions.
 

@@ -9,7 +9,7 @@ aliases: ["/wps/2024/02/13/non-root-podman-and-molecule/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---
 
-![](molecule.png "(thumbnail only — original image lost)")
+![Molecule testing an Ansible role through podman-docker and the user's podman.socket, with containers running as non-root](molecule.png "Recreated in October 2026 from the post; the original image was lost")
 
 On my `Centos8` I was facing issue when I was trying to run Molecule on a centos machine which is running `podman` as a non root user. Also, I am using the driver – `docker` and not `podman`, so to overcome the aliases and references issues I have installed `podman-docker`.
 

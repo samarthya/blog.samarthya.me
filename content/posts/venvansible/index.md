@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/28/venvansible/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---
 
-*[image unavailable: an-lint-1.png]*
+![Python virtual environment steps: create, activate, install, freeze to requirements.txt, and recreate](an-lint-1.png "Recreated in October 2026 from the post; the original image was lost")
 
 ```text
 Using a virtual environment like venv is a best practice when working with Python-based projects like Ansible, Molecule, and Playbooks.

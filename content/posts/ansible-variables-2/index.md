@@ -9,7 +9,7 @@ aliases: ["/wps/2023/03/15/ansible-variables-2/"]
 recovered: "Internet Archive snapshot 2026-05-17"
 ---
 
-*[image unavailable: ans-vars.png]*
+![Places to define Ansible variables: inline, playbook, role, inventory, command line and facts](ans-vars.png "Recreated in October 2026 from the post; the original image was lost")
 
 Ansible Variables
 

@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/02/python-vs-bash/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---
 
-*[image unavailable: pycomp.png]*
+![Python compared with Bash: kind of language, what each is best for, libraries, and when to choose each](pycomp.png "Recreated in October 2026 from the post; the original image was lost")
 
 Python and bash are both programming languages, but they have different purposes and use cases.
 

@@ -11,7 +11,7 @@ recovered: "Internet Archive snapshot 2026-03-12"
 
 Ansible’s `lookup` plugin allows you to access data from a variety of sources, including files, templates, and external programs. You can use `lookup` to fetch data dynamically at runtime and use it in your playbooks and roles.
 
-*[image unavailable: an-lookup.png]*
+![Ansible lookup plugin reading from files, environment variables, templates or programs and returning a value](an-lookup.png "Recreated in October 2026 from the post; the original image was lost")
 
 The `lookup` plugin is used in the following format:
 

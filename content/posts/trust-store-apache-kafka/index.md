@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/22/trust-store-apache-kafka/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---
 
-*[image unavailable: ks-store.png — Trust Stores]*
+![Keystore compared with truststore: what each holds, what it answers, who uses it and how it is protected](ks-store.png "Recreated in October 2026 from the post; the original image was lost")
 
 In `Apache Kafka`, `trust store` and `keystore` are essential components for ensuring secure communication between brokers, clients, and other services. In this blog post, we will discuss the concept of trust store and keystore in detail, their importance, and why we use them in Apache Kafka.
 

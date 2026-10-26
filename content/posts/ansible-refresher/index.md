@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/02/ansible-refresher/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---
 
-*[image unavailable: an-refresh-150x150.png]*
+![Seven reasons to use Ansible: simple, agentless, idempotent, modular, integrates with other tools, large community, open source](an-refresh.png "Recreated in October 2026 from the post; the original image was lost")
 
 ## What is Ansible?
 

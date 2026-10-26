@@ -9,7 +9,7 @@ aliases: ["/wps/2023/03/24/async-poll-notify-ansible-long-running-process/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---
 
-*[image unavailable: as-async.png]*
+![Ansible long-running task with async 300 and poll 60, registered job ID, async_status until finished, and debug output](as-async.png "Recreated in October 2026 from the post; the original image was lost")
 
 ASYNC & Poll
 

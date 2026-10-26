@@ -9,7 +9,7 @@ aliases: ["/wps/2023/03/07/podman-machine-how-why/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---
 
-*[image unavailable: podman.png]*
+![Podman Machine: containers run by Podman inside a VM on your local system or a remote server, with the commands to create, start and run](podman.png "Recreated in October 2026 from the post; the original image was lost")
 
 Podman
 

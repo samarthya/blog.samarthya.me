@@ -9,7 +9,7 @@ aliases: ["/wps/2023/05/10/x509-history/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---
 
-*[image unavailable: x509.png]*
+![Timeline of X.509: public-key infrastructure in the late 1970s, version 1 in 1988, version 2 in 1993, version 3 with extensions and SAN in 1996, and today in SSL/TLS, code signing, email and IoT](x509.png "Recreated in October 2026 from the post; the original image was lost")
 
 X.509 certificates have become a fundamental component of secure communication on the internet. They provide authentication, encryption, and integrity for various applications and protocols. In this blog post, we will delve into the intriguing history of X.509 certificates, tracing their origins, evolution, and significant milestones.
 

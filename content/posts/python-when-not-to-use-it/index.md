@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/02/python-when-not-to-use-it/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---
 
-*[image unavailable: nopy.png]*
+![Five cases where Python is not the best choice: performance-critical code, mobile apps, low-level systems, strict real-time, and tiny one-off scripts](nopy.png "Recreated in October 2026 from the post; the original image was lost")
 
 Python is a versatile and widely-used programming language, but there are certain scenarios when it may not be the best choice. Here are some examples of when not to use Python:
 

@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/02/python-argparse/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---
 
-*[image unavailable: pyarg.png]*
+![Five steps with argparse: import argparse, create an ArgumentParser, add_argument, parse_args, then use args](pyarg.png "Recreated in October 2026 from the post; the original image was lost")
 
 The `argparse` module is a powerful tool for parsing command line arguments in Python. It provides an easy way to define the arguments required by your script and handle the input data passed to your script by the user.
 

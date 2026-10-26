@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/02/python-polymorphism/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---
 
-*[image unavailable: pypoly.png]*
+![Animal base class with make_sound, and Dog and Cat subclasses returning Bark and Meow](pypoly.png "Recreated in October 2026 from the post; the original image was lost")
 
 Polymorphism is a key feature of Object Oriented Programming that allows objects of different classes to be treated as objects of a common class. It is done by implementing the same methods across all classes and making use of inheritance, interfaces and overloading.
 

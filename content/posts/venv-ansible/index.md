@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/27/venv-ansible/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---
 
-*[image unavailable: an-venv.png]*
+![Steps to run Ansible and Molecule in a Python virtual environment on CentOS 7](an-venv.png "Recreated in October 2026 from the post; the original image was lost")
 
 Ansible and Molecule are popular tools for configuration management and testing in the world of DevOps. To avoid conflicts between different projects and their dependencies, it is recommended to use a virtual environment for each project. In this blog post, we’ll show you how to set up and use a virtual environment using Python’s built-in `venv` module on `macOS` and `CentOS 7`.
 

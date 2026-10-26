@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/08/ansible-templates/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---
 
-*[image unavailable: an-template.png]*
+![How an Ansible template becomes a config file: a Jinja2 template and variables are rendered and copied to the host](an-template.png "Recreated in October 2026 from the post; the original image was lost")
 
 Templates in `Ansible` are a type of file that contain configuration information or scripts written in a `Jinja2` templating language.
 

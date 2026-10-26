@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/22/handshake/"]
 recovered: "Internet Archive snapshot 2026-05-17"
 ---
 
-*[image unavailable: ssl-handshake.png]*
+![SSL/TLS handshake between client and server: Client Hello, Server Hello, Certificate, optional Server Key Exchange and Certificate Request, Client Key Exchange, Certificate Verify, and Finished from both sides](ssl-handshake.png "Recreated in October 2026 from the post; the original image was lost")
 
 The SSL/TLS handshake is the initial communication between the client and server in a SSL/TLS connection. The purpose of the handshake is to establish a secure connection between the client and server and to negotiate the cryptographic parameters for the session.
 

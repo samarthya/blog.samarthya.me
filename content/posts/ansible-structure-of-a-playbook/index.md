@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/07/ansible-structure-of-a-playbook/"]
 recovered: "Internet Archive snapshot 2026-05-17"
 ---
 
-*[image unavailable: ansible.png]*
+![An Ansible playbook made of inventory, variables, roles and tasks, beside a short example playbook](ansible.png "Recreated in October 2026 from the post; the original image was lost")
 
 The structure of an `Ansible playbook` includes the following elements:
 

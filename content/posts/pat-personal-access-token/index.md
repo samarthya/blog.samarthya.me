@@ -9,7 +9,7 @@ aliases: ["/wps/2023/02/24/pat-personal-access-token/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---
 
-*[image unavailable: an-lint.png]*
+![Steps for a Git personal access token. Generate it, keep it safe, configure git, use the macOS keychain credential helper, then push](an-lint.png "Recreated in October 2026 from the post; the original image was lost")
 
 Using Git Personal Access Tokens (PATs) is a secure and convenient way to authenticate with Git service providers. In this blog post, we will discuss how to use Git PATs on both Mac and CentOS 7 systems.
 

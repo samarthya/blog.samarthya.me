@@ -9,7 +9,7 @@ aliases: ["/wps/2023/04/12/curl/"]
 recovered: "Internet Archive snapshot 2025-12-05"
 ---
 
-![](curl.png "(thumbnail only — original image lost)")
+![Anatomy of a curl command: -X sets the method, -H a header, -d the body, then the URL](curl.png "Recreated in October 2026 from the post; the original image was lost")
 
 cURL – A true companion
 

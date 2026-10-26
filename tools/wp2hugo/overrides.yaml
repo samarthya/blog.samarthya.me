@@ -278,3 +278,92 @@ spinnaker-open-source-deployment:
   replace:
   - from: '[Pipeline in action]({{< relref "/posts/spinnaker-pipeline-in-action" >}})'
     to: "Pipeline in action *(not published: its screenshots were lost)*"
+x509-history:
+  replace:
+  - from: '*[image unavailable: x509.png]*'
+    to: '![Timeline of X.509: public-key infrastructure in the late 1970s, version 1 in 1988, version 2 in 1993, version 3 with extensions and SAN in 1996, and today in SSL/TLS, code signing, email and IoT](x509.png "Recreated in October 2026 from the post; the original image was lost")'
+# Recreated title images (tools/titles/make_titles.py), 2026-10-26
+handshake:
+  replace:
+  - from: '*[image unavailable: ssl-handshake.png]*'
+    to: '![SSL/TLS handshake between client and server: Client Hello, Server Hello, Certificate, optional Server Key Exchange and Certificate Request, Client Key Exchange, Certificate Verify, and Finished from both sides](ssl-handshake.png "Recreated in October 2026 from the post; the original image was lost")'
+ssl-tls:
+  replace:
+  - from: '*[image unavailable: ssl-tls.png]*'
+    to: '![Five stages of SSL/TLS: handshake, authentication, key exchange, encryption and integrity](ssl-tls.png "Recreated in October 2026 from the post; the original image was lost")'
+trust-store-apache-kafka:
+  replace:
+  - from: '*[image unavailable: ks-store.png — Trust Stores]*'
+    to: '![Keystore compared with truststore: what each holds, what it answers, who uses it and how it is protected](ks-store.png "Recreated in October 2026 from the post; the original image was lost")'
+keystore-vs-truststore:
+  replace:
+  - from: '![Stores in action](ksts.drawio.png "Stores in action (thumbnail only — original image lost)")'
+    to: '![Keystore compared with truststore: a keystore presents your own identity, a truststore verifies others](ksts.drawio.png "Recreated in October 2026 from the post; the original image was lost")'
+python-vs-bash:
+  replace:
+  - from: '*[image unavailable: pycomp.png]*'
+    to: '![Python compared with Bash: kind of language, what each is best for, libraries, and when to choose each](pycomp.png "Recreated in October 2026 from the post; the original image was lost")'
+python-when-not-to-use-it:
+  replace:
+  - from: '*[image unavailable: nopy.png]*'
+    to: '![Five cases where Python is not the best choice: performance-critical code, mobile apps, low-level systems, strict real-time, and tiny one-off scripts](nopy.png "Recreated in October 2026 from the post; the original image was lost")'
+python-argparse:
+  replace:
+  - from: '*[image unavailable: pyarg.png]*'
+    to: '![Five steps with argparse: import argparse, create an ArgumentParser, add_argument, parse_args, then use args](pyarg.png "Recreated in October 2026 from the post; the original image was lost")'
+python-polymorphism:
+  replace:
+  - from: '*[image unavailable: pypoly.png]*'
+    to: '![Animal base class with make_sound, and Dog and Cat subclasses returning Bark and Meow](pypoly.png "Recreated in October 2026 from the post; the original image was lost")'
+venvansible:
+  replace:
+  - from: '*[image unavailable: an-lint-1.png]*'
+    to: '![Python virtual environment steps: create, activate, install, freeze to requirements.txt, and recreate](an-lint-1.png "Recreated in October 2026 from the post; the original image was lost")'
+venv-ansible:
+  replace:
+  - from: '*[image unavailable: an-venv.png]*'
+    to: '![Steps to run Ansible and Molecule in a Python virtual environment on CentOS 7](an-venv.png "Recreated in October 2026 from the post; the original image was lost")'
+ansible-refresher:
+  replace:
+  - from: '*[image unavailable: an-refresh-150x150.png]*'
+    to: '![Seven reasons to use Ansible: simple, agentless, idempotent, modular, integrates with other tools, large community, open source](an-refresh.png "Recreated in October 2026 from the post; the original image was lost")'
+ansible-structure-of-a-playbook:
+  replace:
+  - from: '*[image unavailable: ansible.png]*'
+    to: '![An Ansible playbook made of inventory, variables, roles and tasks, beside a short example playbook](ansible.png "Recreated in October 2026 from the post; the original image was lost")'
+ansible-templates:
+  replace:
+  - from: '*[image unavailable: an-template.png]*'
+    to: '![How an Ansible template becomes a config file: a Jinja2 template and variables are rendered and copied to the host](an-template.png "Recreated in October 2026 from the post; the original image was lost")'
+ansible-configuration-ansible-cfg:
+  replace:
+  - from: '*[image unavailable: an-config.png]*'
+    to: '![Common ansible.cfg settings: inventory, remote_user, become, become_user, become_method, library, forks and file location](an-config.png "Recreated in October 2026 from the post; the original image was lost")'
+ansible-variables-2:
+  replace:
+  - from: '*[image unavailable: ans-vars.png]*'
+    to: '![Places to define Ansible variables: inline, playbook, role, inventory, command line and facts](ans-vars.png "Recreated in October 2026 from the post; the original image was lost")'
+lookup-ansible:
+  replace:
+  - from: '*[image unavailable: an-lookup.png]*'
+    to: '![Ansible lookup plugin reading from files, environment variables, templates or programs and returning a value](an-lookup.png "Recreated in October 2026 from the post; the original image was lost")'
+async-poll-notify-ansible-long-running-process:
+  replace:
+  - from: '*[image unavailable: as-async.png]*'
+    to: '![Ansible long-running task with async 300 and poll 60, registered job ID, async_status until finished, and debug output](as-async.png "Recreated in October 2026 from the post; the original image was lost")'
+pat-personal-access-token:
+  replace:
+  - from: '*[image unavailable: an-lint.png]*'
+    to: '![Steps for a Git personal access token. Generate it, keep it safe, configure git, use the macOS keychain credential helper, then push](an-lint.png "Recreated in October 2026 from the post; the original image was lost")'
+podman-machine-how-why:
+  replace:
+  - from: '*[image unavailable: podman.png]*'
+    to: '![Podman Machine: containers run by Podman inside a VM on your local system or a remote server, with the commands to create, start and run](podman.png "Recreated in October 2026 from the post; the original image was lost")'
+non-root-podman-and-molecule:
+  replace:
+  - from: '![](molecule.png "(thumbnail only — original image lost)")'
+    to: '![Molecule testing an Ansible role through podman-docker and the user''s podman.socket, with containers running as non-root](molecule.png "Recreated in October 2026 from the post; the original image was lost")'
+curl:
+  replace:
+  - from: '![](curl.png "(thumbnail only — original image lost)")'
+    to: '![Anatomy of a curl command: -X sets the method, -H a header, -d the body, then the URL](curl.png "Recreated in October 2026 from the post; the original image was lost")'
