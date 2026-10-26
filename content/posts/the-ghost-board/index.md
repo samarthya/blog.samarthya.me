@@ -3,6 +3,7 @@ title: "The Ghost Board"
 date: "2026-10-22T17:51:51Z"
 slug: "the-ghost-board"
 categories: ["technical"]
+tags: ["ai", "llm", "security"]
 aliases: ["/wps/2026/10/22/the-ghost-board/"]
 wp_id: 2998
 ---

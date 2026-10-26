@@ -1,0 +1,26 @@
+# Old posts to recover from the Internet Archive (AI, ML and data), one path per line
+/wps/2023/10/03/genai/
+/wps/2024/06/20/ollama-revolutionizing-language-models/
+/wps/2024/09/03/from-speech-to-text-a-python-deep-dive/
+/wps/2025/01/24/rfm-analysis-a-comprehensive-guide-to-customer-segmentation/
+/wps/2025/02/02/correlation-and-covariance/
+/wps/2025/02/03/business-analytics-simplified/
+/wps/2025/02/07/business-analytics-the-bigger-picture/
+/wps/2025/02/07/comparison-of-competing-forecasting-models/
+/wps/2025/02/07/forecasting-methods/
+/wps/2025/02/07/model-and-selection/
+/wps/2025/02/14/linear-programming-lp/
+/wps/2025/02/14/monte-carlo-optimisation/
+/wps/2025/09/14/apache-spark/
+/wps/2025/10/09/beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark-%F0%9F%9A%80/
+/wps/2025/10/09/pyspark-vs-pandas-choosing-right-%F0%9F%90%8D/
+/wps/2025/10/10/the-core-divide/
+/wps/2025/10/16/matrix-multiplication-to-gpus/
+/wps/2025/10/21/building-a-minimal-langchain-ollama-demo/
+/wps/2025/11/08/data-mining-essentials/
+/wps/2025/11/11/building-a-practical-retrieval-augmented-personal-assistant-rag/
+/wps/2025/11/22/k-nearest-neighbors/
+/wps/2025/12/17/mastering-tf-idf-a-gamified-journey/
+/wps/2026/01/31/language-model/
+/wps/2026/01/31/two-students-two-talents-the-story-of-how-ai-learns-language/
+/wps/2026/02/01/the-evolution-of-language-models/

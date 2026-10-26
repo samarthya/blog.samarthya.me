@@ -106,6 +106,11 @@ class Overrides(unittest.TestCase):
         self.assertEqual(out, "See [source](https://example.com)")
         self.assertEqual(unmatched, [])
 
+    def test_tags_replace_imported_tags(self):
+        fields = {"tags": ["old"]}
+        self.mod.apply_overrides("p", "text", fields, {"tags": ["ai", "llm"]})
+        self.assertEqual(fields["tags"], ["ai", "llm"])
+
     def test_unmatched_entries_are_reported(self):
         _, unmatched = self.mod.apply_overrides("p", "no images here", {}, {
             "alt": {"gone.png": "x"}, "replace": [{"from": "absent", "to": "y"}]})

@@ -6,3 +6,10 @@
 secret-assignment 051a1ceb5a4c  # content/posts/elastic-_security-api: 2020 lab Elasticsearch API key, obsolete (cluster gone)
 secret-assignment 70d83fe49fd3  # content/posts/installing-k8s-on-ubuntu: kubeadm bootstrap token from a 2020 lab, expires after 24 h by design
 secret-assignment 03e6f3bbc67d  # content/posts/spinnaker: Spring Boot "generated security password" printed once at startup of a 2022 lab
+image-metadata 2699e25697cd  # content/posts/business-analytics-simplified/ba2.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata 16f097d435ed  # content/posts/business-analytics-the-bigger-picture/business1.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata 44595247b7e5  # content/posts/correlation-and-covariance/covariance.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata 1bcf91088e4d  # content/posts/forecasting-methods/forecasting1.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata 2937a4f73b91  # content/posts/linear-programming-lp/lp2.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata eda04f5918d4  # content/posts/model-and-selection/model1.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata 0df80b3a1da7  # content/posts/rfm-analysis-a-comprehensive-guide-to-customer-segmentation/bin-3.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)

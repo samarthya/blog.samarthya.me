@@ -3,6 +3,7 @@ title: "The Probability engine"
 date: "2026-04-16"
 slug: "the-probability-engine"
 categories: ["technical"]
+tags: ["ai", "llm", "ml"]
 aliases: ["/wps/2026/04/16/the-probability-engine/", "/wps/2026/10/23/the-probability-engine/"]
 wp_id: 2967
 ---

@@ -67,6 +67,8 @@ def apply_overrides(slug, body, fields, ov):
     unmatched = []
     if ov.get("description"):
         fields["description"] = ov["description"]
+    if ov.get("tags"):
+        fields["tags"] = ov["tags"]
     for name, alt in (ov.get("alt") or {}).items():
         alt_md = alt.replace("[", "(").replace("]", ")")
         alt_html = alt.replace('"', "&quot;")
@@ -583,7 +585,10 @@ def main():
                  f"posts would be published. Create it, or pass --allow-unredacted to convert anyway.")
     images = ImageSource(args.zip, args.images)
     OVERRIDES.update(load_overrides())
-    unknown = sorted(set(OVERRIDES) - {slug_of(i) for i in items}) if args.all else []
+    # Overrides may also belong to posts recovered from the Internet Archive (tools/wayback/), which are not in
+    # the export but already exist under content/posts; anything else is a typo.
+    site_posts = {p.parent.name for p in (Path(__file__).resolve().parents[2] / "content" / "posts").glob("*/index.md")}
+    unknown = sorted(set(OVERRIDES) - {slug_of(i) for i in items} - site_posts) if args.all else []
     known = {slug_of(i) for i in items}
     out_root = Path(args.out)
     report, totals, review, unmatched = [], {"jwt": 0, "private-key": 0, "pseudonym": 0}, [], []

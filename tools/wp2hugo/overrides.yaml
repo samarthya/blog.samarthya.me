@@ -1,6 +1,7 @@
 # Per-post fixes applied by wp2hugo.py on every import, so re-imports keep them.
 #   alt:         image file name (or URL) as written in the post -> alt text
 #   description: front-matter description (replaces a weak auto-summary)
+#   tags:        front-matter tags (replaces the imported ones; picks the post's topic via data/covers.yaml)
 #   replace:     exact text in the converted post -> new text
 # The importer stops with a list of any entry that no longer matches.
 
@@ -200,9 +201,11 @@ systemd-mother-of-all-processes:
   alt:
     https://opensource.com/sites/default/files/uploads/systemd-architecture.png: 'systemd architecture: utilities, daemons and targets built on the systemd core, its libraries and the Linux kernel'
 the-ghost-board:
+  tags: [ai, llm, security]
   alt:
     image-2.jpg: Illustration of masked people working on server racks with laptops in a dim data centre
 the-probability-engine:
+  tags: [ai, llm, ml]
   alt:
     mathsbehing.png: 'Infographic on the mathematics of large language models: prediction, softmax, output probability distribution and cross-entropy loss'
 timeseries-index-management-ilm:
@@ -261,3 +264,5 @@ zabbix-agent:
   alt:
     screenshot-2021-11-10-at-11.33.31-am.png: 'Zabbix host configuration: host mynode.com, visible name master.kubernetes.cluster, Linux servers group, agent on port 10050'
     screenshot-2021-11-10-at-11.34.37-am.png: 'Zabbix hosts list: master.kubernetes.cluster enabled with the Linux and Docker templates and the agent available'
+comparison-of-competing-forecasting-models:
+  description: "How to tell which forecasting model is better: MAE, MSE, RMSE, MAPE, sMAPE, bias and Theil's U, explained with an ice-cream-sales example."
