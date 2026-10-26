@@ -52,6 +52,7 @@ import check as privacy_check  # noqa: E402
 # and exact text replacements. Every entry must match; anything left unmatched is reported and fails the run.
 OVERRIDES_FILE = Path(__file__).with_name("overrides.yaml")
 OVERRIDES = {}  # filled by main() from OVERRIDES_FILE
+MEDIA_DIR = Path(__file__).with_name("media")  # media/<slug>/<file>: edited images that replace the imported ones
 
 
 def load_overrides(path=OVERRIDES_FILE):
@@ -524,6 +525,11 @@ def convert(item, out_root, images, known_slugs):
         "wp_id": int(item.findtext("wp:post_id", namespaces=NS)),
     }
     body, post.unmatched = apply_overrides(slug, body, fields, OVERRIDES.get(slug) or {})
+    # Edited copies (redacted, rotated, re-encoded) in media/<slug>/ replace the originals, and files the
+    # final text no longer mentions (e.g. a dropped duplicate) are not copied.
+    for f in sorted((MEDIA_DIR / slug).glob("*")):
+        post.files[f.name] = f.read_bytes()
+    post.files = {name: data for name, data in post.files.items() if name in body}
     fm = front_matter(fields)
     text, post.privacy["pseudonym"] = pseudonymise(fm + "\n" + body + "\n")
     allowed = privacy_check.load_allowlist(privacy_check.ALLOWLIST)

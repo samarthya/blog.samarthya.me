@@ -224,19 +224,39 @@ virtualbox-increasing-size-of-the-virtual-disk:
     screenshot-2021-02-05-at-1.39.34-pm.png: GNOME Disks showing the 34 GB virtual disk with a 32 GB ext4 partition and 2.1 GB of free space
     screenshot-2021-02-05-at-1.39.59-pm.png: GNOME Disks Resize Volume dialog to grow the partition into the free space
 whale:
-  alt:
-    img_1187.png: A whale's dark back arching out of the blue sea, white water along its side
-    img_1187-1.png: The same whale's back arching through the surface a moment later
-    img_1188.png: A whale blowing a misty spout as it surfaces, with a second whale alongside
-    img_1189.png: A whale's head breaking the surface, with a dorsal fin further away
-    img_1190.png: Two whales surfacing, one blowing a spout
-    img_1187-2.png: A whale's back and small dorsal fin rising above the waves
-    img_1188-1.png: A whale blowing a misty spout as it surfaces, with a second whale alongside
-    img_1189-1.png: A whale's head breaking the surface, with a dorsal fin further away
-    img_1190-1.png: Two whales surfacing, one blowing a spout
-    img_1191.png: Two whales gliding just below the surface in a swirl of white water
-    img_1198.png: A dorsal fin cutting through the open sea beside a patch of white water
   description: 'Photos from a whale-watching trip: whales surfacing and blowing spouts in the open sea.'
+  replace:
+  - from: |-
+      ![](img_1187.png)
+
+      ![](img_1187-1.png)
+
+      ![](img_1188.png)
+
+      {{< gallery >}}
+        <img src="img_1189.png" alt="" class="grid-w50" />
+        <img src="img_1190.png" alt="" class="grid-w50" />
+      {{< /gallery >}}
+
+      {{< gallery >}}
+        <img src="img_1187-2.png" alt="" class="grid-w33" />
+        <img src="img_1188-1.png" alt="" class="grid-w33" />
+        <img src="img_1189-1.png" alt="" class="grid-w33" />
+        <img src="img_1190-1.png" alt="" class="grid-w33" />
+        <img src="img_1191.png" alt="" class="grid-w33" />
+
+        <img src="img_1198.png" alt="" class="grid-w33" />
+
+      {{< /gallery >}}
+    to: |-
+      {{< gallery >}}
+        <img src="img_1187.jpg" alt="A whale's dark back arching out of the blue sea, white water along its side" class="grid-w50" />
+        <img src="img_1188.jpg" alt="A whale blowing a misty spout as it surfaces, with a second whale alongside" class="grid-w50" />
+        <img src="img_1189.jpg" alt="A whale's head breaking the surface, with a dorsal fin further away" class="grid-w50" />
+        <img src="img_1190.jpg" alt="Two whales surfacing, one blowing a spout" class="grid-w50" />
+        <img src="img_1191.jpg" alt="Two whales gliding just below the surface in a swirl of white water" class="grid-w50" />
+        <img src="img_1198.jpg" alt="A dorsal fin cutting through the open sea beside a patch of white water" class="grid-w50" />
+      {{< /gallery >}}
 zabbix-agent:
   alt:
     screenshot-2021-11-10-at-11.33.31-am.png: 'Zabbix host configuration: host mynode.com, visible name master.kubernetes.cluster, Linux servers group, agent on port 10050'

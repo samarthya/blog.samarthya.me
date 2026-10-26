@@ -1,7 +1,7 @@
 # Trophy shelf on the homepage: the posts you're proudest of, in this order (3 or 4 look best).
 # Use the post's folder name under content/posts/ (or content/daily/). Kept here rather than in the
 # posts' front matter so re-running the WordPress importer can't wipe it.
-# Starter picks by Claude: replace them with your own.
+# Starter picks: replace them with your own.
 posts:
   - the-ghost-board
   - kafka-deploy-test

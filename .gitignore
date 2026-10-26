@@ -17,7 +17,7 @@
 /LOCAL-README.md
 /notes/
 
-# Claude Code per-machine settings
+# local tool settings (per machine)
 /.claude/settings.local.json
 
 # Secrets, just in case
@@ -36,7 +36,7 @@ desktop.ini
 /tools/.venv/
 __pycache__/
 
-# review folder: things Claude moved aside; delete after review
+# review folder: files moved aside for review; delete after review
 /to_be_deleted/
 /TODO.md
 /PUBLISHING.md
