@@ -4,7 +4,7 @@ date: "2025-02-03T12:00:00Z"
 slug: "business-analytics-simplified"
 description: "Business Analytics (BA) is like a GPS for businesses—it uses data to guide decisions, solve problems, and predict future outcomes."
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["analytics", "ba", "data-analytics"]
 aliases: ["/wps/2025/02/03/business-analytics-simplified/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---

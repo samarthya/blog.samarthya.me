@@ -3,8 +3,8 @@ title: "PySpark vs Pandas: Choosing Right! 🐍"
 date: "2025-10-09T12:00:00Z"
 slug: "pyspark-vs-pandas-choosing-right"
 description: "As another project wraps up, bringing with it the bittersweet relief of an almost-closed chapter (and, yes, a few too many late-night coding sessions), I found myself reflecting on the tools that got…"
-categories: ["technical"]
-tags: ["python", "spark", "pandas", "data"]
+categories: ["learn", "python", "technical"]
+tags: ["data", "ml", "pandas", "python", "spark"]
 aliases: ["/wps/2025/10/09/pyspark-vs-pandas-choosing-right-%F0%9F%90%8D/", "/wps/2025/10/09/pyspark-vs-pandas-choosing-right-🐍/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---

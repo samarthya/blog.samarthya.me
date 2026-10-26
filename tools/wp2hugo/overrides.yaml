@@ -202,6 +202,9 @@ systemd-mother-of-all-processes:
     https://opensource.com/sites/default/files/uploads/systemd-architecture.png: 'systemd architecture: utilities, daemons and targets built on the systemd core, its libraries and the Linux kernel'
 the-ghost-board:
   tags: [ai, llm, security]
+  replace:
+  - from: '{{< relref "/posts/the-ghost-board-how-1200-ai-agents-who-were-never-supposed-to-meet-built-a-secret-society-and-hacked-hugging-face" >}}'
+    to: '{{< relref "/posts/the-ghost-board" >}}'
   alt:
     image-2.jpg: Illustration of masked people working on server racks with laptops in a dim data centre
 the-probability-engine:
@@ -266,3 +269,11 @@ zabbix-agent:
     screenshot-2021-11-10-at-11.34.37-am.png: 'Zabbix hosts list: master.kubernetes.cluster enabled with the Linux and Docker templates and the agent available'
 comparison-of-competing-forecasting-models:
   description: "How to tell which forecasting model is better: MAE, MSE, RMSE, MAPE, sMAPE, bias and Theil's U, explained with an ice-cream-sales example."
+certprof-a-good-start:
+  replace:
+  - from: Certificate
+    to: "Certificate *(download no longer available)*"
+spinnaker-open-source-deployment:
+  replace:
+  - from: '[Pipeline in action]({{< relref "/posts/spinnaker-pipeline-in-action" >}})'
+    to: "Pipeline in action *(not published: its screenshots were lost)*"

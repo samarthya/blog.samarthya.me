@@ -13,3 +13,13 @@ image-metadata 1bcf91088e4d  # content/posts/forecasting-methods/forecasting1.jp
 image-metadata 2937a4f73b91  # content/posts/linear-programming-lp/lp2.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
 image-metadata eda04f5918d4  # content/posts/model-and-selection/model1.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
 image-metadata 0df80b3a1da7  # content/posts/rfm-analysis-a-comprehensive-guide-to-customer-segmentation/bin-3.jpg: only photoshop:Credit "Made with Google AI" (AI-image provenance, not personal)
+image-metadata 28bf316f2e2b  # content/posts/dialectic-inquiry/cthinking.jpg: only photoshop:Credit "Made with Google AI"
+image-metadata 786a693b0c98  # content/posts/sed-stream-editor/sed-1.jpg: only photoshop:Credit "Made with Google AI"
+image-metadata 929eb5406533  # content/posts/failed-to-connect-to-bus-no-medium-found/mg.jpg: only photoshop:Credit "Made with Google AI"
+secret-assignment 00810cf8b94d  # content/posts/zookeeper-mtls: "changeit", the JDK's default keystore password, in a sample config
+secret-assignment 1c51b1a358d2  # content/posts/ngrx-state-management-for-angular: reads a form field (this.password.value), no value
+secret-assignment 5e884898da28  # content/posts/securing-elasticsearch: literal "password" in a tutorial request for a demo user
+secret-assignment 8c492825e8c5  # content/posts/spinnaker-docker-registry: masked as ------------------- in tool output
+secret-assignment 9f735e0df9a1  # content/posts/securing-elastic: "testpassword" for a demo user in a tutorial
+secret-assignment be227885f662  # content/posts/mysql-mariadb-on-mac: 'mypassword' placeholder in an example statement
+secret-assignment e50493880b35  # content/posts/metric-beat: "EXTRAsecuredPassword" placeholder in a 2020 lab config sample

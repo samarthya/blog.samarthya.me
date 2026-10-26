@@ -4,7 +4,7 @@ date: "2023-10-03T12:00:00Z"
 slug: "genai"
 description: "Artificial Intelligence (AI) has revolutionized many aspects of our lives, from virtual assistants like Siri and Alexa to self-driving cars and personalized content recommendations."
 categories: ["technical"]
-tags: ["ai", "ml", "data-analytics", "data"]
+tags: ["ai", "data", "data-analytics", "genai", "ml"]
 aliases: ["/wps/2023/10/03/genai/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---

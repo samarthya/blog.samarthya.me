@@ -4,7 +4,7 @@ date: "2025-02-07T12:00:00Z"
 slug: "model-and-selection"
 description: "In the context of forecasting and business analytics, a model is a simplified representation of a real-world situation or process."
 categories: ["technical"]
-tags: ["ml", "data-analytics"]
+tags: ["ba", "data-analytics", "ml"]
 aliases: ["/wps/2025/02/07/model-and-selection/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---

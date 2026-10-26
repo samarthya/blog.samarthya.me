@@ -4,7 +4,7 @@ date: "2025-02-07T12:00:00Z"
 slug: "business-analytics-the-bigger-picture"
 description: "Imagine you’re a business owner trying to figure out why your sales are down. You could guess, or you could use business analytics."
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["ba", "concept", "data-analytics"]
 aliases: ["/wps/2025/02/07/business-analytics-the-bigger-picture/"]
 recovered: "Internet Archive snapshot 2026-05-18"
 ---

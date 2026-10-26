@@ -28,6 +28,9 @@ import wp2hugo as w  # noqa: E402
 
 WAYBACK = "https://web.archive.org"
 HOST = "blog.samarthya.me"
+# WordPress slugs that mean an existing category on the new site.
+SAME_AS = {"technical-2": "technical", "gen": "general"}
+BREAK_IN = "20261007"  # first successful attacker login; pages archived only after this are not trusted
 UA = {"User-Agent": "samarthya.me post recovery (owner); contact via https://samarthya.me/contact/"}
 # Parts of the old theme around the post body (the body itself sits directly in #page).
 CHROME = {"header", "footer", "script", "style", "noscript", "nav", "aside"}
@@ -58,29 +61,33 @@ def get(url, tries=4):
             err = e
         except Exception as e:  # noqa: BLE001 - network hiccups: retry with backoff
             err = e
-        time.sleep(3 * (n + 1))
+        time.sleep(10 * (n + 1))
     raise RuntimeError(f"{url}: {err}")
 
 
 def snapshot(path, cache):
-    """Newest 200 capture of the old page -> (timestamp, html bytes); cached on disk."""
+    """Newest 200 capture of the old page -> (timestamp, first capture, html bytes); cached on disk."""
     slug = path.rstrip("/").rsplit("/", 1)[-1]
     meta, page = cache / f"{slug}.json", cache / f"{slug}.html"
-    if meta.exists() and page.exists():
-        return json.loads(meta.read_text())["ts"], page.read_bytes()
+    if meta.exists() and page.exists() and "first" in json.loads(meta.read_text()):
+        info = json.loads(meta.read_text())
+        return info["ts"], info["first"], page.read_bytes()
     url = f"{HOST}{path}"
     rows = get(f"{WAYBACK}/cdx/search/cdx?url={quote(url)}&fl=timestamp&filter=statuscode:200&output=json")
     rows = json.loads(rows or b"[]")[1:]
     if not rows:
-        return None, None
-    ts = rows[-1][0]
-    html = get(f"{WAYBACK}/web/{ts}id_/https://{url}")
-    time.sleep(1.5)  # be gentle with the archive
+        return None, None, None
+    ts, first = rows[-1][0], rows[0][0]
+    if page.exists():
+        html = page.read_bytes()
+    else:
+        html = get(f"{WAYBACK}/web/{ts}id_/https://{url}")
+        time.sleep(1.5)  # be gentle with the archive
     if not html:
-        return None, None
+        return None, None, None
     page.write_bytes(html)
-    meta.write_text(json.dumps({"ts": ts, "path": path}))
-    return ts, html
+    meta.write_text(json.dumps({"ts": ts, "first": first, "path": path}))
+    return ts, first, html
 
 
 def take_maths(root):
@@ -102,6 +109,23 @@ def take_maths(root):
             holder = root.new_string(token)
         (m.find_parent("div", class_="wp-block-math") or m).replace_with(holder)
     return maths
+
+
+def take_videos(root):
+    """Swap each embedded YouTube player for a placeholder; return Blowfish's lightweight youtubeLite shortcode
+    for each. The old site lazy-loaded embeds, so the address may sit in data-litespeed-src or data-src."""
+    videos = []
+    for fr in root.find_all("iframe"):
+        src = fr.get("data-litespeed-src") or fr.get("data-src") or fr.get("src") or ""
+        m = re.search(r"youtube(?:-nocookie)?\.com/embed/([\w-]{11})", src)
+        if not m:
+            continue
+        label = (fr.get("title") or "YouTube video").replace('"', "'")
+        videos.append(f'{{{{< youtubeLite id="{m[1]}" label="{label}" >}}}}')
+        holder = root.new_tag("p")
+        holder.string = f"WPVIDEO{len(videos) - 1}X"
+        (fr.find_parent("figure") or fr).replace_with(holder)
+    return videos
 
 
 def tidy(root):
@@ -158,19 +182,27 @@ def first_paragraph(md, limit=200):
 class ArchiveImages:
     """Uploads archive first (via wp2hugo.ImageSource), then the Internet Archive's copy of the image."""
 
-    def __init__(self, local, ts):
-        self.local, self.ts, self.fetched = local, ts, 0
+    def __init__(self, local, ts, cache):
+        self.local, self.ts, self.cache, self.fetched = local, ts, cache, 0
 
     def fetch(self, url):
         hit = self.local.fetch(url)
         if (hit[0] and not hit[2]) or not url or "wp-content/uploads/" not in url:
             return hit  # a full-size local copy (or not an upload at all)
         orig = re.sub(r"^https?://[^/]+/web/\d+\w*_/", "", url)
-        data = get(f"{WAYBACK}/web/{self.ts}im_/{orig}")
-        time.sleep(1)
+        month, stem = w.upload_key(orig)
+        cached = self.cache / f"{(month or 'any').replace('/', '-')}_{stem}"
+        if cached.exists():  # downloaded on an earlier run (an empty file means the archive had nothing)
+            data = cached.read_bytes()
+        else:
+            try:
+                data = get(f"{WAYBACK}/web/{self.ts}im_/{orig}") or b""
+            except RuntimeError:
+                return hit  # the archive timed out: keep what we have; a re-run tries again
+            time.sleep(1)
+            cached.write_bytes(data if data.startswith(w.IMAGE_MAGIC) else b"")
         if data and data.startswith(w.IMAGE_MAGIC):
             self.fetched += 1
-            month, stem = w.upload_key(orig)
             ext = Path(unquote(orig).split("?")[0]).suffix.lower().replace(".jpeg", ".jpg") or ".png"
             return stem + ext, data, False
         return hit  # the local thumbnail, if there was one, beats nothing
@@ -181,22 +213,38 @@ def clean_slug(raw):
     return re.sub(r"[^a-z0-9-]+", "-", unquote(raw).lower()).strip("-") or raw
 
 
+def page_terms(soup, kind):
+    """Category or tag slugs WordPress put on the post's <article> (class="... category-personal tag-ladakh ...").
+    Sidebar widgets list every category on the site, so links elsewhere on the page are not used."""
+    art = soup.select_one("article.hentry, article[class*='post-']")
+    names = []
+    for c in (art.get("class") or []) if art else []:
+        if c.startswith(f"{kind}-"):
+            slug = clean_slug(c[len(kind) + 1:])
+            slug = SAME_AS.get(slug, slug)
+            if slug and slug not in names and slug != "uncategorized":
+                names.append(slug)
+    return names
+
+
 def tags_for(title, text):
     tags = [t for t, rx in TAG_WORDS.items() if re.search(rx, title, re.I) or len(re.findall(rx, text, re.I)) >= 3]
     return tags[:6]
 
 
-def recover(path, ts, html, out_root, local_images, known, slug_map):
+def recover(path, ts, html, out_root, local_images, known, slug_map, image_cache):
     soup = BeautifulSoup(html, "html.parser")
     og = {m.get("property"): m.get("content", "") for m in soup.select("meta[property]")}
     m = re.match(r"/wps/(\d{4})/(\d{2})/(\d{2})/([^/]+)/$", path)
     y, mo, d, raw_slug = m.groups()
     slug = clean_slug(raw_slug)
     title = (og.get("og:title") or (soup.title.string if soup.title else slug)).split(" – ")[0].strip()
-    images = ArchiveImages(local_images, ts)
+    images = ArchiveImages(local_images, ts, image_cache)
     post = w.Post(out_root / slug, images, known)
-    maths = take_maths(soup)
+    maths, videos = take_maths(soup), take_videos(soup)
     body = w.html_to_md(w.escape_shortcodes(body_html(soup)), post)
+    for i, shortcode in enumerate(videos):
+        body = body.replace(f"WPVIDEO{i}X", shortcode)
     for raw, clean in slug_map.items():  # links between recovered posts use the original (uncleaned) slug
         body = body.replace(f'"/posts/{raw}"', f'"/posts/{clean}"')
     for i, tex in enumerate(maths):
@@ -212,8 +260,8 @@ def recover(path, ts, html, out_root, local_images, known, slug_map):
         "date": f"{y}-{mo}-{d}T12:00:00Z",  # the archive keeps the day, not the time
         "slug": slug,
         "description": desc,
-        "categories": ["technical"],
-        "tags": tags_for(title, text),
+        "categories": page_terms(soup, "category") or ["technical"],
+        "tags": sorted(set(page_terms(soup, "tag")) | set(tags_for(title, text)))[:8],
         "aliases": sorted({path, f"/wps/{y}/{mo}/{d}/{unquote(raw_slug)}/"}),
         "recovered": f"Internet Archive snapshot {ts[:4]}-{ts[4:6]}-{ts[6:8]}",
     }
@@ -245,19 +293,28 @@ def main():
     paths = [p.strip() for p in Path(args.paths).read_text(encoding="utf-8").splitlines()
              if p.strip() and not p.startswith("#")]
     cache, out_root = Path(args.cache), Path(args.out)
-    cache.mkdir(parents=True, exist_ok=True)
+    (cache / "images").mkdir(parents=True, exist_ok=True)
     local = w.ImageSource(args.zip, args.images)
     raws = [unquote(p.rstrip("/").rsplit("/", 1)[-1]) for p in paths]
     slug_map = {r: clean_slug(r) for r in raws if clean_slug(r) != r}
     known = {p.name for p in out_root.iterdir() if p.is_dir()} | set(raws)
     report = ["# Recovered from the Internet Archive", ""]
     for path in paths:
-        ts, html = snapshot(path, cache)
+        try:
+            ts, first, html = snapshot(path, cache)
+        except RuntimeError as e:  # the archive times out now and then: skip, and a re-run picks it up from the cache
+            print(f"FAIL   {path}: {e}")
+            report.append(f"- **download failed, re-run to retry**: `{path}`")
+            continue
         if not html:
             print(f"none   {path}")
             report.append(f"- **not archived**: `{path}`")
             continue
-        slug, text, post, info = recover(path, ts, html, out_root, local, known, slug_map)
+        if first >= BREAK_IN:
+            print(f"SKIP   {path}: first archived {first[:8]}, after the break-in; could be the attacker's")
+            report.append(f"- **skipped, first archived after the break-in ({first[:8]})**: `{path}`")
+            continue
+        slug, text, post, info = recover(path, ts, html, out_root, local, known, slug_map, cache / "images")
         bundle = out_root / slug
         if (bundle / "index.md").exists() and not args.force:
             print(f"skip   {slug} (exists; use --force)")
@@ -269,7 +326,7 @@ def main():
         print(f"wrote  {slug}: {info['chars']} chars, {len(post.files)} images "
               f"({info['from_archive']} from the archive), {len(post.missing)} missing"
               + (f", {len(info['review'])} for privacy review" if info["review"] else ""))
-        report += [f"## {slug}  (snapshot {ts})", f"- text: {info['chars']} characters; images: {len(post.files)}, "
+        report += [f"## {slug}  (snapshot {ts}, first archived {first[:8]})", f"- text: {info['chars']} characters; images: {len(post.files)}, "
                    f"missing {len(post.missing)}", *[f"  - missing: `{u}`" for u in post.missing],
                    f"- privacy: {info['jwt']} JWT, {info['keys']} key, {info['pseudonym']} pseudonym replacements",
                    *[f"- review: {f}" for f in info["review"]], *[f"- override not matched: {u}" for u in info["unmatched"]],

@@ -4,7 +4,7 @@ date: "2025-02-07T12:00:00Z"
 slug: "forecasting-methods"
 description: "Forecasting methods are the techniques used to predict future outcomes based on past data and trends. They’re like having a crystal ball, but instead of magic, they use data and statistics!"
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["ba", "data-analytics", "forecast"]
 aliases: ["/wps/2025/02/07/forecasting-methods/"]
 recovered: "Internet Archive snapshot 2026-03-13"
 ---

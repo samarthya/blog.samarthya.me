@@ -3,8 +3,8 @@ title: "Two Students, Two Talents: The Story of How AI Learns Language"
 date: "2026-01-31T12:00:00Z"
 slug: "two-students-two-talents-the-story-of-how-ai-learns-language"
 description: "Remember how we compared a language model to an advanced autocomplete system? Well, here’s where the story gets interesting. Not all language models learn the same way."
-categories: ["technical"]
-tags: ["ai"]
+categories: ["ai", "technical"]
+tags: ["ai", "ml", "transformer"]
 aliases: ["/wps/2026/01/31/two-students-two-talents-the-story-of-how-ai-learns-language/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---

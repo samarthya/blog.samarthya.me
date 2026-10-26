@@ -3,8 +3,8 @@ title: "The Core Divide"
 date: "2025-10-10T12:00:00Z"
 slug: "the-core-divide"
 description: "At the heart of machine learning, algorithms learn from data. The key distinction between supervised and unsupervised learning is the type of data used for training."
-categories: ["technical"]
-tags: ["ml", "data"]
+categories: ["ml", "technical"]
+tags: ["ai", "data", "ml"]
 aliases: ["/wps/2025/10/10/the-core-divide/"]
 recovered: "Internet Archive snapshot 2026-05-17"
 ---

@@ -196,4 +196,4 @@ what agents wrote to the boardagents' internal reasoning
 Log excerpts are reproduced from METR's public report, *"Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident"* (Aug 26, 2026). In the source, {curly braces} mark paraphrased reasoning and [brackets] mark information redacted for IP. The narration here is an original retelling; the logs are a curated selection, not the full record.
 
 Read the report → [metr.org](https://metr.org/hugging-face-incident-report-aug-2026.pdf)  
-The full-length retelling → [blog.samarthya.me]({{< relref "/posts/the-ghost-board-how-1200-ai-agents-who-were-never-supposed-to-meet-built-a-secret-society-and-hacked-hugging-face" >}})
+The full-length retelling → [blog.samarthya.me]({{< relref "/posts/the-ghost-board" >}})

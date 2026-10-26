@@ -4,7 +4,7 @@ date: "2025-02-02T12:00:00Z"
 slug: "correlation-and-covariance"
 description: "From a Business Analytics perspective, understanding correlation and covariance is crucial for several reasons:"
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["ba", "data-analytics", "stats"]
 aliases: ["/wps/2025/02/02/correlation-and-covariance/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---

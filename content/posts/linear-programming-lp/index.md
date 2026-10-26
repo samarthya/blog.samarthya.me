@@ -4,7 +4,7 @@ date: "2025-02-14T12:00:00Z"
 slug: "linear-programming-lp"
 description: "Linear programming is a mathematical technique used to find the best possible outcome (maximum profit or minimum cost) in a situation where the relationships between the factors involved are linear."
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["ba", "data-analytics"]
 aliases: ["/wps/2025/02/14/linear-programming-lp/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---

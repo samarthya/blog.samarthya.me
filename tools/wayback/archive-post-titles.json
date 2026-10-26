@@ -1,0 +1,2396 @@
+[
+  {
+    "date": "2019/02/21",
+    "slug": "bienvenue",
+    "title": "Bienvenue",
+    "url": "https://blog.samarthya.me/wps/2019/02/21/bienvenue/",
+    "capture": "https://web.archive.org/web/20220117044133id_/https://blog.samarthya.me/wps/2019/02/21/bienvenue/",
+    "timestamp": "20220117044133",
+    "local_folder": false
+  },
+  {
+    "date": "2019/02/22",
+    "slug": "managers-dillema",
+    "title": "Manager’s dilemma",
+    "url": "https://blog.samarthya.me/wps/2019/02/22/managers-dillema/",
+    "capture": "https://web.archive.org/web/20231002214359id_/https://blog.samarthya.me/wps/2019/02/22/managers-dillema/",
+    "timestamp": "20231002214359",
+    "local_folder": false
+  },
+  {
+    "date": "2019/02/24",
+    "slug": "saturday-morning",
+    "title": "Saturday morning",
+    "url": "https://blog.samarthya.me/wps/2019/02/24/saturday-morning/",
+    "capture": "https://web.archive.org/web/20230208131556id_/https://blog.samarthya.me/wps/2019/02/24/saturday-morning/",
+    "timestamp": "20230208131556",
+    "local_folder": false
+  },
+  {
+    "date": "2019/02/25",
+    "slug": "how-much-more-can-you-take",
+    "title": "How much more can you take?",
+    "url": "https://blog.samarthya.me/wps/2019/02/25/how-much-more-can-you-take/",
+    "capture": "https://web.archive.org/web/20220117031922id_/https://blog.samarthya.me/wps/2019/02/25/how-much-more-can-you-take/",
+    "timestamp": "20220117031922",
+    "local_folder": false
+  },
+  {
+    "date": "2019/02/25",
+    "slug": "what-did-the-horse-say",
+    "title": "What did the horse say?",
+    "url": "https://blog.samarthya.me/wps/2019/02/25/what-did-the-horse-say/",
+    "capture": "https://web.archive.org/web/20220117042611id_/https://blog.samarthya.me/wps/2019/02/25/what-did-the-horse-say/",
+    "timestamp": "20220117042611",
+    "local_folder": false
+  },
+  {
+    "date": "2019/02/26",
+    "slug": "serverless-patterns",
+    "title": "Serverless patterns",
+    "url": "https://blog.samarthya.me/wps/2019/02/26/serverless-patterns/",
+    "capture": "https://web.archive.org/web/20230208135858id_/https://blog.samarthya.me/wps/2019/02/26/serverless-patterns/",
+    "timestamp": "20230208135858",
+    "local_folder": false
+  },
+  {
+    "date": "2019/02/28",
+    "slug": "creating-your-app-with-vuejs",
+    "title": "Creating your app with VUEJS",
+    "url": "https://blog.samarthya.me/wps/2019/02/28/creating-your-app-with-vuejs/",
+    "capture": "https://web.archive.org/web/20230208131059id_/https://blog.samarthya.me/wps/2019/02/28/creating-your-app-with-vuejs/",
+    "timestamp": "20230208131059",
+    "local_folder": false
+  },
+  {
+    "date": "2019/03/08",
+    "slug": "css-and-html-to-dom",
+    "title": "CSS and HTML to dom.",
+    "url": "https://blog.samarthya.me/wps/2019/03/08/css-and-html-to-dom/",
+    "capture": "https://web.archive.org/web/20220117045938id_/https://blog.samarthya.me/wps/2019/03/08/css-and-html-to-dom/",
+    "timestamp": "20220117045938",
+    "local_folder": false
+  },
+  {
+    "date": "2019/03/15",
+    "slug": "css-continued",
+    "title": "CSS continued",
+    "url": "https://blog.samarthya.me/wps/2019/03/15/css-continued/",
+    "capture": "https://web.archive.org/web/20211129111719id_/https://blog.samarthya.me/wps/2019/03/15/css-continued/",
+    "timestamp": "20211129111719",
+    "local_folder": false
+  },
+  {
+    "date": "2019/04/05",
+    "slug": "locale-centos",
+    "title": "Locale – CentOS",
+    "url": "https://blog.samarthya.me/wps/2019/04/05/locale-centos/",
+    "capture": "https://web.archive.org/web/20220117045837id_/https://blog.samarthya.me/wps/2019/04/05/locale-centos/",
+    "timestamp": "20220117045837",
+    "local_folder": false
+  },
+  {
+    "date": "2019/04/24",
+    "slug": "spring-data-ldap",
+    "title": "Spring Data-LDAP",
+    "url": "https://blog.samarthya.me/wps/2019/04/24/spring-data-ldap/",
+    "capture": "https://web.archive.org/web/20220518225949id_/https://blog.samarthya.me/wps/2019/04/24/spring-data-ldap/",
+    "timestamp": "20220518225949",
+    "local_folder": false
+  },
+  {
+    "date": "2019/04/24",
+    "slug": "spring-data-ldap-part-2",
+    "title": "Spring Data-Ldap: Part 2",
+    "url": "https://blog.samarthya.me/wps/2019/04/24/spring-data-ldap-part-2/",
+    "capture": "https://web.archive.org/web/20220117035139id_/https://blog.samarthya.me/wps/2019/04/24/spring-data-ldap-part-2/",
+    "timestamp": "20220117035139",
+    "local_folder": false
+  },
+  {
+    "date": "2019/09/17",
+    "slug": "security-assertion-markup-language",
+    "title": "Security Assertion Markup Language",
+    "url": "https://blog.samarthya.me/wps/2019/09/17/security-assertion-markup-language/",
+    "capture": "https://web.archive.org/web/20211129114739id_/https://blog.samarthya.me/wps/2019/09/17/security-assertion-markup-language/",
+    "timestamp": "20211129114739",
+    "local_folder": false
+  },
+  {
+    "date": "2019/09/18",
+    "slug": "ngrx-state-management-for-angular",
+    "title": "NGRX – State management for Angular.",
+    "url": "https://blog.samarthya.me/wps/2019/09/18/ngrx-state-management-for-angular/",
+    "capture": "https://web.archive.org/web/20211129121221id_/https://blog.samarthya.me/wps/2019/09/18/ngrx-state-management-for-angular/",
+    "timestamp": "20211129121221",
+    "local_folder": false
+  },
+  {
+    "date": "2019/11/01",
+    "slug": "mysql-mariadb-on-mac",
+    "title": "MySQL/MariaDB on MAC",
+    "url": "https://blog.samarthya.me/wps/2019/11/01/mysql-mariadb-on-mac/",
+    "capture": "https://web.archive.org/web/20220117045454id_/https://blog.samarthya.me/wps/2019/11/01/mysql-mariadb-on-mac/",
+    "timestamp": "20220117045454",
+    "local_folder": false
+  },
+  {
+    "date": "2019/12/13",
+    "slug": "optimizing-in-js",
+    "title": "Optimizing in JS",
+    "url": "https://blog.samarthya.me/wps/2019/12/13/optimizing-in-js/",
+    "capture": "https://web.archive.org/web/20220518220215id_/https://blog.samarthya.me/wps/2019/12/13/optimizing-in-js/",
+    "timestamp": "20220518220215",
+    "local_folder": false
+  },
+  {
+    "date": "2019/12/15",
+    "slug": "js-reduce-and-foreach",
+    "title": "Js Reduce And Foreach [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2019/12/15/js-reduce-and-foreach/",
+    "capture": "https://web.archive.org/web/20220518223946id_/https://blog.samarthya.me/wps/2019/12/15/js-reduce-and-foreach/",
+    "timestamp": "20220518223946",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/03",
+    "slug": "concurrency-golang",
+    "title": "Concurrency Golang [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/03/concurrency-golang/",
+    "capture": "https://web.archive.org/web/20220117043800id_/https://blog.samarthya.me/wps/2020/01/03/concurrency-golang/",
+    "timestamp": "20220117043800",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/09",
+    "slug": "asynchronous",
+    "title": "Asynchronous [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/09/asynchronous/",
+    "capture": "https://web.archive.org/web/20211129113307id_/https://blog.samarthya.me/wps/2020/01/09/asynchronous/",
+    "timestamp": "20211129113307",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/10",
+    "slug": "maths-problem-in-js",
+    "title": "Maths problem in JS",
+    "url": "https://blog.samarthya.me/wps/2020/01/10/maths-problem-in-js/",
+    "capture": "https://web.archive.org/web/20220117040514id_/https://blog.samarthya.me/wps/2020/01/10/maths-problem-in-js/",
+    "timestamp": "20220117040514",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/11",
+    "slug": "handshake-js",
+    "title": "Handshake Js [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/11/handshake-js/",
+    "capture": "https://web.archive.org/web/20211129104457id_/https://blog.samarthya.me/wps/2020/01/11/handshake-js/",
+    "timestamp": "20211129104457",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/17",
+    "slug": "house-that-jack-built",
+    "title": "House That Jack Built [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/17/house-that-jack-built/",
+    "capture": "https://web.archive.org/web/20220117034457id_/https://blog.samarthya.me/wps/2020/01/17/house-that-jack-built/",
+    "timestamp": "20220117034457",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/20",
+    "slug": "never-be",
+    "title": "Never Be [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/20/never-be/",
+    "capture": "https://web.archive.org/web/20211129113057id_/https://blog.samarthya.me/wps/2020/01/20/never-be/",
+    "timestamp": "20211129113057",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/23",
+    "slug": "securing-elastic",
+    "title": "Securing Elastic [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/23/securing-elastic/",
+    "capture": "https://web.archive.org/web/20220117044209id_/https://blog.samarthya.me/wps/2020/01/23/securing-elastic/",
+    "timestamp": "20220117044209",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/24",
+    "slug": "metric-beat",
+    "title": "Metric Beat [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/24/metric-beat/",
+    "capture": "https://web.archive.org/web/20220518225530id_/https://blog.samarthya.me/wps/2020/01/24/metric-beat/",
+    "timestamp": "20220518225530",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/26",
+    "slug": "nuil-intf",
+    "title": "Nuil Intf [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/26/nuil-intf/",
+    "capture": "https://web.archive.org/web/20220518230640id_/https://blog.samarthya.me/wps/2020/01/26/nuil-intf/",
+    "timestamp": "20220518230640",
+    "local_folder": false
+  },
+  {
+    "date": "2020/01/30",
+    "slug": "pangram",
+    "title": "Pangram [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/01/30/pangram/",
+    "capture": "https://web.archive.org/web/20220518230343id_/https://blog.samarthya.me/wps/2020/01/30/pangram/",
+    "timestamp": "20220518230343",
+    "local_folder": true
+  },
+  {
+    "date": "2020/02/10",
+    "slug": "golang-proteins-rna",
+    "title": "Golang Proteins Rna [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/02/10/golang-proteins-rna/",
+    "capture": "https://web.archive.org/web/20220518230559id_/https://blog.samarthya.me/wps/2020/02/10/golang-proteins-rna/",
+    "timestamp": "20220518230559",
+    "local_folder": true
+  },
+  {
+    "date": "2020/02/10",
+    "slug": "happy-face",
+    "title": "सोऽहमस्मि",
+    "url": "https://blog.samarthya.me/wps/2020/02/10/happy-face/",
+    "capture": "https://web.archive.org/web/20221205010400id_/https://blog.samarthya.me/wps/2020/02/10/happy-face/",
+    "timestamp": "20221205010400",
+    "local_folder": false
+  },
+  {
+    "date": "2020/02/11",
+    "slug": "siem-security-information-and-event-management",
+    "title": "SIEM: Security Information and Event Management.",
+    "url": "https://blog.samarthya.me/wps/2020/02/11/siem-security-information-and-event-management/",
+    "capture": "https://web.archive.org/web/20220808122517id_/https://blog.samarthya.me/wps/2020/02/11/siem-security-information-and-event-management/",
+    "timestamp": "20220808122517",
+    "local_folder": true
+  },
+  {
+    "date": "2020/02/13",
+    "slug": "authentication-elastic",
+    "title": "Authentication: Elastic",
+    "url": "https://blog.samarthya.me/wps/2020/02/13/authentication-elastic/",
+    "capture": "https://web.archive.org/web/20220117032528id_/https://blog.samarthya.me/wps/2020/02/13/authentication-elastic/",
+    "timestamp": "20220117032528",
+    "local_folder": true
+  },
+  {
+    "date": "2020/02/13",
+    "slug": "sieve-of-eratosthenes",
+    "title": "Sieve of Eratosthenes",
+    "url": "https://blog.samarthya.me/wps/2020/02/13/sieve-of-eratosthenes/",
+    "capture": "https://web.archive.org/web/20211129122242id_/https://blog.samarthya.me/wps/2020/02/13/sieve-of-eratosthenes/",
+    "timestamp": "20211129122242",
+    "local_folder": false
+  },
+  {
+    "date": "2020/02/15",
+    "slug": "package-string",
+    "title": "Package String",
+    "url": "https://blog.samarthya.me/wps/2020/02/15/package-string/",
+    "capture": "https://web.archive.org/web/20220117033449id_/https://blog.samarthya.me/wps/2020/02/15/package-string/",
+    "timestamp": "20220117033449",
+    "local_folder": true
+  },
+  {
+    "date": "2020/02/21",
+    "slug": "elasticsearch-v7-6",
+    "title": "Elasticsearch V7 6 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/02/21/elasticsearch-v7-6/",
+    "capture": "https://web.archive.org/web/20230208133434id_/https://blog.samarthya.me/wps/2020/02/21/elasticsearch-v7-6/",
+    "timestamp": "20230208133434",
+    "local_folder": true
+  },
+  {
+    "date": "2020/02/24",
+    "slug": "elasticsearch-v7-6-2",
+    "title": "Elasticsearch V7 6 2 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/02/24/elasticsearch-v7-6-2/",
+    "capture": "https://web.archive.org/web/20230208131343id_/https://blog.samarthya.me/wps/2020/02/24/elasticsearch-v7-6-2/",
+    "timestamp": "20230208131343",
+    "local_folder": false
+  },
+  {
+    "date": "2020/02/26",
+    "slug": "snapshot-restore",
+    "title": "Snapshot & Restore",
+    "url": "https://blog.samarthya.me/wps/2020/02/26/snapshot-restore/",
+    "capture": "https://web.archive.org/web/20220808134125id_/https://blog.samarthya.me/wps/2020/02/26/snapshot-restore/",
+    "timestamp": "20220808134125",
+    "local_folder": true
+  },
+  {
+    "date": "2020/03/25",
+    "slug": "securing-elasticsearch",
+    "title": "Securing Elasticsearch",
+    "url": "https://blog.samarthya.me/wps/2020/03/25/securing-elasticsearch/",
+    "capture": "https://web.archive.org/web/20220808135051id_/https://blog.samarthya.me/wps/2020/03/25/securing-elasticsearch/",
+    "timestamp": "20220808135051",
+    "local_folder": false
+  },
+  {
+    "date": "2020/03/29",
+    "slug": "say-a-number",
+    "title": "Say a Number",
+    "url": "https://blog.samarthya.me/wps/2020/03/29/say-a-number/",
+    "capture": "https://web.archive.org/web/20240913103320id_/https://blog.samarthya.me/wps/2020/03/29/say-a-number/",
+    "timestamp": "20240913103320",
+    "local_folder": false
+  },
+  {
+    "date": "2020/03/29",
+    "slug": "text-elastic",
+    "title": "Text Elastic [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/03/29/text-elastic/",
+    "capture": "https://web.archive.org/web/20240913111147id_/https://blog.samarthya.me/wps/2020/03/29/text-elastic/",
+    "timestamp": "20240913111147",
+    "local_folder": true
+  },
+  {
+    "date": "2020/04/07",
+    "slug": "kubectl",
+    "title": "Kubectl [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/04/07/kubectl/",
+    "capture": "https://web.archive.org/web/20220808141120id_/https://blog.samarthya.me/wps/2020/04/07/kubectl/",
+    "timestamp": "20220808141120",
+    "local_folder": true
+  },
+  {
+    "date": "2020/04/23",
+    "slug": "index-modules",
+    "title": "Index Modules",
+    "url": "https://blog.samarthya.me/wps/2020/04/23/index-modules/",
+    "capture": "https://web.archive.org/web/20220808135420id_/https://blog.samarthya.me/wps/2020/04/23/index-modules/",
+    "timestamp": "20220808135420",
+    "local_folder": false
+  },
+  {
+    "date": "2020/04/23",
+    "slug": "pipeline-_ingest-api",
+    "title": "Pipeline: _ingest API",
+    "url": "https://blog.samarthya.me/wps/2020/04/23/pipeline-_ingest-api/",
+    "capture": "https://web.archive.org/web/20220808140617id_/https://blog.samarthya.me/wps/2020/04/23/pipeline-_ingest-api/",
+    "timestamp": "20220808140617",
+    "local_folder": true
+  },
+  {
+    "date": "2020/04/26",
+    "slug": "amy-rose",
+    "title": "Amy rose.",
+    "url": "https://blog.samarthya.me/wps/2020/04/26/amy-rose/",
+    "capture": "https://web.archive.org/web/20211017022316id_/https://blog.samarthya.me/wps/2020/04/26/amy-rose/",
+    "timestamp": "20211017022316",
+    "local_folder": false
+  },
+  {
+    "date": "2020/04/26",
+    "slug": "my-lil-one",
+    "title": "My li’l one",
+    "url": "https://blog.samarthya.me/wps/2020/04/26/my-lil-one/",
+    "capture": "https://web.archive.org/web/20211017030723id_/https://blog.samarthya.me/wps/2020/04/26/my-lil-one/",
+    "timestamp": "20211017030723",
+    "local_folder": true
+  },
+  {
+    "date": "2020/05/02",
+    "slug": "analyze-_analyze-api",
+    "title": "Analyze: _analyze api",
+    "url": "https://blog.samarthya.me/wps/2020/05/02/analyze-_analyze-api/",
+    "capture": "https://web.archive.org/web/20230208125141id_/https://blog.samarthya.me/wps/2020/05/02/analyze-_analyze-api/",
+    "timestamp": "20230208125141",
+    "local_folder": true
+  },
+  {
+    "date": "2020/05/11",
+    "slug": "golang-simplecipher",
+    "title": "GoLang: SimpleCipher",
+    "url": "https://blog.samarthya.me/wps/2020/05/11/golang-simplecipher/",
+    "capture": "https://web.archive.org/web/20241006154532id_/https://blog.samarthya.me/wps/2020/05/11/golang-simplecipher/",
+    "timestamp": "20241006154532",
+    "local_folder": true
+  },
+  {
+    "date": "2020/05/12",
+    "slug": "golang-smiplecipher-v2-0",
+    "title": "GoLang: SmipleCipher v2.0",
+    "url": "https://blog.samarthya.me/wps/2020/05/12/golang-smiplecipher-v2-0/",
+    "capture": "https://web.archive.org/web/20241006155409id_/https://blog.samarthya.me/wps/2020/05/12/golang-smiplecipher-v2-0/",
+    "timestamp": "20241006155409",
+    "local_folder": true
+  },
+  {
+    "date": "2020/05/15",
+    "slug": "webservice-in-golang",
+    "title": "WebService: In golang",
+    "url": "https://blog.samarthya.me/wps/2020/05/15/webservice-in-golang/",
+    "capture": "https://web.archive.org/web/20241006154443id_/https://blog.samarthya.me/wps/2020/05/15/webservice-in-golang/",
+    "timestamp": "20241006154443",
+    "local_folder": true
+  },
+  {
+    "date": "2020/05/19",
+    "slug": "go-helpful-links",
+    "title": "Go: Helpful links",
+    "url": "https://blog.samarthya.me/wps/2020/05/19/go-helpful-links/",
+    "capture": "https://web.archive.org/web/20241006161257id_/https://blog.samarthya.me/wps/2020/05/19/go-helpful-links/",
+    "timestamp": "20241006161257",
+    "local_folder": true
+  },
+  {
+    "date": "2020/05/20",
+    "slug": "go-webservice-postget",
+    "title": "Go: WebService [POST][GET]",
+    "url": "https://blog.samarthya.me/wps/2020/05/20/go-webservice-postget/",
+    "capture": "https://web.archive.org/web/20220117042947id_/https://blog.samarthya.me/wps/2020/05/20/go-webservice-postget/",
+    "timestamp": "20220117042947",
+    "local_folder": true
+  },
+  {
+    "date": "2020/06/05",
+    "slug": "ldap-realm-in-elasticsearch",
+    "title": "LDAP Realm in Elasticsearch",
+    "url": "https://blog.samarthya.me/wps/2020/06/05/ldap-realm-in-elasticsearch/",
+    "capture": "https://web.archive.org/web/20250519142831id_/https://blog.samarthya.me/wps/2020/06/05/ldap-realm-in-elasticsearch/",
+    "timestamp": "20250519142831",
+    "local_folder": true
+  },
+  {
+    "date": "2020/06/14",
+    "slug": "a-different-take-siem",
+    "title": "A different take: SIEM",
+    "url": "https://blog.samarthya.me/wps/2020/06/14/a-different-take-siem/",
+    "capture": "https://web.archive.org/web/20220117040736id_/https://blog.samarthya.me/wps/2020/06/14/a-different-take-siem/",
+    "timestamp": "20220117040736",
+    "local_folder": true
+  },
+  {
+    "date": "2020/06/17",
+    "slug": "deviln-the-camera",
+    "title": "Devil’n the camera",
+    "url": "https://blog.samarthya.me/wps/2020/06/17/deviln-the-camera/",
+    "capture": "https://web.archive.org/web/20211129104949id_/https://blog.samarthya.me/wps/2020/06/17/deviln-the-camera/",
+    "timestamp": "20211129104949",
+    "local_folder": false
+  },
+  {
+    "date": "2020/07/11",
+    "slug": "docker-ubuntu-a-refresher",
+    "title": "Docker – Ubuntu a refresher",
+    "url": "https://blog.samarthya.me/wps/2020/07/11/docker-ubuntu-a-refresher/",
+    "capture": "https://web.archive.org/web/20220117032613id_/https://blog.samarthya.me/wps/2020/07/11/docker-ubuntu-a-refresher/",
+    "timestamp": "20220117032613",
+    "local_folder": false
+  },
+  {
+    "date": "2020/07/15",
+    "slug": "dockerfile",
+    "title": "Dockerfile",
+    "url": "https://blog.samarthya.me/wps/2020/07/15/dockerfile/",
+    "capture": "https://web.archive.org/web/20220117043059id_/https://blog.samarthya.me/wps/2020/07/15/dockerfile/",
+    "timestamp": "20220117043059",
+    "local_folder": false
+  },
+  {
+    "date": "2020/07/29",
+    "slug": "docker-registry",
+    "title": "Docker Registry",
+    "url": "https://blog.samarthya.me/wps/2020/07/29/docker-registry/",
+    "capture": "https://web.archive.org/web/20211129113019id_/https://blog.samarthya.me/wps/2020/07/29/docker-registry/",
+    "timestamp": "20211129113019",
+    "local_folder": true
+  },
+  {
+    "date": "2020/07/30",
+    "slug": "storage-drivers",
+    "title": "Storage Drivers",
+    "url": "https://blog.samarthya.me/wps/2020/07/30/storage-drivers/",
+    "capture": "https://web.archive.org/web/20211129111112id_/https://blog.samarthya.me/wps/2020/07/30/storage-drivers/",
+    "timestamp": "20211129111112",
+    "local_folder": true
+  },
+  {
+    "date": "2020/07/31",
+    "slug": "shared-volume",
+    "title": "Shared Volume [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/07/31/shared-volume/",
+    "capture": "https://web.archive.org/web/20211129105414id_/https://blog.samarthya.me/wps/2020/07/31/shared-volume/",
+    "timestamp": "20211129105414",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/01",
+    "slug": "timeseries-index-management-ilm",
+    "title": "Timeseries Index Management Ilm [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/01/timeseries-index-management-ilm/",
+    "capture": "https://web.archive.org/web/20220117040700id_/https://blog.samarthya.me/wps/2020/08/01/timeseries-index-management-ilm/",
+    "timestamp": "20220117040700",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/04",
+    "slug": "docker-network",
+    "title": "Docker Network [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/04/docker-network/",
+    "capture": "https://web.archive.org/web/20230208144203id_/https://blog.samarthya.me/wps/2020/08/04/docker-network/",
+    "timestamp": "20230208144203",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/07",
+    "slug": "performance-tweaks-kibana",
+    "title": "Performance Tweaks: Kibana",
+    "url": "https://blog.samarthya.me/wps/2020/08/07/performance-tweaks-kibana/",
+    "capture": "https://web.archive.org/web/20220117034300id_/https://blog.samarthya.me/wps/2020/08/07/performance-tweaks-kibana/",
+    "timestamp": "20220117034300",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/13",
+    "slug": "dockerizd-service",
+    "title": "Dockerizd Service [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/13/dockerizd-service/",
+    "capture": "https://web.archive.org/web/20211129105503id_/https://blog.samarthya.me/wps/2020/08/13/dockerizd-service/",
+    "timestamp": "20211129105503",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/17",
+    "slug": "k8s",
+    "title": "K8s [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/17/k8s/",
+    "capture": "https://web.archive.org/web/20220117033029id_/https://blog.samarthya.me/wps/2020/08/17/k8s/",
+    "timestamp": "20220117033029",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/21",
+    "slug": "configmaps-k8s-2",
+    "title": "Configmaps K8s 2 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/21/configmaps-k8s-2/",
+    "capture": "https://web.archive.org/web/20241006160550id_/https://blog.samarthya.me/wps/2020/08/21/configmaps-k8s-2/",
+    "timestamp": "20241006160550",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/21",
+    "slug": "services-k8s",
+    "title": "Services K8s [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/21/services-k8s/",
+    "capture": "https://web.archive.org/web/20241006153911id_/https://blog.samarthya.me/wps/2020/08/21/services-k8s/",
+    "timestamp": "20241006153911",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/22",
+    "slug": "probes-k8s",
+    "title": "Probes: K8S",
+    "url": "https://blog.samarthya.me/wps/2020/08/22/probes-k8s/",
+    "capture": "https://web.archive.org/web/20240913113635id_/https://blog.samarthya.me/wps/2020/08/22/probes-k8s/",
+    "timestamp": "20240913113635",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/24",
+    "slug": "deployments-k8s",
+    "title": "Deployments: K8S",
+    "url": "https://blog.samarthya.me/wps/2020/08/24/deployments-k8s/",
+    "capture": "https://web.archive.org/web/20230208124220id_/https://blog.samarthya.me/wps/2020/08/24/deployments-k8s/",
+    "timestamp": "20230208124220",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/26",
+    "slug": "helpful-links-for-k8s",
+    "title": "Helpful Links For K8s [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/26/helpful-links-for-k8s/",
+    "capture": "https://web.archive.org/web/20250323082713id_/https://blog.samarthya.me/wps/2020/08/26/helpful-links-for-k8s/",
+    "timestamp": "20250323082713",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/27",
+    "slug": "multicontainer-k8s",
+    "title": "Multicontainer K8s [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/27/multicontainer-k8s/",
+    "capture": "https://web.archive.org/web/20241006173930id_/https://blog.samarthya.me/wps/2020/08/27/multicontainer-k8s/",
+    "timestamp": "20241006173930",
+    "local_folder": true
+  },
+  {
+    "date": "2020/08/31",
+    "slug": "playground-k8s",
+    "title": "Playground K8s [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/08/31/playground-k8s/",
+    "capture": "https://web.archive.org/web/20250323073411id_/https://blog.samarthya.me/wps/2020/08/31/playground-k8s/",
+    "timestamp": "20250323073411",
+    "local_folder": true
+  },
+  {
+    "date": "2020/09/02",
+    "slug": "helm-charts-packaging",
+    "title": "Helm Charts Packaging [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/09/02/helm-charts-packaging/",
+    "capture": "https://web.archive.org/web/20221205003114id_/https://blog.samarthya.me/wps/2020/09/02/helm-charts-packaging/",
+    "timestamp": "20221205003114",
+    "local_folder": true
+  },
+  {
+    "date": "2020/09/14",
+    "slug": "writing-charts",
+    "title": "Writing Charts [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/09/14/writing-charts/",
+    "capture": "https://web.archive.org/web/20221205011216id_/https://blog.samarthya.me/wps/2020/09/14/writing-charts/",
+    "timestamp": "20221205011216",
+    "local_folder": true
+  },
+  {
+    "date": "2020/09/20",
+    "slug": "business-agility-safe5",
+    "title": "Business Agility Safe5 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/09/20/business-agility-safe5/",
+    "capture": "https://web.archive.org/web/20220117032054id_/https://blog.samarthya.me/wps/2020/09/20/business-agility-safe5/",
+    "timestamp": "20220117032054",
+    "local_folder": true
+  },
+  {
+    "date": "2020/09/30",
+    "slug": "systemd-mother-of-all-processes",
+    "title": "Systemd Mother Of All Processes [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/09/30/systemd-mother-of-all-processes/",
+    "capture": "https://web.archive.org/web/20221205020207id_/https://blog.samarthya.me/wps/2020/09/30/systemd-mother-of-all-processes/",
+    "timestamp": "20221205020207",
+    "local_folder": true
+  },
+  {
+    "date": "2020/10/06",
+    "slug": "race-condition",
+    "title": "Race Condition [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/10/06/race-condition/",
+    "capture": "https://web.archive.org/web/20240920205114id_/https://blog.samarthya.me/wps/2020/10/06/race-condition/",
+    "timestamp": "20240920205114",
+    "local_folder": true
+  },
+  {
+    "date": "2020/10/13",
+    "slug": "linux-utils",
+    "title": "Linux Utils",
+    "url": "https://blog.samarthya.me/wps/2020/10/13/linux-utils/",
+    "capture": "https://web.archive.org/web/20220117035215id_/https://blog.samarthya.me/wps/2020/10/13/linux-utils/",
+    "timestamp": "20220117035215",
+    "local_folder": true
+  },
+  {
+    "date": "2020/10/17",
+    "slug": "kernel-mode",
+    "title": "Kernel Mode [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/10/17/kernel-mode/",
+    "capture": "https://web.archive.org/web/20211129122601id_/https://blog.samarthya.me/wps/2020/10/17/kernel-mode/",
+    "timestamp": "20211129122601",
+    "local_folder": true
+  },
+  {
+    "date": "2020/10/20",
+    "slug": "ps-process-status",
+    "title": "PS: Process Status",
+    "url": "https://blog.samarthya.me/wps/2020/10/20/ps-process-status/",
+    "capture": "https://web.archive.org/web/20211129112000id_/https://blog.samarthya.me/wps/2020/10/20/ps-process-status/",
+    "timestamp": "20211129112000",
+    "local_folder": true
+  },
+  {
+    "date": "2020/11/12",
+    "slug": "java-streams",
+    "title": "Java Streams",
+    "url": "https://blog.samarthya.me/wps/2020/11/12/java-streams/",
+    "capture": "https://web.archive.org/web/20211017022000id_/https://blog.samarthya.me/wps/2020/11/12/java-streams/",
+    "timestamp": "20211017022000",
+    "local_folder": true
+  },
+  {
+    "date": "2020/11/13",
+    "slug": "javastream-characters",
+    "title": "Javastream Characters [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2020/11/13/javastream-characters/",
+    "capture": "https://web.archive.org/web/20211017032957id_/https://blog.samarthya.me/wps/2020/11/13/javastream-characters/",
+    "timestamp": "20211017032957",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/04",
+    "slug": "consumer",
+    "title": "Consumer <Intf>",
+    "url": "https://blog.samarthya.me/wps/2020/12/04/consumer/",
+    "capture": "https://web.archive.org/web/20211129123438id_/https://blog.samarthya.me/wps/2020/12/04/consumer/",
+    "timestamp": "20211129123438",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/06",
+    "slug": "building-a-tree-from-traversal",
+    "title": "Building a tree from Traversal.",
+    "url": "https://blog.samarthya.me/wps/2020/12/06/building-a-tree-from-traversal/",
+    "capture": "https://web.archive.org/web/20211129122822id_/https://blog.samarthya.me/wps/2020/12/06/building-a-tree-from-traversal/",
+    "timestamp": "20211129122822",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/09",
+    "slug": "controller-manager-unhealthy",
+    "title": "controller-manager #Unhealthy",
+    "url": "https://blog.samarthya.me/wps/2020/12/09/controller-manager-unhealthy/",
+    "capture": "https://web.archive.org/web/20220117035744id_/https://blog.samarthya.me/wps/2020/12/09/controller-manager-unhealthy/",
+    "timestamp": "20220117035744",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/09",
+    "slug": "metric-server",
+    "title": "Metric Server",
+    "url": "https://blog.samarthya.me/wps/2020/12/09/metric-server/",
+    "capture": "https://web.archive.org/web/20211129122637id_/https://blog.samarthya.me/wps/2020/12/09/metric-server/",
+    "timestamp": "20211129122637",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/15",
+    "slug": "nth-prime",
+    "title": "Nth Prime",
+    "url": "https://blog.samarthya.me/wps/2020/12/15/nth-prime/",
+    "capture": "https://web.archive.org/web/20211017040626id_/https://blog.samarthya.me/wps/2020/12/15/nth-prime/",
+    "timestamp": "20211017040626",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/16",
+    "slug": "fortune-v1-0",
+    "title": "Fortune v1.0",
+    "url": "https://blog.samarthya.me/wps/2020/12/16/fortune-v1-0/",
+    "capture": "https://web.archive.org/web/20211017041048id_/https://blog.samarthya.me/wps/2020/12/16/fortune-v1-0/",
+    "timestamp": "20211017041048",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/22",
+    "slug": "k8s-deployment",
+    "title": "K8S: Deployment",
+    "url": "https://blog.samarthya.me/wps/2020/12/22/k8s-deployment/",
+    "capture": "https://web.archive.org/web/20221005214731id_/https://blog.samarthya.me/wps/2020/12/22/k8s-deployment/",
+    "timestamp": "20221005214731",
+    "local_folder": true
+  },
+  {
+    "date": "2020/12/24",
+    "slug": "maven-lifecycles",
+    "title": "Maven: Lifecycles",
+    "url": "https://blog.samarthya.me/wps/2020/12/24/maven-lifecycles/",
+    "capture": "https://web.archive.org/web/20220117042720id_/https://blog.samarthya.me/wps/2020/12/24/maven-lifecycles/",
+    "timestamp": "20220117042720",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/07",
+    "slug": "devbhoomi-uttarkhand",
+    "title": "DevBhoomi: Uttarkhand",
+    "url": "https://blog.samarthya.me/wps/2021/01/07/devbhoomi-uttarkhand/",
+    "capture": "https://web.archive.org/web/20211129114809id_/https://blog.samarthya.me/wps/2021/01/07/devbhoomi-uttarkhand/",
+    "timestamp": "20211129114809",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/08",
+    "slug": "quick-cheat-sheet",
+    "title": "Quick: Cheat Sheet",
+    "url": "https://blog.samarthya.me/wps/2021/01/08/quick-cheat-sheet/",
+    "capture": "https://web.archive.org/web/20211129123514id_/https://blog.samarthya.me/wps/2021/01/08/quick-cheat-sheet/",
+    "timestamp": "20211129123514",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/12",
+    "slug": "golang-interfaces",
+    "title": "GOLang: Interfaces",
+    "url": "https://blog.samarthya.me/wps/2021/01/12/golang-interfaces/",
+    "capture": "https://web.archive.org/web/20220117041341id_/https://blog.samarthya.me/wps/2021/01/12/golang-interfaces/",
+    "timestamp": "20220117041341",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/12",
+    "slug": "taint-nodes",
+    "title": "Taint Nodes",
+    "url": "https://blog.samarthya.me/wps/2021/01/12/taint-nodes/",
+    "capture": "https://web.archive.org/web/20211129122530id_/https://blog.samarthya.me/wps/2021/01/12/taint-nodes/",
+    "timestamp": "20211129122530",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/16",
+    "slug": "golang-reflection",
+    "title": "GOLang: Reflection",
+    "url": "https://blog.samarthya.me/wps/2021/01/16/golang-reflection/",
+    "capture": "https://web.archive.org/web/20221205005138id_/https://blog.samarthya.me/wps/2021/01/16/golang-reflection/",
+    "timestamp": "20221205005138",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/21",
+    "slug": "files-golang",
+    "title": "Files: GoLang",
+    "url": "https://blog.samarthya.me/wps/2021/01/21/files-golang/",
+    "capture": "https://web.archive.org/web/20220117050206id_/https://blog.samarthya.me/wps/2021/01/21/files-golang/",
+    "timestamp": "20220117050206",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/22",
+    "slug": "pod-volume-k8s",
+    "title": "Pod & Volume: K8S",
+    "url": "https://blog.samarthya.me/wps/2021/01/22/pod-volume-k8s/",
+    "capture": "https://web.archive.org/web/20211129122726id_/https://blog.samarthya.me/wps/2021/01/22/pod-volume-k8s/",
+    "timestamp": "20211129122726",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/25",
+    "slug": "files-golang-2",
+    "title": "Files Golang 2 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/01/25/files-golang-2/",
+    "capture": "https://web.archive.org/web/20220117035822id_/https://blog.samarthya.me/wps/2021/01/25/files-golang-2/",
+    "timestamp": "20220117035822",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/25",
+    "slug": "missed-opportunity",
+    "title": "Missed Opportunity",
+    "url": "https://blog.samarthya.me/wps/2021/01/25/missed-opportunity/",
+    "capture": "https://web.archive.org/web/20220117041721id_/https://blog.samarthya.me/wps/2021/01/25/missed-opportunity/",
+    "timestamp": "20220117041721",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/27",
+    "slug": "golang-command-line-arguments",
+    "title": "GoLang: Command line arguments",
+    "url": "https://blog.samarthya.me/wps/2021/01/27/golang-command-line-arguments/",
+    "capture": "https://web.archive.org/web/20221005211608id_/https://blog.samarthya.me/wps/2021/01/27/golang-command-line-arguments/",
+    "timestamp": "20221005211608",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/29",
+    "slug": "golang-hex-output",
+    "title": "GoLang: Hex Output",
+    "url": "https://blog.samarthya.me/wps/2021/01/29/golang-hex-output/",
+    "capture": "https://web.archive.org/web/20221005205549id_/https://blog.samarthya.me/wps/2021/01/29/golang-hex-output/",
+    "timestamp": "20221005205549",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/29",
+    "slug": "golang-program-banner",
+    "title": "Golang Program Banner [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/01/29/golang-program-banner/",
+    "capture": "https://web.archive.org/web/20221005223852id_/https://blog.samarthya.me/wps/2021/01/29/golang-program-banner/",
+    "timestamp": "20221005223852",
+    "local_folder": true
+  },
+  {
+    "date": "2021/01/30",
+    "slug": "golang-encoding",
+    "title": "Golang Encoding [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/01/30/golang-encoding/",
+    "capture": "https://web.archive.org/web/20221005222106id_/https://blog.samarthya.me/wps/2021/01/30/golang-encoding/",
+    "timestamp": "20221005222106",
+    "local_folder": false
+  },
+  {
+    "date": "2021/02/01",
+    "slug": "golang-hash",
+    "title": "Golang Hash [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/02/01/golang-hash/",
+    "capture": "https://web.archive.org/web/20221005225004id_/https://blog.samarthya.me/wps/2021/02/01/golang-hash/",
+    "timestamp": "20221005225004",
+    "local_folder": true
+  },
+  {
+    "date": "2021/02/05",
+    "slug": "virtualbox-increasing-size-of-the-virtual-disk",
+    "title": "Virtualbox Increasing Size Of The Virtual Disk [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/02/05/virtualbox-increasing-size-of-the-virtual-disk/",
+    "capture": "https://web.archive.org/web/20221205004033id_/https://blog.samarthya.me/wps/2021/02/05/virtualbox-increasing-size-of-the-virtual-disk/",
+    "timestamp": "20221205004033",
+    "local_folder": true
+  },
+  {
+    "date": "2021/02/22",
+    "slug": "golang-try-catch",
+    "title": "Golang Try Catch [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/02/22/golang-try-catch/",
+    "capture": "https://web.archive.org/web/20221005222720id_/https://blog.samarthya.me/wps/2021/02/22/golang-try-catch/",
+    "timestamp": "20221005222720",
+    "local_folder": false
+  },
+  {
+    "date": "2021/02/26",
+    "slug": "fun-with-goroutines",
+    "title": "Fun With Goroutines [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/02/26/fun-with-goroutines/",
+    "capture": "https://web.archive.org/web/20221005223539id_/https://blog.samarthya.me/wps/2021/02/26/fun-with-goroutines/",
+    "timestamp": "20221005223539",
+    "local_folder": true
+  },
+  {
+    "date": "2021/03/01",
+    "slug": "safe-for-lean-enterprises",
+    "title": "Safe For Lean Enterprises [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/03/01/safe-for-lean-enterprises/",
+    "capture": "https://web.archive.org/web/20211017035540id_/https://blog.samarthya.me/wps/2021/03/01/safe-for-lean-enterprises/",
+    "timestamp": "20211017035540",
+    "local_folder": true
+  },
+  {
+    "date": "2021/03/05",
+    "slug": "identity",
+    "title": "Identity [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/03/05/identity/",
+    "capture": "https://web.archive.org/web/20211017030125id_/https://blog.samarthya.me/wps/2021/03/05/identity/",
+    "timestamp": "20211017030125",
+    "local_folder": true
+  },
+  {
+    "date": "2021/03/06",
+    "slug": "cissp-next-target",
+    "title": "Cissp Next Target [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/03/06/cissp-next-target/",
+    "capture": "https://web.archive.org/web/20211017035928id_/https://blog.samarthya.me/wps/2021/03/06/cissp-next-target/",
+    "timestamp": "20211017035928",
+    "local_folder": true
+  },
+  {
+    "date": "2021/03/08",
+    "slug": "security-standards-baselines-and-guidelines-formalized-security-policy-structure",
+    "title": "Security Standards Baselines And Guidelines Formalized Security Policy Structure [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/03/08/security-standards-baselines-and-guidelines-formalized-security-policy-structure/",
+    "capture": "https://web.archive.org/web/20211017034807id_/https://blog.samarthya.me/wps/2021/03/08/security-standards-baselines-and-guidelines-formalized-security-policy-structure/",
+    "timestamp": "20211017034807",
+    "local_folder": true
+  },
+  {
+    "date": "2021/03/25",
+    "slug": "oauth-2-0",
+    "title": "Oauth 2 0 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/03/25/oauth-2-0/",
+    "capture": "https://web.archive.org/web/20211017031936id_/https://blog.samarthya.me/wps/2021/03/25/oauth-2-0/",
+    "timestamp": "20211017031936",
+    "local_folder": true
+  },
+  {
+    "date": "2021/04/04",
+    "slug": "quotes",
+    "title": "Quotes [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/04/04/quotes/",
+    "capture": "https://web.archive.org/web/20211017032218id_/https://blog.samarthya.me/wps/2021/04/04/quotes/",
+    "timestamp": "20211017032218",
+    "local_folder": true
+  },
+  {
+    "date": "2021/04/06",
+    "slug": "clusterrole-refresher",
+    "title": "ClusterRole: Refresher",
+    "url": "https://blog.samarthya.me/wps/2021/04/06/clusterrole-refresher/",
+    "capture": "https://web.archive.org/web/20211017035240id_/https://blog.samarthya.me/wps/2021/04/06/clusterrole-refresher/",
+    "timestamp": "20211017035240",
+    "local_folder": true
+  },
+  {
+    "date": "2021/04/12",
+    "slug": "secrets",
+    "title": "Secrets",
+    "url": "https://blog.samarthya.me/wps/2021/04/12/secrets/",
+    "capture": "https://web.archive.org/web/20211017034411id_/https://blog.samarthya.me/wps/2021/04/12/secrets/",
+    "timestamp": "20211017034411",
+    "local_folder": true
+  },
+  {
+    "date": "2021/04/19",
+    "slug": "reactjs-a-new-app-tns",
+    "title": "ReactJS: A new app `tns`",
+    "url": "https://blog.samarthya.me/wps/2021/04/19/reactjs-a-new-app-tns/",
+    "capture": "https://web.archive.org/web/20211017023832id_/https://blog.samarthya.me/wps/2021/04/19/reactjs-a-new-app-tns/",
+    "timestamp": "20211017023832",
+    "local_folder": true
+  },
+  {
+    "date": "2021/04/24",
+    "slug": "smallest-integer",
+    "title": "Smallest Integer [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/04/24/smallest-integer/",
+    "capture": "https://web.archive.org/web/20211017024459id_/https://blog.samarthya.me/wps/2021/04/24/smallest-integer/",
+    "timestamp": "20211017024459",
+    "local_folder": true
+  },
+  {
+    "date": "2021/04/26",
+    "slug": "java-stream-examples",
+    "title": "Java Stream: Examples",
+    "url": "https://blog.samarthya.me/wps/2021/04/26/java-stream-examples/",
+    "capture": "https://web.archive.org/web/20211017035128id_/https://blog.samarthya.me/wps/2021/04/26/java-stream-examples/",
+    "timestamp": "20211017035128",
+    "local_folder": true
+  },
+  {
+    "date": "2021/05/05",
+    "slug": "certprof-a-good-start",
+    "title": "Certprof A Good Start [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/05/05/certprof-a-good-start/",
+    "capture": "https://web.archive.org/web/20211017023231id_/https://blog.samarthya.me/wps/2021/05/05/certprof-a-good-start/",
+    "timestamp": "20211017023231",
+    "local_folder": false
+  },
+  {
+    "date": "2021/05/20",
+    "slug": "isg-information-security-governance",
+    "title": "Isg Information Security Governance [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/05/20/isg-information-security-governance/",
+    "capture": "https://web.archive.org/web/20211017025330id_/https://blog.samarthya.me/wps/2021/05/20/isg-information-security-governance/",
+    "timestamp": "20211017025330",
+    "local_folder": false
+  },
+  {
+    "date": "2021/05/25",
+    "slug": "cracking-cism",
+    "title": "Cracking Cism [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/05/25/cracking-cism/",
+    "capture": "https://web.archive.org/web/20211017040512id_/https://blog.samarthya.me/wps/2021/05/25/cracking-cism/",
+    "timestamp": "20211017040512",
+    "local_folder": true
+  },
+  {
+    "date": "2021/06/05",
+    "slug": "junit5-learning-how-to-write-the-code-the-right-way",
+    "title": "Junit5 Learning How To Write The Code The Right Way [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2021/06/05/junit5-learning-how-to-write-the-code-the-right-way/",
+    "capture": "https://web.archive.org/web/20211017040858id_/https://blog.samarthya.me/wps/2021/06/05/junit5-learning-how-to-write-the-code-the-right-way/",
+    "timestamp": "20211017040858",
+    "local_folder": true
+  },
+  {
+    "date": "2021/07/21",
+    "slug": "om",
+    "title": "Om",
+    "url": "https://blog.samarthya.me/wps/2021/07/21/om/",
+    "capture": "https://web.archive.org/web/20211017025621id_/https://blog.samarthya.me/wps/2021/07/21/om/",
+    "timestamp": "20211017025621",
+    "local_folder": true
+  },
+  {
+    "date": "2021/08/24",
+    "slug": "ingress",
+    "title": "Ingress",
+    "url": "https://blog.samarthya.me/wps/2021/08/24/ingress/",
+    "capture": "https://web.archive.org/web/20211017040124id_/https://blog.samarthya.me/wps/2021/08/24/ingress/",
+    "timestamp": "20211017040124",
+    "local_folder": true
+  },
+  {
+    "date": "2021/09/09",
+    "slug": "maven-profiles",
+    "title": "Maven Profiles",
+    "url": "https://blog.samarthya.me/wps/2021/09/09/maven-profiles/",
+    "capture": "https://web.archive.org/web/20211017022551id_/https://blog.samarthya.me/wps/2021/09/09/maven-profiles/",
+    "timestamp": "20211017022551",
+    "local_folder": true
+  },
+  {
+    "date": "2021/09/23",
+    "slug": "building-your-artifacts",
+    "title": "Building your artifact(s)",
+    "url": "https://blog.samarthya.me/wps/2021/09/23/building-your-artifacts/",
+    "capture": "https://web.archive.org/web/20211017040820id_/https://blog.samarthya.me/wps/2021/09/23/building-your-artifacts/",
+    "timestamp": "20211017040820",
+    "local_folder": true
+  },
+  {
+    "date": "2021/09/23",
+    "slug": "personal-access-token",
+    "title": "Personal Access Token",
+    "url": "https://blog.samarthya.me/wps/2021/09/23/personal-access-token/",
+    "capture": "https://web.archive.org/web/20211017022406id_/https://blog.samarthya.me/wps/2021/09/23/personal-access-token/",
+    "timestamp": "20211017022406",
+    "local_folder": true
+  },
+  {
+    "date": "2021/10/28",
+    "slug": "calico-cni-failures",
+    "title": "CALICO CNI failures",
+    "url": "https://blog.samarthya.me/wps/2021/10/28/calico-cni-failures/",
+    "capture": "https://web.archive.org/web/20211129121301id_/https://blog.samarthya.me/wps/2021/10/28/calico-cni-failures/",
+    "timestamp": "20211129121301",
+    "local_folder": true
+  },
+  {
+    "date": "2021/11/06",
+    "slug": "happy-diwali",
+    "title": "Happy Diwali",
+    "url": "https://blog.samarthya.me/wps/2021/11/06/happy-diwali/",
+    "capture": "https://web.archive.org/web/20211129123403id_/https://blog.samarthya.me/wps/2021/11/06/happy-diwali/",
+    "timestamp": "20211129123403",
+    "local_folder": true
+  },
+  {
+    "date": "2021/11/10",
+    "slug": "zabbix-agent",
+    "title": "Zabbix Agent",
+    "url": "https://blog.samarthya.me/wps/2021/11/10/zabbix-agent/",
+    "capture": "https://web.archive.org/web/20211129122858id_/https://blog.samarthya.me/wps/2021/11/10/zabbix-agent/",
+    "timestamp": "20211129122858",
+    "local_folder": true
+  },
+  {
+    "date": "2021/11/26",
+    "slug": "helm-test",
+    "title": "Helm Test",
+    "url": "https://blog.samarthya.me/wps/2021/11/26/helm-test/",
+    "capture": "https://web.archive.org/web/20211129122959id_/https://blog.samarthya.me/wps/2021/11/26/helm-test/",
+    "timestamp": "20211129122959",
+    "local_folder": true
+  },
+  {
+    "date": "2021/12/08",
+    "slug": "scm-for-git-clone",
+    "title": "SCM for git clone",
+    "url": "https://blog.samarthya.me/wps/2021/12/08/scm-for-git-clone/",
+    "capture": "https://web.archive.org/web/20220117032140id_/https://blog.samarthya.me/wps/2021/12/08/scm-for-git-clone/",
+    "timestamp": "20220117032140",
+    "local_folder": true
+  },
+  {
+    "date": "2021/12/09",
+    "slug": "just-on-the-sides",
+    "title": "Just on the sides",
+    "url": "https://blog.samarthya.me/wps/2021/12/09/just-on-the-sides/",
+    "capture": "https://web.archive.org/web/20220117035551id_/https://blog.samarthya.me/wps/2021/12/09/just-on-the-sides/",
+    "timestamp": "20220117035551",
+    "local_folder": true
+  },
+  {
+    "date": "2021/12/12",
+    "slug": "slide-show",
+    "title": "Slide show",
+    "url": "https://blog.samarthya.me/wps/2021/12/12/slide-show/",
+    "capture": "https://web.archive.org/web/20220117050008id_/https://blog.samarthya.me/wps/2021/12/12/slide-show/",
+    "timestamp": "20220117050008",
+    "local_folder": true
+  },
+  {
+    "date": "2021/12/13",
+    "slug": "k8s-rbac",
+    "title": "K8S RBAC",
+    "url": "https://blog.samarthya.me/wps/2021/12/13/k8s-rbac/",
+    "capture": "https://web.archive.org/web/20220117051018id_/https://blog.samarthya.me/wps/2021/12/13/k8s-rbac/",
+    "timestamp": "20220117051018",
+    "local_folder": true
+  },
+  {
+    "date": "2021/12/27",
+    "slug": "docker-clean-in-bulk",
+    "title": "Docker: Clean in Bulk",
+    "url": "https://blog.samarthya.me/wps/2021/12/27/docker-clean-in-bulk/",
+    "capture": "https://web.archive.org/web/20220117041829id_/https://blog.samarthya.me/wps/2021/12/27/docker-clean-in-bulk/",
+    "timestamp": "20220117041829",
+    "local_folder": false
+  },
+  {
+    "date": "2022/01/05",
+    "slug": "upgrading-k8s-cluster",
+    "title": "Upgrading K8S cluster",
+    "url": "https://blog.samarthya.me/wps/2022/01/05/upgrading-k8s-cluster/",
+    "capture": "https://web.archive.org/web/20220117033854id_/https://blog.samarthya.me/wps/2022/01/05/upgrading-k8s-cluster/",
+    "timestamp": "20220117033854",
+    "local_folder": true
+  },
+  {
+    "date": "2022/01/06",
+    "slug": "adding-node-to-a-cluster",
+    "title": "Adding Node To A Cluster [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/01/06/adding-node-to-a-cluster/",
+    "capture": "https://web.archive.org/web/20220117050612id_/https://blog.samarthya.me/wps/2022/01/06/adding-node-to-a-cluster/",
+    "timestamp": "20220117050612",
+    "local_folder": true
+  },
+  {
+    "date": "2022/01/07",
+    "slug": "museum-infantry",
+    "title": "Museum Infantry [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/01/07/museum-infantry/",
+    "capture": "https://web.archive.org/web/20220117043321id_/https://blog.samarthya.me/wps/2022/01/07/museum-infantry/",
+    "timestamp": "20220117043321",
+    "local_folder": true
+  },
+  {
+    "date": "2022/01/20",
+    "slug": "event-streaming",
+    "title": "Event Streaming",
+    "url": "https://blog.samarthya.me/wps/2022/01/20/event-streaming/",
+    "capture": "https://web.archive.org/web/20220518220727id_/https://blog.samarthya.me/wps/2022/01/20/event-streaming/",
+    "timestamp": "20220518220727",
+    "local_folder": true
+  },
+  {
+    "date": "2022/01/31",
+    "slug": "spinnaker",
+    "title": "Spinnaker [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/01/31/spinnaker/",
+    "capture": "https://web.archive.org/web/20220629120933id_/https://blog.samarthya.me/wps/2022/01/31/spinnaker/",
+    "timestamp": "20220629120933",
+    "local_folder": true
+  },
+  {
+    "date": "2022/02/02",
+    "slug": "jenkins-k8s",
+    "title": "Jenkins K8s [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/02/jenkins-k8s/",
+    "capture": "https://web.archive.org/web/20220629130418id_/https://blog.samarthya.me/wps/2022/02/02/jenkins-k8s/",
+    "timestamp": "20220629130418",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/03",
+    "slug": "wireshark-tracking-the-syn-syn-ack-handshake",
+    "title": "Wireshark Tracking The Syn Syn Ack Handshake [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/03/wireshark-tracking-the-syn-syn-ack-handshake/",
+    "capture": "https://web.archive.org/web/20221205004214id_/https://blog.samarthya.me/wps/2022/02/03/wireshark-tracking-the-syn-syn-ack-handshake/",
+    "timestamp": "20221205004214",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/04",
+    "slug": "spinnaker-creating-application",
+    "title": "Spinnaker Creating Application [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/04/spinnaker-creating-application/",
+    "capture": "https://web.archive.org/web/20221205010611id_/https://blog.samarthya.me/wps/2022/02/04/spinnaker-creating-application/",
+    "timestamp": "20221205010611",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/04",
+    "slug": "spinnaker-docker-registry",
+    "title": "Spinnaker Docker Registry [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/04/spinnaker-docker-registry/",
+    "capture": "https://web.archive.org/web/20220629133049id_/https://blog.samarthya.me/wps/2022/02/04/spinnaker-docker-registry/",
+    "timestamp": "20220629133049",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/04",
+    "slug": "spinnaker-pipeline-in-action",
+    "title": "Spinnaker Pipeline In Action [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/04/spinnaker-pipeline-in-action/",
+    "capture": "https://web.archive.org/web/20220629140448id_/https://blog.samarthya.me/wps/2022/02/04/spinnaker-pipeline-in-action/",
+    "timestamp": "20220629140448",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/05",
+    "slug": "spinnaker-artifact-helm",
+    "title": "Spinnaker Artifact Helm [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/05/spinnaker-artifact-helm/",
+    "capture": "https://web.archive.org/web/20220629134701id_/https://blog.samarthya.me/wps/2022/02/05/spinnaker-artifact-helm/",
+    "timestamp": "20220629134701",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/05",
+    "slug": "spinnaker-open-source-deployment",
+    "title": "Spinnaker Open Source Deployment [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/05/spinnaker-open-source-deployment/",
+    "capture": "https://web.archive.org/web/20220629123324id_/https://blog.samarthya.me/wps/2022/02/05/spinnaker-open-source-deployment/",
+    "timestamp": "20220629123324",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/08",
+    "slug": "iac-infrastructure-as-code",
+    "title": "IaC: Infrastructure as Code",
+    "url": "https://blog.samarthya.me/wps/2022/02/08/iac-infrastructure-as-code/",
+    "capture": "https://web.archive.org/web/20221205015013id_/https://blog.samarthya.me/wps/2022/02/08/iac-infrastructure-as-code/",
+    "timestamp": "20221205015013",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/09",
+    "slug": "cert-manager-tls-for-ingress",
+    "title": "Cert-Manager: TLS for ingress",
+    "url": "https://blog.samarthya.me/wps/2022/02/09/cert-manager-tls-for-ingress/",
+    "capture": "https://web.archive.org/web/20221205014154id_/https://blog.samarthya.me/wps/2022/02/09/cert-manager-tls-for-ingress/",
+    "timestamp": "20221205014154",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/11",
+    "slug": "kafka-deploy-test",
+    "title": "Kafka: Deploy & Test",
+    "url": "https://blog.samarthya.me/wps/2022/02/11/kafka-deploy-test/",
+    "capture": "https://web.archive.org/web/20220808125349id_/https://blog.samarthya.me/wps/2022/02/11/kafka-deploy-test/",
+    "timestamp": "20220808125349",
+    "local_folder": true
+  },
+  {
+    "date": "2022/02/11",
+    "slug": "kaniko-jenkins-pipeline",
+    "title": "Kaniko Jenkins Pipeline [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/11/kaniko-jenkins-pipeline/",
+    "capture": "https://web.archive.org/web/20220518233952id_/https://blog.samarthya.me/wps/2022/02/11/kaniko-jenkins-pipeline/",
+    "timestamp": "20220518233952",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/15",
+    "slug": "devspace-managing-apps-in-kubernetes",
+    "title": "`Devspace`: Managing Apps in Kubernetes",
+    "url": "https://blog.samarthya.me/wps/2022/02/15/devspace-managing-apps-in-kubernetes/",
+    "capture": "https://web.archive.org/web/20220518220910id_/https://blog.samarthya.me/wps/2022/02/15/devspace-managing-apps-in-kubernetes/",
+    "timestamp": "20220518220910",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/16",
+    "slug": "serviceaccount",
+    "title": "Serviceaccount [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/16/serviceaccount/",
+    "capture": "https://web.archive.org/web/20220518221731id_/https://blog.samarthya.me/wps/2022/02/16/serviceaccount/",
+    "timestamp": "20220518221731",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/23",
+    "slug": "notes-1",
+    "title": "Notes 1 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2022/02/23/notes-1/",
+    "capture": "https://web.archive.org/web/20220808132548id_/https://blog.samarthya.me/wps/2022/02/23/notes-1/",
+    "timestamp": "20220808132548",
+    "local_folder": true
+  },
+  {
+    "date": "2022/02/25",
+    "slug": "ssh-keygen-ssh-copy-id",
+    "title": "ssh-keygen & ssh-copy-id",
+    "url": "https://blog.samarthya.me/wps/2022/02/25/ssh-keygen-ssh-copy-id/",
+    "capture": "https://web.archive.org/web/20220518231834id_/https://blog.samarthya.me/wps/2022/02/25/ssh-keygen-ssh-copy-id/",
+    "timestamp": "20220518231834",
+    "local_folder": false
+  },
+  {
+    "date": "2022/02/25",
+    "slug": "ssh-protocol",
+    "title": "SSH Protocol",
+    "url": "https://blog.samarthya.me/wps/2022/02/25/ssh-protocol/",
+    "capture": "https://web.archive.org/web/20220518231954id_/https://blog.samarthya.me/wps/2022/02/25/ssh-protocol/",
+    "timestamp": "20220518231954",
+    "local_folder": false
+  },
+  {
+    "date": "2022/03/02",
+    "slug": "bash-named-reference",
+    "title": "Bash: Named Reference",
+    "url": "https://blog.samarthya.me/wps/2022/03/02/bash-named-reference/",
+    "capture": "https://web.archive.org/web/20220518221645id_/https://blog.samarthya.me/wps/2022/03/02/bash-named-reference/",
+    "timestamp": "20220518221645",
+    "local_folder": false
+  },
+  {
+    "date": "2022/03/04",
+    "slug": "ansible-notes",
+    "title": "Ansible: Notes",
+    "url": "https://blog.samarthya.me/wps/2022/03/04/ansible-notes/",
+    "capture": "https://web.archive.org/web/20220518215737id_/https://blog.samarthya.me/wps/2022/03/04/ansible-notes/",
+    "timestamp": "20220518215737",
+    "local_folder": false
+  },
+  {
+    "date": "2022/03/04",
+    "slug": "marathon",
+    "title": "Marathon",
+    "url": "https://blog.samarthya.me/wps/2022/03/04/marathon/",
+    "capture": "https://web.archive.org/web/20220518221513id_/https://blog.samarthya.me/wps/2022/03/04/marathon/",
+    "timestamp": "20220518221513",
+    "local_folder": false
+  },
+  {
+    "date": "2022/04/04",
+    "slug": "renewing-a-driver-license",
+    "title": "Renewing a driver license",
+    "url": "https://blog.samarthya.me/wps/2022/04/04/renewing-a-driver-license/",
+    "capture": "https://web.archive.org/web/20220518231422id_/https://blog.samarthya.me/wps/2022/04/04/renewing-a-driver-license/",
+    "timestamp": "20220518231422",
+    "local_folder": false
+  },
+  {
+    "date": "2022/04/22",
+    "slug": "jmx-monitoring-and-managing-kafka",
+    "title": "JMX: Monitoring and Managing Kafka",
+    "url": "https://blog.samarthya.me/wps/2022/04/22/jmx-monitoring-and-managing-kafka/",
+    "capture": "https://web.archive.org/web/20220518222804id_/https://blog.samarthya.me/wps/2022/04/22/jmx-monitoring-and-managing-kafka/",
+    "timestamp": "20220518222804",
+    "local_folder": false
+  },
+  {
+    "date": "2022/07/07",
+    "slug": "go-modules",
+    "title": "Go Modules",
+    "url": "https://blog.samarthya.me/wps/2022/07/07/go-modules/",
+    "capture": "https://web.archive.org/web/20220808133041id_/https://blog.samarthya.me/wps/2022/07/07/go-modules/",
+    "timestamp": "20220808133041",
+    "local_folder": false
+  },
+  {
+    "date": "2022/07/13",
+    "slug": "naming-convention-policy-for-kafka-topics",
+    "title": "Naming Convention Policy for Kafka topics",
+    "url": "https://blog.samarthya.me/wps/2022/07/13/naming-convention-policy-for-kafka-topics/",
+    "capture": "https://web.archive.org/web/20220808135303id_/https://blog.samarthya.me/wps/2022/07/13/naming-convention-policy-for-kafka-topics/",
+    "timestamp": "20220808135303",
+    "local_folder": false
+  },
+  {
+    "date": "2022/08/04",
+    "slug": "g-power",
+    "title": "G-Power",
+    "url": "https://blog.samarthya.me/wps/2022/08/04/g-power/",
+    "capture": "https://web.archive.org/web/20220808135129id_/https://blog.samarthya.me/wps/2022/08/04/g-power/",
+    "timestamp": "20220808135129",
+    "local_folder": false
+  },
+  {
+    "date": "2022/08/11",
+    "slug": "weekend",
+    "title": "Weekend",
+    "url": "https://blog.samarthya.me/wps/2022/08/11/weekend/",
+    "capture": "https://web.archive.org/web/20221005210141id_/https://blog.samarthya.me/wps/2022/08/11/weekend/",
+    "timestamp": "20221005210141",
+    "local_folder": false
+  },
+  {
+    "date": "2022/08/18",
+    "slug": "vagrant-osx-m1",
+    "title": "Vagrant OSX – M1",
+    "url": "https://blog.samarthya.me/wps/2022/08/18/vagrant-osx-m1/",
+    "capture": "https://web.archive.org/web/20221005212503id_/https://blog.samarthya.me/wps/2022/08/18/vagrant-osx-m1/",
+    "timestamp": "20221005212503",
+    "local_folder": false
+  },
+  {
+    "date": "2022/08/19",
+    "slug": "vagrant-osx-m1-2",
+    "title": "Vagrant-OSX – M1",
+    "url": "https://blog.samarthya.me/wps/2022/08/19/vagrant-osx-m1-2/",
+    "capture": "https://web.archive.org/web/20221005223502id_/https://blog.samarthya.me/wps/2022/08/19/vagrant-osx-m1-2/",
+    "timestamp": "20221005223502",
+    "local_folder": false
+  },
+  {
+    "date": "2022/08/24",
+    "slug": "running-qemu-based-vms-on-osx-m1",
+    "title": "Running QEMu based VM’s on OSX M1",
+    "url": "https://blog.samarthya.me/wps/2022/08/24/running-qemu-based-vms-on-osx-m1/",
+    "capture": "https://web.archive.org/web/20221005225215id_/https://blog.samarthya.me/wps/2022/08/24/running-qemu-based-vms-on-osx-m1/",
+    "timestamp": "20221005225215",
+    "local_folder": false
+  },
+  {
+    "date": "2022/08/25",
+    "slug": "static-ips-in-qemu-vms",
+    "title": "Static IP’s in QEMU VM’s",
+    "url": "https://blog.samarthya.me/wps/2022/08/25/static-ips-in-qemu-vms/",
+    "capture": "https://web.archive.org/web/20221005230309id_/https://blog.samarthya.me/wps/2022/08/25/static-ips-in-qemu-vms/",
+    "timestamp": "20221005230309",
+    "local_folder": false
+  },
+  {
+    "date": "2022/10/07",
+    "slug": "zookeeper-mtls",
+    "title": "Zookeeper mTLS",
+    "url": "https://blog.samarthya.me/wps/2022/10/07/zookeeper-mtls/",
+    "capture": "https://web.archive.org/web/20221205010159id_/https://blog.samarthya.me/wps/2022/10/07/zookeeper-mtls/",
+    "timestamp": "20221205010159",
+    "local_folder": false
+  },
+  {
+    "date": "2022/10/19",
+    "slug": "tip-maven",
+    "title": "Tip #Maven",
+    "url": "https://blog.samarthya.me/wps/2022/10/19/tip-maven/",
+    "capture": "https://web.archive.org/web/20221205010445id_/https://blog.samarthya.me/wps/2022/10/19/tip-maven/",
+    "timestamp": "20221205010445",
+    "local_folder": false
+  },
+  {
+    "date": "2022/11/03",
+    "slug": "specialist-in-the-emotional-memory-eq",
+    "title": "Specialist in the Emotional Memory #EQ",
+    "url": "https://blog.samarthya.me/wps/2022/11/03/specialist-in-the-emotional-memory-eq/",
+    "capture": "https://web.archive.org/web/20221205015844id_/https://blog.samarthya.me/wps/2022/11/03/specialist-in-the-emotional-memory-eq/",
+    "timestamp": "20221205015844",
+    "local_folder": false
+  },
+  {
+    "date": "2022/11/18",
+    "slug": "pki",
+    "title": "PKI",
+    "url": "https://blog.samarthya.me/wps/2022/11/18/pki/",
+    "capture": "https://web.archive.org/web/20221205002009id_/https://blog.samarthya.me/wps/2022/11/18/pki/",
+    "timestamp": "20221205002009",
+    "local_folder": false
+  },
+  {
+    "date": "2023/01/31",
+    "slug": "python-class",
+    "title": "Python: Class",
+    "url": "https://blog.samarthya.me/wps/2023/01/31/python-class/",
+    "capture": "https://web.archive.org/web/20240913104146id_/https://blog.samarthya.me/wps/2023/01/31/python-class/",
+    "timestamp": "20240913104146",
+    "local_folder": false
+  },
+  {
+    "date": "2023/01/31",
+    "slug": "python-decorators",
+    "title": "Python Decorators [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/01/31/python-decorators/",
+    "capture": "https://web.archive.org/web/20240913103809id_/https://blog.samarthya.me/wps/2023/01/31/python-decorators/",
+    "timestamp": "20240913103809",
+    "local_folder": false
+  },
+  {
+    "date": "2023/01/31",
+    "slug": "python-inheritance",
+    "title": "Python Inheritance [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/01/31/python-inheritance/",
+    "capture": "https://web.archive.org/web/20240913123428id_/https://blog.samarthya.me/wps/2023/01/31/python-inheritance/",
+    "timestamp": "20240913123428",
+    "local_folder": false
+  },
+  {
+    "date": "2023/01/31",
+    "slug": "python-interface",
+    "title": "Python Interface [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/01/31/python-interface/",
+    "capture": "https://web.archive.org/web/20240913111538id_/https://blog.samarthya.me/wps/2023/01/31/python-interface/",
+    "timestamp": "20240913111538",
+    "local_folder": false
+  },
+  {
+    "date": "2023/01/31",
+    "slug": "python-multi-args",
+    "title": "Python: Multi-Args",
+    "url": "https://blog.samarthya.me/wps/2023/01/31/python-multi-args/",
+    "capture": "https://web.archive.org/web/20240913114326id_/https://blog.samarthya.me/wps/2023/01/31/python-multi-args/",
+    "timestamp": "20240913114326",
+    "local_folder": false
+  },
+  {
+    "date": "2023/01/31",
+    "slug": "python-pointers-reference",
+    "title": "Python: Pointers & Reference",
+    "url": "https://blog.samarthya.me/wps/2023/01/31/python-pointers-reference/",
+    "capture": "https://web.archive.org/web/20240913110612id_/https://blog.samarthya.me/wps/2023/01/31/python-pointers-reference/",
+    "timestamp": "20240913110612",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/01",
+    "slug": "python-sample-project",
+    "title": "Python Sample Project [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/01/python-sample-project/",
+    "capture": "https://web.archive.org/web/20241213095246id_/https://blog.samarthya.me/wps/2023/02/01/python-sample-project/",
+    "timestamp": "20241213095246",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/02",
+    "slug": "ansible-refresher",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/02/ansible-refresher/",
+    "capture": "https://web.archive.org/web/20230325192621id_/https://blog.samarthya.me/wps/2023/02/02/ansible-refresher/",
+    "timestamp": "20230325192621",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/02",
+    "slug": "python-argparse",
+    "title": "Python Argparse [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/02/python-argparse/",
+    "capture": "https://web.archive.org/web/20230325193149id_/https://blog.samarthya.me/wps/2023/02/02/python-argparse/",
+    "timestamp": "20230325193149",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/02",
+    "slug": "python-polymorphism",
+    "title": "Python Polymorphism [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/02/python-polymorphism/",
+    "capture": "https://web.archive.org/web/20241213094650id_/https://blog.samarthya.me/wps/2023/02/02/python-polymorphism/",
+    "timestamp": "20241213094650",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/02",
+    "slug": "python-vs-bash",
+    "title": "Python Vs Bash [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/02/python-vs-bash/",
+    "capture": "https://web.archive.org/web/20230325212502id_/https://blog.samarthya.me/wps/2023/02/02/python-vs-bash/",
+    "timestamp": "20230325212502",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/02",
+    "slug": "python-when-not-to-use-it",
+    "title": "Python: When not to use it?",
+    "url": "https://blog.samarthya.me/wps/2023/02/02/python-when-not-to-use-it/",
+    "capture": "https://web.archive.org/web/20241213085248id_/https://blog.samarthya.me/wps/2023/02/02/python-when-not-to-use-it/",
+    "timestamp": "20241213085248",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/07",
+    "slug": "ansible-structure-of-a-playbook",
+    "title": "Ansible Structure Of A Playbook [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/07/ansible-structure-of-a-playbook/",
+    "capture": "https://web.archive.org/web/20230325194007id_/https://blog.samarthya.me/wps/2023/02/07/ansible-structure-of-a-playbook/",
+    "timestamp": "20230325194007",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/07",
+    "slug": "python-using-flask",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/07/python-using-flask/",
+    "capture": "https://web.archive.org/web/20230325212942id_/https://blog.samarthya.me/wps/2023/02/07/python-using-flask/",
+    "timestamp": "20230325212942",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/08",
+    "slug": "ansible-a-thought",
+    "title": "Ansible: A thought",
+    "url": "https://blog.samarthya.me/wps/2023/02/08/ansible-a-thought/",
+    "capture": "https://web.archive.org/web/20250209103438id_/https://blog.samarthya.me/wps/2023/02/08/ansible-a-thought/",
+    "timestamp": "20250209103438",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/08",
+    "slug": "ansible-building-inventory",
+    "title": "Ansible Building Inventory [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/08/ansible-building-inventory/",
+    "capture": "https://web.archive.org/web/20241103184736id_/https://blog.samarthya.me/wps/2023/02/08/ansible-building-inventory/",
+    "timestamp": "20241103184736",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/08",
+    "slug": "ansible-ssh-access",
+    "title": "Ansible: SSH Access",
+    "url": "https://blog.samarthya.me/wps/2023/02/08/ansible-ssh-access/",
+    "capture": "https://web.archive.org/web/20250323081920id_/https://blog.samarthya.me/wps/2023/02/08/ansible-ssh-access/",
+    "timestamp": "20250323081920",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/08",
+    "slug": "ansible-templates",
+    "title": "Ansible: Templates",
+    "url": "https://blog.samarthya.me/wps/2023/02/08/ansible-templates/",
+    "capture": "https://web.archive.org/web/20230529054121id_/https://blog.samarthya.me/wps/2023/02/08/ansible-templates/",
+    "timestamp": "20230529054121",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/08",
+    "slug": "ansible-variables",
+    "title": "Ansible Variables [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/08/ansible-variables/",
+    "capture": "https://web.archive.org/web/20230529052033id_/https://blog.samarthya.me/wps/2023/02/08/ansible-variables/",
+    "timestamp": "20230529052033",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/14",
+    "slug": "testinfra",
+    "title": "Testinfra [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/14/testinfra/",
+    "capture": "https://web.archive.org/web/20240913113313id_/https://blog.samarthya.me/wps/2023/02/14/testinfra/",
+    "timestamp": "20240913113313",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/22",
+    "slug": "handshake",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/22/handshake/",
+    "capture": "https://web.archive.org/web/20230325195318id_/https://blog.samarthya.me/wps/2023/02/22/handshake/",
+    "timestamp": "20230325195318",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/22",
+    "slug": "ssl-tls",
+    "title": "Ssl Tls [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/22/ssl-tls/",
+    "capture": "https://web.archive.org/web/20230325205403id_/https://blog.samarthya.me/wps/2023/02/22/ssl-tls/",
+    "timestamp": "20230325205403",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/22",
+    "slug": "trust-store-apache-kafka",
+    "title": "Trust Store: Apache Kafka",
+    "url": "https://blog.samarthya.me/wps/2023/02/22/trust-store-apache-kafka/",
+    "capture": "https://web.archive.org/web/20240913113456id_/https://blog.samarthya.me/wps/2023/02/22/trust-store-apache-kafka/",
+    "timestamp": "20240913113456",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/23",
+    "slug": "ansible-configuration-ansible-cfg",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/23/ansible-configuration-ansible-cfg/",
+    "capture": "https://web.archive.org/web/20230325211508id_/https://blog.samarthya.me/wps/2023/02/23/ansible-configuration-ansible-cfg/",
+    "timestamp": "20230325211508",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/24",
+    "slug": "pat-personal-access-token",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/24/pat-personal-access-token/",
+    "capture": "https://web.archive.org/web/20230325200145id_/https://blog.samarthya.me/wps/2023/02/24/pat-personal-access-token/",
+    "timestamp": "20230325200145",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/27",
+    "slug": "venv-ansible",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/27/venv-ansible/",
+    "capture": "https://web.archive.org/web/20230325211547id_/https://blog.samarthya.me/wps/2023/02/27/venv-ansible/",
+    "timestamp": "20230325211547",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/28",
+    "slug": "lookup-ansible",
+    "title": "Lookup Ansible [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/02/28/lookup-ansible/",
+    "capture": "https://web.archive.org/web/20230325193742id_/https://blog.samarthya.me/wps/2023/02/28/lookup-ansible/",
+    "timestamp": "20230325193742",
+    "local_folder": false
+  },
+  {
+    "date": "2023/02/28",
+    "slug": "venvansible",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/02/28/venvansible/",
+    "capture": "https://web.archive.org/web/20230325193659id_/https://blog.samarthya.me/wps/2023/02/28/venvansible/",
+    "timestamp": "20230325193659",
+    "local_folder": false
+  },
+  {
+    "date": "2023/03/07",
+    "slug": "buildah-https-buildah-io",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/03/07/buildah-https-buildah-io/",
+    "capture": "https://web.archive.org/web/20230325205100id_/https://blog.samarthya.me/wps/2023/03/07/buildah-https-buildah-io/",
+    "timestamp": "20230325205100",
+    "local_folder": false
+  },
+  {
+    "date": "2023/03/07",
+    "slug": "podman-machine-how-why",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/03/07/podman-machine-how-why/",
+    "capture": "https://web.archive.org/web/20230325210516id_/https://blog.samarthya.me/wps/2023/03/07/podman-machine-how-why/",
+    "timestamp": "20230325210516",
+    "local_folder": false
+  },
+  {
+    "date": "2023/03/13",
+    "slug": "a-walk-down-the-memory-lane-ladakh",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/03/13/a-walk-down-the-memory-lane-ladakh/",
+    "capture": "https://web.archive.org/web/20230325205927id_/https://blog.samarthya.me/wps/2023/03/13/a-walk-down-the-memory-lane-ladakh/",
+    "timestamp": "20230325205927",
+    "local_folder": false
+  },
+  {
+    "date": "2023/03/15",
+    "slug": "ansible-variables-2",
+    "title": "One moment, please...",
+    "url": "https://blog.samarthya.me/wps/2023/03/15/ansible-variables-2/",
+    "capture": "https://web.archive.org/web/20230325192946id_/https://blog.samarthya.me/wps/2023/03/15/ansible-variables-2/",
+    "timestamp": "20230325192946",
+    "local_folder": false
+  },
+  {
+    "date": "2023/03/24",
+    "slug": "async-poll-notify-ansible-long-running-process",
+    "title": "Async Poll Notify Ansible Long Running Process [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/03/24/async-poll-notify-ansible-long-running-process/",
+    "capture": "https://web.archive.org/web/20230529055120id_/https://blog.samarthya.me/wps/2023/03/24/async-poll-notify-ansible-long-running-process/",
+    "timestamp": "20230529055120",
+    "local_folder": false
+  },
+  {
+    "date": "2023/04/12",
+    "slug": "curl",
+    "title": "cURL",
+    "url": "https://blog.samarthya.me/wps/2023/04/12/curl/",
+    "capture": "https://web.archive.org/web/20230529043534id_/https://blog.samarthya.me/wps/2023/04/12/curl/",
+    "timestamp": "20230529043534",
+    "local_folder": false
+  },
+  {
+    "date": "2023/04/27",
+    "slug": "domain-name-system",
+    "title": "Domain Name System",
+    "url": "https://blog.samarthya.me/wps/2023/04/27/domain-name-system/",
+    "capture": "https://web.archive.org/web/20230529052703id_/https://blog.samarthya.me/wps/2023/04/27/domain-name-system/",
+    "timestamp": "20230529052703",
+    "local_folder": false
+  },
+  {
+    "date": "2023/04/28",
+    "slug": "tunnel-ssh",
+    "title": "Tunnel: SSH",
+    "url": "https://blog.samarthya.me/wps/2023/04/28/tunnel-ssh/",
+    "capture": "https://web.archive.org/web/20230529061310id_/https://blog.samarthya.me/wps/2023/04/28/tunnel-ssh/",
+    "timestamp": "20230529061310",
+    "local_folder": false
+  },
+  {
+    "date": "2023/05/10",
+    "slug": "devanagari",
+    "title": "Devanagari:",
+    "url": "https://blog.samarthya.me/wps/2023/05/10/devanagari/",
+    "capture": "https://web.archive.org/web/20230529060444id_/https://blog.samarthya.me/wps/2023/05/10/devanagari/",
+    "timestamp": "20230529060444",
+    "local_folder": false
+  },
+  {
+    "date": "2023/05/10",
+    "slug": "x509-history",
+    "title": "X509 History [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/05/10/x509-history/",
+    "capture": "https://web.archive.org/web/20230529064313id_/https://blog.samarthya.me/wps/2023/05/10/x509-history/",
+    "timestamp": "20230529064313",
+    "local_folder": false
+  },
+  {
+    "date": "2023/05/24",
+    "slug": "xee-xml-entity-attack-xxe",
+    "title": "XEE: XML Entity Attack (XXE)",
+    "url": "https://blog.samarthya.me/wps/2023/05/24/xee-xml-entity-attack-xxe/",
+    "capture": "https://web.archive.org/web/20230529061347id_/https://blog.samarthya.me/wps/2023/05/24/xee-xml-entity-attack-xxe/",
+    "timestamp": "20230529061347",
+    "local_folder": false
+  },
+  {
+    "date": "2023/06/01",
+    "slug": "भागवत-गीता-chapter-1",
+    "title": "भागवत गीता: Chapter – 1",
+    "url": "https://blog.samarthya.me/wps/2023/06/01/%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4-%E0%A4%97%E0%A5%80%E0%A4%A4%E0%A4%BE-chapter-1/",
+    "capture": "https://web.archive.org/web/20231002205553id_/https://blog.samarthya.me/wps/2023/06/01/%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4-%E0%A4%97%E0%A5%80%E0%A4%A4%E0%A4%BE-chapter-1/",
+    "timestamp": "20231002205553",
+    "local_folder": false
+  },
+  {
+    "date": "2023/06/07",
+    "slug": "dast",
+    "title": "Dast [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/06/07/dast/",
+    "capture": "https://web.archive.org/web/20231002222158id_/https://blog.samarthya.me/wps/2023/06/07/dast/",
+    "timestamp": "20231002222158",
+    "local_folder": false
+  },
+  {
+    "date": "2023/06/08",
+    "slug": "understanding-pci-dss-ensuring-security-in-payment-card-transactions",
+    "title": "Understanding Pci Dss Ensuring Security In Payment Card Transactions [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/06/08/understanding-pci-dss-ensuring-security-in-payment-card-transactions/",
+    "capture": "https://web.archive.org/web/20231002222930id_/https://blog.samarthya.me/wps/2023/06/08/understanding-pci-dss-ensuring-security-in-payment-card-transactions/",
+    "timestamp": "20231002222930",
+    "local_folder": false
+  },
+  {
+    "date": "2023/06/22",
+    "slug": "network-com",
+    "title": "Network Com [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/06/22/network-com/",
+    "capture": "https://web.archive.org/web/20231002220909id_/https://blog.samarthya.me/wps/2023/06/22/network-com/",
+    "timestamp": "20231002220909",
+    "local_folder": false
+  },
+  {
+    "date": "2023/06/29",
+    "slug": "kernel",
+    "title": "Kernel [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/06/29/kernel/",
+    "capture": "https://web.archive.org/web/20231002210652id_/https://blog.samarthya.me/wps/2023/06/29/kernel/",
+    "timestamp": "20231002210652",
+    "local_folder": false
+  },
+  {
+    "date": "2023/06/30",
+    "slug": "letters-in-sanskrit",
+    "title": "Letters in Sanskrit",
+    "url": "https://blog.samarthya.me/wps/2023/06/30/letters-in-sanskrit/",
+    "capture": "https://web.archive.org/web/20231002223136id_/https://blog.samarthya.me/wps/2023/06/30/letters-in-sanskrit/",
+    "timestamp": "20231002223136",
+    "local_folder": false
+  },
+  {
+    "date": "2023/07/05",
+    "slug": "gallery",
+    "title": "Gallery",
+    "url": "https://blog.samarthya.me/wps/2023/07/05/gallery/",
+    "capture": "https://web.archive.org/web/20231002210608id_/https://blog.samarthya.me/wps/2023/07/05/gallery/",
+    "timestamp": "20231002210608",
+    "local_folder": false
+  },
+  {
+    "date": "2023/07/05",
+    "slug": "whales",
+    "title": "Whale(s)",
+    "url": "https://blog.samarthya.me/wps/2023/07/05/whales/",
+    "capture": "https://web.archive.org/web/20231002214133id_/https://blog.samarthya.me/wps/2023/07/05/whales/",
+    "timestamp": "20231002214133",
+    "local_folder": false
+  },
+  {
+    "date": "2023/07/11",
+    "slug": "snmp",
+    "title": "SNMP",
+    "url": "https://blog.samarthya.me/wps/2023/07/11/snmp/",
+    "capture": "https://web.archive.org/web/20231002221120id_/https://blog.samarthya.me/wps/2023/07/11/snmp/",
+    "timestamp": "20231002221120",
+    "local_folder": false
+  },
+  {
+    "date": "2023/10/03",
+    "slug": "genai",
+    "title": "GenAI",
+    "url": "https://blog.samarthya.me/wps/2023/10/03/genai/",
+    "capture": "https://web.archive.org/web/20231209075818id_/https://blog.samarthya.me/wps/2023/10/03/genai/",
+    "timestamp": "20231209075818",
+    "local_folder": true
+  },
+  {
+    "date": "2023/10/10",
+    "slug": "consul",
+    "title": "Consul [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/10/10/consul/",
+    "capture": "https://web.archive.org/web/20231209091519id_/https://blog.samarthya.me/wps/2023/10/10/consul/",
+    "timestamp": "20231209091519",
+    "local_folder": false
+  },
+  {
+    "date": "2023/10/30",
+    "slug": "keystore-vs-truststore",
+    "title": "Keystore Vs Truststore [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/10/30/keystore-vs-truststore/",
+    "capture": "https://web.archive.org/web/20231209092459id_/https://blog.samarthya.me/wps/2023/10/30/keystore-vs-truststore/",
+    "timestamp": "20231209092459",
+    "local_folder": false
+  },
+  {
+    "date": "2023/10/30",
+    "slug": "pkcs12",
+    "title": "Pkcs12 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2023/10/30/pkcs12/",
+    "capture": "https://web.archive.org/web/20231209092919id_/https://blog.samarthya.me/wps/2023/10/30/pkcs12/",
+    "timestamp": "20231209092919",
+    "local_folder": false
+  },
+  {
+    "date": "2024/01/02",
+    "slug": "python-db",
+    "title": "Python & DB",
+    "url": "https://blog.samarthya.me/wps/2024/01/02/python-db/",
+    "capture": "https://web.archive.org/web/20240227210958id_/https://blog.samarthya.me/wps/2024/01/02/python-db/",
+    "timestamp": "20240227210958",
+    "local_folder": false
+  },
+  {
+    "date": "2024/02/13",
+    "slug": "non-root-podman-and-molecule",
+    "title": "Non Root Podman And Molecule [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2024/02/13/non-root-podman-and-molecule/",
+    "capture": "https://web.archive.org/web/20240419062725id_/https://blog.samarthya.me/wps/2024/02/13/non-root-podman-and-molecule/",
+    "timestamp": "20240419062725",
+    "local_folder": false
+  },
+  {
+    "date": "2024/02/14",
+    "slug": "how-a-file-write-happens-in-linux",
+    "title": "How a file write happens in Linux?",
+    "url": "https://blog.samarthya.me/wps/2024/02/14/how-a-file-write-happens-in-linux/",
+    "capture": "https://web.archive.org/web/20240419051123id_/https://blog.samarthya.me/wps/2024/02/14/how-a-file-write-happens-in-linux/",
+    "timestamp": "20240419051123",
+    "local_folder": false
+  },
+  {
+    "date": "2024/02/14",
+    "slug": "writing-to-a-file-in-linux-deep-dive",
+    "title": "Writing to a file in Linux deep-dive",
+    "url": "https://blog.samarthya.me/wps/2024/02/14/writing-to-a-file-in-linux-deep-dive/",
+    "capture": "https://web.archive.org/web/20240419050751id_/https://blog.samarthya.me/wps/2024/02/14/writing-to-a-file-in-linux-deep-dive/",
+    "timestamp": "20240419050751",
+    "local_folder": false
+  },
+  {
+    "date": "2024/02/22",
+    "slug": "what-about-profile-d",
+    "title": "What about `profile.d`",
+    "url": "https://blog.samarthya.me/wps/2024/02/22/what-about-profile-d/",
+    "capture": "https://web.archive.org/web/20240419064034id_/https://blog.samarthya.me/wps/2024/02/22/what-about-profile-d/",
+    "timestamp": "20240419064034",
+    "local_folder": false
+  },
+  {
+    "date": "2024/02/26",
+    "slug": "kafka-streams",
+    "title": "Kafka Streams [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2024/02/26/kafka-streams/",
+    "capture": "https://web.archive.org/web/20240419050523id_/https://blog.samarthya.me/wps/2024/02/26/kafka-streams/",
+    "timestamp": "20240419050523",
+    "local_folder": false
+  },
+  {
+    "date": "2024/03/27",
+    "slug": "terraform-iac",
+    "title": "Terraform (IaC)",
+    "url": "https://blog.samarthya.me/wps/2024/03/27/terraform-iac/",
+    "capture": "https://web.archive.org/web/20240419063542id_/https://blog.samarthya.me/wps/2024/03/27/terraform-iac/",
+    "timestamp": "20240419063542",
+    "local_folder": false
+  },
+  {
+    "date": "2024/04/29",
+    "slug": "git-commit-logs",
+    "title": "Git Commit Logs [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2024/04/29/git-commit-logs/",
+    "capture": "https://web.archive.org/web/20240518155449id_/https://blog.samarthya.me/wps/2024/04/29/git-commit-logs/",
+    "timestamp": "20240518155449",
+    "local_folder": false
+  },
+  {
+    "date": "2024/05/17",
+    "slug": "containers-a-brief-take",
+    "title": "Containers: A brief take",
+    "url": "https://blog.samarthya.me/wps/2024/05/17/containers-a-brief-take/",
+    "capture": "https://web.archive.org/web/20240618021340id_/https://blog.samarthya.me/wps/2024/05/17/containers-a-brief-take/",
+    "timestamp": "20240618021340",
+    "local_folder": false
+  },
+  {
+    "date": "2024/06/20",
+    "slug": "ollama-revolutionizing-language-models",
+    "title": "Ollama Revolutionizing Language Models [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2024/06/20/ollama-revolutionizing-language-models/",
+    "capture": "https://web.archive.org/web/20240804152632id_/https://blog.samarthya.me/wps/2024/06/20/ollama-revolutionizing-language-models/",
+    "timestamp": "20240804152632",
+    "local_folder": true
+  },
+  {
+    "date": "2024/06/26",
+    "slug": "target-fs",
+    "title": "Target fs?",
+    "url": "https://blog.samarthya.me/wps/2024/06/26/target-fs/",
+    "capture": "https://web.archive.org/web/20240804135741id_/https://blog.samarthya.me/wps/2024/06/26/target-fs/",
+    "timestamp": "20240804135741",
+    "local_folder": false
+  },
+  {
+    "date": "2024/07/26",
+    "slug": "ansible-privilege-escalation",
+    "title": "Privilege Escalation: How a `remote_user` and a `become_user` works",
+    "url": "https://blog.samarthya.me/wps/2024/07/26/ansible-privilege-escalation/",
+    "capture": "https://web.archive.org/web/20240804150010id_/https://blog.samarthya.me/wps/2024/07/26/ansible-privilege-escalation/",
+    "timestamp": "20240804150010",
+    "local_folder": false
+  },
+  {
+    "date": "2024/07/31",
+    "slug": "umask-what-is-it",
+    "title": "UMASK: What is it?",
+    "url": "https://blog.samarthya.me/wps/2024/07/31/umask-what-is-it/",
+    "capture": "https://web.archive.org/web/20240804142015id_/https://blog.samarthya.me/wps/2024/07/31/umask-what-is-it/",
+    "timestamp": "20240804142015",
+    "local_folder": false
+  },
+  {
+    "date": "2024/08/28",
+    "slug": "ansible-loops",
+    "title": "Ansible Loops",
+    "url": "https://blog.samarthya.me/wps/2024/08/28/ansible-loops/",
+    "capture": "https://web.archive.org/web/20240913104337id_/https://blog.samarthya.me/wps/2024/08/28/ansible-loops/",
+    "timestamp": "20240913104337",
+    "local_folder": false
+  },
+  {
+    "date": "2024/09/03",
+    "slug": "from-speech-to-text-a-python-deep-dive",
+    "title": "From Speech to Text: A Python Deep Dive",
+    "url": "https://blog.samarthya.me/wps/2024/09/03/from-speech-to-text-a-python-deep-dive/",
+    "capture": "https://web.archive.org/web/20240913110737id_/https://blog.samarthya.me/wps/2024/09/03/from-speech-to-text-a-python-deep-dive/",
+    "timestamp": "20240913110737",
+    "local_folder": true
+  },
+  {
+    "date": "2024/09/11",
+    "slug": "failed-to-connect-to-bus-no-medium-found",
+    "title": "Failed to connect to bus: No medium found",
+    "url": "https://blog.samarthya.me/wps/2024/09/11/failed-to-connect-to-bus-no-medium-found/",
+    "capture": "https://web.archive.org/web/20241006161037id_/https://blog.samarthya.me/wps/2024/09/11/failed-to-connect-to-bus-no-medium-found/",
+    "timestamp": "20241006161037",
+    "local_folder": false
+  },
+  {
+    "date": "2025/01/24",
+    "slug": "rfm-analysis-a-comprehensive-guide-to-customer-segmentation",
+    "title": "Rfm Analysis A Comprehensive Guide To Customer Segmentation [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/01/24/rfm-analysis-a-comprehensive-guide-to-customer-segmentation/",
+    "capture": "https://web.archive.org/web/20250209102157id_/https://blog.samarthya.me/wps/2025/01/24/rfm-analysis-a-comprehensive-guide-to-customer-segmentation/",
+    "timestamp": "20250209102157",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/02",
+    "slug": "correlation-and-covariance",
+    "title": "Correlation and Covariance",
+    "url": "https://blog.samarthya.me/wps/2025/02/02/correlation-and-covariance/",
+    "capture": "https://web.archive.org/web/20250209105700id_/https://blog.samarthya.me/wps/2025/02/02/correlation-and-covariance/",
+    "timestamp": "20250209105700",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/03",
+    "slug": "business-analytics-simplified",
+    "title": "Business Analytics: Simplified",
+    "url": "https://blog.samarthya.me/wps/2025/02/03/business-analytics-simplified/",
+    "capture": "https://web.archive.org/web/20250209110510id_/https://blog.samarthya.me/wps/2025/02/03/business-analytics-simplified/",
+    "timestamp": "20250209110510",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/07",
+    "slug": "business-analytics-the-bigger-picture",
+    "title": "Business Analytics The Bigger Picture [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/02/07/business-analytics-the-bigger-picture/",
+    "capture": "https://web.archive.org/web/20250323074701id_/https://blog.samarthya.me/wps/2025/02/07/business-analytics-the-bigger-picture/",
+    "timestamp": "20250323074701",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/07",
+    "slug": "comparison-of-competing-forecasting-models",
+    "title": "Comparison of Competing Forecasting Models",
+    "url": "https://blog.samarthya.me/wps/2025/02/07/comparison-of-competing-forecasting-models/",
+    "capture": "https://web.archive.org/web/20250323081811id_/https://blog.samarthya.me/wps/2025/02/07/comparison-of-competing-forecasting-models/",
+    "timestamp": "20250323081811",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/07",
+    "slug": "forecasting-methods",
+    "title": "Forecasting Methods",
+    "url": "https://blog.samarthya.me/wps/2025/02/07/forecasting-methods/",
+    "capture": "https://web.archive.org/web/20250323070243id_/https://blog.samarthya.me/wps/2025/02/07/forecasting-methods/",
+    "timestamp": "20250323070243",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/07",
+    "slug": "model-and-selection",
+    "title": "Model and Selection",
+    "url": "https://blog.samarthya.me/wps/2025/02/07/model-and-selection/",
+    "capture": "https://web.archive.org/web/20250323072321id_/https://blog.samarthya.me/wps/2025/02/07/model-and-selection/",
+    "timestamp": "20250323072321",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/11",
+    "slug": "sed-stream-editor",
+    "title": "Sed Stream Editor [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/02/11/sed-stream-editor/",
+    "capture": "https://web.archive.org/web/20250323065600id_/https://blog.samarthya.me/wps/2025/02/11/sed-stream-editor/",
+    "timestamp": "20250323065600",
+    "local_folder": false
+  },
+  {
+    "date": "2025/02/14",
+    "slug": "linear-programming-lp",
+    "title": "Linear Programming (LP)",
+    "url": "https://blog.samarthya.me/wps/2025/02/14/linear-programming-lp/",
+    "capture": "https://web.archive.org/web/20250323070323id_/https://blog.samarthya.me/wps/2025/02/14/linear-programming-lp/",
+    "timestamp": "20250323070323",
+    "local_folder": true
+  },
+  {
+    "date": "2025/02/14",
+    "slug": "monte-carlo-optimisation",
+    "title": "Monte Carlo Optimisation [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/02/14/monte-carlo-optimisation/",
+    "capture": "https://web.archive.org/web/20250323072513id_/https://blog.samarthya.me/wps/2025/02/14/monte-carlo-optimisation/",
+    "timestamp": "20250323072513",
+    "local_folder": true
+  },
+  {
+    "date": "2025/03/14",
+    "slug": "dialectic-inquiry",
+    "title": "Dialectic Inquiry [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/03/14/dialectic-inquiry/",
+    "capture": "https://web.archive.org/web/20250428092809id_/https://blog.samarthya.me/wps/2025/03/14/dialectic-inquiry/",
+    "timestamp": "20250428092809",
+    "local_folder": false
+  },
+  {
+    "date": "2025/09/11",
+    "slug": "quarto-a-new-way",
+    "title": "Quarto A New Way [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/09/11/quarto-a-new-way/",
+    "capture": "https://web.archive.org/web/20251017165148id_/https://blog.samarthya.me/wps/2025/09/11/quarto-a-new-way/",
+    "timestamp": "20251017165148",
+    "local_folder": false
+  },
+  {
+    "date": "2025/09/14",
+    "slug": "apache-spark",
+    "title": "Apache Spark [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/09/14/apache-spark/",
+    "capture": "https://web.archive.org/web/20251017171908id_/https://blog.samarthya.me/wps/2025/09/14/apache-spark/",
+    "timestamp": "20251017171908",
+    "local_folder": true
+  },
+  {
+    "date": "2025/10/09",
+    "slug": "beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark-🚀",
+    "title": "Beyond The Dataframe How Parquet And Arrow Turbocharge Pyspark 🚀 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/10/09/beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark-%F0%9F%9A%80/",
+    "capture": "https://web.archive.org/web/20251113115713id_/https://blog.samarthya.me/wps/2025/10/09/beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark-%F0%9F%9A%80/",
+    "timestamp": "20251113115713",
+    "local_folder": false
+  },
+  {
+    "date": "2025/10/09",
+    "slug": "pyspark-vs-pandas-choosing-right-🐍",
+    "title": "Pyspark Vs Pandas Choosing Right 🐍 [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/10/09/pyspark-vs-pandas-choosing-right-%F0%9F%90%8D/",
+    "capture": "https://web.archive.org/web/20251113114650id_/https://blog.samarthya.me/wps/2025/10/09/pyspark-vs-pandas-choosing-right-%F0%9F%90%8D/",
+    "timestamp": "20251113114650",
+    "local_folder": false
+  },
+  {
+    "date": "2025/10/10",
+    "slug": "the-core-divide",
+    "title": "The Core Divide [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/10/10/the-core-divide/",
+    "capture": "https://web.archive.org/web/20251113110516id_/https://blog.samarthya.me/wps/2025/10/10/the-core-divide/",
+    "timestamp": "20251113110516",
+    "local_folder": true
+  },
+  {
+    "date": "2025/10/16",
+    "slug": "matrix-multiplication-to-gpus",
+    "title": "Matrix Multiplication To Gpus [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/10/16/matrix-multiplication-to-gpus/",
+    "capture": "https://web.archive.org/web/20251113105356id_/https://blog.samarthya.me/wps/2025/10/16/matrix-multiplication-to-gpus/",
+    "timestamp": "20251113105356",
+    "local_folder": true
+  },
+  {
+    "date": "2025/10/21",
+    "slug": "building-a-minimal-langchain-ollama-demo",
+    "title": "Building a Minimal LangChain + Ollama Demo",
+    "url": "https://blog.samarthya.me/wps/2025/10/21/building-a-minimal-langchain-ollama-demo/",
+    "capture": "https://web.archive.org/web/20251113120722id_/https://blog.samarthya.me/wps/2025/10/21/building-a-minimal-langchain-ollama-demo/",
+    "timestamp": "20251113120722",
+    "local_folder": true
+  },
+  {
+    "date": "2025/11/08",
+    "slug": "data-mining-essentials",
+    "title": "Data Mining Essentials [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/11/08/data-mining-essentials/",
+    "capture": "https://web.archive.org/web/20251205135913id_/https://blog.samarthya.me/wps/2025/11/08/data-mining-essentials/",
+    "timestamp": "20251205135913",
+    "local_folder": true
+  },
+  {
+    "date": "2025/11/11",
+    "slug": "building-a-practical-retrieval-augmented-personal-assistant-rag",
+    "title": "Building A Practical Retrieval Augmented Personal Assistant Rag [inferred from slug]",
+    "url": "https://blog.samarthya.me/wps/2025/11/11/building-a-practical-retrieval-augmented-personal-assistant-rag/",
+    "capture": "https://web.archive.org/web/20251205141658id_/https://blog.samarthya.me/wps/2025/11/11/building-a-practical-retrieval-augmented-personal-assistant-rag/",
+    "timestamp": "20251205141658",
+    "local_folder": true
+  },
+  {
+    "date": "2025/11/22",
+    "slug": "k-nearest-neighbors",
+    "title": "k-Nearest Neighbors",
+    "url": "https://blog.samarthya.me/wps/2025/11/22/k-nearest-neighbors/",
+    "capture": "https://web.archive.org/web/20251205153847id_/https://blog.samarthya.me/wps/2025/11/22/k-nearest-neighbors/",
+    "timestamp": "20251205153847",
+    "local_folder": true
+  },
+  {
+    "date": "2025/12/17",
+    "slug": "mastering-tf-idf-a-gamified-journey",
+    "title": "Mastering TF-IDF: A Gamified Journey!",
+    "url": "https://blog.samarthya.me/wps/2025/12/17/mastering-tf-idf-a-gamified-journey/",
+    "capture": "https://web.archive.org/web/20260116151338id_/https://blog.samarthya.me/wps/2025/12/17/mastering-tf-idf-a-gamified-journey/",
+    "timestamp": "20260116151338",
+    "local_folder": true
+  },
+  {
+    "date": "2026/01/31",
+    "slug": "language-model",
+    "title": "Language Model",
+    "url": "https://blog.samarthya.me/wps/2026/01/31/language-model/",
+    "capture": "https://web.archive.org/web/20260214041550id_/https://blog.samarthya.me/wps/2026/01/31/language-model/",
+    "timestamp": "20260214041550",
+    "local_folder": true
+  },
+  {
+    "date": "2026/01/31",
+    "slug": "two-students-two-talents-the-story-of-how-ai-learns-language",
+    "title": "Two Students, Two Talents: The Story of How AI Learns Language",
+    "url": "https://blog.samarthya.me/wps/2026/01/31/two-students-two-talents-the-story-of-how-ai-learns-language/",
+    "capture": "https://web.archive.org/web/20260214040419id_/https://blog.samarthya.me/wps/2026/01/31/two-students-two-talents-the-story-of-how-ai-learns-language/",
+    "timestamp": "20260214040419",
+    "local_folder": true
+  },
+  {
+    "date": "2026/02/01",
+    "slug": "the-evolution-of-language-models",
+    "title": "The Evolution of Language Models",
+    "url": "https://blog.samarthya.me/wps/2026/02/01/the-evolution-of-language-models/",
+    "capture": "https://web.archive.org/web/20260214044531id_/https://blog.samarthya.me/wps/2026/02/01/the-evolution-of-language-models/",
+    "timestamp": "20260214044531",
+    "local_folder": true
+  },
+  {
+    "date": "2026/03/21",
+    "slug": "know-thyself-or-at-least-try-self-awareness-as-the-foundation-of-effective-leadership",
+    "title": "Know Thyself (Or At Least Try): Self-Awareness as the Foundation of Effective Leadership",
+    "url": "https://blog.samarthya.me/wps/2026/03/21/know-thyself-or-at-least-try-self-awareness-as-the-foundation-of-effective-leadership/",
+    "capture": "https://web.archive.org/web/20260421223051id_/https://blog.samarthya.me/wps/2026/03/21/know-thyself-or-at-least-try-self-awareness-as-the-foundation-of-effective-leadership/",
+    "timestamp": "20260421223051",
+    "local_folder": false
+  }
+]

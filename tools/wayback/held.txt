@@ -1,0 +1,7 @@
+# Recovered from the Internet Archive but NOT published: their substance was files the archive never saved.
+# Publish one when its files turn up (see MISSING-MEDIA.md section 4): put the files in wp-uploads, move the path
+# to paths.txt, re-run recover.py, and drop the "not published" note in overrides.yaml (spinnaker-open-source-deployment).
+/wps/2022/02/04/spinnaker-pipeline-in-action/
+/wps/2022/02/04/spinnaker-creating-application/
+/wps/2021/05/05/certprof-a-good-start/
+/wps/2022/02/03/wireshark-tracking-the-syn-syn-ack-handshake/

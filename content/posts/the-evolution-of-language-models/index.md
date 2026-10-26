@@ -3,8 +3,8 @@ title: "The Evolution of Language Models"
 date: "2026-02-01T12:00:00Z"
 slug: "the-evolution-of-language-models"
 description: "The story of modern language models is like watching a family tree grow, with each new generation learning from the triumphs and mistakes of those who came before."
-categories: ["technical"]
-tags: ["ai", "llm", "transformers"]
+categories: ["ai", "technical"]
+tags: ["ai", "history", "languagemodels", "llm", "transformers"]
 aliases: ["/wps/2026/02/01/the-evolution-of-language-models/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---

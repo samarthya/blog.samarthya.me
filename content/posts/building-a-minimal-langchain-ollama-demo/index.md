@@ -4,7 +4,7 @@ date: "2025-10-21T12:00:00Z"
 slug: "building-a-minimal-langchain-ollama-demo"
 description: "This post walks through a tiny, practical example that uses LangChain primitives and a local Ollama server to run a prompt-based summarization."
 categories: ["technical"]
-tags: ["llm", "langchain", "ollama", "python"]
+tags: ["langchain", "llm", "ollama", "python"]
 aliases: ["/wps/2025/10/21/building-a-minimal-langchain-ollama-demo/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---

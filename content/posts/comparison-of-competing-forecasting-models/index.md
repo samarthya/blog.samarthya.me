@@ -4,7 +4,7 @@ date: "2025-02-07T12:00:00Z"
 slug: "comparison-of-competing-forecasting-models"
 description: "How to tell which forecasting model is better: MAE, MSE, RMSE, MAPE, sMAPE, bias and Theil's U, explained with an ice-cream-sales example."
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["ba", "data-analytics"]
 aliases: ["/wps/2025/02/07/comparison-of-competing-forecasting-models/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---

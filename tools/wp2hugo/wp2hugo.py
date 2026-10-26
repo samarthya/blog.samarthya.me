@@ -587,7 +587,11 @@ def main():
     OVERRIDES.update(load_overrides())
     # Overrides may also belong to posts recovered from the Internet Archive (tools/wayback/), which are not in
     # the export but already exist under content/posts; anything else is a typo.
-    site_posts = {p.parent.name for p in (Path(__file__).resolve().parents[2] / "content" / "posts").glob("*/index.md")}
+    root = Path(__file__).resolve().parents[2]
+    site_posts = {p.parent.name for p in (root / "content" / "posts").glob("*/index.md")}
+    held = root / "tools" / "wayback" / "held.txt"  # recovered but held back until their files turn up
+    site_posts |= {ln.strip().rstrip("/").rsplit("/", 1)[-1] for ln in (held.read_text().splitlines() if held.exists() else [])
+                   if ln.strip() and not ln.startswith("#")}
     unknown = sorted(set(OVERRIDES) - {slug_of(i) for i in items} - site_posts) if args.all else []
     known = {slug_of(i) for i in items}
     out_root = Path(args.out)

@@ -3,7 +3,7 @@ title: "Language Model"
 date: "2026-01-31T12:00:00Z"
 slug: "language-model"
 description: "Think of a language model as a really sophisticated autocomplete system. You know how your phone suggests the next word when you’re texting?"
-categories: ["technical"]
+categories: ["ai", "ml", "technical"]
 tags: ["ai", "llm", "transformers"]
 aliases: ["/wps/2026/01/31/language-model/"]
 recovered: "Internet Archive snapshot 2026-05-18"

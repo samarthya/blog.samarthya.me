@@ -4,7 +4,7 @@ date: "2025-11-11T12:00:00Z"
 slug: "building-a-practical-retrieval-augmented-personal-assistant-rag"
 description: "The elements of information discussed here are all present in my github repository."
 categories: ["technical"]
-tags: ["llm", "langchain", "ollama", "rag"]
+tags: ["langchain", "llm", "ollama", "rag"]
 aliases: ["/wps/2025/11/11/building-a-practical-retrieval-augmented-personal-assistant-rag/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---

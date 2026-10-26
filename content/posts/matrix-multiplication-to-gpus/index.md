@@ -3,8 +3,8 @@ title: "Matrix Multiplication to GPU’s"
 date: "2025-10-16T12:00:00Z"
 slug: "matrix-multiplication-to-gpus"
 description: "If you are like me, you must have stumbled on this question – Why is matrix multiplication so significant – especially in the AI/ML universe."
-categories: ["technical"]
-tags: ["ai", "llm", "ml", "gpu"]
+categories: ["learn", "ml", "technical"]
+tags: ["ai", "cuda", "gpu", "llm", "ml", "nvidia"]
 aliases: ["/wps/2025/10/16/matrix-multiplication-to-gpus/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---
@@ -43,6 +43,8 @@ The nature of matrix multiplication is **perfectly parallelizable**: each elemen
 
 ---
 
+{{< youtubeLite id="OezBnu8K-_M" label="Matrix Multiplication Explained | Math for Machine Learning Part 5" >}}
+
 ## The Need for Speed: From CPU to Parallel GPU
 
 The sheer volume of these matrix calculations quickly became the performance bottleneck. A traditional **Central Processing Unit (CPU)**, with its handful of powerful, complex cores, is excellent for sequential, logic-heavy tasks. However, it’s inefficient for matrix multiplication because the operation is so **`parallelizable`**.
@@ -79,6 +81,8 @@ The progression didn’t stop with CUDA. In recent years, NVIDIA has introduced 
 My journey continues, but the anxiety is gone. I’m still learning, but now I know the engine. Understanding the progression from a single mathematical operation to a global hardware and software ecosystem—from a simple matrix multiply to a powerful Tensor Core—has fundamentally changed how I view and approach machine learning.
 
 If you’re struggling to understand ML, take a step back and find your building block. You might find that the key to the future of AI is a simple piece of math from your college days.
+
+{{< youtubeLite id="ZTt9gsGcdDo" label="Essential Matrix Algebra for Neural Networks, Clearly Explained!!!" >}}
 
 ---
 

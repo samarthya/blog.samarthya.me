@@ -3,8 +3,8 @@ title: "Beyond the `DataFrame`: How Parquet and Arrow Turbocharge PySpark 🚀"
 date: "2025-10-09T12:00:00Z"
 slug: "beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark"
 description: "In my last post, we explored the divide between Pandas (single machine) and PySpark (distributed computing)."
-categories: ["technical"]
-tags: ["python", "spark", "pandas", "data"]
+categories: ["ml", "python", "technical"]
+tags: ["ai", "data", "ml", "pandas", "python", "spark"]
 aliases: ["/wps/2025/10/09/beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark-%F0%9F%9A%80/", "/wps/2025/10/09/beyond-the-dataframe-how-parquet-and-arrow-turbocharge-pyspark-🚀/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---

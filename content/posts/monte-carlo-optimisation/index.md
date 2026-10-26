@@ -4,7 +4,7 @@ date: "2025-02-14T12:00:00Z"
 slug: "monte-carlo-optimisation"
 description: "Imagine you’re trying to find the best solution to a problem, but the problem is really complex and has a lot of randomness involved."
 categories: ["technical"]
-tags: ["data-analytics"]
+tags: ["ba", "data-analytics", "mc"]
 aliases: ["/wps/2025/02/14/monte-carlo-optimisation/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---

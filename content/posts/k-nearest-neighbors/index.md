@@ -4,7 +4,7 @@ date: "2025-11-22T12:00:00Z"
 slug: "k-nearest-neighbors"
 description: "KNN is the friendly, neighborhood algorithm that believes you are defined by the company you keep."
 categories: ["technical"]
-tags: ["ml", "data"]
+tags: ["ai", "data", "knn", "ml"]
 aliases: ["/wps/2025/11/22/k-nearest-neighbors/"]
 recovered: "Internet Archive snapshot 2026-04-21"
 ---

@@ -4,7 +4,7 @@ date: "2025-11-08T12:00:00Z"
 slug: "data-mining-essentials"
 description: "Whether you’re preparing for a quiz or just brushing up on fundamentals, this guide distills the key concepts from Data Mining into bite-sized, memorable chunks. Let’s dive in!"
 categories: ["technical"]
-tags: ["ml", "data-analytics", "data"]
+tags: ["ai", "data", "data-analytics", "datamining", "ml"]
 aliases: ["/wps/2025/11/08/data-mining-essentials/"]
 recovered: "Internet Archive snapshot 2026-06-10"
 ---
