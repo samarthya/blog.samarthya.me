@@ -3,6 +3,7 @@ title: "Someone was knocking"
 date: 2026-09-30T20:00:00-04:00
 slug: "someone-was-knocking"
 description: "165 wrong passwords in one day. The busiest day for password guessing the old blog ever logged."
+milestone: "incident"     # shows in the Milestones timeline on /daily/
 categories: ["daily"]
 tags: ["security", "wordpress", "incident"]
 ---

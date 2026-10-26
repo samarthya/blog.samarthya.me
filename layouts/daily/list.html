@@ -4,6 +4,23 @@
     <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
     {{ with .Description }}<p class="mt-2 text-neutral-600 dark:text-neutral-300">{{ . }}</p>{{ end }}
   </header>
+  {{/* Milestones: entries with `milestone: incident | rebuild | win` in front matter, oldest first.
+     Same look as the homepage timeline (.portal-timeline in assets/css/custom.css). */}}
+  {{ with where .Pages "Params.milestone" "!=" nil }}
+    <section class="daily-milestones" aria-labelledby="milestones-title">
+      <h2 id="milestones-title" class="daily-month-title">Milestones</h2>
+      <ol class="portal-timeline">
+        {{ range .ByDate }}
+          <li class="portal-milestone is-{{ .Params.milestone }}">
+            <span class="portal-dot" aria-hidden="true"></span>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+            <h3>{{ if eq .Params.milestone "incident" }}⚠ {{ end }}<a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+          </li>
+        {{ end }}
+      </ol>
+    </section>
+  {{ end }}
   {{ range .Pages.ByDate.Reverse.GroupByDate "January 2006" }}
     <section class="daily-month">
       <h2 class="daily-month-title">{{ .Key }}</h2>

@@ -3,6 +3,7 @@ title: "The domain moved"
 date: 2026-10-25T21:00:00-04:00
 slug: "the-domain-moved"
 description: "DNS moved to Cloudflare, mail kept working, and samarthya.me now serves the new site over HTTPS."
+milestone: "rebuild"     # shows in the Milestones timeline on /daily/
 categories: ["daily"]
 tags: ["dns", "cloudflare", "github"]
 ---

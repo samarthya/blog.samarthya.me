@@ -3,6 +3,7 @@ title: "The password worked"
 date: 2026-10-07T20:00:00-04:00
 slug: "the-password-worked"
 description: "The first successful logins of the break-in. My reused password had found its way to the wrong people."
+milestone: "incident"     # shows in the Milestones timeline on /daily/
 categories: ["daily"]
 tags: ["security", "wordpress", "incident"]
 ---
