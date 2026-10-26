@@ -409,11 +409,11 @@ Validation in default.stats:
 + Run `hal deploy connect` to connect to Spinnaker.
 ```
 
-*[image unavailable: Screenshot-2022-02-01-at-3.08.11-PM-1024x492.png — the landing page]*
+![the landing page](screenshot-2022-02-01-at-3.08.11-pm.png "the landing page")
 
 Play around with adding a new application (Which I will cover in subsequent blog)
 
-*[image unavailable: Screenshot-2022-02-01-at-3.23.40-PM-1024x899.png]*
+![](screenshot-2022-02-01-at-3.23.40-pm.png)
 
 Configuring the docker-registry for the `spinnaker-hellow` information is covered in this [blog]({{< relref "/posts/spinnaker-docker-registry" >}}).
 
