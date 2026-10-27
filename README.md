@@ -133,6 +133,11 @@ Posts imported from WordPress carry `aliases:` in their front matter, so every
 
 What is checked before publishing, and how to handle migration files safely: [docs/privacy.md](docs/privacy.md).
 
-## Licence
+## Licence, security and contributions
 
-Content © Samarthya. All rights reserved. The Blowfish theme is MIT-licensed (see `themes/blowfish/LICENSE`).
+Content © Samarthya. All rights reserved (see [LICENSE](LICENSE)). The Blowfish theme is MIT-licensed (see
+`themes/blowfish/LICENSE`).
+
+This is a personal, owner-only repository: contributions aren't accepted ([CONTRIBUTING.md](CONTRIBUTING.md)).
+Report security problems privately as described in [SECURITY.md](SECURITY.md). `main` is protected by a
+ruleset (no deletion, no force-push; the owner can bypass it for deliberate history rewrites).
