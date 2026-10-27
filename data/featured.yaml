@@ -1,8 +1,10 @@
-# Trophy shelf on the homepage: the posts you're proudest of, in this order (3 or 4 look best).
-# Use the post's folder name under content/posts/ (or content/daily/). Kept here rather than in the
-# posts' front matter so re-running the WordPress importer can't wipe it.
-# Starter picks: replace them with your own.
+# Trophy shelf on the homepage: the posts you're proudest of, in this order. Three cards fill a row on
+# desktop, so 3 or 6 look best. Use the post's folder name under content/posts/ (or content/daily/). Kept here
+# rather than in the posts' front matter so re-running the importer or the recovery tool can't wipe it.
 posts:
-  - the-ghost-board
-  - kafka-deploy-test
-  - junit5-learning-how-to-write-the-code-the-right-way
+  - rebuilding-1-the-day-the-blog-fell                                # the break-in and what it taught
+  - moving-to-hugo-2-the-migration-playbook                           # the migration as a reusable guide
+  - ai-reading-map                                                    # every AI post, in order
+  - building-a-practical-retrieval-augmented-personal-assistant-rag   # a real RAG build
+  - the-ghost-board                                                   # the agents story
+  - kafka-deploy-test                                                 # hands-on Kafka on Kubernetes
