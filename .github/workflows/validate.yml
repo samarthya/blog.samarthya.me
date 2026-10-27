@@ -22,7 +22,7 @@ jobs:
       TZ: America/New_York
     steps:
       - name: Checkout (with Blowfish submodule)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           submodules: recursive
 
