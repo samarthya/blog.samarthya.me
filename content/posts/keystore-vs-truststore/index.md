@@ -9,7 +9,7 @@ aliases: ["/wps/2023/10/30/keystore-vs-truststore/"]
 recovered: "Internet Archive snapshot 2026-02-14"
 ---
 
-![Keystore compared with truststore: a keystore presents your own identity, a truststore verifies others](ksts.drawio.png "Recreated in October 2026 from the post; the original image was lost")
+![Stores in action: client and server each hold a keystore and a truststore; each presents its own certificate from the keystore and checks the other side against its truststore](ksts.drawio.png "Stores in action")
 
 **Keystore and Truststore** are both repositories for storing cryptographic keys and digital certificates. They are used in various security-related operations, particularly in the context of SSL/TLS encryption. While they serve similar purposes, they have different roles and are used in distinct ways:
 

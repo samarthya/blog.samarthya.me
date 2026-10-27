@@ -298,7 +298,7 @@ trust-store-apache-kafka:
 keystore-vs-truststore:
   replace:
   - from: '![Stores in action](ksts.drawio.png "Stores in action (thumbnail only — original image lost)")'
-    to: '![Keystore compared with truststore: a keystore presents your own identity, a truststore verifies others](ksts.drawio.png "Recreated in October 2026 from the post; the original image was lost")'
+    to: '![Stores in action: client and server each hold a keystore and a truststore; each presents its own certificate from the keystore and checks the other side against its truststore](ksts.drawio.png "Stores in action")'  # original found 2026-10-27
 python-vs-bash:
   replace:
   - from: '*[image unavailable: pycomp.png]*'

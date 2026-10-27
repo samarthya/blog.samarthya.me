@@ -484,8 +484,7 @@ IMAGES = {  # slug: (file name, drawing function)
     "ssl-tls": ("ssl-tls.png", ssl_tls),
     "trust-store-apache-kafka": ("ks-store.png", keystore_truststore(
         "Keystore and truststore", "Kafka brokers and clients use both for TLS between them")),
-    "keystore-vs-truststore": ("ksts.drawio.png", keystore_truststore(
-        "Keystore vs truststore", "Present your identity from one, check theirs against the other")),
+    # "keystore-vs-truststore": the original drawing was found on 2026-10-27, so it is no longer recreated
     "python-vs-bash": ("pycomp.png", python_vs_bash),
     "python-when-not-to-use-it": ("nopy.png", python_when_not),
     "python-argparse": ("pyarg.png", python_argparse),

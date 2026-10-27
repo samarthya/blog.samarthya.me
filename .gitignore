@@ -61,3 +61,6 @@ __pycache__/
 # local review notes
 /comments.md
 /.local-backups/
+
+# Local Claude skills (persona and workflow notes stay off the public repo)
+/.claude/skills/
