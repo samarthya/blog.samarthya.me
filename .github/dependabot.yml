@@ -1,0 +1,11 @@
+# Keep the GitHub Actions used by the workflows up to date (one grouped pull request a month).
+# The Blowfish theme (a git submodule) is updated by hand: see README.md.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      actions:
+        patterns: ["*"]
