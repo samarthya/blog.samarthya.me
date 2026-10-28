@@ -308,3 +308,66 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-v
 /* Fix (Phase A regression): the link override above also applied in dark mode, where primary-700 on
    near-black is too dim. Dark mode gets primary-400 (6.7:1 on neutral-800). */
 .dark .prose { --tw-prose-links: rgba(var(--color-primary-400), 1); }
+
+/* ---------- Trophy shelf flip cards (layouts/partials/home/trophy-shelf.html) ----------
+   Both faces sit in the same grid cell, so the card is as tall as its taller face with no fixed heights.
+   Flipping only where it makes sense: a real pointer that can hover, and no reduced-motion preference. */
+.trophy { position: relative; }
+.trophy-front { position: relative; height: 100%; }
+.trophy-front .article-link--card { height: 100%; transition: box-shadow .3s; }
+.trophy-back { display: none; }
+.trophy-rank { position: absolute; z-index: 3; top: .6rem; left: .6rem; padding: .15rem .55rem; border-radius: 999px;
+  font-size: .8rem; font-weight: 800; letter-spacing: .02em; color: #3b2a00;
+  background: linear-gradient(135deg, #fde68a, #f59e0b); box-shadow: 0 2px 8px -2px rgba(0, 0, 0, .35); }
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .trophy { perspective: 1200px; animation: trophy-in .5s cubic-bezier(.22, 1, .36, 1) both;
+    animation-delay: calc(var(--i, 0) * 70ms); }
+  .trophy-inner { display: grid; height: 100%; transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.22, 1, .36, 1); }
+  .trophy-face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+  .trophy:hover .trophy-inner, .trophy:focus-within .trophy-inner { transform: rotateY(180deg); }
+
+  .trophy-back { display: flex; flex-direction: column; gap: .6rem; position: relative; overflow: hidden;
+    transform: rotateY(180deg); padding: 1.25rem; border-radius: .5rem; color: rgb(var(--color-neutral-800));
+    border: 1px solid rgba(var(--color-primary-500), .45);
+    background: radial-gradient(circle at 85% 0%, rgba(245, 158, 11, .22), transparent 55%),
+                linear-gradient(160deg, rgba(var(--color-primary-100), 1), rgba(var(--color-neutral-50), 1));
+    box-shadow: 0 18px 40px -18px rgba(var(--color-primary-700), .55); }
+  /* A slow light sweep across the back once it faces the reader */
+  .trophy-back::before { content: ""; position: absolute; inset: -50% auto -50% -60%; width: 40%; transform: rotate(20deg);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .45), transparent); pointer-events: none; }
+  .trophy:hover .trophy-back::before { animation: trophy-shine 1.2s .35s ease-out; }
+
+  .trophy-kicker { margin: 0; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: rgb(var(--color-primary-700)); }
+  .trophy-title { margin: 0; font-size: 1.15rem; font-weight: 800; line-height: 1.25; }
+  .trophy-desc { margin: 0; font-size: .92rem; line-height: 1.55; color: rgb(var(--color-neutral-600));
+    display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+  .trophy-tags { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0; padding: 0; list-style: none; }
+  .trophy-tags li { padding: .1rem .55rem; border-radius: 999px; font-size: .75rem;
+    border: 1px solid rgb(var(--color-neutral-300)); color: rgb(var(--color-neutral-600)); }
+  .trophy-cta { margin-top: auto; align-self: flex-start; padding: .45rem 1rem; border-radius: 999px; font-weight: 700;
+    font-size: .9rem; text-decoration: none; color: #fff; background: rgb(var(--color-primary-700)); }
+  .trophy-cta::after { content: ""; position: absolute; inset: 0; }  /* the whole back face is clickable */
+  .trophy:hover .trophy-cta { box-shadow: 0 8px 20px -8px rgba(var(--color-primary-700), .8); }
+
+  /* Keyboard: the focused link is on the (now hidden) front, so draw the ring around the whole card instead */
+  .trophy:focus-within { outline: 2px solid rgb(var(--color-primary-500)); outline-offset: 4px; border-radius: .6rem; }
+
+  .dark .trophy-back { color: rgb(var(--color-neutral-100)); border-color: rgba(var(--color-primary-400), .45);
+    background: radial-gradient(circle at 85% 0%, rgba(245, 158, 11, .18), transparent 55%),
+                linear-gradient(160deg, rgba(var(--color-primary-900), 1), rgba(var(--color-neutral-900), 1)); }
+  .dark .trophy-kicker { color: rgb(var(--color-primary-300)); }
+  .dark .trophy-desc, .dark .trophy-tags li { color: rgb(var(--color-neutral-300)); }
+  .dark .trophy-tags li { border-color: rgb(var(--color-neutral-600)); }
+  .dark .trophy-back::before { background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .12), transparent); }
+}
+
+/* Touch screens and reduced motion: no flip, just a gentle lift */
+@media (hover: hover) and (prefers-reduced-motion: reduce) {
+  .trophy:hover .article-link--card { box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .35); }
+}
+
+@keyframes trophy-in { from { opacity: 0; transform: translateY(12px); } }
+@keyframes trophy-shine { to { left: 130%; } }

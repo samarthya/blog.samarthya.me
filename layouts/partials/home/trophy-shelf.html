@@ -1,4 +1,7 @@
-{{/* Hand-picked posts from data/featured.yaml, shown as cards. Hidden when the list is empty. */}}
+{{/* Hand-picked posts from data/featured.yaml, shown as cards. Hidden when the list is empty.
+   Each card flips on hover or keyboard focus (styles: .trophy in assets/css/custom.css). The front is the normal
+   article card; the back is decoration (aria-hidden, link not tabbable) so screen readers and Tab see each post
+   once. On touch screens and with reduced motion there is no flip and only the front is shown. */}}
 {{ $picks := slice }}
 {{ range hugo.Data.featured.posts }}
   {{ with or (site.GetPage (printf "/posts/%s" .)) (site.GetPage (printf "/daily/%s" .)) }}
@@ -10,8 +13,27 @@
 {{ with $picks }}
   <section class="portal-section">
     <h2 class="portal-h2">🏆 Trophy shelf</h2>
-    <div class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-      {{ range . }}{{ partial "article-link/card.html" . }}{{ end }}
+    <div class="trophy-shelf w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      {{ range $i, $p := . }}
+        {{ $rank := add $i 1 }}
+        <div class="trophy" style="--i: {{ $i }}">
+          <div class="trophy-inner">
+            <div class="trophy-face trophy-front">
+              <span class="trophy-rank" aria-hidden="true">#{{ $rank }}</span>
+              {{ partial "article-link/card.html" $p }}
+            </div>
+            <div class="trophy-face trophy-back" aria-hidden="true">
+              <p class="trophy-kicker">🏆 Trophy #{{ $rank }} · {{ $p.Date.Format "Jan 2006" }}</p>
+              <h3 class="trophy-title">{{ $p.Title | emojify }}</h3>
+              <p class="trophy-desc">{{ $p.Description | default ($p.Summary | plainify) | truncate 200 }}</p>
+              {{ with $p.Params.tags }}
+                <ul class="trophy-tags">{{ range first 3 . }}<li>{{ . }}</li>{{ end }}</ul>
+              {{ end }}
+              <a class="trophy-cta" href="{{ $p.RelPermalink }}" tabindex="-1">Read it · {{ $p.ReadingTime }} min →</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
     </div>
   </section>
 {{ end }}
