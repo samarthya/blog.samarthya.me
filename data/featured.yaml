@@ -8,3 +8,4 @@ posts:
   - building-a-practical-retrieval-augmented-personal-assistant-rag   # a real RAG build
   - the-ghost-board                                                   # the agents story
   - kafka-deploy-test                                                 # hands-on Kafka on Kubernetes
+  - ssdlc-in-the-age-of-ai-exploits                                   # the SSDLC concept, with a slide deck

@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSDLC when exploits are cheap · Samarthya</title>
+<meta name="description" content="A slide walk-through of a secure development life cycle for a time of 48,000 CVEs a year and AI-assisted exploits.">
+<link rel="icon" href="/favicon-32x32.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<style>
+  :root {
+    --bg: #14090b;
+    --panel: #22121a;
+    --line: #3a1f27;
+    --text: #f3e9eb;
+    --muted: #b9a3a8;
+    --red: #ef4444;
+    --red-deep: #7f1d1d;
+    --amber: #f59e0b;
+    --yellow: #eab308;
+    --green: #22c55e;
+    --slate: #64748b;
+  }
+  html, body, .reveal-viewport { background: var(--bg); }
+  .reveal { font-family: "Inter", "Segoe UI", system-ui, sans-serif; font-size: 30px; color: var(--text); }
+  .reveal .slides { text-align: left; }
+  .reveal h1, .reveal h2, .reveal h3 { font-family: inherit; color: var(--text); text-transform: none;
+    letter-spacing: -0.01em; margin: 0 0 0.5em; line-height: 1.15; }
+  .reveal h1 { font-size: 2.3em; font-weight: 800; }
+  .reveal h2 { font-size: 1.45em; font-weight: 750; }
+  .reveal h3 { font-size: 1em; font-weight: 700; color: var(--red); }
+  .reveal p, .reveal li { line-height: 1.4; }
+  .reveal ul { margin-left: 1em; }
+  .reveal li { margin: 0.25em 0; }
+  .reveal a { color: #fca5a5; }
+  .reveal strong { color: #fff; }
+  .reveal code { font-family: "JetBrains Mono", Consolas, monospace; font-size: 0.85em; color: #fecaca;
+    background: var(--panel); padding: 0.05em 0.3em; border-radius: 4px; }
+  .kicker { color: var(--red); font-weight: 700; font-size: 0.6em; letter-spacing: 0.12em;
+    text-transform: uppercase; margin-bottom: 0.6em; }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.68em; }
+  .tiny { font-size: 0.5em; }
+  .bar { height: 6px; width: 120px; background: linear-gradient(90deg, var(--red), var(--red-deep));
+    border-radius: 3px; margin: 0.6em 0 0.9em; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; }
+  .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8em; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 0.7em 0.8em; }
+  .card h3 { margin-bottom: 0.3em; }
+  .stat { font-size: 2.1em; font-weight: 800; color: #fff; line-height: 1; }
+  .stat-label { font-size: 0.62em; color: var(--muted); margin-top: 0.4em; }
+  .reveal table { font-size: 0.6em; border-collapse: collapse; width: 100%; }
+  .reveal table th { color: var(--red); text-align: left; border-bottom: 2px solid var(--line); padding: 0.4em 0.5em; }
+  .reveal table td { border-bottom: 1px solid var(--line); padding: 0.4em 0.5em; vertical-align: top; }
+  .chart { display: flex; justify-content: center; align-items: center; }
+  .chart svg { max-width: 100%; height: auto; max-height: 520px; }
+  .chart.tall svg { max-height: 560px; }
+  .mermaid-src { display: none; }
+  .pill { display: inline-block; padding: 0.1em 0.55em; border-radius: 999px; font-weight: 700; font-size: 0.8em; color: #fff; }
+  .t0 { background: var(--red); } .t1 { background: #ea580c; } .t2 { background: #ca8a04; } .t3 { background: var(--slate); }
+  .footer-note { position: absolute; bottom: -1.6em; left: 0; font-size: 0.42em; color: var(--muted); }
+  .reveal .progress { color: var(--red); }
+  .reveal .controls { color: var(--red); }
+  .reveal .slide-number { background: transparent; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- 1. Title -->
+<section>
+  <div class="kicker">Security · SSDLC · a working concept</div>
+  <h1>SSDLC when exploits are cheap</h1>
+  <div class="bar"></div>
+  <p class="muted">Shipping software when new CVEs arrive faster than fixes,<br>and an LLM can turn a CVE description into an exploit.</p>
+  <p class="small muted" style="margin-top:2em">Samarthya · <a href="/posts/ssdlc-in-the-age-of-ai-exploits/">read the full post</a> · press <code>Esc</code> for the overview</p>
+  <aside class="notes">A fire inspection once a year works when fires are rare. Sparks now fall every day.</aside>
+</section>
+
+<!-- 2. Mind map -->
+<section>
+  <div class="kicker">The map</div>
+  <h2>Everything on one page</h2>
+  <div class="chart tall" data-mermaid="mindmap"></div>
+<script type="text/plain" class="mermaid-src" id="mindmap">
+mindmap
+  root((SSDLC))
+    Why now
+      48,185 CVEs in 2025
+      29% exploited by day 0
+      LLM agents exploit from CVE text
+    Standards
+      NIST SSDF
+      OWASP SAMM
+      SLSA
+      CISA BOD 26-04
+    The loop
+      Commit · PR · Merge
+      Nightly SBOM rescan
+      Triage · Fix · Verify
+    Data lake
+      SARIF + SBOM
+      KEV + EPSS
+      Exposure + owner
+    LLM + human
+      Trivial: bot PR
+      Assisted: draft PR
+      Human: auth, crypto
+    People
+      Budget every sprint
+      Champions
+      Show, do not lecture
+</script>
+</section>
+
+<!-- 3. Three clocks -->
+<section>
+  <div class="kicker">Why now</div>
+  <h2>Three clocks changed</h2>
+  <div class="cols3">
+    <div class="card"><h3>Volume</h3><div class="stat">48,185</div>
+      <div class="stat-label">CVEs published in 2025, +20.6% on 2024. About 132 a day.</div></div>
+    <div class="card"><h3>Exploit</h3><div class="stat">28.96%</div>
+      <div class="stat-label">of newly exploited CVEs were attacked on or before publication day (23.6% in 2024).</div></div>
+    <div class="card"><h3>AI</h3><div class="stat">87%</div>
+      <div class="stat-label">of 15 one-day CVEs exploited by a 91-line LLM agent given the CVE text; 7% without it.</div></div>
+  </div>
+  <p class="small" style="margin-top:1em">Defenders get the same tools: at DARPA's AIxCC final, automated systems found <strong>86%</strong> of planted bugs and patched <strong>68%</strong>, about 45 minutes per patch.</p>
+  <p class="tiny muted">Sources: Jerry Gamblin 2025 CVE review · VulnCheck State of Exploitation 2026 · Fang et al., arXiv:2404.08144 · DARPA AIxCC results</p>
+</section>
+
+<!-- 4. Why the gate fails -->
+<section>
+  <div class="kicker">The old way</div>
+  <h2>"SDLC plus a scan at the end" fails</h2>
+  <div class="cols3">
+    <div class="card"><h3>Too late</h3><p class="small">A finding at release competes with a deadline. The deadline usually wins.</p></div>
+    <div class="card"><h3>A snapshot</h3><p class="small">Clean on Tuesday, vulnerable on Wednesday: a dependency got a CVE. Your code did not change.</p></div>
+    <div class="card"><h3>A report</h3><p class="small">A PDF of 400 findings is a to-do list nobody owns.</p></div>
+  </div>
+</section>
+
+<!-- 5. SDLC vs SSDLC -->
+<section>
+  <div class="kicker">The shift</div>
+  <h2>From a gate to a rhythm</h2>
+  <table>
+    <tr><th></th><th>Classic SDLC</th><th>SSDLC</th></tr>
+    <tr><td>When</td><td>Gate before release</td><td>Every commit, merge, night, and in production</td></tr>
+    <tr><td>Output</td><td>Report</td><td>PR or ticket with an owner and a due date</td></tr>
+    <tr><td>Priority</td><td>CVSS severity</td><td>Exploited? Reachable? Likely? (KEV, exposure, EPSS)</td></tr>
+    <tr><td>Trivial fixes</td><td>A developer, eventually</td><td>A bot opens the PR; a developer reviews</td></tr>
+    <tr><td>Shipped software</td><td>Done</td><td>Rescanned daily against new CVEs</td></tr>
+  </table>
+</section>
+
+<!-- 6. Standards -->
+<section>
+  <div class="kicker">Standards</div>
+  <h2>They say <em>what</em>, not <em>how fast</em></h2>
+  <div class="cols">
+    <div>
+      <ul class="small">
+        <li><strong>NIST SSDF 1.1</strong>: Prepare, Protect, Produce, Respond (1.2 still a draft)</li>
+        <li><strong>OWASP SAMM 2.0</strong>: five business functions, measurable maturity</li>
+        <li><strong>SLSA 1.2</strong>: signed provenance from a hardened build</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>CISA BOD 26-04 (June 2026)</h3>
+      <p class="small">Four questions: <strong>exposed?</strong> <strong>in KEV?</strong> <strong>automatable?</strong> <strong>total control?</strong><br>
+      Worst combination: <span class="pill t0">3 days</span></p>
+      <p class="small muted">At one large agency: <strong>1%</strong> of instances were 3-day; <strong>60%+</strong> could wait for the next upgrade.</p>
+    </div>
+  </div>
+  <p class="small" style="margin-top:0.8em">Risk-based triage: fix a small set very fast, and stop pretending the rest is urgent.</p>
+</section>
+
+<!-- 7. The loop with timeboxes -->
+<section>
+  <div class="kicker">The loop</div>
+  <h2>Every stage has a trigger and a timebox</h2>
+  <div class="chart" data-mermaid="loop"></div>
+<script type="text/plain" class="mermaid-src" id="loop">
+flowchart TB
+  subgraph BUILD["While you build"]
+    direction LR
+    C["1 · Commit<br/>secrets scan<br/><b>seconds</b>"]:::block
+    P["2 · Pull request<br/>SAST diff, deps, IaC<br/><b>under 10 min</b>"]:::block
+    M["3 · Merge to main<br/>full scan, SBOM, sign<br/><b>under 30 min</b>"]:::track
+    C --> P --> M
+  end
+  subgraph RUN["After you ship"]
+    direction LR
+    N["4 · Nightly<br/>rescan shipped SBOMs<br/><b>overnight</b>"]:::key
+    T["5 · Triage<br/>KEV, EPSS, exposure<br/><b>same day</b>"]:::track
+    F["6 · Fix<br/>bot or human PR<br/><b>3 / 14 / 30 days</b>"]:::track
+    V["7 · Verify<br/>rescan closes it<br/><b>next run</b>"]:::track
+    N --> T --> F --> V
+  end
+  BUILD --> RUN
+  classDef block fill:#7f1d1d,stroke:#ef4444,color:#fff
+  classDef track fill:#22121a,stroke:#64748b,color:#f3e9eb
+  classDef key fill:#ef4444,stroke:#fff,color:#fff
+</script>
+  <p class="small"><span class="pill t0">blocks</span> only new criticals and secrets &nbsp;·&nbsp; <span class="pill" style="background:#ef4444;outline:2px solid #fff">stage 4</span> is where most new risk appears</p>
+</section>
+
+<!-- 7b. Feed and vectors per level -->
+<section>
+  <div class="kicker">Feed · check · vector</div>
+  <h2>What each level is fed, and what it guards</h2>
+  <div class="chart tall" data-mermaid="feed"></div>
+<script type="text/plain" class="mermaid-src" id="feed">
+flowchart LR
+  subgraph L1["1 · Commit"]
+    direction TB
+    F1[/"staged diff"/] --> C1["Gitleaks"] --> V1{{"Leaked credentials<br/>T1552.001"}}:::vec
+  end
+  subgraph L2["2 · Pull request"]
+    direction TB
+    F2[/"code, lockfile,<br/>IaC diffs"/] --> C2["Semgrep · OSV<br/>Trivy config"] --> V2{{"Injection A05<br/>Misconfig A02<br/>Bad dep A03 · T1195.001"}}:::vec
+  end
+  subgraph L3["3 · Merge + build"]
+    direction TB
+    F3[/"repo, image,<br/>build steps"/] --> C3["Trivy image · SBOM<br/>signed provenance"] --> V3{{"Base image A03<br/>Tampered build<br/>A08 · T1195.002"}}:::vec
+  end
+  subgraph L4["4 · Nightly"]
+    direction TB
+    F4[/"released SBOMs,<br/>new CVEs, staging"/] --> C4["Dependency-Track<br/>ZAP baseline"] --> V4{{"New CVE in<br/>running app<br/>T1190"}}:::vec
+  end
+  subgraph L5["5 · Triage"]
+    direction TB
+    F5[/"findings + KEV<br/>+ EPSS + exposure"/] --> C5["triage.py"] --> O5(["T0 3d · T1 14d<br/>T2 30d · T3 upgrade"]):::tier
+  end
+  L1 --> L2 --> L3 --> L4 --> L5
+  classDef vec fill:#3b0d10,stroke:#ef4444,color:#fecaca
+  classDef tier fill:#ef4444,stroke:#fff,color:#fff
+</script>
+  <p class="tiny muted">Vectors: OWASP Top 10:2025 (A0x) and MITRE ATT&amp;CK (T1xxx). Not here on purpose: broken access control (A01) and insecure design (A06) need threat modelling and people.</p>
+</section>
+
+<!-- 8. Triage tree -->
+<section>
+  <div class="kicker">Triage</div>
+  <h2>What triggers which timebox</h2>
+  <div class="chart tall" data-mermaid="triage"></div>
+<script type="text/plain" class="mermaid-src" id="triage">
+flowchart LR
+  F([New finding]) --> K{In CISA KEV?}
+  K -- yes --> E1{Internet-exposed?}
+  E1 -- yes --> T0["T0 · fix in 3 days"]:::t0
+  E1 -- no --> T1a["T1 · fix in 14 days"]:::t1
+  K -- no --> E2{Internet-exposed?}
+  E2 -- yes --> P1{EPSS ≥ 0.10?}
+  P1 -- yes --> T1b["T1 · fix in 14 days"]:::t1
+  P1 -- no --> T2a["T2 · fix in 30 days"]:::t2
+  E2 -- no --> P2{EPSS ≥ 0.10?}
+  P2 -- yes --> T2b["T2 · fix in 30 days"]:::t2
+  P2 -- no --> T3["T3 · next planned upgrade"]:::t3
+  classDef t0 fill:#ef4444,stroke:#fff,color:#fff
+  classDef t1 fill:#ea580c,stroke:#fff,color:#fff
+  classDef t2 fill:#ca8a04,stroke:#fff,color:#fff
+  classDef t3 fill:#64748b,stroke:#fff,color:#fff
+</script>
+  <p class="tiny muted">My heuristic, loosely modelled on CISA BOD 26-04. The EPSS cut-off is a starting guess, to be tuned on your own data.</p>
+</section>
+
+<!-- 9. Tier values chart -->
+<section>
+  <div class="kicker">The values</div>
+  <h2>Days to fix, by tier</h2>
+  <div class="cols" style="grid-template-columns: 1.4fr 1fr; align-items:center">
+    <div class="chart" data-mermaid="tiers"></div>
+    <div>
+      <p><span class="pill t0">T0</span> KEV + exposed: <strong>3 days</strong></p>
+      <p><span class="pill t1">T1</span> KEV, or exposed + likely: <strong>14 days</strong></p>
+      <p><span class="pill t2">T2</span> likely, or exposed: <strong>30 days</strong></p>
+      <p><span class="pill t3">T3</span> none of these: <strong>next upgrade</strong></p>
+      <p class="small muted">Same data, different place: Log4Shell is T0 on an internet-facing service and T1 on an internal one.</p>
+    </div>
+  </div>
+<script type="text/plain" class="mermaid-src" id="tiers">
+xychart-beta
+  title "Fix-by window (days)"
+  x-axis ["T0 · KEV + exposed", "T1 · KEV or likely", "T2 · likely or exposed"]
+  y-axis "days" 0 --> 35
+  bar [3, 14, 30]
+</script>
+</section>
+
+<!-- 10. Toolchain -->
+<section>
+  <div class="kicker">Open-source toolchain</div>
+  <h2>One job, one tool, one format out</h2>
+  <table>
+    <tr><th>Job</th><th>Tool</th><th>Licence</th><th>Stage</th></tr>
+    <tr><td>Secrets</td><td>Gitleaks</td><td>MIT</td><td>Commit, PR</td></tr>
+    <tr><td>SAST</td><td>Semgrep CE</td><td>LGPL-2.1</td><td>PR, merge</td></tr>
+    <tr><td>SCA</td><td>OSV-Scanner</td><td>Apache-2.0</td><td>PR, merge</td></tr>
+    <tr><td>Containers, IaC, SBOM</td><td>Trivy</td><td>Apache-2.0</td><td>Merge</td></tr>
+    <tr><td>DAST</td><td>ZAP baseline</td><td>Apache-2.0</td><td>Nightly</td></tr>
+    <tr><td>SBOM monitoring</td><td>Dependency-Track</td><td>Apache-2.0</td><td>Nightly</td></tr>
+    <tr><td>Findings store</td><td>DefectDojo</td><td>BSD-3-Clause</td><td>Triage</td></tr>
+  </table>
+  <p class="small muted">Everything writes SARIF or a CycloneDX SBOM, so it can land in one place.</p>
+</section>
+
+<!-- 11. Data lake -->
+<section>
+  <div class="kicker">The common data lake</div>
+  <h2>Scanners know the bug. You know the context.</h2>
+  <div class="chart" data-mermaid="lake"></div>
+<script type="text/plain" class="mermaid-src" id="lake">
+flowchart TB
+  subgraph Scanners
+    direction LR
+    G[Gitleaks] ~~~ S[Semgrep] ~~~ O[OSV-Scanner] ~~~ Y[Trivy] ~~~ Z[ZAP]
+  end
+  subgraph Context
+    direction LR
+    KEV[CISA KEV] ~~~ EP[FIRST EPSS] ~~~ OWN[Exposure + owner]
+  end
+  D[("Findings store<br/>DefectDojo · Dependency-Track")]
+  TR["triage.py<br/>policy as code"]
+  Scanners -- "SARIF / SBOM" --> D
+  D --> TR
+  Context --> TR
+  TR --> PR[Fix PR]:::out
+  TR --> TK[Ticket with due date]:::out
+  classDef out fill:#ef4444,stroke:#fff,color:#fff
+</script>
+</section>
+
+<!-- 12. LLM + HITL -->
+<section>
+  <div class="kicker">LLM in the loop</div>
+  <h2>Bots propose, tests prove, humans merge</h2>
+  <div class="cols3">
+    <div class="card"><h3>Trivial</h3><p class="small">Patch or minor bumps with upgrade guidance, lint autofix, base-image refresh.<br><strong>Bot PR → human merges after CI.</strong></p></div>
+    <div class="card"><h3>Assisted</h3><p class="small">Parameterise a query, add output encoding, tighten config.<br><strong>LLM draft PR + test → code owner.</strong></p></div>
+    <div class="card"><h3>Human</h3><p class="small">Authentication, authorisation, crypto, data model, major upgrades.<br><strong>Developer, LLM as a pair.</strong></p></div>
+  </div>
+  <ul class="small" style="margin-top:0.8em">
+    <li>No bot writes to <code>main</code>. Branch protection applies to bots too.</li>
+    <li>A finding closes when the <strong>rescan</strong> agrees, not when the PR merges.</li>
+    <li>Pick the model by the data: local open-weight for sensitive code, hosted where allowed.</li>
+  </ul>
+  <p class="tiny muted">Pattern from Google DeepMind's CodeMender: validate first, then "all patches … are reviewed by human researchers".</p>
+</section>
+
+<!-- 13. Deliver + teach -->
+<section>
+  <div class="kicker">People</div>
+  <h2>Still delivering, and teaching it</h2>
+  <div class="cols">
+    <div class="card"><h3>Deliver</h3>
+      <ul class="small">
+        <li>A standing share of every sprint for the security queue</li>
+        <li>Measure flow: time to fix per tier, bot PRs merged in a week, oldest T0/T1</li>
+        <li>A missed T0 gets a blameless review</li>
+      </ul></div>
+    <div class="card"><h3>Teach</h3>
+      <ul class="small">
+        <li>Show a real CVE becoming an exploit, in a sandbox</li>
+        <li>Teach triage, not fear: KEV, EPSS, exposure</li>
+        <li>One security champion per team</li>
+        <li>Make the secure path the default path</li>
+        <li>Share near misses</li>
+      </ul></div>
+  </div>
+</section>
+
+<!-- 14. Open questions + takeaways -->
+<section>
+  <div class="kicker">Fall. Get up. Build again.</div>
+  <h2>Still open, and what to keep</h2>
+  <div class="cols">
+    <div class="card"><h3>Still unsure</h3>
+      <ul class="small">
+        <li>How much to trust an LLM fix with only unit tests behind it</li>
+        <li>Reachability analysis that works across languages</li>
+        <li>Whether EPSS 0.10 is the right cut-off</li>
+      </ul></div>
+    <div class="card"><h3>Keep</h3>
+      <ul class="small">
+        <li>Security in every stage, plus nightly rescans of shipped software</li>
+        <li>Timebox by risk: exploited + exposed gets days</li>
+        <li>One store; triage policy as code</li>
+        <li>Bots and LLMs write; humans merge</li>
+      </ul></div>
+  </div>
+  <p class="small" style="margin-top:1em">Full post, sources and the <code>triage.py</code> script: <a href="/posts/ssdlc-in-the-age-of-ai-exploits/">samarthya.me/posts/ssdlc-in-the-age-of-ai-exploits</a></p>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: "base",
+    securityLevel: "loose",
+    fontFamily: "Inter, Segoe UI, system-ui, sans-serif",
+    themeVariables: {
+      darkMode: true,
+      background: "#14090b",
+      primaryColor: "#22121a",
+      primaryBorderColor: "#ef4444",
+      primaryTextColor: "#f3e9eb",
+      secondaryColor: "#3a1f27",
+      tertiaryColor: "#1b0e13",
+      lineColor: "#b9a3a8",
+      textColor: "#f3e9eb",
+      clusterBkg: "#1b0e13",
+      clusterBorder: "#3a1f27",
+      edgeLabelBackground: "#14090b",
+      fontSize: "18px",
+      // mindmap branch colours: one shade per branch, all readable with white text
+      cScale0: "#7f1d1d", cScale1: "#9a3412", cScale2: "#854d0e", cScale3: "#991b1b",
+      cScale4: "#475569", cScale5: "#b91c1c", cScale6: "#7c2d12", cScale7: "#334155",
+      cScaleLabel0: "#fff", cScaleLabel1: "#fff", cScaleLabel2: "#fff", cScaleLabel3: "#fff",
+      cScaleLabel4: "#fff", cScaleLabel5: "#fff", cScaleLabel6: "#fff", cScaleLabel7: "#fff",
+      xyChart: { backgroundColor: "#14090b", titleColor: "#f3e9eb", xAxisLabelColor: "#f3e9eb",
+        yAxisLabelColor: "#b9a3a8", xAxisLineColor: "#3a1f27", yAxisLineColor: "#3a1f27",
+        xAxisTickColor: "#3a1f27", yAxisTickColor: "#3a1f27", yAxisTitleColor: "#b9a3a8",
+        plotColorPalette: "#ef4444" }
+    },
+    flowchart: { htmlLabels: true, curve: "basis" }
+  });
+
+  // Render every chart off-screen first: reveal hides inactive slides, and Mermaid
+  // measures text, so drawing into a hidden slide gives broken layouts.
+  async function drawCharts() {
+    for (const target of document.querySelectorAll("[data-mermaid]")) {
+      const src = document.getElementById(target.dataset.mermaid).textContent;
+      try {
+        const { svg } = await mermaid.render("svg-" + target.dataset.mermaid, src);
+        target.innerHTML = svg;
+      } catch (err) {
+        target.innerHTML = '<p class="small muted">Chart failed to render: ' + err.message + "</p>";
+      }
+    }
+  }
+
+  drawCharts().finally(() => Reveal.initialize({
+    hash: true,
+    slideNumber: "c/t",
+    transition: "slide",
+    center: true,
+    width: 1280,
+    height: 720,
+    margin: 0.06,
+    plugins: [RevealNotes]
+  }));
+</script>
+</body>
+</html>
