@@ -371,3 +371,56 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-v
 
 @keyframes trophy-in { from { opacity: 0; transform: translateY(12px); } }
 @keyframes trophy-shine { to { left: 130%; } }
+
+/* ---------- Posts timeline (layouts/posts/list.html, assets/js/posts-timeline.js) ----------
+   A sticky rail of years under the fixed header: one mini bar per year (height = posts that year), the year,
+   and its count. The year being read is highlighted; on narrow screens the rail scrolls sideways. */
+.pt-rail { position: sticky; top: var(--pt-top, 4.25rem); z-index: 20; margin: 0 0 1.5rem; padding: .5rem .25rem 0;
+  border-bottom: 1px solid rgb(var(--color-neutral-200)); background: rgba(var(--color-neutral), .85);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.dark .pt-rail { background: rgba(var(--color-neutral-800), .85); border-bottom-color: rgb(var(--color-neutral-700)); }
+.pt-years { display: flex; gap: .25rem; margin: 0; padding: 0 0 .1rem; list-style: none; overflow-x: auto;
+  scroll-snap-type: x proximity; scrollbar-width: none; }
+.pt-years::-webkit-scrollbar { display: none; }
+.pt-years li { flex: 1 0 3.4rem; scroll-snap-align: center; margin: 0; }
+.pt-year { position: relative; display: grid; justify-items: center; gap: .1rem; padding: .25rem .25rem .45rem;
+  border-radius: .5rem .5rem 0 0; text-decoration: none; color: rgb(var(--color-neutral-500)); transition: color .2s, background .2s; }
+.pt-track { display: flex; align-items: flex-end; height: 2.2rem; }
+.pt-bar { display: block; width: 1.25rem; height: max(3px, calc(2.2rem * var(--v))); border-radius: 3px 3px 1px 1px;
+  background: rgb(var(--color-primary-300)); transform-origin: bottom; transition: background .2s, transform .2s; }
+.pt-label { font-size: .85rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pt-n { font-size: .68rem; line-height: 1; opacity: .8; }
+.pt-year::after { content: ""; position: absolute; left: 20%; right: 20%; bottom: 0; height: 3px; border-radius: 3px;
+  background: rgb(var(--color-primary-600)); transform: scaleX(0); transition: transform .25s cubic-bezier(.22, 1, .36, 1); }
+.pt-year:hover, .pt-year:focus-visible { color: rgb(var(--color-neutral-800)); background: rgba(var(--color-primary-500), .08); }
+.pt-year:hover .pt-bar { transform: scaleY(1.08); }
+.pt-year[aria-current] { color: rgb(var(--color-primary-700)); }
+.pt-year[aria-current]::after { transform: scaleX(1); }
+.pt-year:hover .pt-bar { background: rgb(var(--color-primary-400)); }
+.pt-year[aria-current] .pt-bar { background: rgb(var(--color-primary-600)); }
+.dark .pt-year:hover, .dark .pt-year:focus-visible { color: rgb(var(--color-neutral-100)); }
+.dark .pt-year[aria-current] { color: rgb(var(--color-primary-300)); }
+.dark .pt-bar { background: rgb(var(--color-primary-800)); }
+.dark .pt-year[aria-current] .pt-bar { background: rgb(var(--color-primary-400)); }
+
+/* Year sections: the heading clears the sticky header and rail when jumped to */
+.pt-section { scroll-margin-top: calc(var(--pt-top, 4.25rem) + 5.5rem); margin-bottom: 2.5rem; }
+.pt-heading { display: flex; align-items: baseline; gap: .6rem; margin: 0 0 .9rem; font-size: 1.6rem; font-weight: 800;
+  color: rgb(var(--color-neutral-800)); }
+.pt-heading small { font-size: .85rem; font-weight: 600; color: rgb(var(--color-neutral-500)); }
+.dark .pt-heading { color: rgb(var(--color-neutral-100)); }
+.pt-item > .article-link--card { height: 100%; }
+
+/* Batches: hidden until the script reveals them, then fade up one after another */
+.pt-js .pt-item.is-pending { display: none; }
+.pt-item.is-in { animation: pt-in .45s cubic-bezier(.22, 1, .36, 1) both; animation-delay: var(--d, 0ms); }
+@keyframes pt-in { from { opacity: 0; transform: translateY(14px); } }
+@media (prefers-reduced-motion: reduce) { .pt-item.is-in { animation: none; } }
+
+.pt-more { display: grid; justify-items: center; gap: .6rem; padding: 1rem 0 2rem; }
+.pt-more[hidden] { display: none; }
+.pt-status { margin: 0; font-size: .85rem; color: rgb(var(--color-neutral-500)); }
+.pt-button { padding: .5rem 1.2rem; border-radius: 999px; font-weight: 600; color: rgb(var(--color-primary-700));
+  border: 1px solid rgba(var(--color-primary-500), .5); background: transparent; }
+.pt-button:hover { background: rgba(var(--color-primary-500), .08); }
+.pt-button[hidden] { display: none; }

@@ -1,0 +1,55 @@
+{{/* /posts/: every post on one page, grouped by year, with a sticky year timeline on top.
+   All cards are in the HTML (works without JavaScript, and search engines see everything). With JavaScript,
+   assets/js/posts-timeline.js shows them in batches as you scroll, highlights the year you are reading in the
+   timeline, and jumps to a year when you pick it. Styles: "Posts timeline" in assets/css/custom.css. */}}
+{{ define "main" }}
+  {{ $years := .Pages.GroupByDate "2006" }}
+  {{ $max := 1 }}
+  {{ range $years }}{{ $max = math.Max $max (len .Pages) }}{{ end }}
+
+  <header class="mb-6">
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    {{ with .Description }}<p class="mt-2 text-neutral-600 dark:text-neutral-300">{{ . }}</p>{{ end }}
+    <p class="pt-count text-sm text-neutral-500 dark:text-neutral-400">
+      {{ len .Pages }} posts across {{ len $years }} years
+    </p>
+  </header>
+
+  <nav class="pt-rail" aria-label="Jump to a year">
+    <ol class="pt-years">
+      {{ range $years }}
+        {{ $n := len .Pages }}
+        <li>
+          <a class="pt-year" href="#y{{ .Key }}" data-year="{{ .Key }}"
+             aria-label="{{ .Key }}: {{ $n }} {{ cond (eq $n 1) "post" "posts" }}">
+            <span class="pt-track" aria-hidden="true"><span class="pt-bar" style="--v: {{ printf "%.2f" (div (float $n) $max) }}"></span></span>
+            <span class="pt-label">{{ .Key }}</span>
+            <span class="pt-n">{{ $n }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ol>
+  </nav>
+
+  <div class="pt-feed">
+    {{ range $years }}
+      <section class="pt-section" id="y{{ .Key }}" data-year="{{ .Key }}" aria-labelledby="h{{ .Key }}">
+        <h2 class="pt-heading" id="h{{ .Key }}">
+          {{ .Key }} <small>{{ len .Pages }} {{ cond (eq (len .Pages) 1) "post" "posts" }}</small>
+        </h2>
+        <div class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+          {{ range .Pages }}<div class="pt-item">{{ partial "article-link/card.html" . }}</div>{{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </div>
+
+  <div class="pt-more" hidden>
+    <p class="pt-status" aria-live="polite"></p>
+    <button type="button" class="pt-button">Show more</button>
+  </div>
+
+  {{ with resources.Get "js/posts-timeline.js" | minify | fingerprint }}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+  {{ end }}
+{{ end }}
