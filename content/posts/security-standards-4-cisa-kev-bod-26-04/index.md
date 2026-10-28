@@ -1,6 +1,6 @@
 ---
 title: "Security standards, plainly, part 4: CISA KEV and BOD 26-04"
-date: 2026-10-28T17:04:00-04:00
+date: 2026-10-25T19:30:00-04:00
 description: "CISA's Known Exploited Vulnerabilities catalog and directive BOD 26-04 in plain words: what makes a CVE 'known exploited', the four questions that set a fix deadline, the 3-day to fix-on-upgrade timelines, and how to use both outside government."
 categories: ["technical", "ssdlc"]
 tags: ["security", "devops", "sdlc"]

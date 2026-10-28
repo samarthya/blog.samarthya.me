@@ -424,3 +424,58 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-v
   border: 1px solid rgba(var(--color-primary-500), .5); background: transparent; }
 .pt-button:hover { background: rgba(var(--color-primary-500), .08); }
 .pt-button[hidden] { display: none; }
+
+/* ---------- Mermaid full-size viewer (layouts/shortcodes/mermaid.html, assets/js/mermaid-zoom.js) ---------- */
+.mz { position: relative; margin: 1.5rem 0; }
+.mz.is-ready pre.mermaid { cursor: zoom-in; }
+.mz-open { position: absolute; top: .4rem; right: .4rem; padding: .25rem .7rem; border-radius: 999px; font-size: .8rem;
+  font-weight: 600; color: rgb(var(--color-neutral-700)); background: rgba(var(--color-neutral), .9);
+  border: 1px solid rgb(var(--color-neutral-300)); box-shadow: 0 2px 8px -4px rgba(0, 0, 0, .3); }
+.mz-open:hover { color: rgb(var(--color-primary-700)); border-color: rgb(var(--color-primary-400)); }
+.mz-open[hidden] { display: none; }
+.dark .mz-open { color: rgb(var(--color-neutral-200)); background: rgba(var(--color-neutral-800), .9);
+  border-color: rgb(var(--color-neutral-600)); }
+
+.mz-dialog { width: min(96vw, 1600px); height: 92vh; max-width: none; max-height: none; margin: auto; padding: 0; border: 0;
+  border-radius: 14px; background: rgb(var(--color-neutral)); color: rgb(var(--color-neutral-800));
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, .6); }
+.mz-dialog[open] { display: flex; flex-direction: column; }
+.mz-dialog::backdrop { background: rgba(0, 0, 0, .55); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+.dark .mz-dialog { background: rgb(var(--color-neutral-800)); color: rgb(var(--color-neutral-100)); }
+.mz-bar { display: flex; align-items: center; gap: .5rem; padding: .6rem .8rem;
+  border-bottom: 1px solid rgb(var(--color-neutral-200)); }
+.dark .mz-bar { border-bottom-color: rgb(var(--color-neutral-700)); }
+.mz-bar button, .mz-svg { min-width: 2rem; padding: .25rem .6rem; border-radius: 8px; font-weight: 700; text-decoration: none;
+  border: 1px solid rgb(var(--color-neutral-300)); color: inherit; background: transparent; }
+.mz-bar button:hover, .mz-svg:hover { border-color: rgb(var(--color-primary-400)); color: rgb(var(--color-primary-700)); }
+.dark .mz-bar button, .dark .mz-svg { border-color: rgb(var(--color-neutral-600)); }
+.mz-zoom { min-width: 3.2rem; text-align: center; font-size: .85rem; font-variant-numeric: tabular-nums; }
+.mz-svg { margin-left: auto; font-size: .85rem; font-weight: 600; }
+.mz-stage { flex: 1; overflow: auto; padding: 1.5rem; display: grid; align-items: start; justify-items: safe center; }
+.mz-stage svg { display: block; flex: none; }
+
+/* ---------- Cheat cards (layouts/shortcodes/cheatcards.html + cheat.html) ----------
+   Small reference cards: an ID badge in the accent colour, a title, and three short lines. */
+.cheat-grid { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); margin: 1.5rem 0 2rem; }
+.cheat { --c: rgb(var(--color-primary-600)); position: relative; display: flex; flex-direction: column; gap: .35rem;
+  padding: .9rem 1rem 1rem; border-radius: 12px; border: 1px solid rgb(var(--color-neutral-200));
+  border-top: 4px solid var(--c); background: rgb(var(--color-neutral));
+  box-shadow: 0 6px 18px -14px rgba(0, 0, 0, .45); transition: transform .2s, box-shadow .2s; break-inside: avoid; }
+.cheat:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -18px rgba(0, 0, 0, .5); }
+.cheat-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.cheat-id { padding: .1rem .5rem; border-radius: 6px; font: 700 .85rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: #fff; background: var(--c); }
+.cheat-meta { font-size: .72rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: rgb(var(--color-neutral-500)); }
+.cheat-title { margin: .15rem 0 .1rem; font-size: 1.02rem; font-weight: 800; line-height: 1.3; color: rgb(var(--color-neutral-900)); }
+.cheat-body { font-size: .86rem; line-height: 1.5; color: rgb(var(--color-neutral-700)); }
+.cheat-body p { margin: 0 0 .3rem; }
+.cheat-body strong { color: rgb(var(--color-neutral-900)); }
+.cheat-body code { font-size: .8rem; }
+.dark .cheat { background: rgb(var(--color-neutral-800)); border-color: rgb(var(--color-neutral-700)); border-top-color: var(--c); }
+.dark .cheat-title, .dark .cheat-body strong { color: rgb(var(--color-neutral-50)); }
+.dark .cheat-body { color: rgb(var(--color-neutral-300)); }
+@media (prefers-reduced-motion: reduce) { .cheat:hover { transform: none; } }
+@media print {
+  .cheat-grid { grid-template-columns: 1fr 1fr; gap: .5rem; }
+  .cheat { box-shadow: none; transform: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

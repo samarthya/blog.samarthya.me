@@ -1,6 +1,6 @@
 ---
 title: "Security standards, plainly, part 2: OWASP SAMM v2.0"
-date: 2026-10-28T17:02:00-04:00
+date: 2026-10-23T19:30:00-04:00
 description: "OWASP's Software Assurance Maturity Model in plain words: five business functions, fifteen practices, three maturity levels, how a self-assessment works, and why a score you choose beats a score you are given."
 categories: ["technical", "ssdlc"]
 tags: ["security", "devops", "sdlc"]

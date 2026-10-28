@@ -1,0 +1,10 @@
+{{/* One reference card for {{< cheatcards >}}. Params: id (badge), title, meta (small line under the title, optional),
+   color (accent, optional CSS colour). The inner text is Markdown; keep it to three or four short lines. */}}
+<article class="cheat"{{ with .Get "color" }} style="--c: {{ . | safeCSS }}"{{ end }}>
+  <header class="cheat-head">
+    <span class="cheat-id">{{ .Get "id" }}</span>
+    {{ with .Get "meta" }}<span class="cheat-meta">{{ . }}</span>{{ end }}
+  </header>
+  <p class="cheat-title">{{ .Get "title" }}</p>
+  <div class="cheat-body">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</article>

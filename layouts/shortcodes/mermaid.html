@@ -1,0 +1,13 @@
+{{/* Site override of Blowfish's mermaid shortcode: the same <pre class="mermaid">, wrapped in a figure with an
+   "Open full size" button. assets/js/mermaid-zoom.js (loaded once per page) opens the rendered SVG in a zoomable
+   dialog, with a link to the SVG on its own. Styles: "Mermaid full-size viewer" in assets/css/custom.css. */}}
+<figure class="mz not-prose">
+  <pre class="not-prose mermaid">{{ .Inner | safeHTML }}</pre>
+  <button type="button" class="mz-open" hidden>⤢ Open full size</button>
+</figure>
+{{ if not (.Page.Store.Get "mermaidZoom") }}
+  {{ .Page.Store.Set "mermaidZoom" true }}
+  {{ with resources.Get "js/mermaid-zoom.js" | minify | fingerprint }}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+  {{ end }}
+{{ end }}

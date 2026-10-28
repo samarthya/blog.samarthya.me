@@ -1,6 +1,6 @@
 ---
 title: "Security standards, plainly, part 1: NIST SSDF (SP 800-218)"
-date: 2026-10-28T17:01:00-04:00
+date: 2026-10-22T19:30:00-04:00
 description: "What NIST's Secure Software Development Framework is, its four groups of practices in plain words, what it asks of a team, why buyers care about it, and what it deliberately leaves out."
 categories: ["technical", "ssdlc"]
 tags: ["security", "devops", "sdlc"]
