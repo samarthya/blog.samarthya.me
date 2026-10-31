@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>What osv.dev is: advisories from many sources flow into OSV.dev, which publishes records with exact affected version ranges</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#ef4444" stop-opacity="0.28"/><stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <linearGradient id="db" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b91c1c"/><stop offset="0.5" stop-color="#ef4444"/><stop offset="1" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="range" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Heading -->
+  <text x="60" y="78" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">LEARNING OSV · 1</text>
+  <text x="60" y="132" fill="#ffffff" font-size="50" font-weight="800">What osv.dev is</text>
+  <text x="60" y="172" fill="#cbd5e1" font-size="22">Which package. Which versions. In data a machine can match.</text>
+
+  <!-- Sources -->
+  <g font-size="17" font-weight="700" fill="#e2e8f0">
+    <g transform="translate(60,250)">
+      <rect width="196" height="46" rx="23" fill="#ffffff" fill-opacity="0.06" stroke="#64748b"/>
+      <circle cx="26" cy="23" r="7" fill="#a78bfa"/><text x="44" y="29">GitHub (GHSA)</text>
+    </g>
+    <g transform="translate(60,312)">
+      <rect width="196" height="46" rx="23" fill="#ffffff" fill-opacity="0.06" stroke="#64748b"/>
+      <circle cx="26" cy="23" r="7" fill="#facc15"/><text x="44" y="29">PyPA (PYSEC)</text>
+    </g>
+    <g transform="translate(60,374)">
+      <rect width="196" height="46" rx="23" fill="#ffffff" fill-opacity="0.06" stroke="#64748b"/>
+      <circle cx="26" cy="23" r="7" fill="#22d3ee"/><text x="44" y="29">Go (GO-)</text>
+    </g>
+    <g transform="translate(60,436)">
+      <rect width="196" height="46" rx="23" fill="#ffffff" fill-opacity="0.06" stroke="#64748b"/>
+      <circle cx="26" cy="23" r="7" fill="#fb923c"/><text x="44" y="29">RustSec</text>
+    </g>
+    <g transform="translate(60,498)">
+      <rect width="196" height="46" rx="23" fill="#7c3aed" fill-opacity="0.25" stroke="#a78bfa"/>
+      <circle cx="26" cy="23" r="7" fill="#f472b6"/><text x="44" y="29">Malware (MAL-)</text>
+    </g>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arr)" stroke-dasharray="5 6">
+    <path d="M258 273 C 300 273, 300 380, 330 388"/>
+    <path d="M258 335 C 300 335, 300 385, 330 392"/>
+    <path d="M258 397 L330 397"/>
+    <path d="M258 459 C 300 459, 300 410, 330 402"/>
+    <path d="M258 521 C 300 521, 300 415, 330 406"/>
+  </g>
+
+  <!-- Database -->
+  <g transform="translate(340,320)" filter="url(#shadow)">
+    <path d="M0 22 v120 a80 22 0 0 0 160 0 v-120" fill="url(#db)"/>
+    <ellipse cx="80" cy="22" rx="80" ry="22" fill="#fca5a5"/>
+    <path d="M0 62 a80 22 0 0 0 160 0" fill="none" stroke="#fecaca" stroke-opacity="0.5" stroke-width="2"/>
+    <path d="M0 102 a80 22 0 0 0 160 0" fill="none" stroke="#fecaca" stroke-opacity="0.5" stroke-width="2"/>
+    <text x="80" y="95" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">OSV.dev</text>
+    <text x="80" y="120" text-anchor="middle" fill="#fee2e2" font-size="12.5">aggregate · enrich · index</text>
+  </g>
+  <path d="M505 400 L585 400" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Record card -->
+  <g transform="translate(595,215)" filter="url(#shadow)">
+    <rect width="545" height="355" rx="18" fill="url(#card)" stroke="#334155"/>
+    <clipPath id="cardclip"><rect width="545" height="355" rx="18"/></clipPath>
+    <rect width="545" height="54" fill="#ef4444" fill-opacity="0.16" clip-path="url(#cardclip)"/>
+    <line x1="0" y1="54" x2="545" y2="54" stroke="#ef4444" stroke-opacity="0.35"/>
+    <circle cx="26" cy="27" r="6" fill="#ef4444"/><circle cx="46" cy="27" r="6" fill="#f59e0b"/><circle cx="66" cy="27" r="6" fill="#22c55e"/>
+    <text x="92" y="34" fill="#fecaca" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700">GHSA-xvch-5gv4-984h</text>
+    <rect x="430" y="12" width="96" height="30" rx="15" fill="#dc2626"/>
+    <text x="478" y="33" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">9.8 CRIT</text>
+
+    <g font-family="Consolas, Menlo, monospace" font-size="17">
+      <text x="28" y="96" fill="#94a3b8">aliases </text><text x="140" y="96" fill="#e2e8f0">CVE-2021-44906</text>
+      <text x="28" y="128" fill="#94a3b8">package </text><text x="140" y="128" fill="#e2e8f0">npm / minimist</text>
+      <text x="28" y="160" fill="#94a3b8">cwe     </text><text x="140" y="160" fill="#e2e8f0">CWE-1321 prototype pollution</text>
+    </g>
+
+    <text x="28" y="208" fill="#cbd5e1" font-size="15" font-weight="700" letter-spacing="1.5">AFFECTED RANGE (SEMVER)</text>
+    <!-- version axis -->
+    <line x1="40" y1="262" x2="505" y2="262" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+    <rect x="80" y="254" width="300" height="16" rx="8" fill="url(#range)"/>
+    <rect x="380" y="254" width="125" height="16" rx="8" fill="#22c55e"/>
+    <circle cx="80" cy="262" r="11" fill="#111827" stroke="#f97316" stroke-width="4"/>
+    <circle cx="300" cy="262" r="8" fill="#fff"/>
+    <circle cx="380" cy="262" r="11" fill="#111827" stroke="#22c55e" stroke-width="4"/>
+    <g font-size="15" font-weight="700">
+      <text x="80" y="298" text-anchor="middle" fill="#fdba74">introduced</text>
+      <text x="80" y="318" text-anchor="middle" fill="#e2e8f0" font-family="Consolas, Menlo, monospace">1.0.0</text>
+      <text x="300" y="240" text-anchor="middle" fill="#fff">you: 1.2.5</text>
+      <text x="380" y="298" text-anchor="middle" fill="#86efac">fixed</text>
+      <text x="380" y="318" text-anchor="middle" fill="#e2e8f0" font-family="Consolas, Menlo, monospace">1.2.6</text>
+    </g>
+  </g>
+
+  <text x="60" y="600" fill="#94a3b8" font-size="16">OSV schema · OSV.dev database + API · OSV-Scanner</text>
+</svg>

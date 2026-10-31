@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Guided remediation: the in-place strategy edits only the lockfile and fixed 7 of 50; the relax strategy changes package.json and relocks, fixing 50 of 50 with a major upgrade</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <linearGradient id="laneA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14532d" stop-opacity="0.55"/><stop offset="1" stop-color="#14532d" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="laneB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c2d12" stop-opacity="0.6"/><stop offset="1" stop-color="#7c2d12" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#cbd5e1"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <text x="60" y="78" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">LEARNING OSV · 3</text>
+  <text x="60" y="132" fill="#ffffff" font-size="50" font-weight="800">Guided remediation</text>
+  <text x="60" y="172" fill="#cbd5e1" font-size="22">osv-scanner fix proposes. Tests and a reviewer decide.</text>
+
+  <!-- Lane A: in-place -->
+  <g transform="translate(60,205)" filter="url(#shadow)">
+    <rect width="1080" height="180" rx="18" fill="url(#laneA)" stroke="#22c55e" stroke-opacity="0.45"/>
+    <rect x="24" y="22" width="132" height="40" rx="20" fill="#16a34a"/>
+    <text x="90" y="49" text-anchor="middle" fill="#fff" font-size="19" font-weight="800">in-place</text>
+    <text x="24" y="92" fill="#bbf7d0" font-size="16" font-weight="600">lockfile only</text>
+    <text x="24" y="116" fill="#bbf7d0" font-size="16" font-weight="600">low risk</text>
+    <text x="24" y="150" fill="#94a3b8" font-size="14">--strategy=in-place</text>
+
+    <!-- files -->
+    <g transform="translate(200,30)">
+      <path d="M0 0 h52 l18 18 v74 h-70 z" fill="#1f2937" stroke="#64748b"/>
+      <text x="35" y="112" text-anchor="middle" fill="#94a3b8" font-size="12">package.json</text>
+      <text x="35" y="58" text-anchor="middle" fill="#64748b" font-size="13" font-weight="700">=</text>
+      <text x="35" y="130" text-anchor="middle" fill="#64748b" font-size="11">unchanged</text>
+      <path d="M100 0 h52 l18 18 v74 h-70 z" fill="#14532d" stroke="#22c55e"/>
+      <text x="135" y="112" text-anchor="middle" fill="#bbf7d0" font-size="12">package-lock</text>
+      <text x="135" y="60" text-anchor="middle" fill="#86efac" font-size="22" font-weight="800">✎</text>
+      <text x="135" y="130" text-anchor="middle" fill="#86efac" font-size="11">edited</text>
+    </g>
+
+    <!-- changes -->
+    <g font-family="Consolas, Menlo, monospace" font-size="16" fill="#e2e8f0">
+      <g transform="translate(430,34)">
+        <rect width="360" height="38" rx="10" fill="#0f172a" fill-opacity="0.7" stroke="#334155"/>
+        <text x="16" y="25">lodash  4.17.15</text><path d="M178 19 h34" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arr)"/><text x="222" y="25" fill="#86efac">4.18.1</text>
+      </g>
+      <g transform="translate(430,82)">
+        <rect width="360" height="38" rx="10" fill="#0f172a" fill-opacity="0.7" stroke="#334155"/>
+        <text x="16" y="25">axios   0.21.1</text><path d="M178 19 h34" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arr)"/><text x="222" y="25" fill="#86efac">0.21.4</text>
+      </g>
+    </g>
+    <text x="430" y="150" fill="#fca5a5" font-size="14" font-weight="600">🔒 express 4.17.1 pins qs, body-parser, send… exactly: stuck</text>
+
+    <!-- ring 7/50 -->
+    <g transform="translate(960,90)">
+      <circle r="52" fill="none" stroke="#334155" stroke-width="12"/>
+      <circle r="52" fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round" stroke-dasharray="45.7 326.7" transform="rotate(-90)"/>
+      <text y="4" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">7</text>
+      <text y="28" text-anchor="middle" fill="#94a3b8" font-size="14">of 50</text>
+    </g>
+  </g>
+
+  <!-- Lane B: relax -->
+  <g transform="translate(60,405)" filter="url(#shadow)">
+    <rect width="1080" height="190" rx="18" fill="url(#laneB)" stroke="#f97316" stroke-opacity="0.5"/>
+    <rect x="24" y="22" width="132" height="40" rx="20" fill="#ea580c"/>
+    <text x="90" y="49" text-anchor="middle" fill="#fff" font-size="19" font-weight="800">relax</text>
+    <text x="24" y="92" fill="#fed7aa" font-size="16" font-weight="600">package.json</text>
+    <text x="24" y="116" fill="#fed7aa" font-size="16" font-weight="600">+ full relock</text>
+    <text x="24" y="150" fill="#94a3b8" font-size="14">--strategy=relax</text>
+
+    <g transform="translate(200,30)">
+      <path d="M0 0 h52 l18 18 v74 h-70 z" fill="#7c2d12" stroke="#f97316"/>
+      <text x="35" y="112" text-anchor="middle" fill="#fed7aa" font-size="12">package.json</text>
+      <text x="35" y="60" text-anchor="middle" fill="#fdba74" font-size="22" font-weight="800">✎</text>
+      <text x="35" y="130" text-anchor="middle" fill="#fdba74" font-size="11">3 ranges</text>
+      <path d="M100 0 h52 l18 18 v74 h-70 z" fill="#7c2d12" stroke="#f97316"/>
+      <text x="135" y="112" text-anchor="middle" fill="#fed7aa" font-size="12">package-lock</text>
+      <text x="135" y="60" text-anchor="middle" fill="#fdba74" font-size="20" font-weight="800">↻</text>
+      <text x="135" y="130" text-anchor="middle" fill="#fdba74" font-size="11">68 → 92 pkgs</text>
+    </g>
+
+    <g font-family="Consolas, Menlo, monospace" font-size="16" fill="#e2e8f0">
+      <g transform="translate(430,22)">
+        <rect width="420" height="38" rx="10" fill="#0f172a" fill-opacity="0.7" stroke="#334155"/>
+        <text x="16" y="25">jsonwebtoken ^8.5.1</text><path d="M214 19 h30" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arr)"/><text x="252" y="25" fill="#fdba74">^9.0.3</text>
+        <rect x="330" y="8" width="76" height="22" rx="11" fill="#dc2626"/><text x="368" y="24" text-anchor="middle" fill="#fff" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="800">MAJOR</text>
+      </g>
+      <g transform="translate(430,68)">
+        <rect width="420" height="38" rx="10" fill="#0f172a" fill-opacity="0.7" stroke="#334155"/>
+        <text x="16" y="25">axios        ^0.21.1</text><path d="M214 19 h30" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arr)"/><text x="252" y="25" fill="#fdba74">^0.34.0</text>
+        <rect x="330" y="8" width="76" height="22" rx="11" fill="#d97706"/><text x="368" y="24" text-anchor="middle" fill="#fff" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="800">0.x RISK</text>
+      </g>
+      <g transform="translate(430,114)">
+        <rect width="420" height="38" rx="10" fill="#0f172a" fill-opacity="0.7" stroke="#334155"/>
+        <text x="16" y="25">minimist     1.2.5</text><path d="M214 19 h30" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arr)"/><text x="252" y="25" fill="#86efac">^1.2.8</text>
+        <rect x="330" y="8" width="76" height="22" rx="11" fill="#16a34a"/><text x="368" y="24" text-anchor="middle" fill="#fff" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="800">PATCH</text>
+      </g>
+    </g>
+    <text x="430" y="176" fill="#86efac" font-size="14" font-weight="600">✓ rescan: No issues found</text>
+
+    <g transform="translate(960,95)">
+      <circle r="52" fill="none" stroke="#334155" stroke-width="12"/>
+      <circle r="52" fill="none" stroke="#f97316" stroke-width="12" stroke-dasharray="326.7 326.7" transform="rotate(-90)"/>
+      <text y="4" text-anchor="middle" fill="#fff" font-size="30" font-weight="800">50</text>
+      <text y="28" text-anchor="middle" fill="#94a3b8" font-size="14">of 50</text>
+    </g>
+  </g>
+</svg>
