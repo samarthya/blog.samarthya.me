@@ -85,6 +85,10 @@
   <h2>Everything on one page</h2>
   <div class="chart tall" data-mermaid="mindmap"></div>
 <script type="text/plain" class="mermaid-src" id="mindmap">
+---
+config:
+  layout: cose-bilkent
+---
 mindmap
   root((SSDLC))
     Why now
@@ -400,12 +404,12 @@ flowchart TB
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@12.3.0/dist/mermaid.min.js"></script>
 <script>
   mermaid.initialize({
     startOnLoad: false,
     theme: "base",
-    securityLevel: "loose",
+    securityLevel: "strict",
     fontFamily: "Inter, Segoe UI, system-ui, sans-serif",
     themeVariables: {
       darkMode: true,
@@ -431,14 +435,17 @@ flowchart TB
         xAxisTickColor: "#3a1f27", yAxisTickColor: "#3a1f27", yAxisTitleColor: "#b9a3a8",
         plotColorPalette: "#ef4444" }
     },
-    flowchart: { htmlLabels: true, curve: "basis" }
+    // Mermaid 12 defaults to ELK and a new look; keep the layouts these slides were designed around.
+    layout: "dagre",
+    look: "classic",
+    flowchart: { htmlLabels: true, curve: "basis", wrappingWidth: 500 }
   });
 
   // Render every chart off-screen first: reveal hides inactive slides, and Mermaid
   // measures text, so drawing into a hidden slide gives broken layouts.
   async function drawCharts() {
     for (const target of document.querySelectorAll("[data-mermaid]")) {
-      const src = document.getElementById(target.dataset.mermaid).textContent;
+      const src = document.getElementById(target.dataset.mermaid).textContent.trim();
       try {
         const { svg } = await mermaid.render("svg-" + target.dataset.mermaid, src);
         target.innerHTML = svg;

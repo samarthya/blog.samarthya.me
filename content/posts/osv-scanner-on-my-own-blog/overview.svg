@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Anime-style illustration: an excited young experimenter in a lab coat and goggles holds up a glowing green flask at a lab bench</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <radialGradient id="flaskglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.6"/><stop offset="0.55" stop-color="#4ade80" stop-opacity="0.16"/><stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86efac"/><stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e7490"/><stop offset="0.6" stop-color="#22d3ee"/><stop offset="1" stop-color="#a5f3fc"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b3f9e"/><stop offset="1" stop-color="#1f2160"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a5f3fc"/><stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="bench" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#334155"/><stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- chalkboard doodles -->
+  <g fill="none" stroke="#94a3b8" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M560 70 l-14 44 h28 z M553 92 h14"/>
+    <path d="M1090 340 a14 14 0 1 1 22 12 v10 h-14 v-10"/>
+    <path d="M1099 372 h12"/>
+    <path d="M604 180 q10 -22 24 -2 t24 -2"/>
+    <circle cx="560" cy="250" r="16"/><circle cx="560" cy="250" r="6"/>
+    <path d="M560 228 v6 M560 266 v6 M538 250 h6 M576 250 h6"/>
+  </g>
+  <text x="1110" y="90" fill="#94a3b8" fill-opacity="0.35" font-size="64" font-weight="800">?</text>
+
+  <!-- Heading -->
+  <text x="140" y="96" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">LEARNING OSV · 5</text>
+  <text x="140" y="156" fill="#ffffff" font-size="50" font-weight="800">The experiment:</text>
+  <text x="140" y="212" fill="#ffffff" font-size="50" font-weight="800">my own blog</text>
+  <text x="140" y="256" fill="#cbd5e1" font-size="22">What happens if I scan my own repo?</text>
+
+  <!-- rack of test tubes on the bench -->
+  <g transform="translate(180,395)" filter="url(#shadow)">
+    <g stroke="#e2e8f0" stroke-opacity="0.7" stroke-width="2.5">
+      <path d="M12 0 v92 a13 13 0 0 0 26 0 v-92" fill="#ffffff" fill-opacity="0.08"/>
+      <path d="M72 0 v92 a13 13 0 0 0 26 0 v-92" fill="#ffffff" fill-opacity="0.08"/>
+      <path d="M132 0 v92 a13 13 0 0 0 26 0 v-92" fill="#ffffff" fill-opacity="0.08"/>
+      <path d="M192 0 v92 a13 13 0 0 0 26 0 v-92" fill="#ffffff" fill-opacity="0.08"/>
+    </g>
+    <path d="M14 42 h22 v50 a11 11 0 0 1 -22 0 z" fill="#ef4444"/>
+    <path d="M74 26 h22 v66 a11 11 0 0 1 -22 0 z" fill="#f97316"/>
+    <path d="M134 58 h22 v34 a11 11 0 0 1 -22 0 z" fill="#facc15"/>
+    <path d="M194 34 h22 v58 a11 11 0 0 1 -22 0 z" fill="#a78bfa"/>
+    <rect x="-10" y="60" width="250" height="12" rx="4" fill="#475569"/>
+    <rect x="-4" y="72" width="10" height="81" fill="#334155"/><rect x="224" y="72" width="10" height="81" fill="#334155"/>
+  </g>
+
+  <!-- glow behind the flask -->
+  <circle cx="985" cy="205" r="190" fill="url(#flaskglow)"/>
+
+  <!-- Character -->
+  <g transform="translate(730,270)">
+    <!-- back hair -->
+    <path d="M-104 30 L-132 -6 L-122 -34 L-160 -62 L-122 -84 L-146 -132 L-92 -128 L-96 -176 L-44 -148 L-20 -196 L22 -152 L68 -184 L72 -134 L128 -146 L108 -94 L158 -72 L120 -46 L136 -8 L104 30 Z" fill="url(#hair)"/>
+
+    <!-- raised arm (behind body) -->
+    <path d="M128 190 L232 232 L252 92" fill="none" stroke="#cbd5e1" stroke-width="70" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M128 182 L232 224 L250 92" fill="none" stroke="#f1f5f9" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- body: lab coat -->
+    <path d="M-30 128 L-158 178 Q-196 196 -200 260 L-208 380 L208 380 L200 260 Q196 196 158 178 L30 128 Z" fill="#f1f5f9"/>
+    <path d="M-208 380 L-200 260 Q-196 214 -170 192 Q-170 300 -150 380 Z" fill="#cbd5e1"/>
+    <path d="M208 380 L200 260 Q196 214 170 192 Q170 300 150 380 Z" fill="#cbd5e1"/>
+    <!-- hoodie inside -->
+    <path d="M-34 128 L0 250 L34 128 Q0 150 -34 128 Z" fill="#1e293b"/>
+    <path d="M0 250 L-10 380 L10 380 Z" fill="#1e293b"/>
+    <path d="M-34 128 L-70 160 L-14 196 Z" fill="#334155"/><path d="M34 128 L70 160 L14 196 Z" fill="#334155"/>
+    <!-- lapels -->
+    <path d="M-36 124 L-84 158 L-44 214 L-4 262 L-20 190 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M36 124 L84 158 L44 214 L4 262 L20 190 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <!-- pocket and pens -->
+    <rect x="84" y="240" width="72" height="62" rx="4" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="100" y="218" width="9" height="30" rx="3" fill="#ef4444"/><rect x="116" y="212" width="9" height="36" rx="3" fill="#22d3ee"/>
+    <!-- neck -->
+    <path d="M-28 96 L-28 140 Q0 166 28 140 L28 96 Z" fill="#f2b8a0"/>
+
+    <!-- ears -->
+    <ellipse cx="-96" cy="20" rx="13" ry="20" fill="#f2b8a0"/><ellipse cx="96" cy="20" rx="13" ry="20" fill="#f2b8a0"/>
+
+    <!-- face -->
+    <path d="M-94 -24 C-98 50 -50 106 0 124 C50 106 98 50 94 -24 C90 -92 -90 -92 -94 -24 Z" fill="#ffdcc6"/>
+    <path d="M-94 -8 C-94 50 -50 106 0 124 C-34 100 -66 60 -74 -8 Z" fill="#f8c9b0" fill-opacity="0.75"/>
+
+    <!-- blush -->
+    <ellipse cx="-64" cy="58" rx="20" ry="11" fill="#fb7185" fill-opacity="0.42"/>
+    <ellipse cx="64" cy="58" rx="20" ry="11" fill="#fb7185" fill-opacity="0.42"/>
+    <g stroke="#e11d48" stroke-opacity="0.55" stroke-width="2.4" stroke-linecap="round">
+      <path d="M-72 62 l5 -9 M-63 62 l5 -9 M-54 62 l5 -9"/><path d="M56 62 l5 -9 M65 62 l5 -9 M74 62 l5 -9"/>
+    </g>
+
+    <!-- eyes -->
+    <g>
+      <ellipse cx="-42" cy="16" rx="27" ry="34" fill="#ffffff"/>
+      <ellipse cx="-40" cy="18" rx="22" ry="30" fill="url(#iris)"/>
+      <ellipse cx="-40" cy="18" rx="11" ry="16" fill="#0c1a2e"/>
+      <circle cx="-48" cy="4" r="9" fill="#ffffff"/><circle cx="-31" cy="30" r="4.5" fill="#ffffff"/><circle cx="-45" cy="34" r="2.5" fill="#ffffff" fill-opacity="0.8"/>
+      <path d="M-74 10 C-68 -24 -18 -28 -12 2 L-17 -3 C-30 -16 -56 -14 -68 14 L-82 20 Z" fill="#14163f"/>
+      <path d="M-60 50 Q-42 58 -24 50" fill="none" stroke="#14163f" stroke-width="2.5" stroke-linecap="round"/>
+
+      <ellipse cx="42" cy="16" rx="27" ry="34" fill="#ffffff"/>
+      <ellipse cx="44" cy="18" rx="22" ry="30" fill="url(#iris)"/>
+      <ellipse cx="44" cy="18" rx="11" ry="16" fill="#0c1a2e"/>
+      <circle cx="36" cy="4" r="9" fill="#ffffff"/><circle cx="53" cy="30" r="4.5" fill="#ffffff"/><circle cx="39" cy="34" r="2.5" fill="#ffffff" fill-opacity="0.8"/>
+      <path d="M74 10 C68 -24 18 -28 12 2 L17 -3 C30 -16 56 -14 68 14 L82 20 Z" fill="#14163f"/>
+      <path d="M60 50 Q42 58 24 50" fill="none" stroke="#14163f" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- nose and open smile -->
+    <path d="M-2 56 L3 63 L-3 65" fill="none" stroke="#d99a7e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-24 76 Q0 72 24 76 Q20 108 0 110 Q-20 108 -24 76 Z" fill="#7f1d1d"/>
+    <path d="M-22 77 Q0 73 22 77 L20 85 Q0 81 -20 85 Z" fill="#ffffff"/>
+    <ellipse cx="0" cy="101" rx="12" ry="7" fill="#fb7185"/>
+
+    <!-- front hair (bangs) -->
+    <path d="M-98 -18 L-86 -74 C-62 -112 62 -112 88 -70 L100 -14 L80 -46 L72 -6 L48 -48 L30 -10 L8 -52 L-12 -8 L-32 -50 L-52 -8 L-68 -46 L-84 -2 Z" fill="url(#hair)"/>
+    <path d="M-62 -78 Q-20 -98 34 -88" fill="none" stroke="#7c82e0" stroke-width="7" stroke-linecap="round" stroke-opacity="0.8"/>
+
+    <!-- brows, raised -->
+    <path d="M-72 -28 Q-46 -46 -20 -34" fill="none" stroke="#1f2160" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M72 -28 Q46 -46 20 -34" fill="none" stroke="#1f2160" stroke-width="5.5" stroke-linecap="round"/>
+
+    <!-- goggles pushed up on the forehead -->
+    <path d="M-104 -60 Q0 -112 104 -60" fill="none" stroke="#111827" stroke-width="15"/>
+    <g>
+      <circle cx="-38" cy="-92" r="29" fill="#475569"/><circle cx="-38" cy="-92" r="21" fill="url(#lens)"/>
+      <path d="M-50 -100 Q-42 -110 -30 -106" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="38" cy="-92" r="29" fill="#475569"/><circle cx="38" cy="-92" r="21" fill="url(#lens)"/>
+      <path d="M26 -100 Q34 -110 46 -106" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+      <rect x="-12" y="-98" width="24" height="10" rx="4" fill="#475569"/>
+    </g>
+  </g>
+
+  <!-- Flask, held up -->
+  <g transform="translate(985,205)">
+    <path d="M-17 -82 L17 -82 L17 -22 L66 64 Q74 84 52 84 L-52 84 Q-74 84 -66 64 L-17 -22 Z" fill="#ffffff" fill-opacity="0.12" stroke="#e2e8f0" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M-34 10 L34 10 L62 62 Q68 80 50 80 L-50 80 Q-68 80 -62 62 Z" fill="url(#liquid)" filter="url(#glow)"/>
+    <ellipse cx="0" cy="10" rx="34" ry="5" fill="#bbf7d0"/>
+    <rect x="-23" y="-92" width="46" height="12" rx="5" fill="#e2e8f0"/>
+    <circle cx="-16" cy="48" r="7" fill="#dcfce7" fill-opacity="0.85"/><circle cx="14" cy="60" r="5" fill="#dcfce7" fill-opacity="0.85"/><circle cx="20" cy="30" r="6" fill="#dcfce7" fill-opacity="0.85"/><circle cx="-4" cy="26" r="4" fill="#dcfce7" fill-opacity="0.85"/>
+    <path d="M-44 60 Q-52 44 -38 26" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="4" stroke-linecap="round"/>
+    <!-- rising bubbles -->
+    <g fill="#86efac" filter="url(#glow)">
+      <circle cx="-8" cy="-118" r="8"/><circle cx="14" cy="-146" r="5"/><circle cx="-18" cy="-164" r="4"/>
+    </g>
+  </g>
+
+  <!-- Hand gripping the flask -->
+  <g transform="translate(985,300)">
+    <rect x="-34" y="50" width="68" height="28" rx="6" fill="#cbd5e1"/>
+    <path d="M-36 -8 Q-44 34 -28 56 L28 56 Q44 34 36 -8 Z" fill="#ffdcc6"/>
+    <g fill="#ffdcc6" stroke="#e6ab90" stroke-width="2">
+      <rect x="-44" y="-14" width="26" height="20" rx="10"/><rect x="-20" y="-20" width="26" height="22" rx="10"/><rect x="4" y="-18" width="26" height="22" rx="10"/><rect x="26" y="-10" width="22" height="20" rx="10"/>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#fde68a" filter="url(#glow)">
+    <path d="M880 62 l6 18 18 6 -18 6 -6 18 -6 -18 -18 -6 18 -6 z"/>
+    <path d="M1072 96 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z"/>
+    <path d="M1062 300 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"/>
+  </g>
+
+  <!-- Speech bubble -->
+  <g filter="url(#shadow)">
+    <path d="M500 300 h104 q18 0 18 18 v44 q0 18 -18 18 h-20 l28 24 -52 -24 h-60 q-18 0 -18 -18 v-44 q0 -18 18 -18 z" fill="#ffffff" transform="translate(-30,-20)"/>
+    <text x="522" y="312" text-anchor="middle" fill="#0f172a" font-size="24" font-weight="800">Let's</text>
+    <text x="522" y="342" text-anchor="middle" fill="#0f172a" font-size="24" font-weight="800">try it!</text>
+  </g>
+
+  <!-- bench -->
+  <rect x="0" y="548" width="1200" height="82" fill="url(#bench)"/>
+  <rect x="0" y="548" width="1200" height="5" fill="#64748b"/>
+</svg>
