@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a puzzled young orchard keeper in an apple orchard holds up a glossy red apple in one hand and a crisp green apple in the other, comparing the two varieties</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cc8f2"/><stop offset="0.62" stop-color="#c9ecf7"/><stop offset="1" stop-color="#fff1d6"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#fffbe6" stop-opacity="0.95"/><stop offset="1" stop-color="#fffbe6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a7dd9a"/><stop offset="1" stop-color="#83c982"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fc66b"/><stop offset="1" stop-color="#4fa257"/>
+    </linearGradient>
+    <radialGradient id="redApple" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ff8a80"/><stop offset="0.4" stop-color="#e5262f"/><stop offset="0.8" stop-color="#b3101f"/><stop offset="1" stop-color="#7d0a18"/>
+    </radialGradient>
+    <radialGradient id="greenApple" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#f4ffb0"/><stop offset="0.42" stop-color="#b5e04a"/><stop offset="0.8" stop-color="#7cb82a"/><stop offset="1" stop-color="#4d8a1c"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3fa3"/><stop offset="0.6" stop-color="#3b2a7a"/><stop offset="1" stop-color="#2a1d5c"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6b73c"/><stop offset="1" stop-color="#e08e1b"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="blurFar" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/>
+    </filter>
+    <symbol id="spark" viewBox="-10 -10 20 20" overflow="visible">
+      <path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/>
+    </symbol>
+    <g id="tree">
+      <rect x="-13" y="20" width="26" height="110" rx="8" fill="#8a5a3a"/>
+      <circle cx="-48" cy="0" r="58" fill="#5fae57"/><circle cx="48" cy="-4" r="60" fill="#5fae57"/>
+      <circle cx="0" cy="-48" r="68" fill="#6fbe62"/><circle cx="-14" cy="-58" r="34" fill="#8ad177"/>
+      <circle cx="-44" cy="-8" r="9" fill="#e5262f"/><circle cx="34" cy="-40" r="9" fill="#e5262f"/>
+      <circle cx="56" cy="12" r="9" fill="#a8d840"/><circle cx="-12" cy="10" r="9" fill="#a8d840"/>
+    </g>
+  </defs>
+
+  <!-- Sky, sun, clouds -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#sun)"/>
+  <g fill="#ffffff" opacity="0.92">
+    <g transform="translate(150,84)"><ellipse cx="0" cy="14" rx="86" ry="20"/><circle cx="-32" cy="0" r="26"/><circle cx="8" cy="-12" r="34"/><circle cx="44" cy="4" r="22"/></g>
+    <g transform="translate(1030,70)"><ellipse cx="0" cy="14" rx="100" ry="22"/><circle cx="-40" cy="0" r="28"/><circle cx="4" cy="-14" r="38"/><circle cx="50" cy="2" r="26"/></g>
+    <g transform="translate(830,150) scale(0.5)" opacity="0.8"><ellipse cx="0" cy="14" rx="100" ry="22"/><circle cx="-40" cy="0" r="28"/><circle cx="4" cy="-14" r="38"/></g>
+  </g>
+
+  <!-- Orchard behind -->
+  <path d="M0 400 C180 340 340 372 520 392 C720 414 930 340 1200 384 L1200 630 L0 630Z" fill="url(#hillFar)"/>
+  <g filter="url(#blurFar)">
+    <use href="#tree" transform="translate(70,350) scale(0.72)"/>
+    <use href="#tree" transform="translate(432,352) scale(0.5)"/>
+    <use href="#tree" transform="translate(790,356) scale(0.5)"/>
+    <use href="#tree" transform="translate(1135,345) scale(0.76)"/>
+  </g>
+  <path d="M0 500 C240 450 420 500 640 506 C860 512 1020 462 1200 486 L1200 630 L0 630Z" fill="url(#hillNear)"/>
+
+  <!-- Focus lines radiating from the character -->
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.55">
+    <path d="M420 92 L388 42"/><path d="M482 58 L466 14"/><path d="M718 58 L734 14"/><path d="M780 92 L812 42"/>
+  </g>
+
+  <!-- Hair, back mass -->
+  <path d="M456 250 C440 120 520 62 602 62 C690 62 762 122 746 250 C744 320 752 380 722 416 C700 386 500 386 480 416 C450 380 458 320 456 250Z" fill="url(#hair)"/>
+
+  <!-- Body: hooded jumper -->
+  <path d="M388 630 C392 520 446 462 534 442 L668 442 C756 462 810 520 814 630Z" fill="url(#hoodie)" filter="url(#drop)"/>
+  <path d="M522 440 C540 492 662 492 680 440 C694 462 690 486 664 502 C630 522 572 522 538 502 C512 486 508 462 522 440Z" fill="#c9770f"/>
+  <path d="M566 500 L560 572" stroke="#fff4d6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M636 500 L642 572" stroke="#fff4d6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M520 630 L534 584 L668 584 L682 630" fill="#d9860f"/>
+
+  <!-- Neck -->
+  <path d="M566 392 L566 450 C586 478 616 478 636 450 L636 392Z" fill="#f0bf9f"/>
+
+  <!-- Left arm (viewer's left) to red apple -->
+  <path d="M444 486 C390 502 322 498 280 422 L232 448 C276 548 366 590 462 556Z" fill="url(#hoodie)"/>
+  <path d="M232 448 L280 422" stroke="#c9770f" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Right arm to green apple -->
+  <path d="M758 486 C812 502 880 498 922 422 L970 448 C926 548 836 590 740 556Z" fill="url(#hoodie)"/>
+  <path d="M970 448 L922 422" stroke="#c9770f" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- RED APPLE: round, deep crimson with streaks -->
+  <g filter="url(#drop)">
+    <path d="M236 200 C178 158 104 186 104 272 C104 356 176 444 228 428 C244 422 256 422 272 428 C324 444 396 356 396 272 C396 186 306 158 262 200 C252 208 246 208 236 200Z" fill="url(#redApple)"/>
+    <g stroke="#ffd9a8" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.5">
+      <path d="M170 226 C150 280 166 356 200 402"/><path d="M212 214 C196 280 208 360 228 412"/>
+      <path d="M296 216 C316 280 306 360 284 412"/><path d="M338 232 C358 286 342 356 310 400"/>
+    </g>
+    <path d="M154 232 C134 262 134 306 146 334" stroke="#ffffff" stroke-width="15" stroke-linecap="round" fill="none" opacity="0.75"/>
+    <circle cx="176" cy="212" r="8" fill="#ffffff" opacity="0.85"/>
+    <path d="M250 206 C246 184 248 164 262 142" stroke="#5b3a21" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M258 176 C286 136 334 136 354 150 C338 186 292 196 258 176Z" fill="#4aa24a"/>
+    <path d="M262 174 C290 164 318 156 350 151" stroke="#2f7d38" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- GREEN APPLE: taller, tapered, speckled -->
+  <g filter="url(#drop)">
+    <path d="M938 196 C896 158 822 176 812 258 C804 340 870 446 918 432 C934 426 950 426 966 432 C1014 446 1080 340 1072 258 C1062 176 990 158 958 196 C950 204 946 204 938 196Z" fill="url(#greenApple)"/>
+    <g fill="#f4ffb0" opacity="0.8">
+      <circle cx="884" cy="330" r="3.5"/><circle cx="920" cy="284" r="3"/><circle cx="970" cy="322" r="3.5"/><circle cx="1012" cy="276" r="3"/><circle cx="1006" cy="362" r="3.5"/><circle cx="938" cy="382" r="3"/><circle cx="870" cy="262" r="3"/><circle cx="960" cy="244" r="3"/>
+    </g>
+    <path d="M848 228 C830 256 826 300 838 332" stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <circle cx="868" cy="208" r="7" fill="#ffffff" opacity="0.9"/>
+    <path d="M948 202 C946 180 942 160 928 138" stroke="#5b3a21" stroke-width="10" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Fingers wrapped under the apples -->
+  <g fill="url(#skin)" stroke="#d99b7a" stroke-width="2.5">
+    <rect x="186" y="396" rx="15" ry="15" width="34" height="62" transform="rotate(14 203 427)"/>
+    <rect x="222" y="406" rx="15" ry="15" width="34" height="62"/>
+    <rect x="258" y="402" rx="15" ry="15" width="34" height="62" transform="rotate(-8 275 433)"/>
+    <rect x="290" y="388" rx="14" ry="14" width="32" height="56" transform="rotate(-24 306 416)"/>
+    <rect x="880" y="388" rx="14" ry="14" width="32" height="56" transform="rotate(24 896 416)"/>
+    <rect x="910" y="402" rx="15" ry="15" width="34" height="62" transform="rotate(8 927 433)"/>
+    <rect x="946" y="406" rx="15" ry="15" width="34" height="62"/>
+    <rect x="982" y="396" rx="15" ry="15" width="34" height="62" transform="rotate(-14 999 427)"/>
+  </g>
+
+  <!-- Face -->
+  <path d="M478 236 C478 128 724 128 724 236 C724 310 660 386 602 402 C544 386 478 310 478 236Z" fill="url(#skin)"/>
+  <path d="M566 388 C586 404 618 404 638 388 C622 400 612 403 602 404 C592 403 582 400 566 388Z" fill="#e8ad8c"/>
+
+  <!-- Blush -->
+  <ellipse cx="526" cy="326" rx="24" ry="11" fill="#ff9aa2" opacity="0.55" filter="url(#soft)"/>
+  <ellipse cx="678" cy="326" rx="24" ry="11" fill="#ff9aa2" opacity="0.55" filter="url(#soft)"/>
+  <g stroke="#ef7f8c" stroke-width="2.5" stroke-linecap="round">
+    <path d="M518 332 L524 322"/><path d="M530 332 L536 322"/><path d="M670 332 L676 322"/><path d="M682 332 L688 322"/>
+  </g>
+
+  <!-- Eyes, glancing toward the red apple -->
+  <g>
+    <ellipse cx="540" cy="266" rx="38" ry="50" fill="#ffffff"/>
+    <ellipse cx="664" cy="266" rx="38" ry="50" fill="#ffffff"/>
+    <ellipse cx="530" cy="270" rx="30" ry="44" fill="url(#iris)"/>
+    <ellipse cx="654" cy="270" rx="30" ry="44" fill="url(#iris)"/>
+    <ellipse cx="528" cy="262" rx="15" ry="24" fill="#0f1b45"/>
+    <ellipse cx="652" cy="262" rx="15" ry="24" fill="#0f1b45"/>
+    <circle cx="518" cy="244" r="12" fill="#ffffff"/>
+    <circle cx="642" cy="244" r="12" fill="#ffffff"/>
+    <circle cx="542" cy="288" r="5.5" fill="#ffffff" opacity="0.9"/>
+    <circle cx="666" cy="288" r="5.5" fill="#ffffff" opacity="0.9"/>
+    <path d="M498 240 C510 208 566 206 582 244" stroke="#2a1d5c" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M622 244 C638 206 694 208 706 240" stroke="#2a1d5c" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M498 240 L486 232" stroke="#2a1d5c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M706 240 L718 232" stroke="#2a1d5c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M512 320 C526 326 554 326 568 318" stroke="#b98a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M636 318 C650 326 678 326 692 320" stroke="#b98a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Brows: one raised in doubt -->
+  <path d="M498 192 C516 176 548 176 570 190" stroke="#3b2a7a" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M634 204 C656 198 684 198 706 212" stroke="#3b2a7a" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Nose and thinking mouth -->
+  <path d="M600 322 L596 332 L603 334" stroke="#d99b7a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M580 358 C592 352 606 362 626 350" stroke="#a8504a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Bangs -->
+  <path d="M462 256 C444 150 520 76 602 76 C692 76 760 150 742 256 C734 232 726 214 712 198 C708 214 700 226 688 236 C684 210 674 186 656 170 C652 192 640 210 622 222 C622 196 612 176 596 162 C588 188 570 208 546 222 C548 200 544 184 536 170 C522 188 512 208 508 234 C498 222 494 208 492 196 C478 212 470 232 462 256Z" fill="url(#hair)"/>
+  <path d="M520 118 C556 92 612 88 656 104 C616 102 566 110 528 136Z" fill="#8f77d8" opacity="0.8"/>
+  <!-- Ahoge, the anime hair tuft -->
+  <path d="M604 80 C592 46 612 18 650 18 C626 32 622 54 628 80Z" fill="#3b2a7a"/>
+  <!-- Side locks -->
+  <path d="M472 236 C458 300 462 360 490 400 C494 356 492 306 492 256Z" fill="url(#hair)"/>
+  <path d="M732 236 C746 300 742 360 714 400 C710 356 712 306 712 256Z" fill="url(#hair)"/>
+
+  <!-- Sweat drop of indecision -->
+  <path d="M752 158 C734 186 738 208 754 208 C770 208 772 186 752 158Z" fill="#a5e4f7" stroke="#4aa5d6" stroke-width="2.5"/>
+
+  <!-- Sparkles on the apples -->
+  <use href="#spark" x="96" y="162" width="46" height="46"/>
+  <use href="#spark" x="392" y="210" width="26" height="26"/>
+  <use href="#spark" x="1060" y="156" width="46" height="46"/>
+  <use href="#spark" x="790" y="196" width="26" height="26"/>
+
+  <!-- Drifting leaves -->
+  <g fill="#5fae57">
+    <path d="M60 480 q18 -18 36 0 q-18 18 -36 0Z" transform="rotate(-20 78 480)"/>
+    <path d="M1110 520 q18 -18 36 0 q-18 18 -36 0Z" transform="rotate(24 1128 520)"/>
+    <path d="M430 96 q14 -14 28 0 q-14 14 -28 0Z" transform="rotate(30 444 96)"/>
+    <path d="M1090 280 q14 -14 28 0 q-14 14 -28 0Z" transform="rotate(-30 1104 280)"/>
+  </g>
+</svg>
