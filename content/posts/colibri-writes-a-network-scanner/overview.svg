@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Colibri running Qwen3-Coder 30B on a desktop APU: a speed gauge at 3.05 tokens per second against the model card's 8.5 to 9.6, and two program cards. Python as generated found 0 MAC addresses; Go as generated panicked. After fixes both found the same 16 devices.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.6" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef4444"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#cbd5e1"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <circle cx="880" cy="230" r="230" fill="url(#glow)"/>
+
+  <!-- Heading -->
+  <text x="140" y="86" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">LOCAL AI · COLIBRI 2.1.0</text>
+  <text x="140" y="142" fill="#ffffff" font-size="46" font-weight="800">A 30B model writes</text>
+  <text x="140" y="194" fill="#ffffff" font-size="46" font-weight="800">a network scanner</text>
+  <text x="140" y="236" fill="#cbd5e1" font-size="21">Qwen3-Coder on a desktop APU, 28 GB RAM.</text>
+  <text x="140" y="264" fill="#cbd5e1" font-size="21">Slow, capable, and wrong in places.</text>
+
+  <!-- Speed gauge: 0 to 10 tok/s over a half circle, centre (880,250), r 150 -->
+  <g transform="translate(880,262)">
+    <path d="M -150 0 A 150 150 0 0 1 150 0" fill="none" stroke="#1f2937" stroke-width="26" stroke-linecap="round"/>
+    <path d="M -150 0 A 150 150 0 0 1 150 0" fill="none" stroke="url(#arc)" stroke-width="18" stroke-linecap="round" stroke-opacity="0.9"/>
+    <!-- model card band: 8.5 to 9.6 -->
+    <path d="M 133.6 -68.1 A 150 150 0 0 1 148.1 -23.4" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" transform="scale(1.17)"/>
+    <g fill="#94a3b8" font-size="13" text-anchor="middle">
+      <text x="-150" y="30">0</text><text x="0" y="-182">5</text><text x="150" y="30">10</text>
+    </g>
+    <text x="176" y="-94" fill="#e2e8f0" font-size="13" font-weight="600">model card</text>
+    <text x="176" y="-77" fill="#94a3b8" font-size="12">8.5–9.6, all experts</text>
+    <text x="176" y="-61" fill="#94a3b8" font-size="12">in RAM (did not fit)</text>
+    <!-- needle at 3.05: angle = 180 - 3.05*18 = 125.1 deg -->
+    <line x1="0" y1="0" x2="-75.4" y2="-107.2" stroke="#ffffff" stroke-width="6" stroke-linecap="round" filter="url(#shadow)"/>
+    <circle r="12" fill="#ffffff"/><circle r="5" fill="#0b1020"/>
+    <text x="0" y="48" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="800">3.05 tok/s</text>
+    <text x="0" y="72" text-anchor="middle" fill="#94a3b8" font-size="14">measured · 42 of 128 experts per layer in RAM</text>
+  </g>
+
+  <!-- Program cards -->
+  <g filter="url(#shadow)">
+    <g transform="translate(140,372)">
+      <rect width="440" height="150" rx="16" fill="#111827" stroke="#334155"/>
+      <text x="22" y="36" fill="#facc15" font-size="20" font-weight="800">Python</text>
+      <text x="418" y="36" text-anchor="end" fill="#94a3b8" font-size="14">1,658 tokens · 9 min</text>
+      <rect x="22" y="56" width="176" height="70" rx="10" fill="#450a0a" stroke="#ef4444"/>
+      <text x="110" y="84" text-anchor="middle" fill="#fecaca" font-size="13" font-weight="700">AS GENERATED</text>
+      <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="800">0 MACs</text>
+      <path d="M204 91 H 232" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arr)"/>
+      <rect x="240" y="56" width="178" height="70" rx="10" fill="#052e16" stroke="#22c55e"/>
+      <text x="329" y="84" text-anchor="middle" fill="#bbf7d0" font-size="13" font-weight="700">FIXED</text>
+      <text x="329" y="110" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="800">16 devices</text>
+    </g>
+    <g transform="translate(620,372)">
+      <rect width="440" height="150" rx="16" fill="#111827" stroke="#334155"/>
+      <text x="22" y="36" fill="#22d3ee" font-size="20" font-weight="800">Go</text>
+      <text x="418" y="36" text-anchor="end" fill="#94a3b8" font-size="14">2,496 tokens · 15 min</text>
+      <rect x="22" y="56" width="176" height="70" rx="10" fill="#450a0a" stroke="#ef4444"/>
+      <text x="110" y="84" text-anchor="middle" fill="#fecaca" font-size="13" font-weight="700">AS GENERATED</text>
+      <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="800">panic</text>
+      <path d="M204 91 H 232" stroke="#cbd5e1" stroke-width="2.5" marker-end="url(#arr)"/>
+      <rect x="240" y="56" width="178" height="70" rx="10" fill="#052e16" stroke="#22c55e"/>
+      <text x="329" y="84" text-anchor="middle" fill="#bbf7d0" font-size="13" font-weight="700">FIXED</text>
+      <text x="329" y="110" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="800">same 16</text>
+    </g>
+  </g>
+
+  <!-- footer strip -->
+  <text x="140" y="570" fill="#94a3b8" font-size="15">First Go attempt under memory pressure: 0.56 tok/s, 69 min · same prompt, normal memory: 2.84 tok/s</text>
+</svg>
