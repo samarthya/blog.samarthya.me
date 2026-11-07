@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: an unconvinced writer with eyes rolled up and a big question mark hanging over their head, next to a cheerful little robot on a laptop announcing 'Done! 975 words' while the page on screen is covered in red squiggles and a '12 errors' badge</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="0.65" stop-color="#c7d2fe"/><stop offset="1" stop-color="#fef3c7"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a4b2a"/><stop offset="0.6" stop-color="#5c2f1a"/><stop offset="1" stop-color="#3b1d10"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#db2777"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <path d="M0 560 L1200 560 L1200 630 L0 630Z" fill="#8b5e3c"/><path d="M0 552 L1200 552 L1200 566 L0 566Z" fill="#a9744c"/>
+  <g filter="url(#drop)">
+    <path d="M770 556 L1150 556 L1176 574 L744 574Z" fill="#94a3b8"/>
+    <rect x="792" y="300" width="336" height="256" rx="14" fill="#1f2937"/>
+    <rect x="806" y="314" width="308" height="226" rx="6" fill="#ffffff"/>
+  </g>
+  <text x="822" y="346" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="22" fill="#1f2937">My blog post</text>
+  <g fill="#cbd5e1">
+    <rect x="822" y="362" width="270" height="10" rx="5"/><rect x="822" y="384" width="240" height="10" rx="5"/>
+    <rect x="822" y="406" width="276" height="10" rx="5"/><rect x="822" y="428" width="200" height="10" rx="5"/>
+    <rect x="822" y="450" width="262" height="10" rx="5"/><rect x="822" y="472" width="228" height="10" rx="5"/>
+    <rect x="822" y="494" width="250" height="10" rx="5"/>
+  </g>
+  <g stroke="#ef4444" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M880 378 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/><path d="M960 422 q6 -6 12 0 t12 0 t12 0 t12 0"/>
+    <path d="M840 466 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0"/><path d="M1000 510 q6 -6 12 0 t12 0 t12 0"/>
+    <ellipse cx="1040" cy="389" rx="34" ry="13"/>
+  </g>
+  <g filter="url(#drop)" transform="rotate(-8 710 440)">
+    <rect x="640" y="418" width="140" height="44" rx="22" fill="#ef4444"/>
+    <text x="710" y="448" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="22" fill="#ffffff">12 errors</text>
+  </g>
+  <g filter="url(#drop)">
+    <path d="M960 168 L960 140" stroke="#64748b" stroke-width="6" stroke-linecap="round"/><circle cx="960" cy="134" r="11" fill="#22d3ee"/>
+    <rect x="890" y="166" width="140" height="112" rx="34" fill="url(#robot)" stroke="#94a3b8" stroke-width="3"/>
+    <rect x="908" y="188" width="104" height="58" rx="22" fill="#0f172a"/>
+    <path d="M926 222 q12 -16 24 0" stroke="#22d3ee" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M970 222 q12 -16 24 0" stroke="#22d3ee" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M944 260 q16 10 32 0" stroke="#64748b" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <ellipse cx="906" cy="256" rx="10" ry="6" fill="#f9a8d4" opacity="0.8"/><ellipse cx="1014" cy="256" rx="10" ry="6" fill="#f9a8d4" opacity="0.8"/>
+    <rect x="860" y="278" width="200" height="30" rx="14" fill="url(#robot)" stroke="#94a3b8" stroke-width="3"/>
+  </g>
+  <g fill="#ffffff" stroke="#94a3b8" stroke-width="2">
+    <path d="M856 300 C838 296 830 276 846 268 C862 262 872 280 870 300Z"/><path d="M1064 300 C1082 296 1090 276 1074 268 C1058 262 1048 280 1050 300Z"/>
+  </g>
+  <g filter="url(#drop)">
+    <path d="M800 50 h250 a26 26 0 0 1 26 26 v40 a26 26 0 0 1 -26 26 h-112 l-22 24 l-4 -24 h-112 a26 26 0 0 1 -26 -26 v-40 a26 26 0 0 1 26 -26Z" fill="#ffffff"/>
+  </g>
+  <text x="925" y="105" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="26" fill="#0f172a">Done! 975 words</text>
+<g transform="translate(-40,128) scale(0.75)">
+  <path d="M456 250 C440 120 520 62 602 62 C690 62 762 122 746 250 C744 320 752 380 722 416 C700 386 500 386 480 416 C450 380 458 320 456 250Z" fill="url(#hair)"/>
+  <path d="M388 760 C392 520 446 462 534 442 L668 442 C756 462 810 520 814 760Z" fill="url(#hoodie)" filter="url(#drop)"/>
+  <path d="M522 440 C540 492 662 492 680 440 C694 462 690 486 664 502 C630 522 572 522 538 502 C512 486 508 462 522 440Z" fill="#000000" opacity="0.13"/>
+  <path d="M566 500 L560 572" stroke="#fff4d6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M636 500 L642 572" stroke="#fff4d6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M566 392 L566 450 C586 478 616 478 636 450 L636 392Z" fill="#f0bf9f"/>
+  
+  <path d="M478 236 C478 128 724 128 724 236 C724 310 660 386 602 402 C544 386 478 310 478 236Z" fill="url(#skin)"/>
+  <path d="M566 388 C586 404 618 404 638 388 C622 400 612 403 602 404 C592 403 582 400 566 388Z" fill="#e8ad8c"/>
+  <ellipse cx="526" cy="330" rx="24" ry="11" fill="#ff9aa2" opacity="0.5" filter="url(#soft)"/>
+  <ellipse cx="678" cy="330" rx="24" ry="11" fill="#ff9aa2" opacity="0.5" filter="url(#soft)"/>
+  <ellipse cx="540" cy="266" rx="38" ry="50" fill="#ffffff"/>
+  <ellipse cx="664" cy="266" rx="38" ry="50" fill="#ffffff"/>
+  <g clip-path="url(#eyeL)"><ellipse cx="546" cy="226" rx="28" ry="34" fill="url(#iris)"/><ellipse cx="547" cy="218" rx="13" ry="17" fill="#0f1b45"/><circle cx="538" cy="238" r="6" fill="#ffffff"/></g>
+  <g clip-path="url(#eyeR)"><ellipse cx="670" cy="226" rx="28" ry="34" fill="url(#iris)"/><ellipse cx="671" cy="218" rx="13" ry="17" fill="#0f1b45"/><circle cx="662" cy="238" r="6" fill="#ffffff"/></g>
+  <path d="M500 236 C512 214 568 212 580 238 L580 226 C566 200 514 202 500 226Z" fill="#2a1d5c"/>
+  <path d="M624 238 C636 212 692 214 704 236 L704 226 C690 202 638 200 624 226Z" fill="#2a1d5c"/>
+  <path d="M498 238 L484 230" stroke="#2a1d5c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M706 238 L720 230" stroke="#2a1d5c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M514 318 C528 324 554 324 566 316" stroke="#b98a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M638 316 C650 324 676 324 690 318" stroke="#b98a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M500 184 C520 172 550 172 572 182" stroke="#2a1d5c" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M632 192 C654 190 684 192 706 198" stroke="#2a1d5c" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M600 322 L596 332 L603 334" stroke="#d99b7a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M572 358 C582 350 592 364 602 356 C612 348 622 362 634 354" stroke="#a8504a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M462 256 C444 150 520 76 602 76 C692 76 760 150 742 256 C734 232 726 214 712 198 C708 214 700 226 688 236 C684 210 674 186 656 170 C652 192 640 210 622 222 C622 196 612 176 596 162 C588 188 570 208 546 222 C548 200 544 184 536 170 C522 188 512 208 508 234 C498 222 494 208 492 196 C478 212 470 232 462 256Z" fill="url(#hair)"/>
+  <path d="M520 118 C556 92 612 88 656 104 C616 102 566 110 528 136Z" fill="#ffffff" opacity="0.22"/>
+  <path d="M604 80 C592 46 612 18 650 18 C626 32 622 54 628 80Z" fill="url(#hair)"/>
+  <path d="M472 236 C458 300 462 360 490 400 C494 356 492 306 492 256Z" fill="url(#hair)"/>
+  <path d="M732 236 C746 300 742 360 714 400 C710 356 712 306 712 256Z" fill="url(#hair)"/>
+  <path d="M756 150 C738 178 742 200 758 200 C774 200 776 178 756 150Z" fill="#a5e4f7" stroke="#4aa5d6" stroke-width="2.5"/>
+</g>
+  <path d="M410 0 L410 8" stroke="#ffffff" stroke-width="3" stroke-dasharray="2 5" stroke-linecap="round" opacity="0.9"/>
+  <g filter="url(#drop)" transform="rotate(-8 410 8)">
+    <text x="410" y="100" text-anchor="middle" font-family="Segoe UI Black, Arial Black, Segoe UI, sans-serif" font-weight="900" font-size="120" fill="url(#qmark)" stroke="#7c3aed" stroke-width="6" paint-order="stroke">?</text>
+  </g>
+  <use href="#spark" x="456" y="12" width="26" height="26"/>
+  <use href="#spark" x="330" y="48" width="18" height="18"/>
+<use href="#spark" x="80" y="120" width="30" height="30"/><use href="#spark" x="700" y="90" width="22" height="22"/><use href="#spark" x="1150" y="200" width="24" height="24"/><use href="#spark" x="740" y="300" width="18" height="18"/>
+</svg>
