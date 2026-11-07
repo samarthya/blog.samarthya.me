@@ -52,8 +52,16 @@ enableEmoji = true
   isPlainText = true
   notAlternative = true
 
+# /catalog.json: every post and daily entry (path, aliases, topic, words, image), read at build time by
+# about.samarthya.me to name the pages GA4 reports (layouts/index.catalog.json)
+[outputFormats.Catalog]
+  mediaType = "application/json"
+  baseName = "catalog"
+  isPlainText = true
+  notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON", "Latest"]
+  home = ["HTML", "RSS", "JSON", "Latest", "Catalog"]
 
 [related]
   threshold = 0
