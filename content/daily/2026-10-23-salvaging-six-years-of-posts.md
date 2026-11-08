@@ -1,6 +1,7 @@
 ---
 title: "Salvaging six years of posts"
 date: 2026-10-23T20:00:00-04:00
+kind: "rebuild"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "salvaging-six-years-of-posts"
 description: "Exported the content from the broken site and started sorting what could be recovered."
 categories: ["daily"]

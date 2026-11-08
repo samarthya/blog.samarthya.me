@@ -1,6 +1,7 @@
 ---
 title: "The model that never doubted"
 date: 2026-11-05T21:44:00-05:00
+kind: "tried"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "the-model-that-never-doubted"
 description: "I asked a local 30B model to write a blog post and to flag what it was unsure of. It flagged one thing and got 22 wrong."
 categories: ["daily"]

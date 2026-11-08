@@ -1,21 +1,31 @@
-{{/* /daily/: a compact, dated list (newest first), so short entries read differently from Posts. */}}
+{{/* /daily/: a compact, dated list (newest first), so short entries read differently from Posts.
+   Top: the milestones (entries with `milestone:` in front matter) as one horizontal strip, oldest to newest,
+   each a link down to its entry in the list. In the list every entry carries its `kind:` badge, and milestone
+   entries get a coloured edge, so each milestone appears once as a card and once as a marked entry.
+   Styles: .daily-* and .ms-* in assets/css/custom.css. */}}
 {{ define "main" }}
+  {{ $kinds := dict
+    "incident" (dict "label" "Incident" "icon" "⚠")
+    "rebuild"  (dict "label" "Rebuild"  "icon" "🔧")
+    "win"      (dict "label" "Win"      "icon" "🏁")
+    "tried"    (dict "label" "Tried"    "icon" "🧪")
+    "leisure"  (dict "label" "Leisure"  "icon" "☕")
+  }}
   <header class="mb-8">
     <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
     {{ with .Description }}<p class="mt-2 text-neutral-600 dark:text-neutral-300">{{ . }}</p>{{ end }}
+    <p class="daily-count">{{ len .Pages }} entries since {{ (index .Pages.ByDate 0).Date.Format "January 2006" }}
+      · <a href="{{ "story/" | relURL }}">the story behind them</a></p>
   </header>
-  {{/* Milestones: entries with `milestone: incident | rebuild | win` in front matter, oldest first.
-     Same look as the homepage timeline (.portal-timeline in assets/css/custom.css). */}}
   {{ with where .Pages "Params.milestone" "!=" nil }}
-    <section class="daily-milestones" aria-labelledby="milestones-title">
+    <section class="ms" aria-labelledby="milestones-title">
       <h2 id="milestones-title" class="daily-month-title">Milestones</h2>
-      <ol class="portal-timeline">
+      <ol class="ms-strip">
         {{ range .ByDate }}
-          <li class="portal-milestone is-{{ .Params.milestone }}">
-            <span class="portal-dot" aria-hidden="true"></span>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
-            <h3>{{ if eq .Params.milestone "incident" }}⚠ {{ end }}<a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+          <li class="ms-item is-{{ .Params.milestone }}">
+            <span class="ms-dot" aria-hidden="true"></span>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+            <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>
           </li>
         {{ end }}
       </ol>
@@ -23,16 +33,24 @@
   {{ end }}
   {{ range .Pages.ByDate.Reverse.GroupByDate "January 2006" }}
     <section class="daily-month">
-      <h2 class="daily-month-title">{{ .Key }}</h2>
+      <h2 class="daily-month-title">{{ .Key }} <small>{{ len .Pages }}</small></h2>
       <ol class="daily-list">
         {{ range .Pages }}
-          <li class="daily-item">
+          {{ $kind := .Params.kind | default "" }}
+          {{ $k := index $kinds $kind }}
+          <li class="daily-item{{ with .Params.milestone }} is-milestone is-{{ . }}{{ end }}" id="{{ .File.ContentBaseName }}">
             <time class="daily-day" datetime="{{ .Date.Format "2006-01-02" }}">
               <span>{{ .Date.Format "2" }}</span><small>{{ .Date.Format "Mon" }}</small>
             </time>
             <div>
               <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
               {{ with .Description | default (.Summary | plainify) }}<p>{{ . }}</p>{{ end }}
+              {{ if or $k .Params.milestone }}
+                <p class="daily-badges">
+                  {{ with $k }}<span class="daily-kind is-{{ $kind }}"><span aria-hidden="true">{{ .icon }}</span> {{ .label }}</span>{{ end }}
+                  {{ with .Params.milestone }}<span class="daily-ms">Milestone</span>{{ end }}
+                </p>
+              {{ end }}
             </div>
           </li>
         {{ end }}

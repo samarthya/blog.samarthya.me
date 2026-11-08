@@ -1,6 +1,7 @@
 ---
 title: "The defences went off"
 date: 2026-10-09T20:00:00-04:00
+kind: "incident"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "the-defences-went-off"
 description: "A fake administrator, 20 plugins switched off in one second, and a hidden loader planted to stay."
 milestone: "incident"     # shows in the Milestones timeline on /daily/

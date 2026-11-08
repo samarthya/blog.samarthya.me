@@ -1,6 +1,7 @@
 ---
 title: "Two apples, one model"
 date: 2026-11-05T19:33:00-05:00
+kind: "tried"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "two-apples-one-model"
 description: "A day of running the same 30B coding model through Ollama and Colibri, on my desktop and on my Linux server."
 categories: ["daily"]

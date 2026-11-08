@@ -1,6 +1,7 @@
 ---
 title: "A copy of the crime scene"
 date: 2026-10-22T20:00:00-04:00
+kind: "rebuild"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "a-copy-of-the-crime-scene"
 description: "The first full database dump: every one of my posts now belonged to an account registered in 1970."
 categories: ["daily"]

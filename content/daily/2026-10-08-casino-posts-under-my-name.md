@@ -1,6 +1,7 @@
 ---
 title: "Casino posts under my name"
 date: 2026-10-08T20:00:00-04:00
+kind: "incident"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "casino-posts-under-my-name"
 description: "21 successful logins, and the first of 55 spam posts published on my blog."
 categories: ["daily"]

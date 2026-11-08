@@ -1,6 +1,7 @@
 ---
 title: "Rebuilt on Hugo"
 date: 2026-10-24T22:00:00-04:00
+kind: "win"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "rebuilt-on-hugo"
 description: "137 posts moved to a static Hugo site, 126 images recovered from an old backup, old links kept alive."
 milestone: "rebuild"     # shows in the Milestones timeline on /daily/

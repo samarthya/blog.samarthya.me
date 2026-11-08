@@ -1,6 +1,7 @@
 ---
 title: "The blog went down"
 date: 2026-10-10T21:00:00-04:00
+kind: "incident"          # badge on /daily/: incident | rebuild | win | tried | leisure
 slug: "the-blog-went-down"
 description: "The old WordPress site was compromised. Taking it offline was the first step."
 milestone: "incident"     # shows in the Milestones timeline on /daily/
