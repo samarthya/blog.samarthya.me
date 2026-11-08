@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a cheerful server tower with a smiling screen face and closed happy eyes thinks host.startswith('localhost'), looks local to me!, and waves through a sly fox in a trench coat and fedora wearing a localhost.evil.example badge, toward an open door marked 127.0.0.1:8767 with secret.txt inside and a red POST 501 sign</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="0.65" stop-color="#ddd6fe"/><stop offset="1" stop-color="#f5f3ff"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <path d="M0 560 L1200 560 L1200 630 L0 630Z" fill="#64748b"/><path d="M0 552 L1200 552 L1200 562 L0 562Z" fill="#94a3b8"/>
+  <rect x="860" y="120" width="230" height="440" rx="8" fill="#334155"/>
+  <rect x="876" y="136" width="198" height="424" fill="#0f172a"/>
+  <path d="M1074 136 L1150 110 L1150 590 L1074 560Z" fill="#b45309" filter="url(#drop)"/>
+  <circle cx="1130" cy="350" r="8" fill="#fde68a"/>
+  <text x="975" y="108" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="22" fill="#1e293b">127.0.0.1:8767</text>
+  <g filter="url(#drop)">
+    <path d="M960 220 h44 l14 14 v56 h-58Z" fill="#ffffff"/><path d="M1004 220 v14 h14" fill="#e2e8f0"/>
+    <text x="990" y="322" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700" fill="#e2e8f0">secret.txt</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(-8 975 450)"><rect x="900" y="426" width="150" height="46" rx="10" fill="#ef4444"/>
+  <text x="975" y="457" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="20" fill="#ffffff">POST → 501</text></g>
+  <defs><linearGradient id="case" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2e8f0"/><stop offset="1" stop-color="#94a3b8"/></linearGradient></defs>
+  <!-- legs -->
+  <rect x="160" y="530" width="40" height="34" rx="8" fill="#475569"/><rect x="310" y="530" width="40" height="34" rx="8" fill="#475569"/>
+  <!-- tower -->
+  <rect x="110" y="250" width="290" height="300" rx="34" fill="url(#case)" stroke="#64748b" stroke-width="4" filter="url(#drop)"/>
+  <rect x="138" y="276" width="234" height="132" rx="22" fill="#0f172a"/>
+  <!-- happy closed eyes and a smile on the screen -->
+  <path d="M182 344 Q206 314 230 344" stroke="#22d3ee" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M280 344 Q304 314 328 344" stroke="#22d3ee" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M226 372 Q255 394 284 372" stroke="#22d3ee" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="170" cy="380" rx="16" ry="7" fill="#f472b6" opacity="0.6"/><ellipse cx="340" cy="380" rx="16" ry="7" fill="#f472b6" opacity="0.6"/>
+  <!-- drive bays and LEDs -->
+  <rect x="146" y="428" width="218" height="22" rx="6" fill="#cbd5e1"/><rect x="146" y="460" width="218" height="22" rx="6" fill="#cbd5e1"/>
+  <rect x="146" y="492" width="218" height="22" rx="6" fill="#cbd5e1"/>
+  <circle cx="344" cy="439" r="5" fill="#22c55e"/><circle cx="344" cy="471" r="5" fill="#22c55e"/><circle cx="344" cy="503" r="5" fill="#f59e0b"/>
+  <!-- antenna -->
+  <path d="M255 250 L255 214" stroke="#64748b" stroke-width="6" stroke-linecap="round"/><circle cx="255" cy="206" r="11" fill="#22d3ee"/>
+  <!-- waving arm toward the door -->
+  <path d="M398 420 C450 420 480 390 500 350" stroke="#64748b" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <circle cx="504" cy="340" r="20" fill="#e2e8f0" stroke="#64748b" stroke-width="4"/>
+  <path d="M112 420 C80 430 70 460 76 490" stroke="#64748b" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)" fill="#ffffff">
+    <ellipse cx="560" cy="128" rx="200" ry="80"/><circle cx="420" cy="100" r="48"/><circle cx="520" cy="72" r="50"/><circle cx="630" cy="76" r="48"/><circle cx="710" cy="108" r="44"/><circle cx="700" cy="160" r="40"/><circle cx="580" cy="180" r="44"/><circle cx="440" cy="164" r="40"/>
+    <circle cx="445" cy="204" r="13"/><circle cx="330" cy="216" r="8"/>
+  </g>
+  <text x="560" y="116" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="20" fill="#1e293b">host.startswith('localhost')</text>
+  <text x="560" y="156" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="24" fill="#16a34a">✓ looks local to me!</text>
+  <defs><linearGradient id="foxfur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fb923c"/><stop offset="1" stop-color="#c2410c"/></linearGradient><linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6a35c"/><stop offset="1" stop-color="#92622a"/></linearGradient></defs>
+  <!-- tail peeking out of the coat -->
+  <path d="M760 500 C820 470 850 400 830 350 C860 380 880 460 840 520 C820 545 790 548 770 540Z" fill="url(#foxfur)" filter="url(#drop)"/>
+  <path d="M830 350 C850 366 862 392 860 420 C846 396 836 376 822 366Z" fill="#ffffff"/>
+  <!-- trench coat -->
+  <path d="M650 340 L770 340 L806 556 L614 556Z" fill="url(#coat)" filter="url(#drop)"/>
+  <path d="M710 344 L710 556" stroke="#7c4a1e" stroke-width="3"/>
+  <rect x="628" y="450" width="164" height="16" fill="#7c4a1e"/>
+  <path d="M650 340 L700 400 L690 340Z M770 340 L720 400 L730 340Z" fill="#b07a3a" stroke="#7c4a1e" stroke-width="2"/>
+  <rect x="644" y="546" width="44" height="18" rx="8" fill="#1f2937"/><rect x="732" y="546" width="44" height="18" rx="8" fill="#1f2937"/>
+  <!-- head -->
+  <path d="M638 232 L614 166 L672 210Z" fill="url(#foxfur)"/><path d="M640 220 L626 184 L660 210Z" fill="#1f2937"/>
+  <path d="M782 232 L806 166 L748 210Z" fill="url(#foxfur)"/><path d="M780 220 L794 184 L760 210Z" fill="#1f2937"/>
+  <ellipse cx="710" cy="272" rx="80" ry="66" fill="url(#foxfur)" filter="url(#drop)"/>
+  <path d="M642 290 C670 340 750 340 778 290 C752 306 668 306 642 290Z" fill="#ffffff"/>
+  <!-- sly half-closed eyes -->
+  <ellipse cx="680" cy="270" rx="16" ry="10" fill="#facc15"/><ellipse cx="683" cy="271" rx="4" ry="8" fill="#111827"/>
+  <ellipse cx="740" cy="270" rx="16" ry="10" fill="#facc15"/><ellipse cx="743" cy="271" rx="4" ry="8" fill="#111827"/>
+  <path d="M660 266 C670 258 692 258 700 266 L700 260 C690 250 670 250 660 260Z" fill="#7c2d12"/>
+  <path d="M720 266 C730 258 752 258 760 266 L760 260 C750 250 730 250 720 260Z" fill="#7c2d12"/>
+  <path d="M660 252 L700 258 M720 258 L760 252" stroke="#431407" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="710" cy="300" rx="10" ry="7" fill="#111827"/>
+  <path d="M686 312 Q712 332 740 308" stroke="#431407" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- fedora -->
+  <path d="M664 216 L670 168 C700 158 724 158 752 168 L758 216Z" fill="#374151" filter="url(#drop)"/>
+  <rect x="666" y="198" width="90" height="12" fill="#b91c1c"/>
+  <ellipse cx="711" cy="218" rx="88" ry="13" fill="#1f2937"/>
+  <!-- the badge -->
+  <path d="M690 340 L700 404 M730 340 L722 404" stroke="#1f2937" stroke-width="3"/>
+  <g filter="url(#drop)" transform="rotate(-5 710 420)">
+    <rect x="610" y="400" width="206" height="40" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+    <text x="713" y="426" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="16" fill="#dc2626">localhost.evil.example</text>
+  </g><use href="#spark" x="40" y="100" width="26" height="26"/><use href="#spark" x="1160" y="60" width="22" height="22"/><use href="#spark" x="520" y="470" width="20" height="20"/>
+</svg>
