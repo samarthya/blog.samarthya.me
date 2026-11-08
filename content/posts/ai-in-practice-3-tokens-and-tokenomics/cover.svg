@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a hamster with cheeks stuffed with gold coins marked tok and en holds a big tok coin. Beside it the sentence Language models don't read words is cut into seven coloured token chips, and a receipt reads input one million tokens times 3 dollars, output times 15 dollars, 1,000 tokens about 750 words, made-up prices</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="0.65" stop-color="#fef3c7"/><stop offset="1" stop-color="#fff7ed"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <defs><linearGradient id="hfur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fed7aa"/><stop offset="1" stop-color="#fb923c"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
+  <!-- body -->
+  <ellipse cx="300" cy="500" rx="200" ry="170" fill="url(#hfur)" filter="url(#drop)"/>
+  <ellipse cx="300" cy="530" rx="120" ry="110" fill="#fff7ed"/>
+  <!-- ears -->
+  <ellipse cx="180" cy="170" rx="44" ry="40" fill="url(#hfur)"/><ellipse cx="180" cy="172" rx="26" ry="22" fill="#fda4af"/>
+  <ellipse cx="420" cy="170" rx="44" ry="40" fill="url(#hfur)"/><ellipse cx="420" cy="172" rx="26" ry="22" fill="#fda4af"/>
+  <!-- head with puffed cheeks -->
+  <ellipse cx="300" cy="300" rx="170" ry="140" fill="url(#hfur)" filter="url(#drop)"/>
+  <ellipse cx="170" cy="350" rx="90" ry="78" fill="url(#hfur)"/>
+  <ellipse cx="430" cy="350" rx="90" ry="78" fill="url(#hfur)"/>
+  <ellipse cx="300" cy="360" rx="96" ry="66" fill="#fff7ed"/>
+  
+  <defs><clipPath id="hmL"><ellipse cx="240" cy="280" rx="30" ry="34"/></clipPath><linearGradient id="hmLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#475569"/></linearGradient></defs>
+  <ellipse cx="240" cy="280" rx="30" ry="34" fill="#ffffff"/>
+  <g clip-path="url(#hmL)">
+    <ellipse cx="252" cy="278" rx="22.5" ry="25.5" fill="url(#hmLg)"/>
+    <ellipse cx="252" cy="276" rx="10.125" ry="12.75" fill="#111827"/>
+    <circle cx="244.125" cy="267.8" r="7.199999999999999" fill="#ffffff"/>
+    <circle cx="259.875" cy="286.925" r="3.0" fill="#ffffff"/>
+  </g>
+  <ellipse cx="240" cy="280" rx="30" ry="34" fill="none" stroke="#1f2937" stroke-width="4"/>
+  
+  <defs><clipPath id="hmR"><ellipse cx="360" cy="280" rx="30" ry="34"/></clipPath><linearGradient id="hmRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#475569"/></linearGradient></defs>
+  <ellipse cx="360" cy="280" rx="30" ry="34" fill="#ffffff"/>
+  <g clip-path="url(#hmR)">
+    <ellipse cx="372" cy="278" rx="22.5" ry="25.5" fill="url(#hmRg)"/>
+    <ellipse cx="372" cy="276" rx="10.125" ry="12.75" fill="#111827"/>
+    <circle cx="364.125" cy="267.8" r="7.199999999999999" fill="#ffffff"/>
+    <circle cx="379.875" cy="286.925" r="3.0" fill="#ffffff"/>
+  </g>
+  <ellipse cx="360" cy="280" rx="30" ry="34" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <ellipse cx="160" cy="360" rx="34" ry="16" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/><ellipse cx="440" cy="360" rx="34" ry="16" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/>
+  <ellipse cx="300" cy="332" rx="13" ry="9" fill="#f472b6"/>
+  <path d="M300 341 L300 354 M300 354 C292 366 280 366 274 358 M300 354 C308 366 320 366 326 358" stroke="#9a3412" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M220 346 L160 334 M222 360 L162 368 M380 346 L440 334 M378 360 L438 368" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- coins peeking from the cheeks -->
+  
+  <g filter="url(#drop)" transform="rotate(-20 118 330)">
+    <circle cx="118" cy="330" r="26" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="118" cy="330" r="19" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="118" y="337.28" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="800" fill="#92400e">tok</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(18 486 334)">
+    <circle cx="486" cy="334" r="26" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="486" cy="334" r="19" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="486" y="341.28" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="800" fill="#92400e">en</text>
+  </g>
+  <!-- paws holding a coin -->
+  
+  <g filter="url(#drop)" transform="rotate(-6 300 470)">
+    <circle cx="300" cy="470" r="54" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="300" cy="470" r="47" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="300" y="485.12" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="39" font-weight="800" fill="#92400e">tok</text>
+  </g>
+  <ellipse cx="236" cy="470" rx="28" ry="22" fill="#fed7aa" stroke="#c2410c" stroke-width="2.5"/>
+  <ellipse cx="364" cy="470" rx="28" ry="22" fill="#fed7aa" stroke="#c2410c" stroke-width="2.5"/>
+  <!-- coin pile -->
+  
+  <g filter="url(#drop)" transform="rotate(0 110 590)">
+    <circle cx="110" cy="590" r="30" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="110" cy="590" r="23" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="110" y="598.4" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="22" font-weight="800" fill="#92400e">␣</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(10 170 604)">
+    <circle cx="170" cy="604" r="30" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="170" cy="604" r="23" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="170" y="612.4" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="22" font-weight="800" fill="#92400e">s</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(-12 470 598)">
+    <circle cx="470" cy="598" r="30" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="470" cy="598" r="23" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="470" y="606.4" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="22" font-weight="800" fill="#92400e">'t</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(8 530 584)">
+    <circle cx="530" cy="584" r="26" fill="url(#gold)" stroke="#b45309" stroke-width="3"/>
+    <circle cx="530" cy="584" r="19" fill="none" stroke="#fde68a" stroke-width="2"/>
+    <text x="530" y="591.28" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="800" fill="#92400e">es</text>
+  </g>
+  <g filter="url(#drop)"><rect x="600" y="102" width="66" height="46" rx="10" fill="#fecaca" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="609" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">Lang</text><rect x="674" y="102" width="66" height="46" rx="10" fill="#fde68a" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="683" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">uage</text><rect x="748" y="102" width="102" height="46" rx="10" fill="#bbf7d0" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="757" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">␣models</text><rect x="858" y="102" width="66" height="46" rx="10" fill="#bfdbfe" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="867" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">␣don</text><rect x="932" y="102" width="42" height="46" rx="10" fill="#ddd6fe" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="941" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">'t</text><rect x="982" y="102" width="78" height="46" rx="10" fill="#fbcfe8" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="991" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">␣read</text><rect x="1068" y="102" width="90" height="46" rx="10" fill="#a5f3fc" stroke="#334155" stroke-width="2"/><text xml:space="preserve" x="1077" y="132" font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" fill="#0f172a">␣words</text></g>
+  <text x="600" y="186" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#475569">7 tokens · 1 token ≈ 4 characters</text>
+  <g filter="url(#drop)">
+    <rect x="610" y="220" width="530" height="300" rx="18" fill="#ffffff"/>
+    <path d="M610 276 V238 Q610 220 628 220 H1122 Q1140 220 1140 238 V276Z" fill="#1e293b"/>
+    <text x="634" y="257" font-family="Consolas, Menlo, monospace" font-size="24" font-weight="800" fill="#a5f3fc">per million tokens</text>
+  </g>
+  <text x="640" y="300" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#334155">input</text><text x="1110" y="300" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#0f172a">× $3</text><text x="640" y="346" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#334155">output</text><text x="1110" y="346" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#0f172a">× $15</text>
+  <path d="M640 368 H1110" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="640" y="408" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#334155">1,000 tokens</text>
+  <text x="1110" y="408" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#0f172a">≈ 750 words</text>
+  <text x="640" y="452" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#334155">output costs</text>
+  <text x="1110" y="452" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#dc2626">5× input</text>
+  <text x="640" y="494" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-style="italic" fill="#64748b">made-up prices, to show the arithmetic</text><use href="#spark" x="40" y="70" width="26" height="26"/><use href="#spark" x="560" y="60" width="18" height="18"/><use href="#spark" x="1160" y="600" width="24" height="24"/><use href="#spark" x="560" y="420" width="16" height="16"/>
+</svg>

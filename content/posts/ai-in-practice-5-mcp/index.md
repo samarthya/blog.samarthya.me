@@ -2,6 +2,7 @@
 title: "AI in practice, part 5: MCP, the Model Context Protocol"
 date: 2026-10-26T18:40:00-04:00
 description: "What the Model Context Protocol is, how hosts, clients and servers fit together, the tools-resources-prompts building blocks, a minimal Python server, and the security rules that matter."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ai", "llm", "mcp", "agents", "tools", "python"]
 series: ["AI in practice"]

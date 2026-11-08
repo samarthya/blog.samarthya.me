@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: an explorer girl with teal pigtails and a pith helmet studies a treasure map, looking at a tower of the AI stack: tensors with PyTorch, classic ML with scikit-learn, models with Hugging Face, serving with Ollama, apps with LangChain and vector stores, MLOps with MLflow, a red pin on top</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="0.65" stop-color="#e0f2fe"/><stop offset="1" stop-color="#fef9c3"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <defs><linearGradient id="ghair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#0f766e"/></linearGradient><linearGradient id="gshirt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#d97706"/></linearGradient><linearGradient id="ghat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef3c7"/><stop offset="1" stop-color="#d6b26a"/></linearGradient>
+    <linearGradient id="gskin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe8d6"/><stop offset="1" stop-color="#f9cfb2"/></linearGradient></defs>
+  <!-- pigtails -->
+  <path d="M170 250 C110 290 100 380 140 430 C150 390 170 340 200 300Z" fill="url(#ghair)" filter="url(#drop)"/>
+  <path d="M430 250 C490 290 500 380 460 430 C450 390 430 340 400 300Z" fill="url(#ghair)" filter="url(#drop)"/>
+  <circle cx="188" cy="262" r="12" fill="#f43f5e"/><circle cx="412" cy="262" r="12" fill="#f43f5e"/>
+  <!-- body: explorer shirt and scarf -->
+  <path d="M120 640 C126 500 180 450 250 440 L350 440 C420 450 474 500 480 640Z" fill="url(#gshirt)" filter="url(#drop)"/>
+  <path d="M262 436 L338 436 L322 480 L278 480Z" fill="#f0c3a3"/>
+  <path d="M250 450 C280 488 320 488 350 450 L362 470 C326 510 274 510 238 470Z" fill="#ef4444"/>
+  <path d="M300 490 L282 548 L300 540 L312 552Z" fill="#dc2626"/>
+  <rect x="190" y="520" width="34" height="40" rx="6" fill="#b45309" opacity="0.55"/>
+  <rect x="376" y="520" width="34" height="40" rx="6" fill="#b45309" opacity="0.55"/>
+  <!-- face -->
+  <path d="M206 250 C206 140 394 140 394 250 C394 330 346 400 300 414 C254 400 206 330 206 250Z" fill="url(#gskin)" filter="url(#drop)"/>
+  <ellipse cx="240" cy="330" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/><ellipse cx="360" cy="330" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/>
+  
+  <defs><clipPath id="gL"><ellipse cx="254" cy="282" rx="30" ry="38"/></clipPath><linearGradient id="gLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#67e8f9"/></linearGradient></defs>
+  <ellipse cx="254" cy="282" rx="30" ry="38" fill="#ffffff"/>
+  <g clip-path="url(#gL)">
+    <ellipse cx="263" cy="279" rx="22.5" ry="28.5" fill="url(#gLg)"/>
+    <ellipse cx="263" cy="277" rx="10.125" ry="14.25" fill="#111827"/>
+    <circle cx="255.125" cy="267.6" r="7.199999999999999" fill="#ffffff"/>
+    <circle cx="270.875" cy="288.975" r="3.0" fill="#ffffff"/>
+  </g>
+  <ellipse cx="254" cy="282" rx="30" ry="38" fill="none" stroke="#1f2937" stroke-width="4"/>
+  
+  <defs><clipPath id="gR"><ellipse cx="346" cy="282" rx="30" ry="38"/></clipPath><linearGradient id="gRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#67e8f9"/></linearGradient></defs>
+  <ellipse cx="346" cy="282" rx="30" ry="38" fill="#ffffff"/>
+  <g clip-path="url(#gR)">
+    <ellipse cx="355" cy="279" rx="22.5" ry="28.5" fill="url(#gRg)"/>
+    <ellipse cx="355" cy="277" rx="10.125" ry="14.25" fill="#111827"/>
+    <circle cx="347.125" cy="267.6" r="7.199999999999999" fill="#ffffff"/>
+    <circle cx="362.875" cy="288.975" r="3.0" fill="#ffffff"/>
+  </g>
+  <ellipse cx="346" cy="282" rx="30" ry="38" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <path d="M222 234 C238 224 262 224 276 232" stroke="#115e59" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M324 232 C338 222 362 222 378 230" stroke="#115e59" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M298 326 L294 336 L301 338" stroke="#d99b7a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M280 360 C290 376 312 376 322 360 C312 366 290 366 280 360Z" fill="#be123c"/>
+  <!-- bangs -->
+  <path d="M204 262 C192 170 250 128 300 128 C356 128 408 170 396 262 C388 236 380 220 366 208 C364 226 356 238 344 244 C342 218 330 198 314 186 C310 206 298 220 280 228 C282 206 276 190 266 180 C252 198 242 220 238 244 C226 232 220 216 218 204 C208 220 206 240 204 262Z" fill="url(#ghair)"/>
+  <!-- pith helmet -->
+  <path d="M206 186 C206 96 394 96 394 186Z" fill="url(#ghat)" filter="url(#drop)"/>
+  <path d="M176 192 C230 172 370 172 424 192 C404 210 196 210 176 192Z" fill="#b8913f"/>
+  <path d="M210 168 C260 158 340 158 390 168" stroke="#92400e" stroke-width="10" fill="none"/>
+  <!-- the map, held up -->
+  <g filter="url(#drop)" transform="rotate(-6 420 500)">
+    <path d="M330 420 L420 436 L510 420 L600 436 L600 580 L510 564 L420 580 L330 564Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="3"/>
+    <path d="M420 436 L420 580 M510 420 L510 564" stroke="#ca8a04" stroke-width="2" opacity="0.6"/>
+    <path d="M350 540 C390 520 400 480 450 470 C500 460 520 500 570 456" stroke="#ef4444" stroke-width="4" fill="none" stroke-dasharray="8 7"/>
+    <path d="M560 446 L580 466 M580 446 L560 466" stroke="#ef4444" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <circle cx="336" cy="512" r="24" fill="url(#gskin)" stroke="#d99b7a" stroke-width="2.5"/>
+  <circle cx="590" cy="488" r="24" fill="url(#gskin)" stroke="#d99b7a" stroke-width="2.5"/>
+  <g filter="url(#drop)">
+    <rect x="640" y="520" width="500" height="58" rx="14" fill="#ffffff"/>
+    <rect x="640" y="520" width="14" height="58" rx="7" fill="#f97316"/>
+    <text x="670" y="557" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#1f2937">Tensors</text>
+    <text x="1120" y="557" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#f97316">PyTorch</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="654" y="452" width="472" height="58" rx="14" fill="#ffffff"/>
+    <rect x="654" y="452" width="14" height="58" rx="7" fill="#f59e0b"/>
+    <text x="684" y="489" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#1f2937">Classic ML</text>
+    <text x="1106" y="489" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#f59e0b">scikit-learn</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="668" y="384" width="444" height="58" rx="14" fill="#ffffff"/>
+    <rect x="668" y="384" width="14" height="58" rx="7" fill="#eab308"/>
+    <text x="698" y="421" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#1f2937">Models</text>
+    <text x="1092" y="421" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#eab308">Hugging Face</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="682" y="316" width="416" height="58" rx="14" fill="#ffffff"/>
+    <rect x="682" y="316" width="14" height="58" rx="7" fill="#22c55e"/>
+    <text x="712" y="353" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#1f2937">Serving</text>
+    <text x="1078" y="353" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#22c55e">Ollama</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="696" y="248" width="388" height="58" rx="14" fill="#ffffff"/>
+    <rect x="696" y="248" width="14" height="58" rx="7" fill="#06b6d4"/>
+    <text x="726" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#1f2937">Apps</text>
+    <text x="1064" y="285" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#06b6d4">LangChain · vector stores</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="710" y="180" width="360" height="58" rx="14" fill="#ffffff"/>
+    <rect x="710" y="180" width="14" height="58" rx="7" fill="#8b5cf6"/>
+    <text x="740" y="217" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#1f2937">MLOps</text>
+    <text x="1050" y="217" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700" fill="#8b5cf6">MLflow</text>
+  </g>
+  <g filter="url(#drop)" transform="translate(1092 150)">
+    <path d="M0 0 C-26 0 -34 30 -18 50 L0 78 L18 50 C34 30 26 0 0 0Z" fill="#ef4444"/><circle cx="0" cy="26" r="11" fill="#ffffff"/>
+  </g>
+  <g filter="url(#drop)" transform="rotate(0 803.5 62)">
+    <rect x="650" y="40" width="307" height="44" rx="22" fill="#0f766e"/>
+    <text x="803.5" y="69" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">which layer do I need?</text>
+  </g><use href="#spark" x="40" y="80" width="26" height="26"/><use href="#spark" x="560" y="120" width="20" height="20"/><use href="#spark" x="1160" y="600" width="22" height="22"/><use href="#spark" x="600" y="360" width="16" height="16"/>
+</svg>

@@ -2,6 +2,7 @@
 title: "AI in practice, part 1: Choosing the right framework"
 date: 2026-10-26T18:00:00-04:00
 description: "PyTorch, Hugging Face, scikit-learn, LangChain, vector stores, Ollama, MLflow: what each layer of the AI stack does, and how to pick the right tool for the job."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ai", "ml", "llm", "python", "frameworks"]
 series: ["AI in practice"]

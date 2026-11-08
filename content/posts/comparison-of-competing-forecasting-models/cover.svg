@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a penguin in a red scarf holds a three-scoop ice-cream cone beside a pink ice-cream cart. A chart compares a week of cones sold with two forecasts, model A tracking closely and model B zig-zagging, and a scoreboard reads MAE 3.3 vs 15.9, RMSE 3.3 vs 16.2, MAPE 5.6% vs 26.8%, Theil's U 0.22 vs 1.01</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5f3fc"/><stop offset="0.65" stop-color="#e0f2fe"/><stop offset="1" stop-color="#fdf2f8"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <defs><linearGradient id="pgb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#334155"/><stop offset="1" stop-color="#0f172a"/></linearGradient><linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fcd34d"/><stop offset="1" stop-color="#d97706"/></linearGradient></defs>
+  <!-- cart -->
+  <g filter="url(#drop)">
+    <rect x="300" y="470" width="260" height="130" rx="16" fill="#f472b6"/>
+    <path d="M300 500 H560" stroke="#ffffff" stroke-width="10" stroke-dasharray="26 18"/>
+    <text x="430" y="566" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="900" fill="#ffffff">ICE CREAM</text>
+    <path d="M290 330 C330 270 530 270 570 330Z" fill="#fde68a"/><path d="M290 330 C330 300 530 300 570 330" stroke="#f59e0b" stroke-width="6" fill="none"/>
+    <path d="M320 330 L320 470 M540 330 L540 470" stroke="#94a3b8" stroke-width="8"/>
+  </g>
+  <!-- penguin body -->
+  <ellipse cx="200" cy="440" rx="150" ry="190" fill="url(#pgb)" filter="url(#drop)"/>
+  <ellipse cx="200" cy="470" rx="104" ry="150" fill="#ffffff"/>
+  <!-- head: dark cap, white face -->
+  <ellipse cx="200" cy="262" rx="118" ry="104" fill="url(#pgb)" filter="url(#drop)"/>
+  <path d="M118 268 C118 206 168 196 200 222 C232 196 282 206 282 268 C282 316 246 344 200 344 C154 344 118 316 118 268Z" fill="#ffffff"/>
+  
+  <defs><clipPath id="pnL"><ellipse cx="160" cy="262" rx="24" ry="30"/></clipPath><linearGradient id="pnLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c4a6e"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
+  <ellipse cx="160" cy="262" rx="24" ry="30" fill="#ffffff"/>
+  <g clip-path="url(#pnL)">
+    <ellipse cx="170" cy="258" rx="18.0" ry="22.5" fill="url(#pnLg)"/>
+    <ellipse cx="170" cy="256" rx="8.1" ry="11.25" fill="#111827"/>
+    <circle cx="163.7" cy="249.0" r="5.76" fill="#ffffff"/>
+    <circle cx="176.3" cy="265.875" r="2.4000000000000004" fill="#ffffff"/>
+  </g>
+  <ellipse cx="160" cy="262" rx="24" ry="30" fill="none" stroke="#1f2937" stroke-width="4"/>
+  
+  <defs><clipPath id="pnR"><ellipse cx="240" cy="262" rx="24" ry="30"/></clipPath><linearGradient id="pnRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c4a6e"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
+  <ellipse cx="240" cy="262" rx="24" ry="30" fill="#ffffff"/>
+  <g clip-path="url(#pnR)">
+    <ellipse cx="250" cy="258" rx="18.0" ry="22.5" fill="url(#pnRg)"/>
+    <ellipse cx="250" cy="256" rx="8.1" ry="11.25" fill="#111827"/>
+    <circle cx="243.7" cy="249.0" r="5.76" fill="#ffffff"/>
+    <circle cx="256.3" cy="265.875" r="2.4000000000000004" fill="#ffffff"/>
+  </g>
+  <ellipse cx="240" cy="262" rx="24" ry="30" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <ellipse cx="140" cy="310" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/><ellipse cx="260" cy="310" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/>
+  <path d="M180 296 L220 296 L200 322Z" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+  <!-- scarf -->
+  <path d="M90 350 C150 380 250 380 310 350 L314 380 C250 410 150 410 86 380Z" fill="#ef4444"/>
+  <path d="M260 384 L276 452 L300 440 L286 380Z" fill="#dc2626"/>
+  <!-- flipper holding a cone -->
+  <path d="M320 420 C360 400 380 360 390 320" stroke="url(#pgb)" stroke-width="44" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)">
+    <path d="M370 300 L400 240 L430 300Z" fill="url(#cone)" transform="rotate(180 400 270)"/>
+    <circle cx="400" cy="222" r="30" fill="#fbcfe8"/><circle cx="380" cy="200" r="24" fill="#a7f3d0"/><circle cx="418" cy="196" r="24" fill="#fde68a"/>
+    <circle cx="400" cy="170" r="10" fill="#ef4444"/>
+  </g>
+  <!-- feet -->
+  <ellipse cx="150" cy="622" rx="40" ry="14" fill="#f59e0b"/><ellipse cx="250" cy="622" rx="40" ry="14" fill="#f59e0b"/>
+  <g filter="url(#drop)"><rect x="610" y="40" width="560" height="360" rx="18" fill="#ffffff"/></g>
+  <text x="640" y="84" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#1f2937">cones sold vs forecast</text>
+  <rect x="640" y="98" width="16" height="12" rx="3" fill="#bae6fd"/><text x="662" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#475569">actual</text>
+  <rect x="728" y="102" width="22" height="4" fill="#16a34a"/><text x="756" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#475569">model A</text>
+  <rect x="838" y="102" width="22" height="4" fill="#ef4444"/><text x="866" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#475569">model B</text>
+  <path d="M640 350 H1140" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="652" y="304" width="36" height="46" rx="6" fill="#bae6fd"/><rect x="725" y="254" width="36" height="96" rx="6" fill="#bae6fd"/><rect x="799" y="231" width="36" height="119" rx="6" fill="#bae6fd"/><rect x="872" y="281" width="36" height="69" rx="6" fill="#bae6fd"/><rect x="945" y="197" width="36" height="153" rx="6" fill="#bae6fd"/><rect x="1019" y="147" width="36" height="203" rx="6" fill="#bae6fd"/><rect x="1092" y="212" width="36" height="138" rx="6" fill="#bae6fd"/><text x="670" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">M</text><text x="743" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">T</text><text x="817" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">W</text><text x="890" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">T</text><text x="963" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">F</text><text x="1037" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">S</text><text x="1110" y="376" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#64748b">S</text>
+  <path d="M670 243 L743 296 L817 181 L890 227 L963 266 L1037 220 L1110 135" stroke="#ef4444" stroke-width="3" fill="none" stroke-dasharray="8 6"/><circle cx="670" cy="243" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/><circle cx="743" cy="296" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/><circle cx="817" cy="181" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/><circle cx="890" cy="227" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/><circle cx="963" cy="266" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/><circle cx="1037" cy="220" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/><circle cx="1110" cy="135" r="6" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+  <path d="M670 292 L743 266 L817 243 L890 270 L963 212 L1037 158 L1110 197" stroke="#16a34a" stroke-width="3" fill="none"/><circle cx="670" cy="292" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/><circle cx="743" cy="266" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/><circle cx="817" cy="243" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/><circle cx="890" cy="270" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/><circle cx="963" cy="212" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/><circle cx="1037" cy="158" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/><circle cx="1110" cy="197" r="6" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+  <g filter="url(#drop)"><rect x="610" y="420" width="560" height="190" rx="18" fill="#1e293b"/></g>
+  <text x="900" y="452" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#86efac">model A</text>
+  <text x="1060" y="452" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#fca5a5">model B</text>
+  <text x="640" y="486" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#e2e8f0">MAE</text>
+  <text x="900" y="486" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#4ade80">3.3</text>
+  <text x="1060" y="486" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#f87171">15.9</text><text x="640" y="520" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#e2e8f0">RMSE</text>
+  <text x="900" y="520" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#4ade80">3.3</text>
+  <text x="1060" y="520" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#f87171">16.2</text><text x="640" y="554" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#e2e8f0">MAPE</text>
+  <text x="900" y="554" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#4ade80">5.6%</text>
+  <text x="1060" y="554" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#f87171">26.8%</text><text x="640" y="588" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#e2e8f0">Theil's U</text>
+  <text x="900" y="588" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#4ade80">0.22</text>
+  <text x="1060" y="588" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="800" fill="#f87171">1.01</text><use href="#spark" x="40" y="60" width="24" height="24"/><use href="#spark" x="470" y="80" width="20" height="20"/><use href="#spark" x="580" y="420" width="16" height="16"/>
+</svg>

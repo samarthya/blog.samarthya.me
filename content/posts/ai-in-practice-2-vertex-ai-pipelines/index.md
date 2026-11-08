@@ -2,6 +2,7 @@
 title: "AI in practice, part 2: ML pipelines on Google Vertex AI"
 date: 2026-10-26T18:10:00-04:00
 description: "What a machine-learning pipeline is, how Vertex AI Pipelines runs one, and a small train-evaluate-deploy example with the Kubeflow Pipelines SDK."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ai", "ml", "vertex", "pipeline", "gcp", "python"]
 series: ["AI in practice"]

@@ -2,6 +2,7 @@
 title: "AI on this blog: a reading map"
 date: 2026-10-26T18:50:00-04:00
 description: "Every AI, machine-learning and data post on this site in one place, in an order that builds from the basics to agents, MCP and the cost of tokens."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ai", "ml", "llm", "data-analytics"]
 draft: false

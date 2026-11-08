@@ -2,6 +2,7 @@
 title: "AI in practice, part 4: From RAG to tools and agents"
 date: 2026-10-26T18:30:00-04:00
 description: "How language models went from answering questions to taking actions: function calling, the agent loop, and the guardrails that keep agents useful and safe."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ai", "llm", "agents", "rag", "tools"]
 series: ["AI in practice"]

@@ -2,6 +2,7 @@
 title: "AI in practice, part 3: Tokens and tokenomics"
 date: 2026-10-26T18:20:00-04:00
 description: "What a token is, why context windows have limits, how language-model bills are calculated, and practical ways to spend fewer tokens without getting worse answers."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ai", "llm", "tokens", "tokenomics", "cost"]
 series: ["AI in practice"]

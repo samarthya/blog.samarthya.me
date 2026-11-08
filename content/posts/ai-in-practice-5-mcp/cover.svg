@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a boy with spiky dark hair and a blue hoodie carries a giant purple plug marked MCP toward a glowing MCP hub that connects one AI app, the host and client, to three MCP servers for files, a database and GitHub, with pills for tools, resources and prompts</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c7d2fe"/><stop offset="0.65" stop-color="#e0e7ff"/><stop offset="1" stop-color="#fdf4ff"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <defs><linearGradient id="hub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs>
+  <path d="M820 300 C930 300 950 120 960 120" stroke="#f59e0b" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M820 300 C930 300 950 300 980 300" stroke="#3b82f6" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M820 300 C930 300 950 480 960 480" stroke="#334155" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)"><rect x="960" y="76" width="200" height="88" rx="18" fill="#ffffff" stroke="#f59e0b" stroke-width="4"/>
+    <text x="1060" y="116" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#1f2937">files</text>
+    <text x="1060" y="144" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700" fill="#f59e0b">MCP server</text></g><g filter="url(#drop)"><rect x="980" y="256" width="200" height="88" rx="18" fill="#ffffff" stroke="#3b82f6" stroke-width="4"/>
+    <text x="1080" y="296" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#1f2937">database</text>
+    <text x="1080" y="324" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700" fill="#3b82f6">MCP server</text></g><g filter="url(#drop)"><rect x="960" y="436" width="200" height="88" rx="18" fill="#ffffff" stroke="#334155" stroke-width="4"/>
+    <text x="1060" y="476" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#1f2937">GitHub</text>
+    <text x="1060" y="504" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700" fill="#334155">MCP server</text></g>
+  <path d="M620 140 C700 140 740 220 760 250" stroke="#0ea5e9" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)">
+    <rect x="540" y="70" width="190" height="100" rx="14" fill="#1e293b"/><rect x="552" y="82" width="166" height="62" rx="8" fill="#38bdf8"/>
+    <text x="635" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#0c4a6e">AI app</text>
+    <rect x="510" y="168" width="250" height="16" rx="8" fill="#334155"/>
+    <text x="635" y="214" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="16" font-weight="700" fill="#0369a1">host + client</text>
+  </g>
+  <g filter="url(#drop)">
+    <circle cx="780" cy="300" r="76" fill="url(#hub)"/>
+    <text x="780" y="314" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff">MCP</text>
+  </g>
+  
+  <g filter="url(#drop)" transform="rotate(0 604.5 582)">
+    <rect x="560" y="560" width="89" height="44" rx="22" fill="#f97316"/>
+    <text x="604.5" y="589" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#ffffff">tools</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(0 755.5 582)">
+    <rect x="690" y="560" width="131" height="44" rx="22" fill="#0ea5e9"/>
+    <text x="755.5" y="589" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#ffffff">resources</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(0 921.0 582)">
+    <rect x="866" y="560" width="110" height="44" rx="22" fill="#16a34a"/>
+    <text x="921.0" y="589" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#ffffff">prompts</text>
+  </g>
+  <defs><linearGradient id="yhair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#334155"/><stop offset="1" stop-color="#0f172a"/></linearGradient><linearGradient id="yhood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#0369a1"/></linearGradient><linearGradient id="yskin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde3cf"/><stop offset="1" stop-color="#f2c4a3"/></linearGradient><linearGradient id="plug" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+  <!-- hoodie body -->
+  <path d="M90 640 C96 500 150 450 220 440 L330 440 C400 450 454 500 460 640Z" fill="url(#yhood)" filter="url(#drop)"/>
+  <path d="M240 436 L310 436 L300 476 L250 476Z" fill="#e8b496"/>
+  <path d="M220 446 C250 490 300 490 330 446" stroke="#0c4a6e" stroke-width="6" fill="none" opacity="0.4"/>
+  <!-- face -->
+  <path d="M180 250 C180 146 370 146 370 250 C370 330 322 396 275 410 C228 396 180 330 180 250Z" fill="url(#yskin)" filter="url(#drop)"/>
+  <ellipse cx="214" cy="330" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/><ellipse cx="336" cy="330" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/>
+  
+  <defs><clipPath id="yL"><ellipse cx="230" cy="282" rx="28" ry="34"/></clipPath><linearGradient id="yLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#78350f"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs>
+  <ellipse cx="230" cy="282" rx="28" ry="34" fill="#ffffff"/>
+  <g clip-path="url(#yL)">
+    <ellipse cx="240" cy="282" rx="21.0" ry="25.5" fill="url(#yLg)"/>
+    <ellipse cx="240" cy="280" rx="9.450000000000001" ry="12.75" fill="#111827"/>
+    <circle cx="232.65" cy="271.8" r="6.72" fill="#ffffff"/>
+    <circle cx="247.35" cy="290.925" r="2.8000000000000003" fill="#ffffff"/>
+  </g>
+  <ellipse cx="230" cy="282" rx="28" ry="34" fill="none" stroke="#1f2937" stroke-width="4"/>
+  
+  <defs><clipPath id="yR"><ellipse cx="320" cy="282" rx="28" ry="34"/></clipPath><linearGradient id="yRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#78350f"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs>
+  <ellipse cx="320" cy="282" rx="28" ry="34" fill="#ffffff"/>
+  <g clip-path="url(#yR)">
+    <ellipse cx="330" cy="282" rx="21.0" ry="25.5" fill="url(#yRg)"/>
+    <ellipse cx="330" cy="280" rx="9.450000000000001" ry="12.75" fill="#111827"/>
+    <circle cx="322.65" cy="271.8" r="6.72" fill="#ffffff"/>
+    <circle cx="337.35" cy="290.925" r="2.8000000000000003" fill="#ffffff"/>
+  </g>
+  <ellipse cx="320" cy="282" rx="28" ry="34" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <path d="M200 236 C214 226 240 226 254 236" stroke="#0f172a" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M296 236 C310 226 336 226 350 236" stroke="#0f172a" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M250 352 C262 376 296 376 308 352Z" fill="#9f1239"/><path d="M258 354 L300 354" stroke="#ffffff" stroke-width="5"/>
+  <!-- spiky hair -->
+  <path d="M174 262 C160 196 176 160 196 140 L180 104 L226 124 L236 78 L268 116 L300 74 L314 120 L352 96 L346 140 C372 160 386 200 376 262 C366 230 352 214 336 206 C330 220 318 228 304 232 C302 210 292 196 278 188 C270 208 254 222 236 228 C236 210 230 198 220 190 C206 210 196 236 190 262Z" fill="url(#yhair)"/>
+  <!-- headphones round the neck -->
+  <path d="M200 440 C200 480 350 480 350 440" stroke="#f97316" stroke-width="10" fill="none"/>
+  <!-- arms carrying the plug -->
+  <path d="M400 500 C440 470 470 430 500 400" stroke="url(#yhood)" stroke-width="48" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)" transform="rotate(-28 560 360)">
+    <rect x="470" y="320" width="150" height="90" rx="18" fill="url(#plug)"/>
+    <rect x="620" y="336" width="54" height="16" rx="5" fill="#cbd5e1"/><rect x="620" y="378" width="54" height="16" rx="5" fill="#cbd5e1"/>
+    <text x="566" y="378" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" fill="#ffffff">MCP</text>
+    <path d="M470 366 C420 366 380 400 340 420" stroke="#7c3aed" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+  <circle cx="500" cy="404" r="28" fill="url(#yskin)" stroke="#d99b7a" stroke-width="2.5"/>
+  <!-- sparks where the plug meets the hub -->
+  <path d="M676 228 L700 214 M690 260 L716 262 M664 196 L672 172" stroke="#facc15" stroke-width="6" stroke-linecap="round"/><use href="#spark" x="40" y="70" width="24" height="24"/><use href="#spark" x="470" y="90" width="20" height="20"/><use href="#spark" x="1160" y="600" width="22" height="22"/><use href="#spark" x="1040" y="580" width="16" height="16"/>
+</svg>
