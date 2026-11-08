@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a startled girl with pink twin tails and a sailor uniform, hands on her cheeks and mouth open, looks up at a ceiling smoke alarm whose 9-volt battery dangles from its wires, while files labelled dry-run fly into a QUARANTINE box and a red badge reads 0 copies left</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdba74"/><stop offset="0.65" stop-color="#fde68a"/><stop offset="1" stop-color="#fff7ed"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <rect x="0" y="0" width="1200" height="34" fill="#e2e8f0"/><rect x="0" y="34" width="1200" height="6" fill="#cbd5e1"/>
+  <g filter="url(#drop)">
+    <ellipse cx="960" cy="58" rx="96" ry="32" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+    <ellipse cx="960" cy="52" rx="60" ry="16" fill="#e2e8f0"/>
+    <circle cx="1010" cy="66" r="6" fill="#94a3b8"/>
+  </g>
+  <path d="M930 86 C926 130 950 150 944 190" stroke="#ef4444" stroke-width="4" fill="none"/>
+  <path d="M948 86 C952 128 976 148 968 190" stroke="#1f2937" stroke-width="4" fill="none"/>
+  <g transform="rotate(14 956 230)" filter="url(#drop)">
+    <rect x="926" y="188" width="60" height="96" rx="10" fill="#1f2937"/><rect x="942" y="178" width="28" height="14" rx="4" fill="#94a3b8"/>
+    <rect x="926" y="188" width="60" height="34" rx="10" fill="#f59e0b"/>
+    <text x="956" y="262" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="22" fill="#ffffff">9V</text>
+  </g>
+  <text x="1060" y="130" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="22" fill="#334155">never beeps</text>
+  <g filter="url(#drop)">
+    <path d="M830 420 L1150 420 L1130 580 L850 580Z" fill="#a16207"/>
+    <path d="M818 400 L1162 400 L1150 430 L830 430Z" fill="#ca8a04"/>
+    <rect x="886" y="468" width="208" height="54" rx="10" fill="#fef3c7"/>
+    <text x="990" y="505" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="26" fill="#92400e" letter-spacing="2">QUARANTINE</text>
+  </g>
+  <g transform="rotate(-20 700 330)" filter="url(#drop)"><path d="M674 296 h38 l14 14 v54 h-52Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/><path d="M712 296 v14 h14" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/><rect x="682" y="320" width="30" height="4" rx="2" fill="#cbd5e1"/><rect x="682" y="330" width="36" height="4" rx="2" fill="#cbd5e1"/><rect x="682" y="340" width="24" height="4" rx="2" fill="#cbd5e1"/></g><g transform="rotate(12 830 290)" filter="url(#drop)"><path d="M804 256 h38 l14 14 v54 h-52Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/><path d="M842 256 v14 h14" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/><rect x="812" y="280" width="30" height="4" rx="2" fill="#cbd5e1"/><rect x="812" y="290" width="36" height="4" rx="2" fill="#cbd5e1"/><rect x="812" y="300" width="24" height="4" rx="2" fill="#cbd5e1"/></g><g transform="rotate(-8 1000 330)" filter="url(#drop)"><path d="M974 296 h38 l14 14 v54 h-52Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/><path d="M1012 296 v14 h14" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/><rect x="982" y="320" width="30" height="4" rx="2" fill="#cbd5e1"/><rect x="982" y="330" width="36" height="4" rx="2" fill="#cbd5e1"/><rect x="982" y="340" width="24" height="4" rx="2" fill="#cbd5e1"/></g>
+  <path d="M600 400 C680 300 780 270 900 340" stroke="#ffffff" stroke-width="4" stroke-dasharray="4 10" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)" transform="rotate(-6 640 500)">
+    <rect x="570" y="470" width="150" height="60" rx="12" fill="#ffffff"/>
+    <text x="645" y="508" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="22" fill="#2563eb">dry-run</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(-6 680 170)"><rect x="585" y="146" width="190" height="46" rx="23" fill="#ef4444"/>
+  <text x="680" y="177" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="21" fill="#ffffff">0 copies left</text></g>
+  <defs><linearGradient id="ghair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#9d174d"/></linearGradient><linearGradient id="gskin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient><linearGradient id="navy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#172554"/></linearGradient></defs>
+  <!-- twin tails behind -->
+  <path d="M130 230 C40 300 40 470 90 600 C110 520 120 440 160 330Z" fill="url(#ghair)" filter="url(#drop)"/>
+  <path d="M410 230 C500 300 500 470 450 600 C430 520 420 440 380 330Z" fill="url(#ghair)" filter="url(#drop)"/>
+  <!-- back hair -->
+  <path d="M140 300 C120 160 200 90 270 90 C340 90 420 160 400 300 C398 360 390 400 370 420 L170 420 C150 400 142 360 140 300Z" fill="url(#ghair)"/>
+  <!-- sailor uniform -->
+  <path d="M110 640 C114 520 170 470 230 458 L310 458 C370 470 426 520 430 640Z" fill="#f8fafc" filter="url(#drop)"/>
+  <path d="M190 462 L270 560 L350 462 L320 458 L270 520 L220 458Z" fill="url(#navy)"/>
+  <path d="M150 500 L230 462 L248 486 Z M390 500 L310 462 L292 486Z" fill="url(#navy)"/>
+  <path d="M244 540 L270 560 L296 540 L300 590 L270 572 L240 590Z" fill="#ef4444"/>
+  <path d="M246 420 L246 466 C258 480 282 480 294 466 L294 420Z" fill="#f0bf9f"/>
+  <!-- face -->
+  <path d="M164 280 C164 168 376 168 376 280 C376 350 324 422 270 436 C216 422 164 350 164 280Z" fill="url(#gskin)"/>
+  
+  <defs><clipPath id="gL"><ellipse cx="222" cy="300" rx="36" ry="46"/></clipPath><linearGradient id="gLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4c1d95"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs>
+  <ellipse cx="222" cy="300" rx="36" ry="46" fill="#ffffff"/>
+  <g clip-path="url(#gL)">
+    <ellipse cx="222" cy="300" rx="18.0" ry="23.0" fill="url(#gLg)"/>
+    <ellipse cx="222" cy="298" rx="8.1" ry="11.5" fill="#111827"/>
+    <circle cx="215.7" cy="290.8" r="7.92" fill="#ffffff"/>
+    <circle cx="228.3" cy="308.05" r="3.6" fill="#ffffff"/>
+  </g>
+  <ellipse cx="222" cy="300" rx="36" ry="46" fill="none" stroke="#1f2937" stroke-width="4"/>
+  
+  <defs><clipPath id="gR"><ellipse cx="318" cy="300" rx="36" ry="46"/></clipPath><linearGradient id="gRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4c1d95"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs>
+  <ellipse cx="318" cy="300" rx="36" ry="46" fill="#ffffff"/>
+  <g clip-path="url(#gR)">
+    <ellipse cx="318" cy="300" rx="18.0" ry="23.0" fill="url(#gRg)"/>
+    <ellipse cx="318" cy="298" rx="8.1" ry="11.5" fill="#111827"/>
+    <circle cx="311.7" cy="290.8" r="7.92" fill="#ffffff"/>
+    <circle cx="324.3" cy="308.05" r="3.6" fill="#ffffff"/>
+  </g>
+  <ellipse cx="318" cy="300" rx="36" ry="46" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <path d="M186 236 C200 222 236 220 254 232" stroke="#831843" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M286 232 C304 220 340 222 354 236" stroke="#831843" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="196" cy="366" rx="22" ry="10" fill="#ff9aa2" opacity="0.55" filter="url(#soft)"/>
+  <ellipse cx="344" cy="366" rx="22" ry="10" fill="#ff9aa2" opacity="0.55" filter="url(#soft)"/>
+  <ellipse cx="270" cy="392" rx="16" ry="20" fill="#9f1239"/><ellipse cx="270" cy="400" rx="9" ry="8" fill="#fb7185"/>
+  <!-- bangs -->
+  <path d="M156 280 C140 170 210 104 270 104 C336 104 402 170 384 280 C376 252 366 230 352 214 C346 234 336 246 322 254 C320 228 308 206 290 192 C284 216 270 232 248 242 C250 220 244 202 234 190 C220 210 210 230 206 256 C196 244 190 228 190 214 C174 234 164 254 156 280Z" fill="url(#ghair)"/>
+  <path d="M210 136 C240 116 290 112 328 126 C292 126 246 134 214 154Z" fill="#ffffff" opacity="0.25"/>
+  <!-- ribbons -->
+  <path d="M142 214 L112 186 L114 236Z M142 214 L170 190 L166 236Z" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+  <path d="M398 214 L428 186 L426 236Z M398 214 L370 190 L374 236Z" fill="#facc15" stroke="#ca8a04" stroke-width="2"/>
+  <!-- hands on cheeks -->
+  <path d="M150 600 C110 540 120 470 168 424 M390 600 C430 540 420 470 372 424" stroke="#f8fafc" stroke-width="40" fill="none" stroke-linecap="round" filter="url(#drop)"/>
+  <path d="M154 440 L186 418 M386 440 L354 418" stroke="url(#navy)" stroke-width="12" stroke-linecap="round"/>
+  <g fill="url(#gskin)" stroke="#d99b7a" stroke-width="2.5">
+    <path d="M168 424 C160 396 166 362 182 352 C190 348 196 356 194 366 C200 352 210 354 210 366 C214 380 206 404 196 418Z"/>
+    <path d="M372 424 C380 396 374 362 358 352 C350 348 344 356 346 366 C340 352 330 354 330 366 C326 380 334 404 344 418Z"/>
+  </g>
+  <!-- shock lines and exclamation marks -->
+  <path d="M430 150 L470 120 M440 190 L490 184 M100 150 L64 118" stroke="#be185d" stroke-width="6" stroke-linecap="round"/>
+  <text x="470" y="250" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="90" fill="#ef4444" stroke="#ffffff" stroke-width="6" paint-order="stroke" transform="rotate(10 490 220)">!!</text><use href="#spark" x="40" y="60" width="26" height="26"/><use href="#spark" x="1150" y="330" width="22" height="22"/><use href="#spark" x="540" y="210" width="20" height="20"/><use href="#spark" x="520" y="580" width="18" height="18"/>
+</svg>
