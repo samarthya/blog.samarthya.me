@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a puzzled brown bear in a chef's hat and apron scratches its head, holding one egg, next to an egg carton labelled dependencies with two empty cups tagged chardet? and requests?, a green pip install badge above, and a pytest board showing five passes and three failures, scored 5 of 8</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#86efac"/><stop offset="0.65" stop-color="#bbf7d0"/><stop offset="1" stop-color="#fefce8"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g filter="url(#drop)">
+    <rect x="760" y="120" width="410" height="440" rx="18" fill="#ffffff"/>
+    <rect x="760" y="120" width="410" height="56" rx="18" fill="#1e293b"/><rect x="760" y="150" width="410" height="26" fill="#1e293b"/>
+    <text x="786" y="157" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="24" fill="#a5f3fc">$ pytest</text>
+    <g transform="rotate(10 1100 150)"><rect x="1040" y="128" width="116" height="46" rx="23" fill="#f59e0b"/>
+    <text x="1098" y="160" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#ffffff">5 / 8</text></g>
+  </g>
+  <text x="790" y="214" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#16a34a">✓</text><text x="822" y="214" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">test_clean_dry_run</text><text x="790" y="252" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#16a34a">✓</text><text x="822" y="252" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">test_scan_folders</text><text x="790" y="290" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#16a34a">✓</text><text x="822" y="290" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">test_scan_exact_duplicates</text><text x="790" y="328" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#16a34a">✓</text><text x="822" y="328" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">test_hash_file</text><text x="790" y="366" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#16a34a">✓</text><text x="822" y="366" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">test_calculate_similarity</text><text x="790" y="404" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#dc2626">✗</text><text x="822" y="404" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">same_name_different_content</text><text x="790" y="442" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#dc2626">✗</text><text x="822" y="442" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">similarity_different</text><text x="790" y="480" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="24" fill="#dc2626">✗</text><text x="822" y="480" font-family="Consolas, Menlo, monospace" font-weight="700" font-size="19" fill="#1e293b">test_web_serve  403</text>
+  <g filter="url(#drop)">
+    <path d="M462 510 L756 510 L744 566 L474 566Z" fill="#d6c4a8"/>
+    <path d="M462 510 L756 510" stroke="#b7a184" stroke-width="4"/>
+    <ellipse cx="494" cy="514" rx="20" ry="10" fill="#a8896a"/><ellipse cx="494" cy="494" rx="18" ry="24" fill="#fffbeb" stroke="#d6c4a8" stroke-width="2"/><ellipse cx="488" cy="484" rx="5" ry="8" fill="#ffffff"/><ellipse cx="540" cy="514" rx="20" ry="10" fill="#a8896a"/><ellipse cx="540" cy="494" rx="18" ry="24" fill="#fffbeb" stroke="#d6c4a8" stroke-width="2"/><ellipse cx="534" cy="484" rx="5" ry="8" fill="#ffffff"/><ellipse cx="586" cy="514" rx="20" ry="10" fill="#a8896a"/><ellipse cx="586" cy="494" rx="18" ry="24" fill="#fffbeb" stroke="#d6c4a8" stroke-width="2"/><ellipse cx="580" cy="484" rx="5" ry="8" fill="#ffffff"/><ellipse cx="632" cy="514" rx="20" ry="10" fill="#a8896a"/><ellipse cx="632" cy="494" rx="18" ry="24" fill="#fffbeb" stroke="#d6c4a8" stroke-width="2"/><ellipse cx="626" cy="484" rx="5" ry="8" fill="#ffffff"/><ellipse cx="678" cy="514" rx="20" ry="10" fill="#a8896a"/><ellipse cx="724" cy="514" rx="20" ry="10" fill="#a8896a"/>
+    <text x="609" y="550" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="16" fill="#78573a">dependencies</text>
+  </g>
+  <path d="M640 370 C660 420 670 460 678 496" stroke="#7c3aed" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+  <path d="M700 446 C712 470 718 486 724 500" stroke="#7c3aed" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+  <g filter="url(#drop)">
+    <rect x="560" y="320" width="160" height="50" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="3" stroke-dasharray="8 6"/>
+    <text x="640" y="353" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="20" fill="#7c3aed">chardet ?</text>
+    <rect x="600" y="396" width="150" height="50" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="3" stroke-dasharray="8 6"/>
+    <text x="675" y="429" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-weight="800" font-size="20" fill="#7c3aed">requests ?</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(-4 560 150)"><rect x="480" y="128" width="170" height="46" rx="23" fill="#22c55e"/>
+  <text x="565" y="159" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="20" fill="#ffffff">pip install ✓</text></g>
+  <defs><linearGradient id="bear" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a16207"/><stop offset="1" stop-color="#713f12"/></linearGradient></defs>
+  <!-- body and apron -->
+  <ellipse cx="250" cy="560" rx="185" ry="160" fill="url(#bear)" filter="url(#drop)"/>
+  <path d="M160 470 C200 452 300 452 340 470 L360 640 L140 640Z" fill="#ffffff"/>
+  <path d="M190 470 C200 430 300 430 310 470" stroke="#ffffff" stroke-width="8" fill="none"/>
+  <rect x="200" y="520" width="100" height="56" rx="10" fill="#fee2e2"/>
+  <text x="250" y="555" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="18" fill="#b91c1c">recipe</text>
+  <!-- ears -->
+  <circle cx="135" cy="205" r="46" fill="url(#bear)"/><circle cx="135" cy="205" r="24" fill="#fcd9b6"/>
+  <circle cx="365" cy="205" r="46" fill="url(#bear)"/><circle cx="365" cy="205" r="24" fill="#fcd9b6"/>
+  <!-- head -->
+  <circle cx="250" cy="300" r="132" fill="url(#bear)" filter="url(#drop)"/>
+  <ellipse cx="250" cy="352" rx="66" ry="50" fill="#fcd9b6"/>
+  <ellipse cx="250" cy="328" rx="22" ry="14" fill="#1f2937"/><ellipse cx="244" cy="323" rx="7" ry="4" fill="#ffffff" opacity="0.7"/>
+  <path d="M250 342 L250 360 M226 372 C236 362 244 380 252 370 C260 360 268 378 276 368" stroke="#1f2937" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <defs><clipPath id="bearL"><ellipse cx="200" cy="284" rx="24" ry="28"/></clipPath><linearGradient id="bearLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#78350f"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
+  <ellipse cx="200" cy="284" rx="24" ry="28" fill="#ffffff"/>
+  <g clip-path="url(#bearL)">
+    <ellipse cx="204" cy="286" rx="18.0" ry="21.0" fill="url(#bearLg)"/>
+    <ellipse cx="204" cy="284" rx="8.1" ry="10.5" fill="#111827"/>
+    <circle cx="197.7" cy="277.6" r="5.28" fill="#ffffff"/>
+    <circle cx="210.3" cy="293.35" r="2.4000000000000004" fill="#ffffff"/>
+  </g>
+  <ellipse cx="200" cy="284" rx="24" ry="28" fill="none" stroke="#1f2937" stroke-width="4"/>
+  
+  <defs><clipPath id="bearR"><ellipse cx="300" cy="284" rx="24" ry="28"/></clipPath><linearGradient id="bearRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#78350f"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
+  <ellipse cx="300" cy="284" rx="24" ry="28" fill="#ffffff"/>
+  <g clip-path="url(#bearR)">
+    <ellipse cx="304" cy="286" rx="18.0" ry="21.0" fill="url(#bearRg)"/>
+    <ellipse cx="304" cy="284" rx="8.1" ry="10.5" fill="#111827"/>
+    <circle cx="297.7" cy="277.6" r="5.28" fill="#ffffff"/>
+    <circle cx="310.3" cy="293.35" r="2.4000000000000004" fill="#ffffff"/>
+  </g>
+  <ellipse cx="300" cy="284" rx="24" ry="28" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <path d="M170 244 C184 236 206 236 222 244" stroke="#3f2a10" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M278 230 C294 220 316 220 330 232" stroke="#3f2a10" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <ellipse cx="176" cy="330" rx="20" ry="9" fill="#fb7185" opacity="0.45" filter="url(#soft)"/>
+  <ellipse cx="324" cy="330" rx="20" ry="9" fill="#fb7185" opacity="0.45" filter="url(#soft)"/>
+  <!-- chef hat -->
+  <g filter="url(#drop)" fill="#ffffff">
+    <circle cx="196" cy="128" r="48"/><circle cx="252" cy="100" r="56"/><circle cx="308" cy="128" r="48"/>
+    <rect x="180" y="132" width="144" height="54" rx="10"/>
+  </g>
+  <path d="M184 170 H320" stroke="#e5e7eb" stroke-width="4"/>
+  <!-- paw scratching head, paw holding an egg -->
+  <path d="M390 480 C450 400 440 300 392 250" stroke="url(#bear)" stroke-width="58" fill="none" stroke-linecap="round"/>
+  <circle cx="388" cy="246" r="32" fill="#fcd9b6" stroke="#713f12" stroke-width="4"/>
+  <path d="M112 480 C70 450 70 410 96 392" stroke="url(#bear)" stroke-width="56" fill="none" stroke-linecap="round"/>
+  <ellipse cx="96" cy="372" rx="22" ry="28" fill="#fffbeb" stroke="#d6c4a8" stroke-width="2"/>
+  <circle cx="96" cy="402" r="28" fill="#fcd9b6" stroke="#713f12" stroke-width="4"/>
+  <!-- sweat drop and a small question mark -->
+  <path d="M420 150 C404 176 408 196 422 196 C436 196 438 176 420 150Z" fill="#a5e4f7" stroke="#4aa5d6" stroke-width="2.5"/>
+  <text x="440" y="110" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="64" fill="#fbbf24" stroke="#7c3aed" stroke-width="4" paint-order="stroke" transform="rotate(12 460 90)">?</text><use href="#spark" x="560" y="240" width="22" height="22"/><use href="#spark" x="1150" y="600" width="22" height="22"/><use href="#spark" x="720" y="70" width="24" height="24"/><use href="#spark" x="40" y="80" width="26" height="26"/>
+</svg>
