@@ -1,5 +1,6 @@
 ---
 title: "SYSTEMD: Mother of all processes"
+featureimage: "feature.png"
 date: "2020-09-30T14:33:47Z"
 slug: "systemd-mother-of-all-processes"
 categories: ["technical"]

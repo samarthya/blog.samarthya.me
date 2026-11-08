@@ -1,5 +1,6 @@
 ---
 title: "SSH Protocol"
+featureimage: "feature.png"
 date: "2022-02-25T12:00:00Z"
 slug: "ssh-protocol"
 categories: ["technical"]

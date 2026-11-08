@@ -1,5 +1,6 @@
 ---
 title: "Ansible: Async & Poll"
+featureimage: "feature.png"
 date: "2023-03-30"
 slug: "ansible-async-poll"
 categories: ["technical"]

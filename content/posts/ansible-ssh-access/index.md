@@ -3,6 +3,7 @@ title: "Ansible: SSH Access"
 date: "2023-02-08T12:00:00Z"
 slug: "ansible-ssh-access"
 description: "To set up SSH access for inventory hosts in Ansible, follow these steps:"
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ansible", "ssh"]
 aliases: ["/wps/2023/02/08/ansible-ssh-access/"]

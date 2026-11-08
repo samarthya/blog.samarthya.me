@@ -3,6 +3,7 @@ title: "Locale"
 date: "2019-04-05T12:00:00Z"
 slug: "locale-centos"
 description: "Did you ever see a warning printed on your console the moment you log into your Linux machine and did that warning ever complaned to you about the benign locale?"
+featureimage: "feature.png"
 categories: ["others"]
 tags: ["centos", "linux", "locale", "warning"]
 aliases: ["/wps/2019/04/05/locale-centos/"]

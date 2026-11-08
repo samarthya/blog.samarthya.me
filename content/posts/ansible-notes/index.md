@@ -3,6 +3,7 @@ title: "Ansible: Notes"
 date: "2022-03-04T12:00:00Z"
 slug: "ansible-notes"
 description: "Control node   Managed nodes   Inventory   Modules   Tasks   Playbooks"
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ansible"]
 aliases: ["/wps/2022/03/04/ansible-notes/"]

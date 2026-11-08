@@ -1,5 +1,6 @@
 ---
 title: "PS: Process Status"
+featureimage: "feature.png"
 date: "2020-10-20T11:13:18Z"
 slug: "ps-process-status"
 categories: ["technical"]

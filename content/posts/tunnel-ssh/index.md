@@ -3,6 +3,7 @@ title: "Tunnel: SSH"
 date: "2023-04-28T12:00:00Z"
 slug: "tunnel-ssh"
 description: "SSH tunneling is a powerful technique that allows you to securely tunnel network traffic between two endpoints."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ssh", "tunnel"]
 aliases: ["/wps/2023/04/28/tunnel-ssh/"]

@@ -3,6 +3,7 @@ title: "Ansible: Variables"
 date: "2023-02-08T12:00:00Z"
 slug: "ansible-variables"
 description: "Ansible Variables are used to store values that can be reused throughout an Ansible playbook."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ansible", "variables"]
 aliases: ["/wps/2023/02/08/ansible-variables/"]

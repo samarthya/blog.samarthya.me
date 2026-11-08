@@ -3,6 +3,7 @@ title: "Ansible: A thought"
 date: "2023-02-08T12:00:00Z"
 slug: "ansible-a-thought"
 description: "Ansible is an open-source software platform for automating and managing IT infrastructure."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ansible"]
 aliases: ["/wps/2023/02/08/ansible-a-thought/"]

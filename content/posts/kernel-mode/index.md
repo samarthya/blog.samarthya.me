@@ -1,5 +1,6 @@
 ---
 title: "Kernel Mode"
+featureimage: "feature.png"
 date: "2020-10-17T14:58:39Z"
 slug: "kernel-mode"
 categories: ["technical"]

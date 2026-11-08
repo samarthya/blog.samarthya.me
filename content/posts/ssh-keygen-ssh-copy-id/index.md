@@ -3,6 +3,7 @@ title: "ssh-keygen & ssh-copy-id"
 date: "2022-02-25T12:00:00Z"
 slug: "ssh-keygen-ssh-copy-id"
 description: "– The SSH protocol uses public key cryptography for authenticating hosts and users."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["ssh-key-gen"]
 aliases: ["/wps/2022/02/25/ssh-keygen-ssh-copy-id/"]

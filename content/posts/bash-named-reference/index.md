@@ -3,6 +3,7 @@ title: "Bash: Named Reference"
 date: "2022-03-02T12:00:00Z"
 slug: "bash-named-reference"
 description: "Bash is different world. Powerful, simple, elegant and complex all at the same time."
+featureimage: "feature.png"
 categories: ["technical"]
 tags: ["bash", "indirect", "linux", "nameref"]
 aliases: ["/wps/2022/03/02/bash-named-reference/"]

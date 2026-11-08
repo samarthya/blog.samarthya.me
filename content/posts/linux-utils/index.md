@@ -1,5 +1,6 @@
 ---
 title: "Linux Utils"
+featureimage: "feature.png"
 date: "2020-10-13T08:29:43Z"
 slug: "linux-utils"
 categories: ["technical"]

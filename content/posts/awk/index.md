@@ -1,5 +1,6 @@
 ---
 title: "AWK"
+featureimage: "feature.png"
 date: "2022-12-05"
 slug: "awk"
 categories: ["technical"]
