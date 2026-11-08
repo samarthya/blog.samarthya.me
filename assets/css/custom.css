@@ -479,3 +479,39 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible, summary:focus-v
   .cheat-grid { grid-template-columns: 1fr 1fr; gap: .5rem; }
   .cheat { box-shadow: none; transform: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* ---------- Agent log entries (layouts/shortcodes/agentlog.html), used by "The Ghost Board" ----------
+   Board posts: monospace, cyan rail. Private reasoning: italic, violet rail. Timeline beats: headings that start with a .beat-time span. */
+.agentlog { --c: #0891b2; margin: 1.1rem 0 1.4rem; padding: .7rem 1rem .8rem; border-radius: 10px;
+  border: 1px solid rgb(var(--color-neutral-200)); border-left: 4px solid var(--c);
+  background: rgb(var(--color-neutral-50)); }
+.agentlog-reasoning { --c: #7c3aed; }
+.agentlog-head { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem; margin-bottom: .35rem; }
+.agentlog-who { font: 700 .82rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: rgb(var(--color-neutral-900)); }
+.agentlog-kind { padding: 0 .45rem; border-radius: 999px; font-size: .68rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: #fff; background: var(--c); }
+.agentlog-when { margin-left: auto; font-size: .75rem; color: rgb(var(--color-neutral-500)); }
+.agentlog-body { font-size: .92rem; line-height: 1.55; color: rgb(var(--color-neutral-800)); overflow-wrap: anywhere; }
+.agentlog-body p { margin: .2rem 0; }
+.agentlog-board .agentlog-body { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .84rem; }
+.agentlog-reasoning .agentlog-body { font-style: italic; }
+.agentlog-note { margin-top: .4rem; font-size: .78rem; color: rgb(var(--color-neutral-500)); }
+.dark .agentlog { background: rgb(var(--color-neutral-800)); border-color: rgb(var(--color-neutral-700)); border-left-color: var(--c); }
+.dark .agentlog-board { --c: #22d3ee; }
+.dark .agentlog-reasoning { --c: #a78bfa; }
+.dark .agentlog-kind { color: #0b1020; }
+.dark .agentlog-who { color: rgb(var(--color-neutral-50)); }
+.dark .agentlog-body { color: rgb(var(--color-neutral-200)); }
+.dark .agentlog-note, .dark .agentlog-when { color: rgb(var(--color-neutral-400)); }
+.agentlog-legend { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; font-size: .82rem; color: rgb(var(--color-neutral-500)); }
+.agentlog-legend span::before { content: ""; display: inline-block; width: .7rem; height: .7rem; margin-right: .4rem;
+  border-radius: 3px; vertical-align: -.05rem; background: #0891b2; }
+.agentlog-legend .lg-reasoning::before { background: #7c3aed; }
+.dark .agentlog-legend .lg-board::before { background: #22d3ee; }
+.dark .agentlog-legend .lg-reasoning::before { background: #a78bfa; }
+/* Timeline beat headings: "### <span class="beat-time">Jul 8 · 23:00</span> A board is born" */
+.prose h3:has(.beat-time) { margin-top: 2.4rem; }
+.beat-time { display: inline-block; margin-right: .6rem; vertical-align: .15em; padding: .05rem .55rem; border-radius: 6px; font: 700 .8rem/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: rgb(var(--color-primary-700)); background: rgb(var(--color-primary-100)); }
+.dark .beat-time { color: rgb(var(--color-primary-200)); background: rgb(var(--color-primary-900)); }
+@media print { .agentlog { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

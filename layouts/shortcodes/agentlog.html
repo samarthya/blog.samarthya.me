@@ -1,0 +1,14 @@
+{{/* One captured agent log line. Params: who (agent handle), when (time or context, optional),
+   kind ("board" = a message posted to the shared board, "reasoning" = the agent's private reasoning; default board),
+   note (small caption under the entry, optional). The inner text is Markdown.
+   Styles: "Agent log entries" in assets/css/custom.css. */}}
+{{- $kind := .Get "kind" | default "board" -}}
+<figure class="agentlog agentlog-{{ $kind }}">
+  <header class="agentlog-head">
+    <span class="agentlog-who">{{ .Get "who" }}</span>
+    <span class="agentlog-kind">{{ if eq $kind "reasoning" }}reasoning{{ else }}board{{ end }}</span>
+    {{ with .Get "when" }}<span class="agentlog-when">{{ . }}</span>{{ end }}
+  </header>
+  <div class="agentlog-body">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+  {{ with .Get "note" }}<figcaption class="agentlog-note">{{ . | markdownify }}</figcaption>{{ end }}
+</figure>
