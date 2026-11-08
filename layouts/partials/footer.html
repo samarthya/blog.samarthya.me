@@ -1,0 +1,43 @@
+{{/* Site override of Blowfish's footer.html. A card: the brand (logo, motto, a live line of numbers, RSS pills) and
+   the footer menu in two columns, "Read" and "Me" (config/_default/menus.en.toml: footer entries carry
+   params.group = "read" | "me" and a `pre` icon). Below it, one quiet line: copyright and what it's built with.
+   Replaces the old extend-footer.html hook. Styles: .sf in assets/css/custom.css. */}}
+{{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
+{{ $groups := slice (dict "id" "read" "title" "Read") (dict "id" "me" "title" "Me") }}
+<footer id="site-footer" class="sf print:hidden">
+  <div class="sf-card">
+    <div class="sf-brand">
+      <a class="sf-home" href="{{ "" | relURL }}">
+        {{ with site.Params.logo }}{{ with resources.Get . }}{{ $l := .Resize "96x webp" }}<img class="nozoom" src="{{ $l.RelPermalink }}" width="48" height="48" alt="">{{ end }}{{ end }}
+        <span>{{ site.Params.Author.name | default "Samarthya" }}</span>
+      </a>
+      <p class="sf-motto">Fall. Get up. Build again.</p>
+      <p class="sf-facts">Writing since {{ (index $posts.ByDate 0).Date.Year }} · {{ len $posts }} posts and entries</p>
+      <p class="sf-feeds">
+        {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">{{ partial "icon.html" "rss" }} Everything</a>{{ end }}
+        {{ with site.GetPage "/daily" }}{{ with .OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">{{ partial "icon.html" "rss" }} Daily</a>{{ end }}{{ end }}
+      </p>
+    </div>
+    {{ with site.Menus.footer }}
+      <nav class="sf-cols" aria-label="{{ i18n "nav.footer_menu" }}">
+        {{ range $g := $groups }}
+          <div class="sf-col">
+            <h2>{{ $g.title }}</h2>
+            <ul>
+              {{ range site.Menus.footer }}
+                {{ if eq (.Params.group | default "read") $g.id }}
+                  <li><a href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} rel="noopener"{{ end }}>
+                    <span class="sf-ico" aria-hidden="true">{{ with .Pre }}{{ partial "icon.html" . }}{{ end }}</span>{{ .Name }}</a></li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </nav>
+    {{ end }}
+  </div>
+  <div class="sf-bottom">
+    <p>{{ with replace (site.Params.copyright | default "") "{ year }" now.Year }}{{ . | markdownify }}{{ else }}&copy; {{ now.Year }} Samarthya{{ end }}</p>
+    <p>Built with <a href="https://gohugo.io/">Hugo</a> and <a href="https://blowfish.page/">Blowfish</a></p>
+  </div>
+</footer>

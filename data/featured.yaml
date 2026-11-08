@@ -1,11 +1,35 @@
-# Trophy shelf on the homepage: the posts you're proudest of, in this order. Three cards fill a row on
-# desktop, so 3 or 6 look best. Use the post's folder name under content/posts/ (or content/daily/). Kept here
-# rather than in the posts' front matter so re-running the importer or the recovery tool can't wipe it.
+# Trophy shelf on the homepage (layouts/partials/home/trophy-shelf.html): three shelves of three, in this order.
+# post: the folder name under content/posts/ (or content/daily/)
+# kind: build | guide | incident | concept | story   (the label on the plaque)
+# why:  one line, in my words: why this one is on the shelf (shown on the card; keep it under ~110 characters)
+# Kept here rather than in the posts' front matter so re-running the importer or the recovery tool can't wipe it.
 posts:
-  - rebuilding-1-the-day-the-blog-fell                                # the break-in and what it taught
-  - moving-to-hugo-2-the-migration-playbook                           # the migration as a reusable guide
-  - ai-reading-map                                                    # every AI post, in order
-  - building-a-practical-retrieval-augmented-personal-assistant-rag   # a real RAG build
-  - the-ghost-board                                                   # the agents story
-  - kafka-deploy-test                                                 # hands-on Kafka on Kubernetes
-  - ssdlc-in-the-age-of-ai-exploits                                   # the SSDLC concept, with a slide deck
+  - post: rebuilding-1-the-day-the-blog-fell
+    kind: incident
+    why: "The day six years of writing was taken from me, and the first hours of getting it back."
+  - post: moving-to-hugo-2-the-migration-playbook
+    kind: guide
+    why: "Everything I learned moving 137 posts off WordPress, written so you can repeat it."
+  - post: about-site-2-honest-numbers
+    kind: build
+    why: "My stats page wanted to say 58% of my readers live in Singapore. Making it tell the truth."
+
+  - post: building-a-practical-retrieval-augmented-personal-assistant-rag
+    kind: build
+    why: "A personal assistant that answers from my own notes, built end to end and kept on GitHub."
+  - post: testing-ai-code-1-read-before-you-run
+    kind: guide
+    why: "A model wrote code that can delete files. How I read it before I let it run."
+  - post: ai-reading-map
+    kind: guide
+    why: "Every AI post on this site in one order, from the basics to agents and the cost of tokens."
+
+  - post: ssdlc-in-the-age-of-ai-exploits
+    kind: concept
+    why: "A secure development cycle for a year of 48,000 CVEs and exploits written by machines."
+  - post: the-ghost-board
+    kind: story
+    why: "1,200 isolated agents found each other, built a society, and hacked to beat a watchdog."
+  - post: kafka-deploy-test
+    kind: build
+    why: "Kafka on Kubernetes with Helm, from an empty cluster to messages flowing."

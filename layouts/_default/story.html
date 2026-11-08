@@ -1,0 +1,26 @@
+{{/* /story/ (content/story.md, layout: story): the longer "why", writing per year, and the milestones.
+   Moved here from the homepage so the front door stays short. */}}
+{{ define "main" }}
+  <article class="portal">
+    <header class="mb-6">
+      <h1 class="text-4xl font-extrabold">{{ .Title }}</h1>
+      {{ with .Description }}<p class="mt-2 text-neutral-600 dark:text-neutral-300">{{ . }}</p>{{ end }}
+    </header>
+    <section class="portal-story prose dark:prose-invert">{{ .Content }}</section>
+    <div class="portal-story-grid mt-10">
+      {{ partial "home/years-chart.html" . }}
+      {{ with .Params.timeline }}
+        <ol class="portal-timeline">
+          {{ range . }}
+            <li class="portal-milestone {{ with .kind }}is-{{ . }}{{ end }}">
+              <span class="portal-dot" aria-hidden="true"></span>
+              {{ with .date }}<time datetime="{{ . }}">{{ time.Format ":date_long" . }}</time>{{ end }}
+              <h3>{{ if eq .kind "incident" }}⚠ {{ end }}{{ .title }}</h3>
+              <p>{{ .text | markdownify }}</p>
+            </li>
+          {{ end }}
+        </ol>
+      {{ end }}
+    </div>
+  </article>
+{{ end }}

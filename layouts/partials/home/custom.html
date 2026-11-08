@@ -1,57 +1,41 @@
-{{/* Homepage (params.toml: homepage.layout = "custom"). Words live in content/_index.md
-   (front matter `intro` + `timeline`, body = the story); styles in assets/css/custom.css.
-   Blowfish's layouts/index.html appends the "recent articles" grid after this partial. */}}
+{{/* Homepage (params.toml: homepage.layout = "custom"): a quiet front door.
+   Hero (photo, name, motto, one line, three doors, the newest post), then writing activity, then the trophy
+   shelf, then one line of links. The longer story and the milestones live on /story/ (content/story.md).
+   Words live in content/_index.md (front matter `intro`); styles in assets/css/custom.css (.portal, .hero-*).
+   Blowfish's layouts/index.html appends "recent articles" after this partial; it's off (showRecent = false). */}}
 {{ $intro := .Params.intro }}
 {{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
-<article class="portal">
-  <header class="portal-hero">
-    {{ with site.Params.logo }}
-      {{ with resources.Get . }}
-        <img class="portal-logo nozoom" src="{{ .RelPermalink }}" width="96" height="96" alt="{{ site.Title }}">
-      {{ end }}
+<article class="portal is-home">
+  <header class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    {{ with resources.Get ($intro.photo | default "img/avatar.jpg") }}
+      {{ $a := .Fill "320x320 Center webp q82" }}
+      <div class="hero-avatar">
+        <img class="nozoom" src="{{ $a.RelPermalink }}" width="160" height="160" alt="{{ $intro.photoAlt | default "Portrait of Samarthya" }}" fetchpriority="high">
+      </div>
     {{ end }}
-    <div class="portal-hero-text">
-      {{ with $intro.kicker }}<p class="portal-kicker">{{ . }}</p>{{ end }}
-      <h1 class="portal-headline">{{ $intro.headline | default site.Title }}</h1>
-      <div class="portal-links text-2xl">{{ partialCached "author-links.html" . }}</div>
-    </div>
+    <h1 class="hero-name">{{ $intro.name | default site.Title }}</h1>
+    <p class="hero-motto">{{ $intro.headline }}</p>
+    {{ with $intro.role }}<p class="hero-role">{{ . | markdownify }}</p>{{ end }}
+    <div class="hero-links text-2xl">{{ partialCached "author-links.html" . }}</div>
+    {{ with $intro.buttons }}
+      <nav class="hero-doors" aria-label="Start here">
+        {{ range . }}
+          {{ $ext := strings.HasPrefix .url "http" }}
+          <a class="hero-door" href="{{ if $ext }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}">
+            <span class="hero-door-icon" aria-hidden="true">{{ .icon }}</span>
+            <span class="hero-door-text"><strong>{{ .label }}</strong><small>{{ .note }}</small></span>
+          </a>
+        {{ end }}
+      </nav>
+    {{ end }}
+    {{ with index ($posts.ByDate.Reverse) 0 }}
+      <a class="hero-new" href="{{ .RelPermalink }}"><span>New</span> {{ .Title | emojify }} <b aria-hidden="true">→</b></a>
+    {{ end }}
   </header>
-
-  <section class="portal-story prose dark:prose-invert">{{ .Content }}</section>
-
-  {{ with $intro.buttons }}
-    <nav class="portal-buttons">
-      {{ range . }}<a class="portal-button" href="{{ .url | relURL }}">{{ .label }}</a>{{ end }}
-    </nav>
-  {{ end }}
-
-  <section class="portal-stats" aria-label="At a glance">
-    {{ $first := index ($posts.ByDate) 0 }}
-    <div><strong>{{ len $posts }}</strong><span>posts &amp; entries</span></div>
-    <div><strong>{{ with $first }}{{ .Date.Year }}{{ end }}</strong><span>writing since</span></div>
-    <div><strong>{{ len (partialCached "functions/topic-index.html" site.Home) }}</strong><span>topics</span></div>
-  </section>
-
-  <div class="portal-story-grid">
-  {{ partial "home/years-chart.html" . }}
-  {{ with .Params.timeline }}
-    <ol class="portal-timeline">
-      {{ range . }}
-        <li class="portal-milestone {{ with .kind }}is-{{ . }}{{ end }}">
-          <span class="portal-dot" aria-hidden="true"></span>
-          {{ with .date }}<time datetime="{{ . }}">{{ time.Format ":date_long" . }}</time>{{ end }}
-          <h3>{{ if eq .kind "incident" }}⚠ {{ end }}{{ .title }}</h3>
-          <p>{{ .text | markdownify }}</p>
-        </li>
-      {{ end }}
-    </ol>
-  {{ end }}
-  </div>
 </article>
 
+{{ partial "home/activity.html" . }}
 {{ partial "home/trophy-shelf.html" . }}
 
-<section class="portal-section">
-  <h2 class="portal-h2">Explore by topic</h2>
-  {{ partial "home/topic-chips.html" (dict "size" "small") }}
-</section>
+{{ partial "home/explore.html" . }}

@@ -1,5 +1,5 @@
 # -- Main Menu --
-# Mirrors the nav on samarthya.github.io; Projects/About live on the portfolio site.
+# About goes to the hub (about.samarthya.me); Projects stay on the portfolio site.
 
 [[main]]
   name = "Posts"
@@ -35,8 +35,14 @@
 [[main]]
   name = "About"
   parent = "me"
-  url = "https://samarthya.github.io/about.html"
+  url = "https://about.samarthya.me/"
   weight = 42
+
+[[main]]
+  name = "Story"
+  parent = "me"
+  pageRef = "story"
+  weight = 44
 
 [[main]]
   name = "Contact"
@@ -52,33 +58,60 @@
 
 # -- Footer Menu --
 
-# Footer: the site map in one row. The RSS link and tagline come from layouts/partials/extend-footer.html.
+# Footer (layouts/partials/footer.html): two columns, picked by params.group (read | me); `pre` is the icon.
+
 [[footer]]
   name = "Posts"
+  pre = "pencil"
   pageRef = "posts"
   weight = 10
+  params = { group = "read" }
 
 [[footer]]
   name = "Daily"
+  pre = "fire"
   pageRef = "daily"
   weight = 20
+  params = { group = "read" }
 
 [[footer]]
   name = "Topics"
+  pre = "tag"
   pageRef = "topics"
   weight = 30
+  params = { group = "read" }
 
 [[footer]]
   name = "Tags"
+  pre = "bars"
   pageRef = "tags"
   weight = 40
+  params = { group = "read" }
+
+[[footer]]
+  name = "Story"
+  pre = "star"
+  pageRef = "story"
+  weight = 50
+  params = { group = "me" }
+
+[[footer]]
+  name = "About"
+  pre = "circle-info"
+  url = "https://about.samarthya.me/"
+  weight = 60
+  params = { group = "me" }
 
 [[footer]]
   name = "Contact"
+  pre = "envelope"
   pageRef = "contact"
-  weight = 45
+  weight = 70
+  params = { group = "me" }
 
 [[footer]]
   name = "GitHub"
+  pre = "github"
   url = "https://github.com/samarthya"
-  weight = 50
+  weight = 80
+  params = { group = "me" }

@@ -1,39 +1,71 @@
-{{/* Hand-picked posts from data/featured.yaml, shown as cards. Hidden when the list is empty.
-   Each card flips on hover or keyboard focus (styles: .trophy in assets/css/custom.css). The front is the normal
-   article card; the back is decoration (aria-hidden, link not tabbable) so screen readers and Tab see each post
-   once. On touch screens and with reduced motion there is no flip and only the front is shown. */}}
-{{ $picks := slice }}
+{{/* Trophy shelf: hand-picked posts from data/featured.yaml, three rows of three.
+   Each trophy is a card that flips on hover or keyboard focus. Front: the cover art, kind label, year, title (and,
+   where there's no flip, the "why" line). Back: a dark plaque with the why, tags and read time. Both faces share one
+   grid cell, so the card is as tall as its taller face. The back is decoration (aria-hidden, link not tabbable), so
+   screen readers and Tab meet each post once, through the title link on the front.
+   No flip on touch screens or with reduced motion. Styles: .trophy in assets/css/custom.css. */}}
+{{ $kinds := dict
+  "build"    (dict "label" "Build"    "icon" "🛠")
+  "guide"    (dict "label" "Guide"    "icon" "🧭")
+  "incident" (dict "label" "Incident" "icon" "⚠")
+  "concept"  (dict "label" "Concept"  "icon" "💡")
+  "story"    (dict "label" "Story"    "icon" "📖")
+}}
+{{ $items := slice }}
 {{ range hugo.Data.featured.posts }}
-  {{ with or (site.GetPage (printf "/posts/%s" .)) (site.GetPage (printf "/daily/%s" .)) }}
-    {{ $picks = $picks | append . }}
+  {{ $slug := cond (reflect.IsMap .) .post . }}
+  {{ $kind := "" }}{{ $why := "" }}
+  {{ if reflect.IsMap . }}{{ $kind = .kind | default "" }}{{ $why = .why | default "" }}{{ end }}
+  {{ with or (site.GetPage (printf "/posts/%s" $slug)) (site.GetPage (printf "/daily/%s" $slug)) }}
+    {{ $items = $items | append (dict "page" . "kind" $kind "why" ($why | default (.Description | default (.Summary | plainify) | truncate 120))) }}
   {{ else }}
-    {{ warnf "data/featured.yaml: no post named %q" . }}
+    {{ warnf "data/featured.yaml: no post named %q" $slug }}
   {{ end }}
 {{ end }}
-{{ with $picks }}
-  <section class="portal-section">
-    <h2 class="portal-h2">🏆 Trophy shelf</h2>
-    <div class="trophy-shelf w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-      {{ range $i, $p := . }}
-        {{ $rank := add $i 1 }}
-        <div class="trophy" style="--i: {{ $i }}">
+{{ with $items }}
+  <section class="portal-section shelf-section" aria-labelledby="shelf-title">
+    <div class="shelf-head">
+      <h2 id="shelf-title" class="portal-h2">🏆 Trophy shelf</h2>
+      <p class="shelf-sub">The posts I'm proudest of: things built, broken and understood.</p>
+    </div>
+    <ol class="shelf">
+      {{ range $i, $it := . }}
+        {{ $p := .page }}
+        {{ $k := index $kinds .kind }}
+        {{ $img := "" }}
+        {{ with partial "functions/feature-image.html" $p }}{{ $img = or ($p.Resources.Get .) (resources.Get .) }}{{ end }}
+        <li class="trophy{{ with .kind }} is-{{ . }}{{ end }}" style="--i: {{ $i }}">
           <div class="trophy-inner">
             <div class="trophy-face trophy-front">
-              <span class="trophy-rank" aria-hidden="true">#{{ $rank }}</span>
-              {{ partial "article-link/card.html" $p }}
+              <div class="trophy-art" aria-hidden="true">
+                {{ with $img }}
+                  {{ if eq .MediaType.SubType "svg" }}
+                    <img src="{{ .RelPermalink }}" alt="" loading="lazy">
+                  {{ else }}
+                    {{ $small := .Fill "720x405 Center webp q78" }}
+                    <img src="{{ $small.RelPermalink }}" width="{{ $small.Width }}" height="{{ $small.Height }}" alt="" loading="lazy">
+                  {{ end }}
+                {{ end }}
+                <span class="trophy-rank">#{{ add $i 1 }}</span>
+              </div>
+              <div class="trophy-meta">
+                {{ with $k }}<span class="trophy-kind"><span aria-hidden="true">{{ .icon }}</span> {{ .label }}</span>{{ end }}
+                <span class="trophy-year">{{ $p.Date.Format "2006" }}</span>
+              </div>
+              <h3 class="trophy-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title | emojify }}</a></h3>
+              <p class="trophy-why">{{ .why }}</p>
+              <p class="trophy-hint" aria-hidden="true"><span>Why it's here</span> ↻</p>
             </div>
             <div class="trophy-face trophy-back" aria-hidden="true">
-              <p class="trophy-kicker">🏆 Trophy #{{ $rank }} · {{ $p.Date.Format "Jan 2006" }}</p>
-              <h3 class="trophy-title">{{ $p.Title | emojify }}</h3>
-              <p class="trophy-desc">{{ $p.Description | default ($p.Summary | plainify) | truncate 200 }}</p>
-              {{ with $p.Params.tags }}
-                <ul class="trophy-tags">{{ range first 3 . }}<li>{{ . }}</li>{{ end }}</ul>
-              {{ end }}
+              <p class="trophy-kicker">🏆 Trophy #{{ add $i 1 }}{{ with $k }} · {{ .label }}{{ end }} · {{ $p.Date.Format "Jan 2006" }}</p>
+              <p class="trophy-back-title">{{ $p.Title | emojify }}</p>
+              <p class="trophy-back-why">“{{ .why }}”</p>
+              {{ with $p.Params.tags }}<ul class="trophy-tags">{{ range first 3 . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
               <a class="trophy-cta" href="{{ $p.RelPermalink }}" tabindex="-1">Read it · {{ $p.ReadingTime }} min →</a>
             </div>
           </div>
-        </div>
+        </li>
       {{ end }}
-    </div>
+    </ol>
   </section>
 {{ end }}

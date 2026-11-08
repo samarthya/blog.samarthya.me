@@ -1,0 +1,121 @@
+{{/* Writing activity, GitHub style: one square per day (columns are weeks, Sunday on top), shaded by how many
+   posts and daily entries went out that day. Views: the last 12 months (default) and every year back to the
+   first post, picked from a year list on the right. The views switch with radio buttons and CSS only (no
+   script), so arrow keys work and every view is in the page for search engines and screen readers.
+   Under each grid: a month row (posts per month) and, for the last 12 months, the latest activity by title.
+   Single hue, light to dark; the legend and the native <title> tooltips carry the numbers.
+   Styles: .act in assets/css/custom.css. */}}
+{{ $pages := where site.RegularPages "Section" "in" site.Params.mainSections }}
+{{ $day := dict }}{{ $month := dict }}
+{{ range $pages }}
+  {{ $k := .Date.Format "2006-01-02" }}{{ $m := .Date.Format "2006-01" }}
+  {{ $day = merge $day (dict $k (add (index $day $k | default 0) 1)) }}
+  {{ $month = merge $month (dict $m (add (index $month $m | default 0) 1)) }}
+{{ end }}
+{{ $wd := dict "Sun" 0 "Mon" 1 "Tue" 2 "Wed" 3 "Thu" 4 "Fri" 5 "Sat" 6 }}
+{{ $today := time.AsTime (now.Format "2006-01-02") }}
+{{ $firstYear := (index $pages.ByDate 0).Date.Year }}
+
+{{/* The views: "last" plus each year, newest first */}}
+{{ $views := slice (dict "id" "last" "label" "Last 12 months" "start" ($today.AddDate 0 0 -364) "end" $today) }}
+{{ range $y := seq now.Year -1 $firstYear }}
+  {{ $s := time.AsTime (printf "%d-01-01" $y) }}
+  {{ $e := time.AsTime (printf "%d-12-31" $y) }}
+  {{ if $e.After $today }}{{ $e = $today }}{{ end }}
+  {{ $views = $views | append (dict "id" (printf "y%d" $y) "label" (string $y) "start" $s "end" $e) }}
+{{ end }}
+
+{{ $step := 14 }}{{ $cell := 11 }}{{ $left := 30 }}{{ $top := 20 }}
+<section class="portal-section act" aria-labelledby="act-title">
+  <h2 id="act-title" class="portal-h2">Writing activity</h2>
+  <style>
+    {{- range $views }}
+    #act-{{ .id }}:checked ~ .act-layout .act-p-{{ .id }} { display: block; }
+    #act-{{ .id }}:checked ~ .act-layout label[for="act-{{ .id }}"] { color: #fff; background: rgb(var(--color-primary-700)); }
+    #act-{{ .id }}:focus-visible ~ .act-layout label[for="act-{{ .id }}"] { outline: 2px solid rgb(var(--color-primary-500)); outline-offset: 2px; }
+    {{- end }}
+  </style>
+  {{ range $i, $v := $views }}
+    <input class="sr-only act-radio" type="radio" name="act-view" id="act-{{ $v.id }}"{{ if eq $i 0 }} checked{{ end }} aria-label="Show {{ $v.label }}">
+  {{ end }}
+  <div class="act-layout">
+    <div class="act-panels">
+      {{ range $v := $views }}
+        {{ $start := $v.start }}{{ $end := $v.end }}
+        {{ $gridStart := $start.AddDate 0 0 (mul -1 (index $wd ($start.Format "Mon"))) }}
+        {{ $days := add (int (div ($end.Sub $gridStart).Hours 24)) 1 }}
+        {{ $weeks := int (math.Ceil (div (float $days) 7)) }}
+        {{ $total := 0 }}{{ $active := 0 }}
+        {{ $w := add $left (mul $weeks $step) }}{{ $h := add $top (mul 7 $step) }}
+        <div class="act-panel act-p-{{ $v.id }}">
+          {{ $cells := slice }}
+          <svg class="act-grid" viewBox="0 0 {{ $w }} {{ $h }}" width="{{ $w }}" height="{{ $h }}" role="img"
+               aria-labelledby="act-sum-{{ $v.id }}">
+            {{ range $n := seq 0 (sub (mul $weeks 7) 1) }}
+              {{ $d := $gridStart.AddDate 0 0 $n }}
+              {{ $col := div $n 7 }}{{ $row := mod $n 7 }}
+              {{ if and (eq $row 0) (lt $d.Day 8) (not ($d.After $end)) }}
+                <text class="act-month" x="{{ add $left (mul $col $step) }}" y="12">{{ $d.Format "Jan" }}</text>
+              {{ end }}
+              {{ if not (or ($d.Before $start) ($d.After $end)) }}
+                {{ $c := index $day ($d.Format "2006-01-02") | default 0 }}
+                {{ $total = add $total $c }}{{ if $c }}{{ $active = add $active 1 }}{{ end }}
+                {{ $lvl := cond (ge $c 4) 4 $c }}
+                <rect class="l{{ $lvl }}" x="{{ add $left (mul $col $step) }}" y="{{ add $top (mul $row $step) }}" width="{{ $cell }}" height="{{ $cell }}" rx="2"><title>{{ if $c }}{{ $c }} {{ cond (eq $c 1) "post" "posts" }}{{ else }}Nothing{{ end }} on {{ $d.Format "Monday, 2 January 2006" }}</title></rect>
+              {{ end }}
+            {{ end }}
+            <text class="act-wday" x="0" y="{{ add $top (mul 1 $step) 9 }}">Mon</text>
+            <text class="act-wday" x="0" y="{{ add $top (mul 3 $step) 9 }}">Wed</text>
+            <text class="act-wday" x="0" y="{{ add $top (mul 5 $step) 9 }}">Fri</text>
+          </svg>
+          <div class="act-foot">
+            <p class="act-sum" id="act-sum-{{ $v.id }}"><strong>{{ $total }}</strong> {{ cond (eq $total 1) "post or entry" "posts and entries" }}
+              in {{ if eq $v.id "last" }}the last 12 months{{ else }}{{ $v.label }}{{ end }}, on {{ $active }} {{ cond (eq $active 1) "day" "days" }}</p>
+            <p class="act-legend" aria-hidden="true">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More</p>
+          </div>
+
+          {{/* Month row: one column per month in the view */}}
+          {{ $m0 := time.AsTime (printf "%s-01" ($start.Format "2006-01")) }}
+          {{ $months := slice }}
+          {{ range $k := seq 0 12 }}
+            {{ $md := $m0.AddDate 0 $k 0 }}
+            {{ if not ($md.After $end) }}{{ $months = $months | append $md }}{{ end }}
+          {{ end }}
+          {{ $mmax := 1 }}
+          {{ range $months }}{{ $mmax = math.Max $mmax (index $month (.Format "2006-01") | default 0) }}{{ end }}
+          <ol class="act-months" style="--cols: {{ len $months }}" aria-label="Posts per month">
+            {{ range $months }}
+              {{ $c := index $month (.Format "2006-01") | default 0 }}
+              <li title="{{ .Format "January 2006" }}: {{ $c }} {{ cond (eq $c 1) "post" "posts" }}">
+                <span class="act-mbar" style="--v: {{ div (float $c) $mmax }}"></span>
+                <span class="act-mn">{{ if $c }}{{ $c }}{{ end }}</span>
+                <span class="act-ml">{{ .Format "Jan" }}<span class="sr-only"> {{ .Format "2006" }}: {{ $c }}</span></span>
+              </li>
+            {{ end }}
+          </ol>
+
+          {{ if eq $v.id "last" }}
+            <div class="act-feed">
+              {{ range first 2 ($pages.ByDate.Reverse.GroupByDate "January 2006") }}
+                <section class="act-feed-month">
+                  <h3>{{ .Key }} <small>{{ len .Pages }} {{ cond (eq (len .Pages) 1) "post" "posts" }}</small></h3>
+                  <ul>
+                    {{ range first 5 .Pages }}
+                      <li><span class="act-type is-{{ .Section }}">{{ cond (eq .Section "daily") "Daily" "Post" }}</span>
+                        <a href="{{ .RelPermalink }}">{{ .Title | emojify }}</a>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan" }}</time></li>
+                    {{ end }}
+                  </ul>
+                  {{ with after 5 .Pages }}<p class="act-more"><a href="{{ "posts/" | relURL }}">and {{ len . }} more →</a></p>{{ end }}
+                </section>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    <ul class="act-years" aria-label="Choose a period">
+      {{ range $views }}<li><label for="act-{{ .id }}">{{ .label }}</label></li>{{ end }}
+    </ul>
+  </div>
+</section>

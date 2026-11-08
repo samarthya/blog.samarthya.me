@@ -1,0 +1,55 @@
+{{/* "Keep exploring": three cards at the end of the homepage, each with a small live visual drawn from the site:
+   the story (its milestone dots, from content/story.md), topics (the top topics' colours and counts), and reading
+   stats on about.samarthya.me (a mini bar per year of writing). Styles: .explore in assets/css/custom.css. */}}
+{{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
+{{ $story := site.GetPage "/story" }}
+{{ $topics := partialCached "functions/topic-index.html" site.Home }}
+{{ $years := dict }}
+{{ range $posts.GroupByDate "2006" }}{{ $years = merge $years (dict .Key (len .Pages)) }}{{ end }}
+{{ $first := (index $posts.ByDate 0).Date.Year }}
+{{ $ymax := 1 }}
+{{ range $y := seq $first now.Year }}{{ $ymax = math.Max $ymax (index $years (string $y) | default 0) }}{{ end }}
+<section class="portal-section explore" aria-labelledby="explore-title">
+  <h2 id="explore-title" class="portal-h2">Keep exploring</h2>
+  <div class="explore-grid">
+    {{ with $story }}
+      <a class="explore-card is-story" href="{{ .RelPermalink }}">
+        <span class="explore-visual" aria-hidden="true">
+          <span class="explore-dots">
+            {{ range .Params.timeline }}<i class="is-{{ .kind | default "start" }}"></i>{{ end }}
+          </span>
+        </span>
+        <span class="explore-kicker">Why “Fall. Get up. Build again.”</span>
+        <strong class="explore-title">The story</strong>
+        <span class="explore-text">From a hacked blog to a site I fully own, one milestone at a time.</span>
+        <span class="explore-go" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    {{ end }}
+    <a class="explore-card is-topics" href="{{ "topics/" | relURL }}">
+      <span class="explore-visual" aria-hidden="true">
+        <span class="explore-chips">
+          {{ $rows := slice }}
+          {{ range $t := hugo.Data.covers.topics }}
+            {{ with index $topics $t.name }}{{ $rows = $rows | append (dict "t" $t "n" (len .)) }}{{ end }}
+          {{ end }}
+          {{ range first 6 (sort $rows "n" "desc") }}<i style="--from: {{ .t.from }}; --to: {{ .t.to }}" title="{{ .t.label }}"></i>{{ end }}
+        </span>
+      </span>
+      <span class="explore-kicker">{{ len $topics }} topics · {{ len $posts }} posts</span>
+      <strong class="explore-title">Browse by topic</strong>
+      <span class="explore-text">Security, AI, Kubernetes, Go and more, each on its own shelf.</span>
+      <span class="explore-go" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+    <a class="explore-card is-stats" href="https://about.samarthya.me/stats.html">
+      <span class="explore-visual" aria-hidden="true">
+        <span class="explore-bars">
+          {{ range $y := seq $first now.Year }}<i style="--v: {{ div (float (index $years (string $y) | default 0)) $ymax }}"></i>{{ end }}
+        </span>
+      </span>
+      <span class="explore-kicker">On about.samarthya.me</span>
+      <strong class="explore-title">Reading stats</strong>
+      <span class="explore-text">What people actually read, with the bots filtered out.</span>
+      <span class="explore-go" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </div>
+</section>
