@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Left: the path from a tag in every page, to the GA4 property, to the Data API read by a Viewer service account, to seven small JSON reports. Right: what costs money: standard Analytics, the Cloud project and service account are free, the Data API is quota-limited, Analytics 360 and BigQuery beyond the sandbox are paid.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.62" r="0.5"><stop offset="0" stop-color="#a78bfa" stop-opacity="0.16"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="78" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">BUILDING ABOUT.SAMARTHYA.ME · 1</text>
+  <text x="60" y="132" fill="#ffffff" font-size="50" font-weight="800">Google Analytics, from tag to API</text>
+  <text x="60" y="172" fill="#cbd5e1" font-size="22">What it is, what’s free, and how a script reads it.</text>
+<line x1="94" y1="277" x2="94" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/><line x1="94" y1="369" x2="94" y2="387" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/><line x1="94" y1="461" x2="94" y2="479" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <g filter="url(#shadow)"><rect x="60" y="205" width="530" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="94" cy="241" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="94" y="247" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">1</text>
+  <text x="124" y="236" fill="#ffffff" font-size="19" font-weight="700">Tag in every page</text>
+  <text x="124" y="260" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">page_view event → Google</text>
+  
+  
+  <g filter="url(#shadow)"><rect x="60" y="297" width="530" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="94" cy="333" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="94" y="339" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">2</text>
+  <text x="124" y="328" fill="#ffffff" font-size="19" font-weight="700">GA4 property</text>
+  <text x="124" y="352" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">reports since 2022</text>
+  <rect x="438" y="319" width="140" height="28" rx="14" fill="#d97706" fill-opacity="0.18" stroke="#d97706"/><text x="508.0" y="338" text-anchor="middle" fill="#d97706" font-size="13" font-weight="700">KNOWN BOTS OUT</text>
+  
+  <g filter="url(#shadow)"><rect x="60" y="389" width="530" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="94" cy="425" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="94" y="431" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">3</text>
+  <text x="124" y="420" fill="#ffffff" font-size="19" font-weight="700">Data API · runReport</text>
+  <text x="124" y="444" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">REST + truststore</text>
+  <rect x="498" y="411" width="80" height="28" rx="14" fill="#22c55e" fill-opacity="0.18" stroke="#22c55e"/><text x="538.0" y="430" text-anchor="middle" fill="#22c55e" font-size="13" font-weight="700">VIEWER</text>
+  
+  <g filter="url(#shadow)"><rect x="60" y="481" width="530" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="94" cy="517" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="94" y="523" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">4</text>
+  <text x="124" y="512" fill="#ffffff" font-size="19" font-weight="700">Seven small reports</text>
+  <text x="124" y="536" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">pages · countries · years · totals</text>
+  <rect x="514" y="503" width="64" height="28" rx="14" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/><text x="546.0" y="522" text-anchor="middle" fill="#22d3ee" font-size="13" font-weight="700">JSON</text>
+  
+  <g filter="url(#shadow)"><rect x="650" y="205" width="490" height="368" rx="18" fill="url(#card)" stroke="#334155"/></g>
+  <text x="676" y="242" fill="#ffffff" font-size="19" font-weight="700">What it costs</text>
+  <text x="676" y="286" fill="#e2e8f0" font-size="17">Google Analytics (standard)</text><rect x="1040" y="266" width="76" height="28" rx="14" fill="#22c55e" fill-opacity="0.18" stroke="#22c55e"/><text x="1078" y="285" text-anchor="middle" fill="#22c55e" font-size="13" font-weight="700">FREE</text><line x1="676" y1="309" x2="1116" y2="309" stroke="#334155"/><text x="676" y="344" fill="#e2e8f0" font-size="17">Data API</text><rect x="1040" y="324" width="76" height="28" rx="14" fill="#22d3ee" fill-opacity="0.18" stroke="#22d3ee"/><text x="1078" y="343" text-anchor="middle" fill="#22d3ee" font-size="13" font-weight="700">QUOTA</text><line x1="676" y1="367" x2="1116" y2="367" stroke="#334155"/><text x="676" y="402" fill="#e2e8f0" font-size="17">Cloud project + service account</text><rect x="1040" y="382" width="76" height="28" rx="14" fill="#22c55e" fill-opacity="0.18" stroke="#22c55e"/><text x="1078" y="401" text-anchor="middle" fill="#22c55e" font-size="13" font-weight="700">FREE</text><line x1="676" y1="425" x2="1116" y2="425" stroke="#334155"/><text x="676" y="460" fill="#e2e8f0" font-size="17">Analytics 360</text><rect x="1040" y="440" width="76" height="28" rx="14" fill="#ef4444" fill-opacity="0.18" stroke="#ef4444"/><text x="1078" y="459" text-anchor="middle" fill="#ef4444" font-size="13" font-weight="700">PAID</text><line x1="676" y1="483" x2="1116" y2="483" stroke="#334155"/><text x="676" y="518" fill="#e2e8f0" font-size="17">BigQuery beyond the sandbox</text><rect x="1040" y="498" width="76" height="28" rx="14" fill="#ef4444" fill-opacity="0.18" stroke="#ef4444"/><text x="1078" y="517" text-anchor="middle" fill="#ef4444" font-size="13" font-weight="700">PAID</text>
+</svg>
