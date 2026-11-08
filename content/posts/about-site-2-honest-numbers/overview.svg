@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Left: users versus engaged sessions per year, flat until 2024, then users jump to 7,470 while engaged sessions stay at 568; one country had 5,971 users but 194 engaged sessions. Right: the fix, from counting engaged sessions and joining old paths to a ranking where a bot spike scores 0.37 and real readers 1.30.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.62" r="0.5"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="78" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">BUILDING ABOUT.SAMARTHYA.ME · 2</text>
+  <text x="60" y="132" fill="#ffffff" font-size="50" font-weight="800">Keeping the numbers honest</text>
+  <text x="60" y="172" fill="#cbd5e1" font-size="22">6,000 “users”, 194 readers, and a ranking where bots don’t get a vote.</text>
+<g filter="url(#shadow)"><rect x="60" y="205" width="530" height="368" rx="18" fill="url(#card)" stroke="#334155"/></g>
+  <text x="86" y="240" fill="#ffffff" font-size="19" font-weight="700">Users vs engaged sessions, per year</text>
+  <rect x="86" y="256" width="12" height="12" rx="3" fill="#64748b"/><text x="104" y="267" fill="#cbd5e1" font-size="14">activeUsers</text>
+  <rect x="196" y="256" width="12" height="12" rx="3" fill="#22d3ee"/><text x="214" y="267" fill="#cbd5e1" font-size="14">engagedSessions</text>
+  <rect x="96" y="300" width="196" height="50" rx="12" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444"/>
+  <text x="194" y="321" text-anchor="middle" fill="#fecaca" font-size="14" font-weight="700">One country, since 2022:</text>
+  <text x="194" y="340" text-anchor="middle" fill="#fecaca" font-size="14">5,971 users · 194 engaged</text>
+  <line x1="86" y1="525" x2="566" y2="525" stroke="#334155" stroke-width="1.5"/>
+  <rect x="105" y="520.5" width="30" height="4.5" rx="4" fill="#64748b"/><rect x="139" y="521.9" width="30" height="3.1" rx="4" fill="#22d3ee"/><text x="137" y="549" text-anchor="middle" fill="#cbd5e1" font-size="15">2022</text><rect x="197" y="521.2" width="30" height="3.8" rx="4" fill="#64748b"/><rect x="231" y="520.9" width="30" height="4.1" rx="4" fill="#22d3ee"/><text x="229" y="549" text-anchor="middle" fill="#cbd5e1" font-size="15">2023</text><rect x="289" y="519.8" width="30" height="5.2" rx="4" fill="#64748b"/><rect x="323" y="520.0" width="30" height="5.0" rx="4" fill="#22d3ee"/><text x="321" y="549" text-anchor="middle" fill="#cbd5e1" font-size="15">2024</text><rect x="381" y="465.3" width="30" height="59.7" rx="4" fill="#64748b"/><rect x="415" y="498.0" width="30" height="27.0" rx="4" fill="#22d3ee"/><text x="413" y="549" text-anchor="middle" fill="#cbd5e1" font-size="15">2025</text><text x="396" y="457.3" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">2,074</text><text x="430" y="490.0" text-anchor="middle" fill="#67e8f9" font-size="14" font-weight="700">937</text><rect x="473" y="310.0" width="30" height="215.0" rx="4" fill="#64748b"/><rect x="507" y="508.7" width="30" height="16.3" rx="4" fill="#22d3ee"/><text x="505" y="549" text-anchor="middle" fill="#cbd5e1" font-size="15">2026</text><text x="488" y="302.0" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">7,470</text><text x="522" y="500.7" text-anchor="middle" fill="#67e8f9" font-size="14" font-weight="700">568</text>
+  <line x1="664" y1="277" x2="664" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/><line x1="664" y1="369" x2="664" y2="387" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/><line x1="664" y1="461" x2="664" y2="479" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <g filter="url(#shadow)"><rect x="630" y="205" width="512" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="664" cy="241" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="664" y="247" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">1</text>
+  <text x="694" y="236" fill="#ffffff" font-size="19" font-weight="700">Count engaged sessions</text>
+  <text x="694" y="260" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">10 s+, 2+ pages or a key event</text>
+  <rect x="1046" y="227" width="84" height="28" rx="14" fill="#ef4444" fill-opacity="0.18" stroke="#ef4444"/><text x="1088.0" y="246" text-anchor="middle" fill="#ef4444" font-size="13" font-weight="700">SG 3.2%</text>
+  
+  <g filter="url(#shadow)"><rect x="630" y="297" width="512" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="664" cy="333" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="664" y="339" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">2</text>
+  <text x="694" y="328" fill="#ffffff" font-size="19" font-weight="700">Join old paths to posts</text>
+  <text x="694" y="352" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">pages.json + catalog.json</text>
+  <rect x="1000" y="319" width="130" height="28" rx="14" fill="#d97706" fill-opacity="0.18" stroke="#d97706"/><text x="1065.0" y="338" text-anchor="middle" fill="#d97706" font-size="13" font-weight="700">/wps/ → /posts/</text>
+  
+  <g filter="url(#shadow)"><rect x="630" y="389" width="512" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="664" cy="425" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="664" y="431" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">3</text>
+  <text x="694" y="420" fill="#ffffff" font-size="19" font-weight="700">Rank the posts</text>
+  <text x="694" y="444" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">log1p(views) × engagement</text>
+  <rect x="1018" y="411" width="112" height="28" rx="14" fill="#22c55e" fill-opacity="0.18" stroke="#22c55e"/><text x="1074.0" y="430" text-anchor="middle" fill="#22c55e" font-size="13" font-weight="700">READERS 1.30</text><rect x="926" y="411" width="84" height="28" rx="14" fill="#ef4444" fill-opacity="0.18" stroke="#ef4444"/><text x="968.0" y="430" text-anchor="middle" fill="#ef4444" font-size="13" font-weight="700">BOT 0.37</text>
+  
+  <g filter="url(#shadow)"><rect x="630" y="481" width="512" height="72" rx="14" fill="url(#card)" stroke="#334155"/></g>
+  <circle cx="664" cy="517" r="16" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa"/><text x="664" y="523" text-anchor="middle" fill="#ddd6fe" font-size="16" font-weight="800">4</text>
+  <text x="694" y="512" fill="#ffffff" font-size="19" font-weight="700">Top nine, honestly</text>
+  <text x="694" y="536" fill="#94a3b8" font-size="14" font-family="Consolas, Menlo, monospace">vs. sorting by raw views</text>
+  <rect x="1000" y="503" width="130" height="28" rx="14" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa"/><text x="1065.0" y="522" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="700">2 OF 9 SURVIVE</text>
+  
+</svg>
