@@ -139,5 +139,5 @@ Content © Samarthya. All rights reserved (see [LICENSE](LICENSE)). The Blowfish
 `themes/blowfish/LICENSE`).
 
 This is a personal, owner-only repository: contributions aren't accepted ([CONTRIBUTING.md](CONTRIBUTING.md)).
-Report security problems privately as described in [SECURITY.md](SECURITY.md). `main` is protected by a
-ruleset (no deletion, no force-push; the owner can bypass it for deliberate history rewrites).
+
+Report security problems privately as described in [SECURITY.md](SECURITY.md). `main` is protected.
