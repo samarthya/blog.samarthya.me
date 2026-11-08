@@ -3,33 +3,46 @@
 
 [[main]]
   name = "Posts"
+  pre = "pencil"
   pageRef = "posts"
   weight = 10
 
 [[main]]
   name = "Daily"
+  pre = "fire"
   pageRef = "daily"
   weight = 20
 
 [[main]]
   name = "Topics"
+  pre = "tag"
   pageRef = "topics"
   weight = 30
 
+# "Me" groups the personal pages into one dropdown.
 [[main]]
-  name = "Projects"
-  url = "https://samarthya.github.io/projects.html"
+  name = "Me"
+  identifier = "me"
+  pre = "circle-info"
   weight = 40
 
 [[main]]
-  name = "Contact"
-  pageRef = "contact"
-  weight = 55
+  name = "Projects"
+  parent = "me"
+  url = "https://samarthya.github.io/projects.html"
+  weight = 41
 
 [[main]]
   name = "About"
+  parent = "me"
   url = "https://samarthya.github.io/about.html"
-  weight = 50
+  weight = 42
+
+[[main]]
+  name = "Contact"
+  parent = "me"
+  pageRef = "contact"
+  weight = 43
 
 [[main]]
   identifier = "github"
