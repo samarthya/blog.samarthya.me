@@ -1,5 +1,6 @@
 ---
 title: "Elastic Cluster API"
+featureimage: "feature.png"
 date: "2020-02-06"
 slug: "elastic-cluster-api"
 categories: ["technical"]

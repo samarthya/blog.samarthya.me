@@ -1,5 +1,6 @@
 ---
 title: "Elasticsearch v7.6"
+featureimage: "feature.png"
 date: "2020-02-21T11:24:29Z"
 slug: "elasticsearch-v7-6"
 categories: ["technical"]

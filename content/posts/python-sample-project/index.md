@@ -1,5 +1,6 @@
 ---
 title: "Python: Sample Project"
+featureimage: "feature.png"
 date: "2023-02-01T12:00:00Z"
 slug: "python-sample-project"
 description: "Python is a high-level programming language that is widely used for web development, machine learning, scientific computing and more."

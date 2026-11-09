@@ -1,5 +1,6 @@
 ---
 title: "GoLang: Hash"
+featureimage: "feature.png"
 date: "2021-02-01T09:20:50Z"
 slug: "golang-hash"
 categories: ["golang", "technical"]

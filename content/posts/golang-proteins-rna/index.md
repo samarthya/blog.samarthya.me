@@ -1,5 +1,6 @@
 ---
 title: "GOLANG: Proteins & RNA"
+featureimage: "feature.png"
 date: "2020-02-10T15:06:21Z"
 slug: "golang-proteins-rna"
 categories: ["technical"]

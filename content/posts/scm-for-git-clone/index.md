@@ -1,5 +1,6 @@
 ---
 title: "SCM for git clone"
+featureimage: "feature.png"
 date: "2021-12-08T09:55:42Z"
 slug: "scm-for-git-clone"
 categories: ["technical"]

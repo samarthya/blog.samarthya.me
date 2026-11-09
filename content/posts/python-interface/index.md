@@ -1,5 +1,6 @@
 ---
 title: "Python: Interface"
+featureimage: "feature.png"
 date: "2023-01-31T12:00:00Z"
 slug: "python-interface"
 description: "n Python, unlike some other programming languages, there is no explicit syntax for defining interfaces."

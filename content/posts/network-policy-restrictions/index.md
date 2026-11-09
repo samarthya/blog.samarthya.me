@@ -1,5 +1,6 @@
 ---
 title: "Network Policy Restrictions"
+featureimage: "feature.png"
 date: "2020-09-04"
 slug: "network-policy-restrictions"
 description: "A Kubernetes NetworkPolicy demo: deny all traffic in a namespace, then allow only labelled pods to reach nginx."

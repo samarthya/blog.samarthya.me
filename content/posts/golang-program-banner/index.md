@@ -1,5 +1,6 @@
 ---
 title: "GoLang: Program Banner"
+featureimage: "feature.png"
 date: "2021-01-29T07:39:04Z"
 slug: "golang-program-banner"
 categories: ["golang", "technical"]

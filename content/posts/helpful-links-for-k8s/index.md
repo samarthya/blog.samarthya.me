@@ -1,5 +1,6 @@
 ---
 title: "Helpful links for K8S"
+featureimage: "feature.png"
 date: "2020-08-26T09:52:02Z"
 slug: "helpful-links-for-k8s"
 categories: ["technical"]

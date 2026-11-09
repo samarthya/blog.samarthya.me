@@ -1,5 +1,6 @@
 ---
 title: "Files: GoLang"
+featureimage: "feature.png"
 date: "2021-01-25T12:46:47Z"
 slug: "files-golang-2"
 categories: ["golang", "technical"]

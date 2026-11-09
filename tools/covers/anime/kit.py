@@ -278,3 +278,158 @@ def critter(fur=("#fdba74", "#ea580c"), belly="#fff7ed", face=None, ears="round"
     b.append(f'<circle cx="{HAND[0]}" cy="{HAND[1]}" r="28" fill="{hc}" stroke="#000000" stroke-opacity="0.2" stroke-width="3"/>'
              f'<ellipse cx="200" cy="520" rx="34" ry="26" fill="{hc}" stroke="#000000" stroke-opacity="0.2" stroke-width="3"/>')
     return "\n  ".join(b)
+
+
+# ---------------------------------------------------------------------------------------------------------
+# A configurable anime boy or girl (head ~(275,270), raised hand at HAND), drawn like the AI & Data covers.
+# ---------------------------------------------------------------------------------------------------------
+_HAIR_BACK = {
+    "pigtails": '<path d="M150 240 C90 290 80 390 120 450 C134 400 156 340 186 300Z M400 240 C460 290 470 390 430 450 C416 400 394 340 364 300Z" fill="url(#khair)" filter="url(#drop)"/>'
+                '<circle cx="166" cy="252" r="12" fill="{acc}"/><circle cx="384" cy="252" r="12" fill="{acc}"/>',
+    "long": '<path d="M160 230 C120 320 120 440 150 560 L400 560 C430 440 430 320 390 230Z" fill="url(#khair)" filter="url(#drop)"/>',
+    "ponytail": '<path d="M370 190 C450 200 480 290 450 400 C440 330 420 280 380 260Z" fill="url(#khair)" filter="url(#drop)"/>'
+                '<circle cx="380" cy="200" r="13" fill="{acc}"/>',
+    "bob": '<path d="M160 240 C150 320 160 380 190 410 L360 410 C390 380 400 320 390 240Z" fill="url(#khair)" filter="url(#drop)"/>',
+    "buns": '<circle cx="180" cy="150" r="44" fill="url(#khair)" filter="url(#drop)"/><circle cx="370" cy="150" r="44" fill="url(#khair)" filter="url(#drop)"/>',
+}
+_FRINGE = {
+    "spiky": 'M168 262 C154 196 170 160 190 140 L174 104 L220 124 L230 78 L262 116 L294 74 L308 120 L346 96 L340 140 C366 160 380 200 370 262 C360 230 346 214 330 206 C324 220 312 228 298 232 C296 210 286 196 272 188 C264 208 248 222 230 228 C230 210 224 198 214 190 C200 210 190 236 184 262Z',
+    "swept": 'M170 262 C156 170 220 120 280 122 C340 124 394 166 380 262 C370 220 350 196 320 186 C290 210 240 222 200 216 C190 230 180 246 176 262Z',
+    "soft": 'M178 262 C166 170 224 128 274 128 C330 128 382 170 370 262 C362 236 354 220 340 208 C338 226 330 238 318 244 C316 218 304 198 288 186 C284 206 272 220 254 228 C256 206 250 190 240 180 C226 198 216 220 212 244 C200 232 194 216 192 204 C182 220 180 240 178 262Z',
+    "curly": 'M172 262 C150 220 160 170 190 150 C186 120 220 100 246 112 C262 90 300 90 316 112 C344 100 376 124 370 152 C398 170 402 222 378 262 C370 236 356 220 340 214 C330 230 300 238 276 226 C252 238 222 232 210 214 C192 222 180 240 172 262Z',
+}
+_KID_HATS = {
+    "cap": '<path d="M178 190 C182 110 368 110 372 190Z" fill="{acc}" filter="url(#drop)"/><path d="M300 186 C350 176 410 180 440 196 C410 208 340 206 300 200Z" fill="{acc}" opacity="0.85"/>',
+    "beanie": '<path d="M172 200 C170 100 380 100 378 200Z" fill="{acc}" filter="url(#drop)"/><rect x="166" y="186" width="218" height="30" rx="14" fill="#ffffff" opacity="0.85"/><circle cx="275" cy="98" r="20" fill="#ffffff"/>',
+    "headset": '<path d="M166 270 C150 140 400 140 384 270" stroke="#334155" stroke-width="14" fill="none"/><rect x="150" y="252" width="30" height="56" rx="12" fill="{acc}"/><rect x="370" y="252" width="30" height="56" rx="12" fill="{acc}"/><path d="M168 300 C180 360 220 370 250 368" stroke="#334155" stroke-width="6" fill="none"/><circle cx="254" cy="368" r="8" fill="#334155"/>',
+    "hardhat": '<path d="M176 196 C176 100 374 100 374 196Z" fill="#facc15" filter="url(#drop)"/><rect x="156" y="188" width="238" height="22" rx="10" fill="#eab308"/><rect x="264" y="104" width="22" height="86" rx="8" fill="#fde047"/>',
+    "wizard": '<path d="M160 200 L275 10 L390 200Z" fill="{acc}" filter="url(#drop)"/><ellipse cx="275" cy="200" rx="140" ry="22" fill="{acc}"/><use href="#spark" x="246" y="90" width="22" height="22"/><use href="#spark" x="290" y="140" width="16" height="16"/>',
+    "headband": '<path d="M172 206 C220 180 330 180 378 206" stroke="{acc}" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M372 204 L410 230 M372 210 L400 250" stroke="{acc}" stroke-width="10" stroke-linecap="round"/>',
+    "flower": '<g transform="translate(360 180)"><circle r="14" cx="0" cy="-16" fill="{acc}"/><circle r="14" cx="15" cy="-5" fill="{acc}"/><circle r="14" cx="9" cy="13" fill="{acc}"/><circle r="14" cx="-9" cy="13" fill="{acc}"/><circle r="14" cx="-15" cy="-5" fill="{acc}"/><circle r="9" fill="#fde047"/></g>',
+}
+
+
+def kid(hair=("#334155", "#0f172a"), style="spiky", back=None, outfit=("#38bdf8", "#0369a1"), iris=("#78350f", "#fbbf24"),
+        hat=None, acc="#f43f5e", glasses=False, mouth="grin", look=(10, 0), skin=("#fde3cf", "#f2c4a3"), prop="", collar=None):
+    """An anime kid in the left half. style: spiky | swept | soft | curly (fringe). back: pigtails | long | ponytail |
+    bob | buns | None. hat: cap | beanie | headset | hardhat | wizard | headband | flower | None. prop: at HAND."""
+    b = [f'<defs>{grad("khair", *hair)}{grad("kout", *outfit)}{grad("kskin", *skin)}</defs>']
+    if back:
+        b.append(_HAIR_BACK[back].replace("{acc}", acc))
+    b.append('<path d="M90 640 C96 500 150 450 220 440 L330 440 C400 450 454 500 460 640Z" fill="url(#kout)" filter="url(#drop)"/>'
+             '<path d="M240 436 L310 436 L300 476 L250 476Z" fill="#e8b496"/>'
+             '<path d="M220 446 C250 490 300 490 330 446" stroke="#000000" stroke-width="6" fill="none" opacity="0.18"/>')
+    if collar:
+        b.append(f'<path d="M226 444 L275 486 L324 444 L334 462 L275 512 L216 462Z" fill="{collar}"/>')
+    b.append('<path d="M180 250 C180 146 370 146 370 250 C370 330 322 396 275 410 C228 396 180 330 180 250Z" fill="url(#kskin)" filter="url(#drop)"/>')
+    b.append(blush(214, 330) + blush(336, 330))
+    b.append(eye(230, 282, 28, 34, *iris, look=look, cid="kL") + eye(320, 282, 28, 34, *iris, look=look, cid="kR"))
+    b.append(f'<path d="M200 236 C214 226 240 226 254 236 M296 236 C310 226 336 226 350 236" stroke="{hair[1]}" stroke-width="7" fill="none" stroke-linecap="round"/>')
+    if glasses:
+        b.append(f'<g fill="none" stroke="{INK}" stroke-width="5"><rect x="190" y="248" width="80" height="68" rx="20"/><rect x="280" y="248" width="80" height="68" rx="20"/><path d="M270 276 L280 276"/></g>')
+    b.append({
+        "grin": '<path d="M250 352 C262 376 296 376 308 352Z" fill="#9f1239"/><path d="M258 354 L300 354" stroke="#ffffff" stroke-width="5"/>',
+        "smile": '<path d="M256 356 C266 370 290 370 300 356" stroke="#9f1239" stroke-width="5" fill="none" stroke-linecap="round"/>',
+        "o": '<ellipse cx="278" cy="362" rx="11" ry="14" fill="#9f1239"/>',
+        "open": '<path d="M254 352 C260 384 296 384 302 352Z" fill="#be123c"/>',
+    }[mouth])
+    b.append(f'<path d="{_FRINGE[style]}" fill="url(#khair)"/>')
+    if hat:
+        b.append(_KID_HATS[hat].replace("{acc}", acc))
+    b.append(f'<path d="M400 500 C430 470 445 440 {HAND[0]} {HAND[1] + 20}" stroke="url(#kout)" stroke-width="48" fill="none" stroke-linecap="round"/>')
+    b.append(prop)
+    b.append(f'<circle cx="{HAND[0]}" cy="{HAND[1]}" r="27" fill="url(#kskin)" stroke="#d99b7a" stroke-width="2.5"/>')
+    return "\n  ".join(b)
+
+
+# ---------------------------------------------------------------------------------------------------------
+# Props held at HAND. Each is a function of (accent colour, label) returning SVG; label may be "".
+# ---------------------------------------------------------------------------------------------------------
+def _t(x, y, s, size=20, fill="#ffffff", anchor="middle", fam=None, w=800):
+    return (f'<text x="{x}" y="{y}" text-anchor="{anchor}" font-family="{fam or SANS}" font-size="{size}" '
+            f'font-weight="{w}" fill="{fill}">{_esc(s)}</text>')
+
+
+def prop(kind, col="#7c3aed", label=""):
+    x, y = HAND
+    if kind == "wheel":  # a ship's helm (Kubernetes, Helm)
+        spokes = "".join(f'<path d="M{x + 30 + 74 * math.cos(a):.0f} {y - 90 + 74 * math.sin(a):.0f} L{x + 30 + 104 * math.cos(a):.0f} {y - 90 + 104 * math.sin(a):.0f}" stroke="#92400e" stroke-width="16" stroke-linecap="round"/>'
+                         f'<path d="M{x + 30} {y - 90} L{x + 30 + 74 * math.cos(a):.0f} {y - 90 + 74 * math.sin(a):.0f}" stroke="#b45309" stroke-width="9"/>'
+                         for a in [i * math.pi / 4 for i in range(8)])
+        return (f'<g filter="url(#drop)">{spokes}<circle cx="{x + 30}" cy="{y - 90}" r="74" fill="none" stroke="#b45309" stroke-width="16"/>'
+                f'<circle cx="{x + 30}" cy="{y - 90}" r="24" fill="{col}"/></g>')
+    if kind == "box":  # a parcel / container / chart package
+        return (f'<g filter="url(#drop)" transform="rotate(-8 {x + 30} {y - 70})"><rect x="{x - 40}" y="{y - 150}" width="150" height="120" rx="12" fill="{col}"/>'
+                f'<path d="M{x - 40} {y - 112} H{x + 110}" stroke="#000" stroke-opacity="0.2" stroke-width="6"/>'
+                f'<rect x="{x + 14}" y="{y - 150}" width="42" height="40" fill="#ffffff" opacity="0.5"/>'
+                + (_t(x + 35, y - 58, label, 24) if label else "") + '</g>')
+    if kind == "key":
+        return (f'<g filter="url(#drop)" transform="rotate(-40 {x} {y})"><circle cx="{x + 40}" cy="{y - 60}" r="40" fill="none" stroke="{col}" stroke-width="18"/>'
+                f'<path d="M{x + 40} {y - 20} V{y + 90} M{x + 40} {y + 50} h30 M{x + 40} {y + 78} h22" stroke="{col}" stroke-width="18" stroke-linecap="round"/></g>')
+    if kind == "shield":
+        return (f'<g filter="url(#drop)"><path d="M{x + 30} {y - 190} L{x + 120} {y - 156} C{x + 120} {y - 70} {x + 90} {y - 20} {x + 30} {y + 10} '
+                f'C{x - 30} {y - 20} {x - 60} {y - 70} {x - 60} {y - 156}Z" fill="{col}" stroke="#ffffff" stroke-width="7"/>'
+                + (_t(x + 30, y - 76, label, 26) if label else f'<path d="M{x} {y - 96} l24 24 l44 -50" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round"/>') + '</g>')
+    if kind == "lens":  # magnifying glass
+        return (f'<g filter="url(#drop)"><path d="M{x} {y} L{x + 50} {y - 60}" stroke="#78350f" stroke-width="18" stroke-linecap="round"/>'
+                f'<circle cx="{x + 90}" cy="{y - 110}" r="62" fill="#e0f2fe" fill-opacity="0.65" stroke="{col}" stroke-width="14"/>'
+                f'<path d="M{x + 60} {y - 140} q18 -16 40 -12" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round"/></g>')
+    if kind == "wrench":
+        return (f'<g filter="url(#drop)" transform="rotate(32 {x} {y})"><rect x="{x - 12}" y="{y - 150}" width="26" height="160" rx="12" fill="url(#metal)"/>'
+                f'<path d="M{x - 40} {y - 210} a42 42 0 1 0 84 0 l-18 0 l0 24 l-48 0 l0 -24Z" fill="url(#metal)"/></g>')
+    if kind == "bulb":
+        return (f'<g filter="url(#drop)"><circle cx="{x + 20}" cy="{y - 120}" r="60" fill="#fde047"/><circle cx="{x + 20}" cy="{y - 120}" r="84" fill="#fde047" opacity="0.25"/>'
+                f'<rect x="{x - 8}" y="{y - 68}" width="56" height="40" rx="8" fill="#94a3b8"/>'
+                f'<path d="M{x} {y - 128} l12 22 l16 -30 l12 22" stroke="#b45309" stroke-width="5" fill="none"/></g>')
+    if kind == "flag":
+        return (f'<g filter="url(#drop)"><path d="M{x} {y + 10} V{y - 220}" stroke="#78350f" stroke-width="10" stroke-linecap="round"/>'
+                f'<path d="M{x} {y - 220} C{x + 60} {y - 240} {x + 100} {y - 190} {x + 170} {y - 210} V{y - 130} C{x + 100} {y - 110} {x + 60} {y - 160} {x} {y - 140}Z" fill="{col}"/>'
+                + (_t(x + 84, y - 162, label, 22) if label else "") + '</g>')
+    if kind == "mug":
+        return (f'<g filter="url(#drop)"><rect x="{x - 30}" y="{y - 120}" width="100" height="110" rx="14" fill="{col}"/>'
+                f'<path d="M{x + 70} {y - 96} c40 0 40 60 0 60" stroke="{col}" stroke-width="14" fill="none"/>'
+                f'<path d="M{x - 6} {y - 140} q10 -20 0 -40 M{x + 24} {y - 140} q10 -20 0 -40" stroke="#94a3b8" stroke-width="6" fill="none" stroke-linecap="round"/>'
+                + (_t(x + 20, y - 56, label, 22) if label else "") + '</g>')
+    if kind == "scroll":
+        return (f'<g filter="url(#drop)" transform="rotate(-10 {x + 40} {y - 80})"><rect x="{x - 30}" y="{y - 170}" width="150" height="160" fill="#fef3c7"/>'
+                f'<rect x="{x - 44}" y="{y - 184}" width="178" height="22" rx="11" fill="#d6b26a"/><rect x="{x - 44}" y="{y - 20}" width="178" height="22" rx="11" fill="#d6b26a"/>'
+                + "".join(f'<path d="M{x - 10} {y - 140 + i * 24} H{x + 100}" stroke="{col}" stroke-width="5" stroke-linecap="round"/>' for i in range(5)) + '</g>')
+    if kind == "book":
+        return (f'<g filter="url(#drop)" transform="rotate(-12 {x + 40} {y - 70})"><rect x="{x - 20}" y="{y - 160}" width="130" height="160" rx="10" fill="{col}"/>'
+                f'<rect x="{x - 20}" y="{y - 160}" width="22" height="160" rx="6" fill="#000" opacity="0.25"/>'
+                + (_t(x + 56, y - 76, label, 24) if label else "") + '</g>')
+    if kind == "lantern":
+        return (f'<g filter="url(#drop)"><path d="M{x + 10} {y - 10} V{y - 40}" stroke="#334155" stroke-width="8"/>'
+                f'<circle cx="{x + 10}" cy="{y - 110}" r="90" fill="#fde68a" opacity="0.3"/>'
+                f'<rect x="{x - 30}" y="{y - 160}" width="80" height="110" rx="20" fill="#fde047" stroke="#334155" stroke-width="8"/>'
+                f'<path d="M{x - 30} {y - 160} h80 l-10 -20 h-60Z" fill="#334155"/></g>')
+    if kind == "balloon":
+        return (f'<g filter="url(#drop)"><path d="M{x} {y} C{x + 20} {y - 60} {x - 10} {y - 100} {x + 20} {y - 150}" stroke="#64748b" stroke-width="3" fill="none"/>'
+                f'<ellipse cx="{x + 30}" cy="{y - 220}" rx="62" ry="74" fill="{col}"/><ellipse cx="{x + 8}" cy="{y - 246}" rx="14" ry="22" fill="#ffffff" opacity="0.5"/>'
+                + (_t(x + 30, y - 212, label, 26) if label else "") + '</g>')
+    if kind == "wand":
+        return (f'<g filter="url(#drop)"><path d="M{x} {y} L{x + 100} {y - 140}" stroke="#4c1d95" stroke-width="12" stroke-linecap="round"/>'
+                f'<use href="#spark" x="{x + 70}" y="{y - 190}" width="64" height="64"/><use href="#spark" x="{x + 150}" y="{y - 140}" width="26" height="26"/>'
+                f'<use href="#spark" x="{x + 40}" y="{y - 210}" width="20" height="20"/></g>')
+    if kind == "pencil":
+        return (f'<g filter="url(#drop)" transform="rotate(35 {x} {y})"><rect x="{x - 14}" y="{y - 200}" width="30" height="180" fill="{col}"/>'
+                f'<path d="M{x - 14} {y - 20} L{x + 1} {y + 22} L{x + 16} {y - 20}Z" fill="#fde68a"/><rect x="{x - 14}" y="{y - 216}" width="30" height="20" rx="4" fill="#f9a8d4"/></g>')
+    if kind == "padlock":
+        return (f'<g filter="url(#drop)"><path d="M{x - 10} {y - 110} V{y - 150} a40 40 0 0 1 80 0 V{y - 110}" stroke="url(#metal)" stroke-width="16" fill="none"/>'
+                f'<rect x="{x - 36}" y="{y - 116}" width="132" height="100" rx="16" fill="{col}"/><circle cx="{x + 30}" cy="{y - 72}" r="12" fill="#1f2937"/></g>')
+    if kind == "telescope":
+        return (f'<g filter="url(#drop)" transform="rotate(-62 {x} {y})"><rect x="{x - 20}" y="{y - 40}" width="180" height="46" rx="12" fill="{col}"/>'
+                f'<rect x="{x + 150}" y="{y - 52}" width="40" height="70" rx="10" fill="#334155"/><rect x="{x - 50}" y="{y - 30}" width="40" height="26" rx="6" fill="#334155"/></g>')
+    if kind == "envelope":
+        return (f'<g filter="url(#drop)" transform="rotate(-10 {x + 40} {y - 80})"><rect x="{x - 40}" y="{y - 150}" width="170" height="112" rx="10" fill="#ffffff" stroke="{col}" stroke-width="5"/>'
+                f'<path d="M{x - 40} {y - 150} L{x + 45} {y - 90} L{x + 130} {y - 150}" stroke="{col}" stroke-width="5" fill="none"/></g>')
+    if kind == "plug":
+        return (f'<g filter="url(#drop)" transform="rotate(-28 {x + 60} {y - 50})"><rect x="{x - 20}" y="{y - 90}" width="130" height="80" rx="16" fill="{col}"/>'
+                f'<rect x="{x + 110}" y="{y - 76}" width="46" height="14" rx="5" fill="#cbd5e1"/><rect x="{x + 110}" y="{y - 40}" width="46" height="14" rx="5" fill="#cbd5e1"/>'
+                + (_t(x + 45, y - 40, label, 24) if label else "") + '</g>')
+    if kind == "sign":  # a placard with a word on it
+        w = max(140, int(len(label) * 15) + 40)
+        return (f'<g filter="url(#drop)" transform="rotate(-6 {x} {y - 120})"><path d="M{x} {y + 10} V{y - 90}" stroke="#78350f" stroke-width="12"/>'
+                f'<rect x="{x - w / 2}" y="{y - 180}" width="{w}" height="90" rx="14" fill="{col}"/>'
+                + _t(x, y - 124, label, 26, fam=MONO) + '</g>')
+    raise KeyError(kind)

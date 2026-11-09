@@ -1,5 +1,6 @@
 ---
 title: "Kafka Cluster Fundamentals: Brokers, Topics, and Partitions"
+featureimage: "feature.png"
 date: "2025-01-18"
 description: "A practical introduction to how Kafka distributes records across brokers and why partition planning matters."
 categories: ["technical"]

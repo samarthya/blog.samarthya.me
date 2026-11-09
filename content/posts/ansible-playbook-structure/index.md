@@ -1,5 +1,6 @@
 ---
 title: "A Maintainable Ansible Playbook Structure"
+featureimage: "feature.png"
 date: "2024-09-14"
 description: "A small project layout for turning a working Ansible playbook into reusable roles without losing clarity."
 categories: ["technical"]

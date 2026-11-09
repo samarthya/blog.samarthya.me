@@ -1,5 +1,6 @@
 ---
 title: "PlayGround: K8S"
+featureimage: "feature.png"
 date: "2020-08-31T09:39:33Z"
 slug: "playground-k8s"
 categories: ["technical"]

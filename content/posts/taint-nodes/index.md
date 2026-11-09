@@ -1,5 +1,6 @@
 ---
 title: "Taint Nodes"
+featureimage: "feature.png"
 date: "2021-01-12T08:57:23Z"
 slug: "taint-nodes"
 categories: ["docker", "technical"]

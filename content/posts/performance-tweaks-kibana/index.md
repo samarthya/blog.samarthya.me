@@ -1,5 +1,6 @@
 ---
 title: "Performance Tweaks: Kibana"
+featureimage: "feature.png"
 date: "2020-08-07T13:23:55Z"
 slug: "performance-tweaks-kibana"
 categories: ["technical"]

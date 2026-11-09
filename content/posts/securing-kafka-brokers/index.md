@@ -1,5 +1,6 @@
 ---
 title: "Securing Kafka Brokers: A Practical Operations Checklist"
+featureimage: "feature.png"
 date: "2025-06-14"
 description: "Broker-level controls for a safer Kafka deployment, from service accounts and filesystems to monitoring and recovery."
 categories: ["technical"]

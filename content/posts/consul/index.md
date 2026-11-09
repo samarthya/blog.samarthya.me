@@ -1,5 +1,6 @@
 ---
 title: "Consul"
+featureimage: "feature.png"
 date: "2023-10-10T12:00:00Z"
 slug: "consul"
 description: "Consul is an open-source software tool developed by HashiCorp, designed to provide a distributed system for configuration management, service discovery, and health checking of services in a modern…"

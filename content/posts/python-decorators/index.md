@@ -1,5 +1,6 @@
 ---
 title: "Python: Decorators"
+featureimage: "feature.png"
 date: "2023-01-31T12:00:00Z"
 slug: "python-decorators"
 description: "Let’s learn about decorators @iamdecorator"

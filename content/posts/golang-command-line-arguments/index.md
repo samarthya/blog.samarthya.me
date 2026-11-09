@@ -1,5 +1,6 @@
 ---
 title: "GoLang: Command line arguments"
+featureimage: "feature.png"
 date: "2021-01-27T17:06:11Z"
 slug: "golang-command-line-arguments"
 categories: ["golang", "technical"]

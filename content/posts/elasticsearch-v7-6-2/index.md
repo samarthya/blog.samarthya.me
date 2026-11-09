@@ -1,5 +1,6 @@
 ---
 title: "Elasticsearch v7.6"
+featureimage: "feature.png"
 date: "2020-02-24T12:00:00Z"
 slug: "elasticsearch-v7-6-2"
 description: "In the previous blog we searched for a match\\all, and sorted it by age. In this we will improve upon the query we are writing and look for other options."

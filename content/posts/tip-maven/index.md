@@ -1,5 +1,6 @@
 ---
 title: "Tip #Maven"
+featureimage: "feature.png"
 date: "2022-10-19T12:00:00Z"
 slug: "tip-maven"
 description: "A decent developer trick is to ensure your maven points to the right JAVA version, and if you have freshly installed maven it will be pointing to the default available."

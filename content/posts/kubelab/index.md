@@ -1,5 +1,6 @@
 ---
 title: "KubeLab"
+featureimage: "feature.png"
 date: "2019-10-10"
 slug: "kubelab"
 categories: ["others"]

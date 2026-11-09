@@ -1,5 +1,6 @@
 ---
 title: "Quotes"
+featureimage: "feature.png"
 date: "2021-04-04T07:51:52Z"
 slug: "quotes"
 categories: ["technical"]

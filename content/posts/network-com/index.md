@@ -1,5 +1,6 @@
 ---
 title: "Network Com"
+featureimage: "feature.png"
 date: "2023-06-22T12:00:00Z"
 slug: "network-com"
 description: "In the world of computer networks, communication between devices is crucial. To facilitate this communication, various protocols are used at different layers of the networking stack."

@@ -1,5 +1,6 @@
 ---
 title: "Python: Multi-Args"
+featureimage: "feature.png"
 date: "2023-01-31T12:00:00Z"
 slug: "python-multi-args"
 description: "In Python, you can define a function with a variable number of arguments using the  and  syntax in the function definition."

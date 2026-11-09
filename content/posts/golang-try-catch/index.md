@@ -1,5 +1,6 @@
 ---
 title: "GoLang: try-catch"
+featureimage: "feature.png"
 date: "2021-02-22T12:00:00Z"
 slug: "golang-try-catch"
 description: "GoLang doesn’t have a try and catch like the popular C++ or Java languages, what it has is panic-recover."

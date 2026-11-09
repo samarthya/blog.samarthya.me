@@ -1,5 +1,6 @@
 ---
 title: "Consumer <Intf>"
+featureimage: "feature.png"
 date: "2020-12-04T14:38:51Z"
 slug: "consumer"
 categories: ["technical"]

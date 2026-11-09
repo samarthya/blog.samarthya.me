@@ -1,5 +1,6 @@
 ---
 title: "Buildah: https://buildah.io/"
+featureimage: "feature.png"
 date: "2023-03-07T12:00:00Z"
 slug: "buildah-https-buildah-io"
 description: "Buildah is a command-line tool used for building and managing OCI-compliant images. It is an alternative to Docker Build that provides greater flexibility and control over the image building process."

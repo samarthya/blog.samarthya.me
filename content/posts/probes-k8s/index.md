@@ -1,5 +1,6 @@
 ---
 title: "Probes: K8S"
+featureimage: "feature.png"
 date: "2020-08-22T10:53:05Z"
 slug: "probes-k8s"
 categories: ["technical"]

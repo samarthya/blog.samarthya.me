@@ -1,5 +1,6 @@
 ---
 title: "ECS: Elastic common schema"
+featureimage: "feature.png"
 date: "2020-04-02"
 slug: "ecs-elastic-common-schema"
 categories: ["technical"]

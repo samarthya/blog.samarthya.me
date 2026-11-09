@@ -1,5 +1,6 @@
 ---
 title: "ServiceAccount"
+featureimage: "feature.png"
 date: "2022-02-16T12:00:00Z"
 slug: "serviceaccount"
 description: "If you have seen errors like these when deploying using a serviceAccount"

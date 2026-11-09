@@ -1,5 +1,6 @@
 ---
 title: "Learning Step - 1"
+featureimage: "feature.png"
 date: "2019-02-27"
 slug: "learning-step-1"
 categories: ["others"]

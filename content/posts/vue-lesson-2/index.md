@@ -1,5 +1,6 @@
 ---
 title: "Vue - Lesson 2"
+featureimage: "feature.png"
 date: "2019-03-01"
 slug: "vue-lesson-2"
 categories: ["others"]

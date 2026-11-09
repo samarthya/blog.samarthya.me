@@ -1,5 +1,6 @@
 ---
 title: "The inevitable"
+featureimage: "feature.png"
 date: "2022-01-06"
 slug: "the-inevitable"
 categories: ["technical"]

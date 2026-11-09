@@ -1,5 +1,6 @@
 ---
 title: "Documenting GO"
+featureimage: "feature.png"
 date: "2021-12-28"
 slug: "documenting-go"
 categories: ["technical"]

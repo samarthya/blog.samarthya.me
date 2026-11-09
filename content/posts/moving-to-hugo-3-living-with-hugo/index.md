@@ -1,5 +1,6 @@
 ---
 title: "Moving to Hugo, part 3: Living with Hugo"
+featureimage: "feature.png"
 date: 2026-10-26T07:20:00-04:00
 description: "Day-to-day life after the move: writing and publishing a post, updating the theme and Hugo safely, extending the site, and the gotchas that cost me an evening each."
 categories: ["technical"]

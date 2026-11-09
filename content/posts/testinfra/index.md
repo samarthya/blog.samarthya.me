@@ -1,5 +1,6 @@
 ---
 title: "Testinfra"
+featureimage: "feature.png"
 date: "2023-02-14T12:00:00Z"
 slug: "testinfra"
 description: "Testinfra is a Python-based framework for infrastructure testing. It allows you to write tests for your infrastructure and verify that everything is working as expected."

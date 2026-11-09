@@ -1,5 +1,6 @@
 ---
 title: "Python: Inheritance"
+featureimage: "feature.png"
 date: "2023-01-31T12:00:00Z"
 slug: "python-inheritance"
 description: "Inheritance is a mechanism in object-oriented programming (OOP) that allows you to create new classes that are derived from existing classes."

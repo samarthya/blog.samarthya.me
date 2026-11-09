@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous"
+featureimage: "feature.png"
 date: "2020-01-09T12:00:00Z"
 slug: "asynchronous"
 description: "I learned a whole new dimension to this word, quite recently. Usually this word is used to express the non-blocking way of calling a program, a service or a code."

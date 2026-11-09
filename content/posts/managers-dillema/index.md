@@ -1,5 +1,6 @@
 ---
 title: "Manager’s dilemma"
+featureimage: "feature.png"
 date: "2019-02-22T12:00:00Z"
 slug: "managers-dillema"
 description: "Some of the gems I hear everyday and the benefits are exceptional."

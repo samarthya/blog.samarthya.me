@@ -1,5 +1,6 @@
 ---
 title: "Say a Number"
+featureimage: "feature.png"
 date: "2020-03-29T12:00:00Z"
 slug: "say-a-number"
 description: "With the Corona-Lockdown in place “literally”, it was time to squeeze out some me-time to continue the quest for GO-Proficiency."

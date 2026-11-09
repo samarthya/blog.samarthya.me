@@ -1,5 +1,6 @@
 ---
 title: "Jenkins: K8S"
+featureimage: "feature.png"
 date: "2022-02-02T12:00:00Z"
 slug: "jenkins-k8s"
 description: "Deploying Jenkins on K8S cluster is as simple as"

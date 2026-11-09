@@ -1,5 +1,6 @@
 ---
 title: "Vagrant-OSX"
+featureimage: "feature.png"
 date: "2022-08-19T12:00:00Z"
 slug: "vagrant-osx-m1-2"
 description: "In the previous blog, I was left with the error that had little information for me to debug. I realized since I migrated most of the files from my previous laptop it might be causing an issue."

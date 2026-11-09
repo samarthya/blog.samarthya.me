@@ -1,5 +1,6 @@
 ---
 title: "Painless Scripting"
+featureimage: "feature.png"
 date: "2020-05-02"
 slug: "painless-scripting"
 categories: ["technical"]

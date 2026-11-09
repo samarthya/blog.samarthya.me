@@ -1,5 +1,6 @@
 ---
 title: "Deployments: K8S"
+featureimage: "feature.png"
 date: "2020-08-24T12:29:53Z"
 slug: "deployments-k8s"
 categories: ["technical"]

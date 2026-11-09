@@ -1,5 +1,6 @@
 ---
 title: "LDAP Realm in Elasticsearch"
+featureimage: "feature.png"
 date: "2020-06-05T04:18:06Z"
 slug: "ldap-realm-in-elasticsearch"
 categories: ["technical"]

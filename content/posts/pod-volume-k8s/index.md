@@ -1,5 +1,6 @@
 ---
 title: "Pod & Volume: K8S"
+featureimage: "feature.png"
 date: "2021-01-22T10:19:46Z"
 slug: "pod-volume-k8s"
 categories: ["docker", "technical"]

@@ -1,5 +1,6 @@
 ---
 title: "Secrets"
+featureimage: "feature.png"
 date: "2021-04-12T09:35:03Z"
 slug: "secrets"
 categories: ["technical"]

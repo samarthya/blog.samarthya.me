@@ -1,5 +1,6 @@
 ---
 title: "Docker Registry"
+featureimage: "feature.png"
 date: "2020-07-29T10:23:38Z"
 slug: "docker-registry"
 categories: ["docker"]

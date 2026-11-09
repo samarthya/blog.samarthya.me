@@ -1,5 +1,6 @@
 ---
 title: "Ansible Magic Variables: Useful Context Without Guesswork"
+featureimage: "feature.png"
 date: "2024-06-08"
 description: "A practical guide to Ansible's built-in context variables, including hostvars, groups, inventory_hostname, and facts."
 categories: ["technical"]

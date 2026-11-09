@@ -1,5 +1,6 @@
 ---
 title: "NetworkPolicy: K8S"
+featureimage: "feature.png"
 date: "2020-08-24"
 slug: "networkpolicy-k8s"
 categories: ["technical"]

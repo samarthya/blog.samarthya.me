@@ -1,5 +1,6 @@
 ---
 title: "Docker"
+featureimage: "feature.png"
 date: "2020-07-11T12:00:00Z"
 slug: "docker-ubuntu-a-refresher"
 description: "Usually I use Centos, but this time I wanted to try out docker swarm and ubuntu was the preferred option due to the options and supporting blogs available."

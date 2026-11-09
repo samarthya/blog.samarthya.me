@@ -1,5 +1,6 @@
 ---
 title: "PV, PVC"
+featureimage: "feature.png"
 date: "2020-07-15"
 slug: "pv-pvc"
 categories: ["technical"]

@@ -1,5 +1,6 @@
 ---
 title: "Vagrant OSX"
+featureimage: "feature.png"
 date: "2022-08-18T12:00:00Z"
 slug: "vagrant-osx-m1"
 description: "Having just bought an M1 – MacBook Pro the issue are mounting. The premier challenge was to get my Vagrant boxes configured with provider virtualbox to run."

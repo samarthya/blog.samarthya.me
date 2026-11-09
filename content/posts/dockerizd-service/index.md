@@ -1,5 +1,6 @@
 ---
 title: "Dockeriz'd service"
+featureimage: "feature.png"
 date: "2020-08-13T05:51:34Z"
 slug: "dockerizd-service"
 categories: ["docker", "technical"]

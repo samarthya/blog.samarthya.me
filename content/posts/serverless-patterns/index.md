@@ -1,5 +1,6 @@
 ---
 title: "Serverless patterns"
+featureimage: "feature.png"
 date: "2019-02-26T12:00:00Z"
 slug: "serverless-patterns"
 description: "Usually they are cost savers and beneficial for situations that are not bounded by the precise profitable point in time."

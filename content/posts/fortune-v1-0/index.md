@@ -1,5 +1,6 @@
 ---
 title: "Fortune v1.0"
+featureimage: "feature.png"
 date: "2020-12-16T10:50:24Z"
 slug: "fortune-v1-0"
 categories: ["java", "technical"]

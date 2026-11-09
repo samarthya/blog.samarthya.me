@@ -1,5 +1,6 @@
 ---
 title: "map and FlatMap"
+featureimage: "feature.png"
 date: "2020-11-30"
 slug: "map-and-flatmap"
 description: "Java 8 streams: what map and flatMap do, with small examples of each."

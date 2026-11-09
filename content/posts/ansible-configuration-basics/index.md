@@ -1,5 +1,6 @@
 ---
 title: "Ansible Configuration: Make the Defaults Explicit"
+featureimage: "feature.png"
 date: "2024-03-16"
 description: "How ansible.cfg, inventory settings, and environment variables fit together in a manageable project."
 categories: ["technical"]

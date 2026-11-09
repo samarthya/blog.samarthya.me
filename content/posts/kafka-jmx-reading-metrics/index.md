@@ -1,5 +1,6 @@
 ---
 title: "Reading Kafka JMX Data Without Getting Lost in the Numbers"
+featureimage: "feature.png"
 date: "2025-12-07"
 description: "How I group Kafka JMX metrics into traffic, latency, consumer lag, replication, and JVM signals."
 categories: ["technical"]

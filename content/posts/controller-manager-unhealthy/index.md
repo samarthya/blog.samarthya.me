@@ -1,5 +1,6 @@
 ---
 title: "controller-manager   #Unhealthy"
+featureimage: "feature.png"
 date: "2020-12-09T07:12:34Z"
 slug: "controller-manager-unhealthy"
 categories: ["technical"]

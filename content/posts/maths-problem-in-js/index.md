@@ -1,5 +1,6 @@
 ---
 title: "Maths problem in JS"
+featureimage: "feature.png"
 date: "2020-01-10T12:00:00Z"
 slug: "maths-problem-in-js"
 description: "We will utilize regular expression to identify and parse the elements from the input string."

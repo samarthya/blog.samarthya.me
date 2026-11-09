@@ -1,5 +1,6 @@
 ---
 title: "ClusterRole: Refresher"
+featureimage: "feature.png"
 date: "2021-04-06T11:26:35Z"
 slug: "clusterrole-refresher"
 categories: ["docker"]

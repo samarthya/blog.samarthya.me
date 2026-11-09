@@ -1,5 +1,6 @@
 ---
 title: "Adding Node to a cluster"
+featureimage: "feature.png"
 date: "2022-01-06T06:58:31Z"
 slug: "adding-node-to-a-cluster"
 categories: ["kubernetes", "technical"]

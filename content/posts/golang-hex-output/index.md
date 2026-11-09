@@ -1,5 +1,6 @@
 ---
 title: "GoLang: Hex Output"
+featureimage: "feature.png"
 date: "2021-01-29T17:47:07Z"
 slug: "golang-hex-output"
 categories: ["golang", "technical"]

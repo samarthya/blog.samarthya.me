@@ -1,5 +1,6 @@
 ---
 title: "Writing Helm Charts"
+featureimage: "feature.png"
 date: "2020-09-14T18:07:54Z"
 slug: "writing-charts"
 categories: ["technical"]

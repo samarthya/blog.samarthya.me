@@ -1,5 +1,6 @@
 ---
 title: "Creating your app with VUEJS"
+featureimage: "feature.png"
 date: "2019-02-28T12:00:00Z"
 slug: "creating-your-app-with-vuejs"
 description: "This is my attempt at learning a new framework and using it to create my own webapp uing vueJS."

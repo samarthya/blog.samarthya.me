@@ -1,5 +1,6 @@
 ---
 title: "Smallest Integer"
+featureimage: "feature.png"
 date: "2021-04-24T05:43:46Z"
 slug: "smallest-integer"
 categories: ["java", "technical"]

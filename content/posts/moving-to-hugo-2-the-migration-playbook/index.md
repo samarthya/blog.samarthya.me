@@ -1,5 +1,6 @@
 ---
 title: "Moving to Hugo, part 2: The migration playbook"
+featureimage: "feature.png"
 date: 2026-10-26T07:10:00-04:00
 description: "A step-by-step guide to moving a WordPress blog to Hugo: back up, inventory, convert with a script, rescue images, keep every link, then go live."
 categories: ["technical"]

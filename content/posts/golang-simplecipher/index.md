@@ -1,5 +1,6 @@
 ---
 title: "GoLang: SimpleCipher"
+featureimage: "feature.png"
 date: "2020-05-11T10:14:20Z"
 slug: "golang-simplecipher"
 categories: ["technical"]

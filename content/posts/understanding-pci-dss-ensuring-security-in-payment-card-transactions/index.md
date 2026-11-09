@@ -1,5 +1,6 @@
 ---
 title: "Understanding PCI DSS: Ensuring Security in Payment Card Transactions"
+featureimage: "feature.png"
 date: "2023-06-08T12:00:00Z"
 slug: "understanding-pci-dss-ensuring-security-in-payment-card-transactions"
 description: "The Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards established to protect cardholder data and maintain a secure environment for payment card transactions."

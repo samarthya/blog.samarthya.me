@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Anime illustration: a piglet holding a padlock, beside key requirements: Secure network (infrastructure), Cardholder data (encryption), Access controls (who sees it), Practices (policies, procedures)</title>
+  <defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fecaca"/><stop offset="0.65" stop-color="#fee2e2"/><stop offset="1" stop-color="#fef2f2"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
+<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
+<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
+<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
+<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
+<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
+<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+</defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+<text x="604" y="166" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#b91c1c">key requirements</text>
+  <g filter="url(#drop)">
+    <rect x="600" y="184" width="560" height="58" rx="14" fill="#ffffff"/>
+    <rect x="600" y="184" width="14" height="58" rx="7" fill="#ef4444"/>
+    <text x="630" y="221" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Secure network</text>
+    <text x="1142" y="221" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#ef4444">infrastructure</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="600" y="252" width="560" height="58" rx="14" fill="#ffffff"/>
+    <rect x="600" y="252" width="14" height="58" rx="7" fill="#eab308"/>
+    <text x="630" y="289" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Cardholder data</text>
+    <text x="1142" y="289" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#eab308">encryption</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="600" y="320" width="560" height="58" rx="14" fill="#ffffff"/>
+    <rect x="600" y="320" width="14" height="58" rx="7" fill="#06b6d4"/>
+    <text x="630" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Access controls</text>
+    <text x="1142" y="357" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#06b6d4">who sees it</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="600" y="388" width="560" height="58" rx="14" fill="#ffffff"/>
+    <rect x="600" y="388" width="14" height="58" rx="7" fill="#a855f7"/>
+    <text x="630" y="425" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Practices</text>
+    <text x="1142" y="425" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#a855f7">policies, procedures</text>
+  </g>
+  <g filter="url(#drop)" transform="rotate(0 794.0 88)">
+    <rect x="600" y="66" width="388" height="44" rx="22" fill="#b91c1c"/>
+    <text x="794.0" y="95" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">PCI DSS: protect the card data</text>
+  </g><defs><linearGradient id="cfur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbcfe8"/><stop offset="1" stop-color="#f472b6"/></linearGradient><linearGradient id="cbeak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdba74"/><stop offset="1" stop-color="#f97316"/></linearGradient><linearGradient id="cshine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>
+  <ellipse cx="270" cy="530" rx="165" ry="140" fill="url(#cfur)" filter="url(#drop)"/><ellipse cx="270" cy="560" rx="105" ry="100" fill="#fce7f3"/>
+  <circle cx="165" cy="190" r="28" fill="url(#cfur)"/><circle cx="375" cy="190" r="28" fill="url(#cfur)"/>
+  <ellipse cx="270" cy="290" rx="165" ry="138" fill="url(#cfur)" filter="url(#drop)"/><ellipse cx="230" cy="190" rx="70" ry="28" fill="url(#cshine)" transform="rotate(-15 230 190)"/>
+  
+  
+  <defs><clipPath id="cL"><ellipse cx="212" cy="290" rx="30" ry="36"/></clipPath><linearGradient id="cLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#475569"/></linearGradient></defs>
+  <ellipse cx="212" cy="290" rx="30" ry="36" fill="#ffffff"/>
+  <g clip-path="url(#cL)">
+    <ellipse cx="222" cy="288" rx="22.5" ry="27.0" fill="url(#cLg)"/>
+    <ellipse cx="222" cy="286" rx="10.125" ry="13.5" fill="#111827"/>
+    <circle cx="214.125" cy="277.2" r="7.199999999999999" fill="#ffffff"/>
+    <circle cx="229.875" cy="297.45" r="3.0" fill="#ffffff"/>
+  </g>
+  <ellipse cx="212" cy="290" rx="30" ry="36" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <defs><clipPath id="cR"><ellipse cx="328" cy="290" rx="30" ry="36"/></clipPath><linearGradient id="cRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#475569"/></linearGradient></defs>
+  <ellipse cx="328" cy="290" rx="30" ry="36" fill="#ffffff"/>
+  <g clip-path="url(#cR)">
+    <ellipse cx="338" cy="288" rx="22.5" ry="27.0" fill="url(#cRg)"/>
+    <ellipse cx="338" cy="286" rx="10.125" ry="13.5" fill="#111827"/>
+    <circle cx="330.125" cy="277.2" r="7.199999999999999" fill="#ffffff"/>
+    <circle cx="345.875" cy="297.45" r="3.0" fill="#ffffff"/>
+  </g>
+  <ellipse cx="328" cy="290" rx="30" ry="36" fill="none" stroke="#1f2937" stroke-width="4"/>
+  <ellipse cx="176" cy="356" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/><ellipse cx="364" cy="356" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/>
+  <ellipse cx="270" cy="340" rx="17" ry="12" fill="#db2777"/><ellipse cx="264" cy="335" rx="6" ry="3.5" fill="#ffffff" opacity="0.6"/>
+  <path d="M248 366 C258 382 282 382 292 366" stroke="#3f1d0b" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  
+  <path d="M400 500 C430 470 445 440 450 412" stroke="url(#cfur)" stroke-width="48" fill="none" stroke-linecap="round"/>
+  <g filter="url(#drop)"><path d="M440 282 V242 a40 40 0 0 1 80 0 V282" stroke="url(#metal)" stroke-width="16" fill="none"/><rect x="414" y="276" width="132" height="100" rx="16" fill="#b91c1c"/><circle cx="480" cy="320" r="12" fill="#1f2937"/></g>
+  <circle cx="450" cy="392" r="28" fill="url(#cfur)" stroke="#000000" stroke-opacity="0.2" stroke-width="3"/><ellipse cx="200" cy="520" rx="34" ry="26" fill="url(#cfur)" stroke="#000000" stroke-opacity="0.2" stroke-width="3"/><use href="#spark" x="40" y="70" width="24" height="24"/><use href="#spark" x="560" y="40" width="18" height="18"/><use href="#spark" x="1165" y="600" width="22" height="22"/>
+</svg>

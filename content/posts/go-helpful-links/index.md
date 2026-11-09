@@ -1,5 +1,6 @@
 ---
 title: "Go: Helpful links"
+featureimage: "feature.png"
 date: "2020-05-19T11:13:28Z"
 slug: "go-helpful-links"
 categories: ["technical"]

@@ -1,5 +1,6 @@
 ---
 title: "Quick: Cheat Sheet"
+featureimage: "feature.png"
 date: "2021-01-08T11:04:34Z"
 slug: "quick-cheat-sheet"
 categories: ["docker", "technical"]

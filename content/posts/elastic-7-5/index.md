@@ -1,5 +1,6 @@
 ---
 title: "Elastic 7.5"
+featureimage: "feature.png"
 date: "2020-01-06"
 slug: "elastic-7-5"
 categories: ["personal"]

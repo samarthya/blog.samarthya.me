@@ -1,5 +1,6 @@
 ---
 title: "Java Stream: Examples"
+featureimage: "feature.png"
 date: "2021-04-26T09:07:19Z"
 slug: "java-stream-examples"
 categories: ["java", "technical"]

@@ -1,5 +1,6 @@
 ---
 title: "Dockerfile"
+featureimage: "feature.png"
 date: "2020-07-15T12:00:00Z"
 slug: "dockerfile"
 description: "I would move in stages, like a good learning guide always recommends."

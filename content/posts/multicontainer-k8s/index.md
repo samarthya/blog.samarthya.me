@@ -1,5 +1,6 @@
 ---
 title: "MultiContainer: K8S"
+featureimage: "feature.png"
 date: "2020-08-27T11:18:17Z"
 slug: "multicontainer-k8s"
 categories: ["technical"]

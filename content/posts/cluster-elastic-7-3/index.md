@@ -1,5 +1,6 @@
 ---
 title: "Cluster: Elastic 7.3"
+featureimage: "feature.png"
 date: "2020-04-14"
 slug: "cluster-elastic-7-3"
 categories: ["technical"]

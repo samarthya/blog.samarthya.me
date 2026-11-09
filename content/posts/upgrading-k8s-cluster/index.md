@@ -1,5 +1,6 @@
 ---
 title: "Upgrading K8S cluster"
+featureimage: "feature.png"
 date: "2022-01-05T07:05:30Z"
 slug: "upgrading-k8s-cluster"
 categories: ["kubernetes", "technical"]

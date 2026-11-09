@@ -1,5 +1,6 @@
 ---
 title: "Docker: Clean in Bulk"
+featureimage: "feature.png"
 date: "2021-12-27T12:00:00Z"
 slug: "docker-clean-in-bulk"
 description: "So to delete there was one hard hack way of cleaning it all"

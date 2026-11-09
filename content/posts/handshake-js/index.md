@@ -1,5 +1,6 @@
 ---
 title: "Handshake: JS"
+featureimage: "feature.png"
 date: "2020-01-11T12:00:00Z"
 slug: "handshake-js"
 description: "Let’s say the input is 2 the output should be [“double blink”]."

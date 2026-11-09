@@ -1,5 +1,6 @@
 ---
 title: "CISM Notes: Connecting Technical Controls to Security Governance"
+featureimage: "feature.png"
 date: "2025-08-30"
 description: "A practical study note on turning infrastructure security work into governance, risk, and incident-management outcomes."
 categories: ["technical"]

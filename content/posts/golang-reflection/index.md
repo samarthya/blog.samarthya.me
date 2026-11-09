@@ -1,5 +1,6 @@
 ---
 title: "GOLang: Reflection"
+featureimage: "feature.png"
 date: "2021-01-16T08:18:34Z"
 slug: "golang-reflection"
 categories: ["golang", "technical"]

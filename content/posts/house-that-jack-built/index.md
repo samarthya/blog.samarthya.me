@@ -1,5 +1,6 @@
 ---
 title: "House that Jack built."
+featureimage: "feature.png"
 date: "2020-01-17T12:00:00Z"
 slug: "house-that-jack-built"
 description: "Funny thing about simple programs is that there are too many optimization options available that never lets you feel content."

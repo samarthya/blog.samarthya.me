@@ -1,5 +1,6 @@
 ---
 title: "SAFe for Lean enterprises"
+featureimage: "feature.png"
 date: "2021-03-01T16:14:46Z"
 slug: "safe-for-lean-enterprises"
 categories: ["others"]

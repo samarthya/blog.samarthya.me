@@ -1,5 +1,6 @@
 ---
 title: "Aggregations: Elastic"
+featureimage: "feature.png"
 date: "2020-06-09"
 slug: "aggregations-elastic"
 categories: ["technical"]

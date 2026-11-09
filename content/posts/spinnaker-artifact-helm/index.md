@@ -1,5 +1,6 @@
 ---
 title: "Spinnaker: Artifact Helm"
+featureimage: "feature.png"
 date: "2022-02-05T12:00:00Z"
 slug: "spinnaker-artifact-helm"
 description: "In this blog let’s try add a helm account and enable for use in the pipelines"

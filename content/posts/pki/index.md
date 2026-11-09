@@ -1,5 +1,6 @@
 ---
 title: "PKI"
+featureimage: "feature.png"
 date: "2022-11-18T12:00:00Z"
 slug: "pki"
 description: "PKI is the core of security for most organizations, and at its heart is a couple of keys that together allows the encryption/decryption of the traffic exchanged."

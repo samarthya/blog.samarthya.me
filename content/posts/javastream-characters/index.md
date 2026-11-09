@@ -1,5 +1,6 @@
 ---
 title: "JavaStream: Characters"
+featureimage: "feature.png"
 date: "2020-11-13T10:20:02Z"
 slug: "javastream-characters"
 categories: ["java", "technical"]

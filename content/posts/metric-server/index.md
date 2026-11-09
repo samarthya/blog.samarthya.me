@@ -1,5 +1,6 @@
 ---
 title: "Metric Server"
+featureimage: "feature.png"
 date: "2020-12-09T08:01:49Z"
 slug: "metric-server"
 categories: ["docker", "technical"]

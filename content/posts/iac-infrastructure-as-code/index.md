@@ -1,5 +1,6 @@
 ---
 title: "IaC: Infrastructure as Code"
+featureimage: "feature.png"
 date: "2022-02-08T12:00:00Z"
 slug: "iac-infrastructure-as-code"
 description: "IaC tools like Terraform allows one to manage infrastructure with configuration files rather than through a graphical user interface."

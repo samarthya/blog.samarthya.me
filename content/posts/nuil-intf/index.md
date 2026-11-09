@@ -1,5 +1,6 @@
 ---
 title: "Nil Interface"
+featureimage: "feature.png"
 date: "2020-01-26T12:00:00Z"
 slug: "nuil-intf"
 description: "An interface in Golang is a set of methods and a type."

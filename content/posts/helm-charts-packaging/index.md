@@ -1,5 +1,6 @@
 ---
 title: "Helm Charts: Packaging"
+featureimage: "feature.png"
 date: "2020-09-02T09:12:45Z"
 slug: "helm-charts-packaging"
 categories: ["technical"]

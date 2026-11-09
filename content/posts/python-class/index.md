@@ -1,5 +1,6 @@
 ---
 title: "Python: Class"
+featureimage: "feature.png"
 date: "2023-01-31T12:00:00Z"
 slug: "python-class"
 description: "Learning to write Python code? A Python class is a blueprint for creating objects."

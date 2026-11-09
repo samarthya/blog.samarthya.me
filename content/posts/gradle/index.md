@@ -1,5 +1,6 @@
 ---
 title: "Gradle"
+featureimage: "feature.png"
 date: "2022-07-19"
 slug: "gradle"
 categories: ["technical"]

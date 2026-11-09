@@ -1,5 +1,6 @@
 ---
 title: "K8S RBAC"
+featureimage: "feature.png"
 date: "2021-12-13T13:03:56Z"
 slug: "k8s-rbac"
 categories: ["kubernetes", "technical"]

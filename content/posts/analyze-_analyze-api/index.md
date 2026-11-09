@@ -1,5 +1,6 @@
 ---
 title: "Analyze: _analyze api"
+featureimage: "feature.png"
 date: "2020-05-02T10:21:09Z"
 slug: "analyze-_analyze-api"
 categories: ["technical"]

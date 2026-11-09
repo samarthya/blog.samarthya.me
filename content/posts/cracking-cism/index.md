@@ -1,5 +1,6 @@
 ---
 title: "Cracking CISM"
+featureimage: "feature.png"
 date: "2021-05-25T09:26:50Z"
 slug: "cracking-cism"
 categories: ["technical"]

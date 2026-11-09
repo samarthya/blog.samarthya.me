@@ -1,5 +1,6 @@
 ---
 title: "Nth Prime"
+featureimage: "feature.png"
 date: "2020-12-15T08:21:32Z"
 slug: "nth-prime"
 categories: ["java", "technical"]

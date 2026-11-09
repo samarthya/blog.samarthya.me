@@ -1,5 +1,6 @@
 ---
 title: "ISG: Information security governance"
+featureimage: "feature.png"
 date: "2021-05-20T12:00:00Z"
 slug: "isg-information-security-governance"
 description: "Rules that run the organisation = Governance."

@@ -1,5 +1,6 @@
 ---
 title: "Shared Volume"
+featureimage: "feature.png"
 date: "2020-07-31T07:10:03Z"
 slug: "shared-volume"
 categories: ["docker"]

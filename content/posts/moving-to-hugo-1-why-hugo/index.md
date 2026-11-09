@@ -1,5 +1,6 @@
 ---
 title: "Moving to Hugo, part 1: Why Hugo"
+featureimage: "feature.png"
 date: 2026-10-26T07:00:00-04:00
 description: "How I chose a new home for a personal blog after a break-in: the requirements, the candidates, and why a static site generator won."
 categories: ["technical","move"]

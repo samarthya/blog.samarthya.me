@@ -1,5 +1,6 @@
 ---
 title: "Python: Pointers & Reference"
+featureimage: "feature.png"
 date: "2023-01-31T12:00:00Z"
 slug: "python-pointers-reference"
 description: "In Python, there are no explicit pointers like in some other programming languages. In python everything is an object and references to objects are stored in variables."

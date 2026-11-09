@@ -1,5 +1,6 @@
 ---
 title: "Spinnaker: docker-registry"
+featureimage: "feature.png"
 date: "2022-02-04T12:00:00Z"
 slug: "spinnaker-docker-registry"
 description: "You will need a valid docker registry before you add any trigger in the pipeline in Spinnaker"

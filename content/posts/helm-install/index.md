@@ -1,5 +1,6 @@
 ---
 title: "Helm Install"
+featureimage: "feature.png"
 date: "2020-09-06"
 slug: "helm-install"
 categories: ["technical"]

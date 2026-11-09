@@ -1,5 +1,6 @@
 ---
 title: "Concurrency"
+featureimage: "feature.png"
 date: "2020-01-03T12:00:00Z"
 slug: "concurrency-golang"
 description: "Last few weeks have been interesting, a new year just embarked, my learning pace slowed down; comparatively due to the festivities and obligations around, but I am still trying to maintain."

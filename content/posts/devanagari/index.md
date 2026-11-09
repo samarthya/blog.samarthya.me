@@ -1,5 +1,6 @@
 ---
 title: "Devanagari:"
+featureimage: "feature.png"
 date: "2023-05-10T12:00:00Z"
 slug: "devanagari"
 description: "Devanagari is a script that is used to write several languages spoken in the Indian subcontinent, including Hindi, Nepali, Marathi, and Sanskrit."

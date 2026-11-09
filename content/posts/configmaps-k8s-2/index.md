@@ -1,5 +1,6 @@
 ---
 title: "ConfigMaps: K8S - 2"
+featureimage: "feature.png"
 date: "2020-08-21T12:24:01Z"
 slug: "configmaps-k8s-2"
 categories: ["technical"]

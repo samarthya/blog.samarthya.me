@@ -1,5 +1,6 @@
 ---
 title: "Spring Data-LDAP"
+featureimage: "feature.png"
 date: "2019-04-24T12:00:00Z"
 slug: "spring-data-ldap"
 description: "I have a small problem at hand which girdles around learning Angular, with a Spring enabled Rest endpoints which uses a DB to store data and have security layer in between that should interact with a…"

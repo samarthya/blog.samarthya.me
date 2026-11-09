@@ -1,5 +1,6 @@
 ---
 title: "Kuberenetes: Rest API"
+featureimage: "feature.png"
 date: "2020-04-08"
 slug: "kuberenetes-rest-api"
 categories: ["technical"]

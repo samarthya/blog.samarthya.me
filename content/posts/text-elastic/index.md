@@ -1,5 +1,6 @@
 ---
 title: "Text - Elastic"
+featureimage: "feature.png"
 date: "2020-03-29T17:37:33Z"
 slug: "text-elastic"
 categories: ["technical"]

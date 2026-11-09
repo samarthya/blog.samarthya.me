@@ -1,5 +1,6 @@
 ---
 title: "Go Modules"
+featureimage: "feature.png"
 date: "2022-07-07T12:00:00Z"
 slug: "go-modules"
 description: "If you are like me and getting errors while trying to compile your go lang code without having a go.mod in v1.18"

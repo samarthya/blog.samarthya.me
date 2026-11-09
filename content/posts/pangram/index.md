@@ -1,5 +1,6 @@
 ---
 title: "Pangram"
+featureimage: "feature.png"
 date: "2020-01-30T15:59:51Z"
 slug: "pangram"
 description: "A pangram (Greek: παν γράμμα, pan gramma, \"every letter\") is a sentence using every letter of the alphabet at least once. The best known English pangram is:\nThe quick brown fox jumps over the lazy dog."

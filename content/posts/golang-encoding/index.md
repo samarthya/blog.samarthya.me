@@ -1,5 +1,6 @@
 ---
 title: "GoLang: encoding"
+featureimage: "feature.png"
 date: "2021-01-30T12:00:00Z"
 slug: "golang-encoding"
 description: "Package encoding provide capabilities to convert data to and from byte-level and textual representations."

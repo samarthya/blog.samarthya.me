@@ -1,5 +1,6 @@
 ---
 title: "XEE: XML Entity Attack (XXE)"
+featureimage: "feature.png"
 date: "2023-05-24T12:00:00Z"
 slug: "xee-xml-entity-attack-xxe"
 description: "XML entity attack, also known as Billion Laughs Attack, is a type of security vulnerability that exploits the way XML parsers handle entity expansion."

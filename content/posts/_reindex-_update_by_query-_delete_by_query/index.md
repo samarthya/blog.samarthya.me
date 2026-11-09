@@ -1,5 +1,6 @@
 ---
 title: "_reindex, _update_by_query & _delete_by_query"
+featureimage: "feature.png"
 date: "2020-04-17"
 slug: "_reindex-_update_by_query-_delete_by_query"
 categories: ["technical"]

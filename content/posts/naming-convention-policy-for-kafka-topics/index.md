@@ -1,5 +1,6 @@
 ---
 title: "Naming Convention Policy for Kafka topics"
+featureimage: "feature.png"
 date: "2022-07-13T12:00:00Z"
 slug: "naming-convention-policy-for-kafka-topics"
 description: "Creating a Topic in a kafka-cluster is easy and well documented for the kafka-topics.sh or even the official API documentation."

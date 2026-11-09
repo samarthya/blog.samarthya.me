@@ -1,5 +1,6 @@
 ---
 title: "Java Streams"
+featureimage: "feature.png"
 date: "2020-11-12T11:47:49Z"
 slug: "java-streams"
 categories: ["java", "technical"]

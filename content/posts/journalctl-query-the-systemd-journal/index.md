@@ -1,5 +1,6 @@
 ---
 title: "journalctl - Query the systemd journal"
+featureimage: "feature.png"
 date: "2020-10-17"
 slug: "journalctl-query-the-systemd-journal"
 categories: ["technical"]
