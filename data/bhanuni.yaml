@@ -9,42 +9,43 @@
 #   series       pictures that belong together share a series name (shown in order of date)
 #   words        one line in her own words (shown under the picture)
 #   about        optional note on what is happening in it, e.g. a frame of a story (shown in the viewer)
+#                words and about are written as the artist, in the first person: "my", "I"
 #   featured     true: shown in the "favourites" row at the top
 #   publish      true once she says it can go up; false keeps it off the site
 
 - id: an58cn
-  title: "The Rat-A-Tat gang"
+  title: "Sab Jholmaal hai gang!"
   date: 2025-11-14
   medium: digital
   kind: fan-art
-  inspired_by: "Rat-A-Tat"
-  series: ""
+  inspired_by: "Huntrix transfomation, Sab Jholmaal hai"
+  series: "Sab Jholmaal hai"
   words: ""
-  about: ""
+  about: "If the Sab Jholmaal hai gang were to meet Huntrix, what would happen? This is my take on it."
   featured: false
   publish: true
 
 - id: 3snf5b
-  title: "Living-room chaos"
+  title: "Vocaloid"
   date: 2025-11-16
   medium: digital
   kind: fan-art
-  inspired_by: "Rat-A-Tat"
+  inspired_by: "Sab Jholmaal hai, Vocaloids"
   series: ""
   words: ""
-  about: ""
+  about: "Huny, Buny and Zordar and popat as Vocaloids. I drew this because I wanted to see how they would look as Vocaloids."
   featured: false
   publish: true
 
 - id: q9wecn
-  title: "The witch and the princess"
+  title: "The wicked witch of the west"
   date: 2025-11-21
   medium: digital
   kind: fan-art
-  inspired_by: "Rat-A-Tat"
+  inspired_by: "Rat-A-Tat, The Wicked Witch of the West"
   series: ""
   words: ""
-  about: ""
+  about: "Doggy don and Colonel are in the land of Oz, and they meet the Wicked Witch of the West. I drew this because I wanted to see how they would look in the land of Oz."
   featured: false
   publish: true
 
@@ -56,31 +57,31 @@
   inspired_by: "Hatsune Miku"
   series: ""
   words: ""
-  about: ""
+  about: "I love Hatsune Miku, so I drew her. I wanted to see how she would look in my style."
   featured: false
   publish: true
 
 - id: e6fn8d
-  title: "Ready to go"
+  title: "Zoey from K-Pop Demon Hunters"
   date: 2025-11-24
   medium: digital
   kind: original
   inspired_by: ""
   series: ""
-  words: ""
+  words: "I love this character."
   about: ""
   featured: false
   publish: true
 
 - id: qpxyrq
-  title: "Ponies as Huntr/x"
+  title: "Ponies as Huntrix"
   date: 2025-12-01
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony, KPop Demon Hunters"
   series: ""
   words: ""
-  about: ""
+  about: "Crossover of My Little Pony and KPop Demon Hunters. I drew this because I wanted to see how the ponies would look as Huntrix."
   featured: true
   publish: true
 
@@ -97,14 +98,14 @@
   publish: true
 
 - id: qf7sqr
-  title: "Rat-A-Tat as the Powerpuff Girls"
+  title: "Sab Jholmaal hai as the Powerpuff Girls"
   date: 2025-12-28
   medium: digital
   kind: fan-art
-  inspired_by: "Rat-A-Tat, The Powerpuff Girls"
+  inspired_by: "The Powerpuff Girls"
   series: ""
   words: ""
-  about: ""
+  about: "Sab Jholmal hai gang transformed into the Powerpuff Girls. I drew this because I wanted to see how they would look as the Powerpuff Girls."
   featured: true
   publish: true
 
@@ -308,7 +309,7 @@
   inspired_by: "Miraculous"
   series: ""
   words: ""
-  about: "Her own character in a Miraculous storyline, at the moment the akuma takes hold and the glowing mask appears."
+  about: "My own character in a Miraculous storyline, at the moment the akuma takes hold and the glowing mask appears."
   featured: false
   publish: true
 
@@ -476,7 +477,7 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 1: Colonel and Larry sit down to a bucket of fried chicken."
+  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 1: Colonel and Larry sit down to a bucket of fried chicken."
   featured: false
   publish: true
 
@@ -488,7 +489,7 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 2: the mice turn up at the table."
+  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 2: the mice turn up at the table."
   featured: false
   publish: true
 
@@ -500,7 +501,7 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 3: a scuffle, and the bucket vanishes in a cloud of scribbles."
+  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 3: a scuffle, and the bucket vanishes in a cloud of scribbles."
   featured: false
   publish: true
 
@@ -512,6 +513,6 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 4: the mice make off with the chicken while Colonel and Larry stare."
+  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 4: the mice make off with the chicken while Colonel and Larry stare."
   featured: false
   publish: true

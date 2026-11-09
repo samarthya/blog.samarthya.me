@@ -27,7 +27,7 @@ Edit that drawing's entry in `data/bhanuni.yaml`:
   title: "Buddha"                  # her title for it
   date: 2026-04-18                 # when it was drawn
   medium: colour pencil            # digital | pencil | colour pencil | crayon | ink | paint | mixed
-  kind: original                   # original | fan-art  (the "Her own characters" / "Fan art" filters)
+  kind: original                   # original | fan-art  (the "My own characters" / "Fan art" filters)
   inspired_by: ""                  # for fan art: the show, game or book, e.g. "Miraculous"
   series: ""                       # drawings that belong together share the same series name
   words: ""                        # one line in HER words, shown in quotes under the picture
@@ -39,7 +39,9 @@ Edit that drawing's entry in `data/bhanuni.yaml`:
 Tips:
 
 - Keep the quotes around text that contains a colon (`:`) or starts with a special character.
-- `words` is for her own sentence; `about` is for an explanation written by a grown-up.
+- She is the artist, so everything shown on the page speaks as her, in the first person ("my", "I"):
+  `words` is a line she says about the drawing (shown in quotes), `about` is the story behind it
+  ("My take on ...", not "Her take on ...").
 - **Stories in frames** (like "The snack table"): give each frame the same `series`, number the titles
   ("..., 1", "..., 2"), and keep the entries in story order in the file. Drawings with the same date are shown in
   file order.

@@ -128,7 +128,7 @@
   <h2>All drawings</h2>
   <div class="studio-bar" role="group" aria-label="Show">
     <button type="button" data-filter="all" aria-pressed="true">All</button>
-    <button type="button" data-filter="original" aria-pressed="false">Her own characters</button>
+    <button type="button" data-filter="original" aria-pressed="false">My own characters</button>
     <button type="button" data-filter="fan-art" aria-pressed="false">Fan art</button>
     <button type="button" data-filter="paper" aria-pressed="false">On paper</button>
     <button type="button" class="play" data-play>▶ Slide show</button>
@@ -137,7 +137,7 @@
     {{ range $art }}{{ partial "bhanuni-card" (dict "page" $page "a" . "group" "grid") }}{{ end }}
   </div>
 
-  <p class="foot">Every drawing here is hers. Fan art is her take on characters she loves; they belong to their creators.</p>
+  <p class="foot">Every drawing here is mine. Fan art is my take on characters I love; they belong to their creators.</p>
 </article>
 
 <dialog class="viewer" id="studio-viewer" aria-label="Drawing viewer">
