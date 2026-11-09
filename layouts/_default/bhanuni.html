@@ -1,64 +1,166 @@
-{{/* /bhanuni/ (content/bhanuni/index.md, layout: bhanuni): holding page that bhanuni.in redirects to
-   until the gallery has its own site. Self-contained styles; no photos, first name only. */}}
+{{/* /bhanuni/ (content/bhanuni/index.md, layout: bhanuni): Bhanuni's Studio, the gallery bhanuni.in redirects to.
+   Drawings: data/bhanuni.yaml (only publish: true) + images content/bhanuni/art/<id>.jpg (page resources),
+   added with tools/bhanuni/import_art.py, which strips all metadata. First name only, no photos of people. */}}
 {{ define "main" }}
+{{ $page := . }}
+{{ $all := where (hugo.Data.bhanuni | default slice) "publish" true }}
+{{ $art := sort $all "date" "desc" }}
+{{ $fav := where $art "featured" true }}
+{{ $first := "" }}{{ with last 1 $art }}{{ $first = (index . 0).date }}{{ end }}
 <style>
-  .studio { --ink:#1f2937; --soft:#6b7280; --card:#fffaf0; --edge:#f3d9a4;
-            max-width: 44rem; margin: 0 auto; text-align: center; color: var(--ink); }
-  .dark .studio { --ink:#f3f4f6; --soft:#cbd5e1; --card:#1f2937; --edge:#475569; }
-  .studio h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 800; line-height: 1.15; margin: .75rem 0 .5rem; }
-  .studio .sub { color: var(--soft); font-size: 1.15rem; margin: 0 0 1.5rem; }
-  .studio svg { width: 100%; height: auto; max-width: 560px; }
-  .studio .note { margin: 1.5rem auto 0; padding: 1rem 1.25rem; max-width: 32rem; border-radius: 14px;
-                  background: var(--card); border: 2px dashed var(--edge); font-size: 1.05rem; }
-  .studio .wiggle { transform-origin: 300px 330px; animation: wig 3s ease-in-out infinite; }
-  @keyframes wig { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
-  @media (prefers-reduced-motion: reduce) { .studio .wiggle { animation: none; } }
+  .studio { --ink:#1f2937; --soft:#6b7280; --card:#ffffff; --edge:#f3d9a4; --chip:#fff7ed; --chipOn:#f97316;
+            --paper:#fffaf0; max-width: 72rem; margin: 0 auto; color: var(--ink); }
+  .dark .studio { --ink:#f3f4f6; --soft:#cbd5e1; --card:#1f2937; --edge:#475569; --chip:#1f2937; --chipOn:#fb923c;
+                  --paper:#111827; }
+  .studio-head { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .studio-head svg { width: 120px; height: auto; flex: none; }
+  .studio h1 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; line-height: 1.15; margin: 0; }
+  .studio .sub { color: var(--soft); font-size: 1.1rem; margin: .35rem 0 0; }
+  .studio h2 { font-size: 1.25rem; font-weight: 800; margin: 2rem 0 .75rem; }
+  .studio-bar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: 1rem 0; }
+  .studio-bar button { border: 2px solid var(--edge); background: var(--chip); color: var(--ink); border-radius: 999px;
+                       padding: .35rem .9rem; font-weight: 600; font-size: .95rem; cursor: pointer; }
+  .studio-bar button[aria-pressed="true"] { background: var(--chipOn); border-color: var(--chipOn); color: #fff; }
+  .studio-bar .play { margin-left: auto; background: #7c3aed; border-color: #7c3aed; color: #fff; }
+  .fav { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(200px, 1fr); gap: 1rem; overflow-x: auto;
+         padding-bottom: .5rem; scroll-snap-type: x mandatory; }
+  .fav .tile { scroll-snap-align: start; }
+  .gallery { columns: 4 220px; column-gap: 1rem; }
+  .tile { break-inside: avoid; margin: 0 0 1rem; display: block; width: 100%; text-align: left; padding: 0; cursor: zoom-in;
+          background: var(--card); border: 2px solid var(--edge); border-radius: 16px; overflow: hidden;
+          color: inherit; font: inherit; transition: transform .15s ease; }
+  .tile:hover, .tile:focus-visible { transform: translateY(-3px) rotate(-.4deg); }
+  .tile img { display: block; width: 100%; height: auto; background: #fff; }
+  .fav .tile img { aspect-ratio: 1; object-fit: cover; }
+  .tile .cap { display: block; padding: .55rem .75rem .7rem; }
+  .tile .t { display: block; font-weight: 700; line-height: 1.25; }
+  .tile .m { display: block; color: var(--soft); font-size: .82rem; margin-top: .15rem; }
+  .tile[hidden] { display: none; }
+  .studio .foot { color: var(--soft); font-size: .9rem; margin-top: 2rem; text-align: center; }
+  /* viewer */
+  .viewer { border: 0; padding: 0; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh;
+            background: rgba(10, 10, 20, .94); color: #f3f4f6; }
+  .viewer::backdrop { background: rgba(0, 0, 0, .6); }
+  .viewer .stage { position: absolute; inset: 0 0 6.5rem; display: grid; place-items: center; padding: 1rem 4rem; }
+  .viewer img { max-width: 100%; max-height: calc(100vh - 9rem); width: auto; height: auto; object-fit: contain; margin: 0; border-radius: 10px; background: #fff; }
+  .viewer .info { position: absolute; left: 0; right: 0; bottom: 0; min-height: 6.5rem; padding: .75rem 1.25rem;
+                  text-align: center; }
+  .viewer .info h3 { font-size: 1.3rem; font-weight: 800; margin: 0; color: #fff; }
+  .viewer .info .w { font-style: italic; margin: .2rem 0; color: #fde68a; }
+  .viewer .info .m { color: #cbd5e1; font-size: .9rem; margin: .2rem 0 0; }
+  .viewer .nav { position: absolute; top: 50%; transform: translateY(-50%); width: 3rem; height: 3rem; border-radius: 50%;
+                 border: 0; background: rgba(0, 0, 0, .55); color: #fff; font-size: 1.6rem; cursor: pointer; }
+  .viewer .prev { left: .75rem; } .viewer .next { right: .75rem; }
+  .viewer .close, .viewer .toggle { position: absolute; top: .75rem; border: 0; border-radius: 999px; cursor: pointer;
+                  background: rgba(0, 0, 0, .6); color: #fff; padding: .4rem .9rem; font-weight: 600; z-index: 1; }
+  .viewer .close { right: .75rem; } .viewer .toggle { right: 6rem; }
+  .viewer.playing .nav, .viewer.playing .toggle { opacity: .25; }
+  @media (max-width: 640px) { .viewer .stage { padding: 1rem .5rem; } .viewer .nav { top: auto; bottom: 7rem; } }
+  @media (prefers-reduced-motion: reduce) { .tile { transition: none; } .tile:hover { transform: none; } }
 </style>
+
 <article class="studio">
-  <svg viewBox="0 0 600 420" role="img" aria-labelledby="studio-t">
-    <title id="studio-t">An easel holding a sheet of paper with a half-drawn sun, a house and the words "coming soon", with crayons and a paint palette beside it</title>
-    <defs>
-      <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-        <circle cx="2" cy="2" r="2" fill="#f59e0b" opacity=".18"/>
-      </pattern>
-    </defs>
-    <rect width="600" height="420" rx="24" fill="url(#dots)"/>
-    <!-- easel -->
-    <g stroke="#a16207" stroke-width="12" stroke-linecap="round">
-      <line x1="300" y1="40" x2="190" y2="400"/><line x1="300" y1="40" x2="410" y2="400"/>
-      <line x1="300" y1="60" x2="300" y2="390"/>
-    </g>
-    <rect x="160" y="300" width="280" height="16" rx="6" fill="#854d0e"/>
-    <!-- paper -->
-    <g class="wiggle">
-      <rect x="175" y="70" width="250" height="230" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="3"/>
-      <circle cx="225" cy="120" r="24" fill="#fde047"/>
-      <g stroke="#facc15" stroke-width="5" stroke-linecap="round">
-        <line x1="225" y1="84" x2="225" y2="72"/><line x1="261" y1="120" x2="273" y2="120"/>
-        <line x1="250" y1="95" x2="259" y2="86"/><line x1="250" y1="145" x2="259" y2="154" stroke-dasharray="4 6"/>
-      </g>
-      <path d="M300 205 l45 -40 l45 40 z" fill="#f87171"/>
-      <rect x="312" y="205" width="66" height="50" fill="#93c5fd"/>
-      <rect x="337" y="225" width="16" height="30" fill="#1d4ed8"/>
-      <path d="M190 262 q40 -18 80 0 t80 0" fill="none" stroke="#4ade80" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8"/>
-      <text x="300" y="288" text-anchor="middle" font-family="Comic Sans MS, Segoe Print, Chalkboard, cursive"
-            font-size="22" fill="#7c3aed">coming soon…</text>
-    </g>
-    <!-- crayons -->
-    <g transform="translate(455 330) rotate(-20)">
-      <rect width="90" height="16" rx="4" fill="#ef4444"/><path d="M90 0 l16 8 l-16 8 z" fill="#b91c1c"/>
-      <rect y="24" width="90" height="16" rx="4" fill="#3b82f6"/><path d="M90 24 l16 8 l-16 8 z" fill="#1d4ed8"/>
-      <rect y="48" width="90" height="16" rx="4" fill="#22c55e"/><path d="M90 48 l16 8 l-16 8 z" fill="#15803d"/>
-    </g>
-    <!-- palette -->
-    <g transform="translate(40 300)">
-      <path d="M60 0 C110 0 130 40 110 60 C95 75 70 60 60 80 C50 100 0 95 0 55 C0 20 25 0 60 0 z" fill="#fcd34d" stroke="#b45309" stroke-width="3"/>
-      <circle cx="35" cy="30" r="9" fill="#ef4444"/><circle cx="65" cy="20" r="9" fill="#3b82f6"/>
-      <circle cx="92" cy="38" r="9" fill="#22c55e"/><circle cx="28" cy="62" r="9" fill="#a855f7"/>
-    </g>
-  </svg>
-  <h1>{{ .Title }}</h1>
-  <p class="sub">{{ .Description }}</p>
-  <div class="note">{{ .Content }}</div>
+  <header class="studio-head">
+    <svg viewBox="0 0 120 110" aria-hidden="true">
+      <g stroke="#a16207" stroke-width="6" stroke-linecap="round"><line x1="60" y1="6" x2="22" y2="106"/><line x1="60" y1="6" x2="98" y2="106"/></g>
+      <rect x="22" y="16" width="76" height="62" rx="5" fill="#fff" stroke="#e5e7eb" stroke-width="2" transform="rotate(-4 60 47)"/>
+      <circle cx="42" cy="36" r="9" fill="#fde047"/><path d="M58 64 l14 -13 l14 13 z" fill="#f87171"/>
+      <rect x="62" y="64" width="20" height="12" fill="#93c5fd"/>
+      <path d="M30 70 q12 -6 24 0" fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h1>{{ .Title }}</h1>
+      <p class="sub">{{ len $art }} drawings{{ with $first }} since {{ time.Format "January 2006" . }}{{ end }}. {{ .Description }}</p>
+    </div>
+  </header>
+
+  {{ with .Content }}<div class="prose dark:prose-invert max-w-none">{{ . }}</div>{{ end }}
+
+  {{ with $fav }}
+    <h2>⭐ Favourites</h2>
+    <div class="fav">
+      {{ range . }}{{ partial "bhanuni-card" (dict "page" $page "a" . "group" "fav") }}{{ end }}
+    </div>
+  {{ end }}
+
+  <h2>All drawings</h2>
+  <div class="studio-bar" role="group" aria-label="Show">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="original" aria-pressed="false">Her own characters</button>
+    <button type="button" data-filter="fan-art" aria-pressed="false">Fan art</button>
+    <button type="button" data-filter="paper" aria-pressed="false">On paper</button>
+    <button type="button" class="play" data-play>▶ Slide show</button>
+  </div>
+  <div class="gallery" id="studio-grid">
+    {{ range $art }}{{ partial "bhanuni-card" (dict "page" $page "a" . "group" "grid") }}{{ end }}
+  </div>
+
+  <p class="foot">Every drawing here is hers. Fan art is her take on characters she loves; they belong to their creators.</p>
 </article>
+
+<dialog class="viewer" id="studio-viewer" aria-label="Drawing viewer">
+  <button type="button" class="toggle" data-toggle>▶ Play</button>
+  <button type="button" class="close" data-close>✕ Close</button>
+  <div class="stage"><img alt="" id="studio-img"></div>
+  <button type="button" class="nav prev" data-step="-1" aria-label="Previous drawing">‹</button>
+  <button type="button" class="nav next" data-step="1" aria-label="Next drawing">›</button>
+  <div class="info"><h3 id="studio-t"></h3><p class="w" id="studio-w"></p><p class="m" id="studio-m"></p></div>
+</dialog>
+
+<script>
+(() => {
+  const grid = document.getElementById('studio-grid');
+  const dlg = document.getElementById('studio-viewer');
+  const img = document.getElementById('studio-img');
+  const T = id => document.getElementById(id);
+  let list = [], pos = 0, timer = null;
+  const visible = () => [...grid.querySelectorAll('.tile:not([hidden])')];
+  function show(i) {
+    pos = (i + list.length) % list.length;
+    const d = list[pos].dataset;
+    img.src = d.big; img.alt = d.alt;
+    T('studio-t').textContent = d.title;
+    T('studio-w').textContent = d.words ? '“' + d.words + '”' : '';
+    T('studio-m').textContent = d.meta + '  ·  ' + (pos + 1) + ' of ' + list.length;
+    history.replaceState(null, '', '#' + d.id);   // a link to this one drawing
+  }
+  function stop() { clearInterval(timer); timer = null; dlg.classList.remove('playing'); dlg.querySelector('[data-toggle]').textContent = '▶ Play'; }
+  function play() {
+    stop(); dlg.classList.add('playing'); dlg.querySelector('[data-toggle]').textContent = '❚❚ Pause';
+    timer = setInterval(() => show(pos + 1), 6000);
+  }
+  function open(tile, autoplay) {
+    list = tile.closest('.fav') ? [...tile.parentElement.children] : visible();
+    if (!list.length) return;
+    dlg.showModal(); show(Math.max(0, list.indexOf(tile)));
+    if (autoplay) { play(); dlg.requestFullscreen?.().catch(() => {}); }
+  }
+  document.querySelectorAll('.studio .tile').forEach(t => t.addEventListener('click', () => open(t, false)));
+  document.querySelector('[data-play]').addEventListener('click', () => { const v = visible(); if (v.length) open(v[0], true); });
+  dlg.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (b?.dataset.step) { stop(); show(pos + Number(b.dataset.step)); }
+    else if (b?.hasAttribute('data-close')) dlg.close();
+    else if (b?.hasAttribute('data-toggle')) timer ? stop() : play();
+    else if (e.target === dlg) dlg.close();
+  });
+  dlg.addEventListener('close', () => { stop(); history.replaceState(null, '', location.pathname); if (document.fullscreenElement) document.exitFullscreen(); });
+  // /bhanuni/#<id> opens that drawing straight away
+  const linked = location.hash && grid.querySelector('.tile[data-id="' + CSS.escape(location.hash.slice(1)) + '"]');
+  if (linked) open(linked, false);
+  document.addEventListener('keydown', e => {
+    if (!dlg.open) return;
+    if (e.key === 'ArrowRight') { stop(); show(pos + 1); }
+    if (e.key === 'ArrowLeft') { stop(); show(pos - 1); }
+    if (e.key === ' ') { e.preventDefault(); timer ? stop() : play(); }
+  });
+  document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('[data-filter]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    const f = b.dataset.filter;
+    grid.querySelectorAll('.tile').forEach(t => {
+      t.hidden = !(f === 'all' || t.dataset.kind === f || (f === 'paper' && t.dataset.medium !== 'digital'));
+    });
+  }));
+})();
+</script>
 {{ end }}

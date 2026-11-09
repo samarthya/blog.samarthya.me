@@ -1,0 +1,474 @@
+# Bhanuni's Studio: one entry per drawing. Image: content/bhanuni/art/<id>.jpg
+# New drawings: python -I tools/bhanuni/import_art.py <folder>  (adds entries with publish: false)
+#
+#   title        her title for it
+#   date         when it was drawn (from the photo or file; fix it if wrong)
+#   medium       digital | pencil | colour pencil | crayon | ink | paint | mixed
+#   kind         original | fan-art
+#   inspired_by  for fan art: the show, game or book it comes from
+#   series       pictures that belong together share a series name (shown in order of date)
+#   words        one line in her own words (shown under the picture)
+#   featured     true: shown in the "favourites" row at the top
+#   publish      true once she says it can go up; false keeps it off the site
+
+- id: an58cn
+  title: "The Rat-A-Tat gang"
+  date: 2025-11-14
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: 3snf5b
+  title: "Living-room chaos"
+  date: 2025-11-16
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: q9wecn
+  title: "The witch and the princess"
+  date: 2025-11-21
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: jkgvrc
+  title: "Miku"
+  date: 2025-11-22
+  medium: digital
+  kind: fan-art
+  inspired_by: "Hatsune Miku"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: e6fn8d
+  title: "Ready to go"
+  date: 2025-11-24
+  medium: digital
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: qpxyrq
+  title: "Ponies as Huntr/x"
+  date: 2025-12-01
+  medium: digital
+  kind: fan-art
+  inspired_by: "My Little Pony, KPop Demon Hunters"
+  series: ""
+  words: ""
+  featured: true
+  publish: true
+
+- id: dkfyzb
+  title: "Rat-A-Tat goes Miraculous"
+  date: 2025-12-28
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, Miraculous"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: qf7sqr
+  title: "Rat-A-Tat as the Powerpuff Girls"
+  date: 2025-12-28
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, The Powerpuff Girls"
+  series: ""
+  words: ""
+  featured: true
+  publish: true
+
+- id: 7ea4kq
+  title: "Salish as a pony"
+  date: 2026-03-29
+  medium: digital
+  kind: fan-art
+  inspired_by: "My Little Pony"
+  series: "Pony friends"
+  words: ""
+  featured: false
+  publish: true
+
+- id: wfyga6
+  title: "Sisters, as ponies"
+  date: 2026-04-02
+  medium: digital
+  kind: original
+  inspired_by: "My Little Pony"
+  series: "Sisters"
+  words: ""
+  featured: false
+  publish: true
+
+- id: 4z4xk3
+  title: "Chocobo"
+  date: 2026-04-03
+  medium: digital
+  kind: fan-art
+  inspired_by: "Final Fantasy"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: 8xms7k
+  title: "Buddha"
+  date: 2026-04-18
+  medium: colour pencil
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: true
+  publish: true
+
+- id: 9xhcjh
+  title: "Sisters"
+  date: 2026-04-18
+  medium: digital
+  kind: original
+  inspired_by: ""
+  series: "Sisters"
+  words: ""
+  featured: false
+  publish: true
+
+- id: gz57xs
+  title: "Ganesha"
+  date: 2026-04-18
+  medium: pencil
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: true
+  publish: true
+
+- id: 3mn5kz
+  title: "Baby-Sitters Club cast meme"
+  date: 2026-04-19
+  medium: digital
+  kind: fan-art
+  inspired_by: "The Baby-Sitters Club, My Little Pony"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: vskzxz
+  title: "Ponies in new outfits"
+  date: 2026-04-19
+  medium: digital
+  kind: fan-art
+  inspired_by: "My Little Pony"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: d3h49j
+  title: "Hanuman ji"
+  date: 2026-04-24
+  medium: ink
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: true
+  publish: true
+
+- id: ff6hbq
+  title: "Hope Dream"
+  date: 2026-04-24
+  medium: digital
+  kind: original
+  inspired_by: "My Little Pony"
+  series: "Pony friends"
+  words: ""
+  featured: false
+  publish: true
+
+- id: mqfkj9
+  title: "Cookie"
+  date: 2026-04-26
+  medium: digital
+  kind: original
+  inspired_by: "My Little Pony"
+  series: "Pony friends"
+  words: ""
+  featured: false
+  publish: true
+
+- id: mvn2dv
+  title: "Plum"
+  date: 2026-04-26
+  medium: digital
+  kind: original
+  inspired_by: "My Little Pony"
+  series: "Pony friends"
+  words: ""
+  featured: false
+  publish: true
+
+- id: 377jte
+  title: "Ladybug"
+  date: 2026-05-23
+  medium: digital
+  kind: fan-art
+  inspired_by: "Miraculous"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: muzz75
+  title: "Flower top"
+  date: 2026-05-23
+  medium: digital
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: vfmndw
+  title: "All the ponies"
+  date: 2026-05-25
+  medium: digital
+  kind: fan-art
+  inspired_by: "My Little Pony"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: 3swr53
+  title: "Best friends"
+  date: 2026-05-30
+  medium: digital
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: hnzxzv
+  title: "The glowing mask"
+  date: 2026-06-01
+  medium: digital
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: wq4ube
+  title: "Fox hero"
+  date: 2026-06-06
+  medium: digital
+  kind: fan-art
+  inspired_by: "Miraculous"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: 2huckn
+  title: "Pink Sprunki"
+  date: 2026-06-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Sprunki"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: f8jt64
+  title: "Hands on hips"
+  date: 2026-06-22
+  medium: digital
+  kind: original
+  inspired_by: ""
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: pf57vm
+  title: "Mogwai"
+  date: 2026-06-30
+  medium: digital
+  kind: fan-art
+  inspired_by: "Gremlins, Sprunki"
+  series: ""
+  words: ""
+  featured: false
+  publish: true
+
+- id: 5nf49y
+  title: "Gray as Wednesday"
+  date: 2026-07-05
+  medium: digital
+  kind: fan-art
+  inspired_by: "Sprunki, Wednesday"
+  series: "Wenda and Gray"
+  words: ""
+  featured: false
+  publish: true
+
+- id: tgfr6e
+  title: "Wenda as Enid"
+  date: 2026-07-05
+  medium: digital
+  kind: fan-art
+  inspired_by: "Sprunki, Wednesday"
+  series: "Wenda and Gray"
+  words: ""
+  featured: false
+  publish: true
+
+- id: 5a2p6c
+  title: "Wenda and Gray"
+  date: 2026-07-06
+  medium: digital
+  kind: fan-art
+  inspired_by: "Sprunki, Wednesday"
+  series: "Wenda and Gray"
+  words: ""
+  featured: false
+  publish: true
+
+- id: bn3n97
+  title: "Wenda and Gray, Wednesday window"
+  date: 2026-07-06
+  medium: digital
+  kind: fan-art
+  inspired_by: "Sprunki, Wednesday"
+  series: "Wenda and Gray"
+  words: ""
+  featured: true
+  publish: true
+
+- id: 4vyq67
+  title: "Rat-A-Tat as Sprunki"
+  date: 2026-09-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, Sprunki"
+  series: "Sprunki crew"
+  words: ""
+  featured: true
+  publish: true
+
+- id: ap54a4
+  title: "Larry"
+  date: 2026-09-23
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, Sprunki"
+  series: "Sprunki crew"
+  words: ""
+  featured: false
+  publish: true
+
+- id: bx5ugb
+  title: "Colonel"
+  date: 2026-09-23
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, Sprunki"
+  series: "Sprunki crew"
+  words: ""
+  featured: false
+  publish: true
+
+- id: fy9w38
+  title: "Marly"
+  date: 2026-09-23
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, Sprunki"
+  series: "Sprunki crew"
+  words: ""
+  featured: false
+  publish: true
+
+- id: ysrmw5
+  title: "Charly"
+  date: 2026-09-23
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat, Sprunki"
+  series: "Sprunki crew"
+  words: ""
+  featured: false
+  publish: true
+
+- id: e5kqu8
+  title: "The snack table, 1"
+  date: 2026-09-26
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: "The snack table"
+  words: ""
+  featured: false
+  publish: true
+
+- id: xmg3wa
+  title: "The snack table, 2"
+  date: 2026-09-26
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: "The snack table"
+  words: ""
+  featured: false
+  publish: true
+
+- id: f9sqzj
+  title: "The snack table, 3"
+  date: 2026-09-26
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: "The snack table"
+  words: ""
+  featured: false
+  publish: true
+
+- id: vv79tt
+  title: "The snack table, 4"
+  date: 2026-09-26
+  medium: digital
+  kind: fan-art
+  inspired_by: "Rat-A-Tat"
+  series: "The snack table"
+  words: ""
+  featured: false
+  publish: true

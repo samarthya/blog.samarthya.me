@@ -64,3 +64,6 @@ __pycache__/
 
 # Local Claude skills (persona and workflow notes stay off the public repo)
 /.claude/skills/
+
+# Bhanuni gallery: original file names stay local
+/tools/bhanuni/ids.local.csv
