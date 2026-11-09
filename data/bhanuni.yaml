@@ -194,14 +194,14 @@
   publish: true
 
 - id: vskzxz
-  title: "Ponies in new outfits"
+  title: "Ponies as Chocobo GP characters"
   date: 2026-04-19
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony"
   series: "My Little Pony"
   words: ""
-  about: ""
+  about: "I play this game everyday and love it!"
   featured: false
   publish: true
 
@@ -213,7 +213,7 @@
   inspired_by: ""
   series: "Sacred drawings"
   words: ""
-  about: ""
+  about: "Jai Shri Ram! Jai Hanuman!"
   featured: true
   publish: true
 
@@ -225,7 +225,7 @@
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
-  about: ""
+  about: "A new member of the my little pony friends! She is a pony who loves to dream and hope for the best!"
   featured: false
   publish: true
 
@@ -237,19 +237,19 @@
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
-  about: ""
+  about: "She is a baker! She loves to bake cookies and cakes for her friends!"
   featured: false
   publish: true
 
 - id: mvn2dv
-  title: "Plum"
+  title: "Plum Pudding"
   date: 2026-04-26
   medium: digital
   kind: original
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
-  about: ""
+  about: "She is a new student from Ms. Cheerilee's class! She is a pony who loves to read and learn new things!"
   featured: false
   publish: true
 
@@ -258,10 +258,10 @@
   date: 2026-05-23
   medium: digital
   kind: fan-art
-  inspired_by: "Miraculous"
-  series: "Miraculous"
+  inspired_by: "Miraculous Ladybug"
+  series: "Miraculous Ladybug"
   words: ""
-  about: ""
+  about: "She is my favourite Super Hero! Lucky Charm!"
   featured: false
   publish: true
 
@@ -270,22 +270,22 @@
   date: 2026-05-23
   medium: digital
   kind: original
-  inspired_by: ""
+  inspired_by: "Miraculous Ladybug"
   series: ""
   words: ""
-  about: ""
+  about: "She is Kavya Kumar! She is a new character I created for my own Miraculous story! She is a girl who loves to wear flower tops!"
   featured: false
   publish: true
 
 - id: vfmndw
-  title: "All the ponies"
+  title: "The mane 7"
   date: 2026-05-25
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony"
   series: "My Little Pony"
   words: ""
-  about: ""
+  about: "The Mane 7 of My Little Pony! I love them all! I drew them in my own style!"
   featured: false
   publish: true
 
@@ -294,10 +294,10 @@
   date: 2026-05-30
   medium: digital
   kind: original
-  inspired_by: ""
-  series: ""
+  inspired_by: "Miraculous Ladybug"
+  series: "Miraculous Ladybug"
   words: ""
-  about: ""
+  about: "The best friends stay together!"
   featured: false
   publish: true
 
@@ -306,46 +306,46 @@
   date: 2026-06-01
   medium: digital
   kind: fan-art
-  inspired_by: "Miraculous"
-  series: "Miraculous"
+  inspired_by: "Miraculous Ladybug"
+  series: "Miraculous Ladybug"
   words: ""
   about: "My own character in a Miraculous storyline, at the moment the akuma takes hold and the glowing mask appears."
   featured: false
   publish: true
 
 - id: wq4ube
-  title: "Fox hero"
+  title: "Vixen Veda"
   date: 2026-06-06
   medium: digital
   kind: fan-art
-  inspired_by: "Miraculous"
-  series: "Miraculous"
+  inspired_by: "Miraculous Ladybug"
+  series: "Miraculous Ladybug"
   words: ""
-  about: ""
+  about: "The ladybug gave her the power of the vixen! She is now Vixen Veda!"
   featured: false
   publish: true
 
 - id: 2huckn
-  title: "Pink Sprunki"
+  title: "Charolette - Sprunki"
   date: 2026-06-20
   medium: digital
   kind: fan-art
   inspired_by: "Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "She is a calm and kind caring girl! She loves to help others and make them smile."
   featured: false
   publish: true
 
 - id: f8jt64
-  title: "Hands on hips"
+  title: "Lucy from FPE"
   date: 2026-06-22
   medium: digital
   kind: original
   inspired_by: ""
-  series: ""
+  series: "FPE"
   words: ""
-  about: ""
+  about: "She is Lucy from FPE! She is the main villain! She is good at lying and is a bully!"
   featured: false
   publish: true
 
@@ -357,7 +357,7 @@
   inspired_by: "Gremlins, Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "This was made on request!"
   featured: false
   publish: true
 
@@ -369,7 +369,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
-  about: ""
+  about: "Gray as Wednesday! He never smiles!"
   featured: false
   publish: true
 
@@ -381,7 +381,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
-  about: ""
+  about: "Wenda as Enid! She is energetic, cheerful and always smiling!"
   featured: false
   publish: true
 
@@ -393,7 +393,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
-  about: ""
+  about: "Wenda wants to hug Gray, but he is not interested! He is a loner, grumpy and does not like to be touched!"
   featured: false
   publish: true
 
@@ -405,7 +405,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
-  about: ""
+  about: "The scene is the split window! Beware!"
   featured: true
   publish: true
 
@@ -417,7 +417,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "OC from Rat-A-Tat, Sprunki! I drew this because I wanted to see how they would look in my style."
   featured: true
   publish: true
 
@@ -429,7 +429,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "He is the mischievous rat of the three!"
   featured: false
   publish: true
 
@@ -441,7 +441,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "He is Doggy Don's big brother!"
   featured: false
   publish: true
 
@@ -453,7 +453,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "He is a foodie! He likes to eat a lot and Chicken is his favourite!"
   featured: false
   publish: true
 
@@ -465,12 +465,12 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
-  about: ""
+  about: "He is the leader of the three! He is a smart and clever rat!"
   featured: false
   publish: true
 
 - id: e5kqu8
-  title: "The snack table, 1"
+  title: "The Doggy brothers are about to have Lunch!"
   date: 2026-09-26
   medium: digital
   kind: fan-art
@@ -482,37 +482,37 @@
   publish: true
 
 - id: xmg3wa
-  title: "The snack table, 2"
+  title: "The rats have a different plan!"
   date: 2026-09-26
   medium: digital
   kind: fan-art
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 2: the mice turn up at the table."
+  about: "Let's get the chicken!"
   featured: false
   publish: true
 
 - id: f9sqzj
-  title: "The snack table, 3"
+  title: "It's a mad house, chicken is gone!"
   date: 2026-09-26
   medium: digital
   kind: fan-art
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 3: a scuffle, and the bucket vanishes in a cloud of scribbles."
+  about: "The mice got what they came for! The chicken is gone and the Doggy brothers are shocked!"
   featured: false
   publish: true
 
 - id: vv79tt
-  title: "The snack table, 4"
+  title: "Doggy brothers are mad and sad!"
   date: 2026-09-26
   medium: digital
   kind: fan-art
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
-  about: "My take on an anecdote, told in four frames: the mice steal the chicken. 4: the mice make off with the chicken while Colonel and Larry stare."
+  about: "The three mice ate it all! The Doggy brothers are mad and sad!"
   featured: false
   publish: true
