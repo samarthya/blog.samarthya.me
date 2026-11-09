@@ -139,6 +139,8 @@
     </div>
   {{ end }}
 
+  {{ partial "bhanuni-cinema.html" (dict "page" $page "all" $all) }}
+
   <h2>All drawings</h2>
   <div class="studio-bar" role="group" aria-label="Show">
     <button type="button" data-filter="all" aria-pressed="true">All</button>

@@ -1,0 +1,218 @@
+{{/* Story films for /bhanuni/: a series played like a short anime film (title card, slow camera moves,
+   dissolves, her lines as subtitles, "The End"). Stories: data/bhanuni_stories.yaml.
+   Context: dict "page" (the /bhanuni/ page) "all" (published drawings, in file order = story order). */}}
+{{ $page := .page }}
+{{ $all := .all }}
+{{ $films := slice }}
+{{ range hugo.Data.bhanuni_stories | default slice }}
+  {{ $story := . }}
+  {{ $frames := slice }}
+  {{ $poster := "" }}
+  {{ $defaults := slice "zoom-in" "pan-right" "pan-left" "zoom-out" }}
+  {{ range $i, $a := where $all "series" $story.series }}
+    {{ with $page.Resources.GetMatch (printf "art/%s.jpg" $a.id) }}
+      {{ $big := .Resize "1600x webp q85" }}
+      {{ if eq $i 0 }}{{ $poster = .Resize "600x webp q78" }}{{ end }}
+      {{ $move := index $defaults (mod $i 4) }}
+      {{ with $story.moves }}{{ if lt $i (len .) }}{{ $move = index . $i }}{{ end }}{{ end }}
+      {{ $frames = $frames | append (dict "src" $big.RelPermalink "title" $a.title "about" $a.about "words" $a.words "move" $move) }}
+    {{ end }}
+  {{ end }}
+  {{ if and $frames $poster }}
+    {{ $films = $films | append (dict "story" $story "frames" $frames "poster" $poster) }}
+  {{ end }}
+{{ end }}
+
+{{ with $films }}
+<style>
+  .films { display: flex; flex-wrap: wrap; gap: 1.25rem; margin: .5rem 0 1rem; }
+  .film-card { position: relative; width: min(100%, 360px); padding: 0; border: 0; cursor: pointer; text-align: left;
+               background: #111; color: #fff; border-radius: 14px; overflow: hidden; font: inherit;
+               box-shadow: 0 10px 28px rgba(0, 0, 0, .25); transition: transform .25s ease, box-shadow .25s ease; }
+  .film-card::before, .film-card::after { content: ""; position: absolute; left: 0; right: 0; height: 14px; z-index: 2;
+               background: repeating-linear-gradient(90deg, #111 0 10px, #f5f5f4 10px 18px, #111 18px 26px);
+               opacity: .9; }
+  .film-card::before { top: 0; } .film-card::after { bottom: 0; }
+  .film-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; opacity: .85;
+                   transition: transform 6s ease, opacity .3s; }
+  .film-card:hover, .film-card:focus-visible { transform: translateY(-4px) rotate(-.6deg); box-shadow: 0 18px 40px rgba(0, 0, 0, .35); }
+  .film-card:hover img { transform: scale(1.12); opacity: 1; }
+  .film-card .over { position: absolute; inset: 14px 0; z-index: 1; display: flex; flex-direction: column; justify-content: flex-end;
+                     padding: .9rem 1rem; background: linear-gradient(transparent 35%, rgba(0, 0, 0, .78)); }
+  .film-card .ft { font-family: "Segoe Print", "Bradley Hand", "Chalkboard SE", "Comic Sans MS", cursive; font-size: 1.35rem; font-weight: 700; }
+  .film-card .fm { font-size: .85rem; opacity: .85; }
+  .film-card .pl { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -95%); width: 64px; height: 64px;
+                   border-radius: 50%; background: rgba(124, 58, 237, .92); display: grid; place-items: center; font-size: 1.6rem;
+                   box-shadow: 0 0 0 0 rgba(124, 58, 237, .6); animation: pulse 2.4s infinite; }
+  @keyframes pulse { 70% { box-shadow: 0 0 0 18px rgba(124, 58, 237, 0); } 100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0); } }
+
+  .cinema { border: 0; padding: 0; width: 100vw; height: 100vh; max-width: 100vw; max-height: 100vh; background: #000; color: #fff; overflow: hidden; }
+  .cinema::backdrop { background: #000; }
+  .cinema .screen { position: absolute; inset: 0; overflow: hidden; }
+  .cinema .layer { position: absolute; inset: 7vh 0; display: grid; place-items: center; opacity: 0; transition: opacity 1.1s ease; }
+  .cinema .layer.on { opacity: 1; }
+  .cinema .layer img { max-width: 92vw; max-height: 86vh; object-fit: contain; border-radius: 6px; background: #fff; will-change: transform; }
+  .cinema .bars::before, .cinema .bars::after { content: ""; position: absolute; left: 0; right: 0; height: 7vh; background: #000; z-index: 3; }
+  .cinema .bars::before { top: 0; } .cinema .bars::after { bottom: 0; }
+  .cinema .vignette { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+                      background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, .55)); }
+  .cinema .grain { position: absolute; inset: -50%; z-index: 2; pointer-events: none; opacity: .07;
+                   background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 3px 3px; animation: grain .8s steps(4) infinite; }
+  @keyframes grain { 25% { transform: translate(-3%, 2%); } 50% { transform: translate(2%, -3%); } 75% { transform: translate(-1%, 3%); } }
+  .cinema .card { position: absolute; inset: 0; z-index: 4; display: grid; place-content: center; text-align: center; padding: 1rem;
+                  background: #000; opacity: 0; pointer-events: none; transition: opacity 1s ease; }
+  .cinema .card.on { opacity: 1; pointer-events: auto; }
+  .cinema .card h2 { font-family: "Segoe Print", "Bradley Hand", "Chalkboard SE", "Comic Sans MS", cursive;
+                     font-size: clamp(2rem, 7vw, 4.5rem); margin: 0; color: #fde68a; letter-spacing: .02em; line-height: 1.25; }
+  .cinema .card p { color: #e5e7eb; font-size: clamp(1rem, 2.6vw, 1.4rem); margin: 1rem 0 0; }
+  .cinema .card .by { color: #a78bfa; font-size: 1rem; margin-top: 1.4rem; letter-spacing: .2em; text-transform: uppercase; }
+  .cinema .card button { margin-top: 1.5rem; justify-self: center; }
+  .cinema .sub { position: absolute; left: 50%; bottom: 9vh; transform: translateX(-50%); z-index: 4; width: min(92vw, 52rem);
+                 text-align: center; opacity: 0; transition: opacity .6s ease .5s; }
+  .cinema .sub.on { opacity: 1; }
+  .cinema .sub b { display: inline-block; font-size: clamp(1.1rem, 3vw, 1.7rem); padding: .15rem .7rem; background: rgba(0, 0, 0, .65);
+                   border-radius: 6px; color: #fff; text-shadow: 0 2px 4px #000; }
+  .cinema .sub span { display: inline-block; margin-top: .35rem; font-size: clamp(.9rem, 2.2vw, 1.1rem); color: #fde68a;
+                      background: rgba(0, 0, 0, .65); border-radius: 6px; padding: .15rem .6rem; line-height: 1.45; }
+  .cinema .sub span:empty { display: none; }
+  .cinema .ctl { position: absolute; top: 1.2vh; right: 1rem; z-index: 5; display: flex; gap: .5rem; }
+  .cinema .ctl button, .cinema .card button { border: 0; border-radius: 999px; padding: .4rem .9rem; font-weight: 700; cursor: pointer;
+                  background: rgba(255, 255, 255, .16); color: #fff; }
+  .cinema .card button { background: #7c3aed; }
+  .cinema .bar { position: absolute; left: 0; bottom: 0; height: 4px; z-index: 5; background: #a78bfa; width: 0; }
+  /* camera moves; --t is the frame time */
+  .mv-zoom-in  { animation: zin  var(--t) linear forwards; }
+  .mv-zoom-out { animation: zout var(--t) linear forwards; }
+  .mv-pan-right { animation: pr var(--t) linear forwards; }
+  .mv-pan-left  { animation: pl var(--t) linear forwards; }
+  .mv-shake    { animation: zin var(--t) linear forwards, shake .35s linear 6; }
+  @keyframes zin  { from { transform: scale(1); } to { transform: scale(1.16); } }
+  @keyframes zout { from { transform: scale(1.18); } to { transform: scale(1); } }
+  @keyframes pr { from { transform: scale(1.14) translateX(-4%); } to { transform: scale(1.14) translateX(4%); } }
+  @keyframes pl { from { transform: scale(1.14) translateX(4%); } to { transform: scale(1.14) translateX(-4%); } }
+  @keyframes shake { 20% { translate: -6px 3px; } 40% { translate: 5px -4px; } 60% { translate: -4px -3px; } 80% { translate: 6px 4px; } }
+  .cinema.paused *, .cinema.paused *::before { animation-play-state: paused !important; }
+  @media (prefers-reduced-motion: reduce) {
+    .mv-zoom-in, .mv-zoom-out, .mv-pan-right, .mv-pan-left, .mv-shake, .cinema .grain, .film-card .pl { animation: none; }
+    .film-card:hover img { transform: none; } }
+</style>
+
+<div class="fav-head"><h2>🎬 Story films</h2></div>
+<div class="films">
+  {{ range $n, $f := . }}
+    {{ $secs := $f.story.seconds | default 5 }}
+    <button type="button" class="film-card" data-film="film-{{ $n }}" aria-label="Play the story {{ $f.story.title }}">
+      <img src="{{ $f.poster.RelPermalink }}" alt="" loading="lazy" decoding="async">
+      <span class="pl" aria-hidden="true">▶</span>
+      <span class="over"><span class="ft">{{ $f.story.title }}</span>
+        <span class="fm">{{ len $f.frames }} frames · about {{ add (mul (len $f.frames) $secs) 6 }} seconds</span></span>
+    </button>
+    <script type="application/json" id="film-{{ $n }}">{{ dict "title" $f.story.title "tagline" ($f.story.tagline | default "") "series" $f.story.series "seconds" $secs "frames" $f.frames | jsonify | safeJS }}</script>
+  {{ end }}
+</div>
+
+<dialog class="cinema" id="studio-cinema" aria-label="Story film">
+  <div class="screen bars">
+    <div class="layer"><img alt=""></div><div class="layer"><img alt=""></div>
+    <div class="vignette"></div><div class="grain"></div>
+    <div class="sub" aria-live="polite"><b></b><br><span></span></div>
+    <div class="card" data-card><h2></h2><p></p><p class="by">A story by Bhanuni</p></div>
+  </div>
+  <div class="ctl"><button type="button" data-cpause>❚❚ Pause</button><button type="button" data-cclose>✕ Close</button></div>
+  <div class="bar"></div>
+</dialog>
+
+<script>
+(() => {
+  const dlg = document.getElementById('studio-cinema');
+  if (!dlg) return;
+  const layers = [...dlg.querySelectorAll('.layer')], sub = dlg.querySelector('.sub'), card = dlg.querySelector('[data-card]');
+  const bar = dlg.querySelector('.bar'), pauseBtn = dlg.querySelector('[data-cpause]');
+  let film = null, steps = [], at = 0, timer = null, flip = 0, total = 0, stepStart = 0, pausedAt = 0;
+  const paused = () => dlg.classList.contains('paused');
+
+  function showCard(h, p, end) {
+    card.querySelector('h2').textContent = h; card.querySelector('p').textContent = p;
+    card.querySelector('.by').hidden = end;
+    card.querySelectorAll('button').forEach(b => b.remove());
+    if (end) {
+      const again = document.createElement('button'); again.type = 'button'; again.textContent = '↻ Watch again';
+      again.onclick = () => play(film); card.appendChild(again);
+    }
+    card.classList.add('on'); sub.classList.remove('on'); layers.forEach(l => l.classList.remove('on'));
+  }
+  function showFrame(f) {
+    const L = layers[flip = 1 - flip], img = L.querySelector('img');
+    img.className = ''; void img.offsetWidth;                       // restart the camera move
+    img.src = f.src; img.alt = f.title; img.style.setProperty('--t', (film.seconds + 1.2) + 's');
+    img.classList.add('mv-' + (f.move || 'still'));
+    layers.forEach(l => l.classList.toggle('on', l === L));
+    card.classList.remove('on');
+    sub.classList.remove('on'); void sub.offsetWidth;
+    sub.querySelector('b').textContent = f.title;
+    sub.querySelector('span').textContent = f.words ? '“' + f.words + '”' : (f.about || '');
+    sub.classList.add('on');
+  }
+  // run step `at`: show it, then move on after its time (the last step, "The End", stays)
+  function run() {
+    const s = steps[at];
+    if (s.kind === 'title') showCard(film.title, film.tagline, false);
+    else if (s.kind === 'end') showCard('The End', film.title, true);
+    else { showFrame(film.frames[s.i]); const nx = film.frames[s.i + 1]; if (nx) new Image().src = nx.src; }
+    stepStart = performance.now(); arm(s.ms); requestAnimationFrame(tick);
+  }
+  function arm(ms) { clearTimeout(timer); if (at < steps.length - 1) timer = setTimeout(() => { at++; run(); }, ms); }
+  function tick() {
+    if (!dlg.open || !film) return;
+    const before = steps.slice(0, at).reduce((a, s) => a + s.ms, 0);
+    const inStep = Math.min(steps[at].ms, (paused() ? pausedAt : performance.now()) - stepStart);
+    bar.style.width = (total ? Math.min(100, (before + inStep) / total * 100) : 100) + '%';
+    if (at < steps.length - 1) requestAnimationFrame(tick);
+  }
+  function play(f) {
+    film = f; flip = 0; at = 0;
+    steps = [{ kind: 'title', ms: 3200 }, ...f.frames.map((_, i) => ({ kind: 'frame', i, ms: f.seconds * 1000 })), { kind: 'end', ms: 0 }];
+    total = steps.reduce((a, s) => a + s.ms, 0);
+    dlg.classList.remove('paused'); pauseBtn.textContent = '❚❚ Pause';
+    if (!dlg.open) { dlg.showModal(); dlg.requestFullscreen?.().catch(() => {}); }
+    run();
+  }
+  function togglePause() {
+    if (!film || at >= steps.length - 1) return;
+    const now = performance.now();
+    if (!paused()) { dlg.classList.add('paused'); pausedAt = now; clearTimeout(timer); pauseBtn.textContent = '▶ Play'; }
+    else {
+      dlg.classList.remove('paused'); stepStart += now - pausedAt; pauseBtn.textContent = '❚❚ Pause';
+      arm(Math.max(0, steps[at].ms - (now - stepStart))); requestAnimationFrame(tick);
+    }
+  }
+  function step(d) {
+    if (!film) return;
+    at = Math.min(steps.length - 1, Math.max(0, at + d));
+    dlg.classList.remove('paused'); pauseBtn.textContent = '❚❚ Pause'; run();
+  }
+  document.querySelectorAll('[data-film]').forEach(b => b.addEventListener('click', () => {
+    play(JSON.parse(document.getElementById(b.dataset.film).textContent));
+  }));
+  pauseBtn.addEventListener('click', togglePause);
+  dlg.querySelector('[data-cclose]').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('close', () => { clearTimeout(timer); film = null; if (document.fullscreenElement) document.exitFullscreen(); });
+  document.addEventListener('keydown', e => {
+    if (!dlg.open) return;
+    if (e.key === ' ') { e.preventDefault(); togglePause(); }
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft') step(-1);
+  });
+  // choosing a story series in the filters offers its film
+  document.querySelectorAll('[data-filter="series"]').forEach(b => b.addEventListener('click', () => setTimeout(() => {
+    const note = document.getElementById('studio-series-note'); if (!note) return;
+    const fb = [...document.querySelectorAll('[data-film]')].find(x =>
+      JSON.parse(document.getElementById(x.dataset.film).textContent).series === b.dataset.name);
+    if (!fb) return;
+    const w = document.createElement('button'); w.type = 'button'; w.textContent = '🎬 Watch it as a film';
+    w.style.cssText = 'margin-left:.6rem;border:0;border-radius:999px;padding:.2rem .8rem;font-weight:700;background:#7c3aed;color:#fff;cursor:pointer';
+    w.onclick = () => fb.click(); note.appendChild(w);
+  })));
+})();
+</script>
+{{ end }}

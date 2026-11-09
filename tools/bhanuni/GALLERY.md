@@ -52,6 +52,23 @@ Tips:
   file order.
 - **Hide** a drawing: `publish: false`. **Remove** it completely: delete its entry and its `art/<id>.jpg`.
 
+## Story films
+
+A series that tells a story can play as a short film (🎬 Story films on the page): an opening title card, each
+drawing with a slow camera move, dissolves between frames, the title and `about` (or `words`) as subtitles, and
+"The End". Films are listed in `data/bhanuni_stories.yaml`:
+
+```yaml
+- series: "The snack table"          # the series name, exactly as in data/bhanuni.yaml
+  title: "The Snack Table"           # the opening title card
+  tagline: "A chicken, two hungry brothers and three mice with a plan"
+  seconds: 5                         # time per frame
+  moves: [zoom-in, pan-right, shake, zoom-out]   # one per frame: zoom-in | zoom-out | pan-left | pan-right | shake | still
+```
+
+The frames play in the order the drawings appear in `data/bhanuni.yaml`. In the film, space pauses, the arrow keys
+step between frames, and Esc closes it.
+
 ## Add new drawings
 
 1. Put the photos or files in any folder (outside the repos).

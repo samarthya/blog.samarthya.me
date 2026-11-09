@@ -1,0 +1,16 @@
+# Story films: a series from data/bhanuni.yaml played as a short film on /bhanuni/.
+# Frames are the series' drawings in the order they appear in data/bhanuni.yaml.
+#
+#   series    the series name, exactly as in data/bhanuni.yaml
+#   title     shown on the opening title card
+#   tagline   the line under the title
+#   seconds   how long each frame stays on screen
+#   moves     one camera move per frame, in order:
+#             zoom-in | zoom-out | pan-left | pan-right | shake (for chaos) | still
+#             (missing entries repeat the pattern zoom-in, pan-right, pan-left, zoom-out)
+
+- series: "The snack table"
+  title: "The Snack Table"
+  tagline: "A chicken, two hungry brothers and three mice with a plan"
+  seconds: 5
+  moves: [zoom-in, pan-right, shake, zoom-out]
