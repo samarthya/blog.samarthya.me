@@ -31,7 +31,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "Sab Jholmaal hai, Vocaloids"
-  series: ""
+  series: "Sab Jholmaal hai"
   words: ""
   about: "Huny, Buny and Zordar and popat as Vocaloids. I drew this because I wanted to see how they would look as Vocaloids."
   featured: false
@@ -79,21 +79,21 @@
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony, KPop Demon Hunters"
-  series: ""
+  series: "My Little Pony"
   words: ""
   about: "Crossover of My Little Pony and KPop Demon Hunters. I drew this because I wanted to see how the ponies would look as Huntrix."
   featured: true
   publish: true
 
 - id: dkfyzb
-  title: "Rat-A-Tat goes Miraculous"
+  title: "Sab Jholmaal hai goes Miraculous"
   date: 2025-12-28
   medium: digital
   kind: fan-art
-  inspired_by: "Rat-A-Tat, Miraculous"
-  series: ""
+  inspired_by: "Sab Jholmaal hai, Miraculous"
+  series: "Sab Jholmaal hai"
   words: ""
-  about: ""
+  about: "The universe crossover of Sab Jholmaal hai and Miraculous. I drew this because I wanted to see how the Sab Jholmaal hai gang would look in the Miraculous universe."
   featured: false
   publish: true
 
@@ -103,45 +103,45 @@
   medium: digital
   kind: fan-art
   inspired_by: "The Powerpuff Girls"
-  series: ""
+  series: "Sab Jholmaal hai"
   words: ""
   about: "Sab Jholmal hai gang transformed into the Powerpuff Girls. I drew this because I wanted to see how they would look as the Powerpuff Girls."
   featured: true
   publish: true
 
 - id: 7ea4kq
-  title: "Salish as a pony"
+  title: "Salish Matter as a pony"
   date: 2026-03-29
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony"
-  series: "Pony friends"
+  series: "My Little Pony"
   words: ""
-  about: ""
+  about: "How would Salish Matter feature in the My Little Pony universe!"
   featured: false
   publish: true
 
 - id: wfyga6
-  title: "Sisters, as ponies"
+  title: "Neoni Sisters, as ponies"
   date: 2026-04-02
   medium: digital
   kind: original
   inspired_by: "My Little Pony"
-  series: "Sisters"
+  series: "Neoni Sisters"
   words: ""
-  about: ""
+  about: "My little Pony have the famous Neoni Ponies as well!"
   featured: false
   publish: true
 
 - id: 4z4xk3
-  title: "Chocobo"
+  title: "Chocobo, Final Fantasy"
   date: 2026-04-03
   medium: digital
   kind: fan-art
-  inspired_by: "Final Fantasy"
-  series: ""
+  inspired_by: "Chocobo, Final Fantasy"
+  series: "Nintendo and PlayStation"
   words: ""
-  about: ""
+  about: "Chobo GP GO! GO!"
   featured: false
   publish: true
 
@@ -150,22 +150,22 @@
   date: 2026-04-18
   medium: colour pencil
   kind: original
-  inspired_by: ""
-  series: ""
+  inspired_by: "Lord Buddha"
+  series: "Sacred drawings"
   words: ""
-  about: ""
+  about: "Lord Buddha! Buddham Sharnam Gachhami!"
   featured: true
   publish: true
 
 - id: 9xhcjh
-  title: "Sisters"
+  title: "Neoni Sisters"
   date: 2026-04-18
   medium: digital
   kind: original
-  inspired_by: ""
-  series: "Sisters"
+  inspired_by: "Neoni Sisters"
+  series: "Neoni Sisters"
   words: ""
-  about: ""
+  about: "I love the Neoni Sisters! I drew them in my own style."
   featured: false
   publish: true
 
@@ -174,10 +174,10 @@
   date: 2026-04-18
   medium: pencil
   kind: original
-  inspired_by: ""
-  series: ""
+  inspired_by: "Indian mythology"
+  series: "Sacred drawings"
   words: ""
-  about: ""
+  about: "Lord Ganesha! Ganapati Bappa Morya!"
   featured: true
   publish: true
 
@@ -187,9 +187,9 @@
   medium: digital
   kind: fan-art
   inspired_by: "The Baby-Sitters Club, My Little Pony"
-  series: ""
+  series: "My Little Pony"
   words: ""
-  about: ""
+  about: "This is the book I read"
   featured: false
   publish: true
 
@@ -199,7 +199,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony"
-  series: ""
+  series: "My Little Pony"
   words: ""
   about: ""
   featured: false
@@ -211,7 +211,7 @@
   medium: ink
   kind: original
   inspired_by: ""
-  series: ""
+  series: "Sacred drawings"
   words: ""
   about: ""
   featured: true
@@ -259,7 +259,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "Miraculous"
-  series: ""
+  series: "Miraculous"
   words: ""
   about: ""
   featured: false
@@ -283,7 +283,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "My Little Pony"
-  series: ""
+  series: "My Little Pony"
   words: ""
   about: ""
   featured: false
@@ -307,7 +307,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "Miraculous"
-  series: ""
+  series: "Miraculous"
   words: ""
   about: "My own character in a Miraculous storyline, at the moment the akuma takes hold and the glowing mask appears."
   featured: false
@@ -319,7 +319,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "Miraculous"
-  series: ""
+  series: "Miraculous"
   words: ""
   about: ""
   featured: false
@@ -331,7 +331,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "Sprunki"
-  series: ""
+  series: "Sprunki crew"
   words: ""
   about: ""
   featured: false
@@ -355,7 +355,7 @@
   medium: digital
   kind: fan-art
   inspired_by: "Gremlins, Sprunki"
-  series: ""
+  series: "Sprunki crew"
   words: ""
   about: ""
   featured: false

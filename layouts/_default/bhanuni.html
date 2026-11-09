@@ -6,6 +6,10 @@
 {{ $all := where (hugo.Data.bhanuni | default slice) "publish" true }}
 {{ $art := sort $all "date" "desc" }}
 {{ $fav := where $art "featured" true }}
+{{ $series := slice }}
+{{ $names := slice }}{{ range $art }}{{ with .series }}{{ $names = $names | append . }}{{ end }}{{ end }}
+{{ range uniq $names }}{{ $series = $series | append (dict "name" . "n" (len (where $art "series" .))) }}{{ end }}
+{{ $series = sort $series "n" "desc" }}
 {{ $first := "" }}{{ with last 1 $art }}{{ $first = (index . 0).date }}{{ end }}
 <style>
   .studio { --ink:#1f2937; --soft:#6b7280; --card:#ffffff; --edge:#f3d9a4; --chip:#fff7ed; --chipOn:#f97316;
@@ -69,6 +73,16 @@
   .tile .t { display: block; font-weight: 700; line-height: 1.25; }
   .tile .m { display: block; color: var(--soft); font-size: .82rem; margin-top: .15rem; }
   .tile .about { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .tile .badge { display: inline-block; font-size: .72rem; font-weight: 700; color: #7c3aed; background: #ede9fe;
+                 border-radius: 999px; padding: .05rem .5rem; margin-bottom: .3rem; }
+  .dark .tile .badge { color: #ddd6fe; background: #4c1d95; }
+  .deck .tile .badge { display: none; }
+  .studio-bar.series { margin-top: -.25rem; }
+  .studio-bar.series .lbl { font-weight: 700; color: var(--soft); font-size: .9rem; margin-right: .25rem; }
+  .studio-bar.series button { font-size: .85rem; padding: .25rem .75rem; }
+  .studio-bar.series button .n { opacity: .7; font-weight: 500; }
+  .studio-bar.series button[aria-pressed="true"] { background: #7c3aed; border-color: #7c3aed; }
+  .series-note { color: var(--soft); margin: -.25rem 0 1rem; font-size: .95rem; }
   .tile[hidden] { display: none; }
   .studio .foot { color: var(--soft); font-size: .9rem; margin-top: 2rem; text-align: center; }
   /* viewer */
@@ -133,6 +147,14 @@
     <button type="button" data-filter="paper" aria-pressed="false">On paper</button>
     <button type="button" class="play" data-play>▶ Slide show</button>
   </div>
+  {{ with $series }}
+  <div class="studio-bar series" role="group" aria-label="Series">
+    <span class="lbl">📚 Series</span>
+    {{ range . }}<button type="button" data-filter="series" data-name="{{ .name }}" aria-pressed="false">{{ .name }} <span class="n">{{ .n }}</span></button>
+    {{ end }}
+  </div>
+  <p class="series-note" id="studio-series-note" hidden></p>
+  {{ end }}
   <div class="gallery" id="studio-grid">
     {{ range $art }}{{ partial "bhanuni-card" (dict "page" $page "a" . "group" "grid") }}{{ end }}
   </div>
@@ -157,6 +179,10 @@
   const T = id => document.getElementById(id);
   let list = [], pos = 0, timer = null;
   const visible = () => [...grid.querySelectorAll('.tile:not([hidden])')];
+  const gridOrder = [...grid.querySelectorAll('.tile')];
+  // a series reads oldest first; same-date drawings keep their file order (stories in frames)
+  const inSeries = name => gridOrder.filter(t => t.dataset.series === name)
+    .map((t, i) => [t, i]).sort((a, b) => a[0].dataset.date.localeCompare(b[0].dataset.date) || a[1] - b[1]).map(x => x[0]);
   function show(i) {
     pos = (i + list.length) % list.length;
     const d = list[pos].dataset;
@@ -164,7 +190,9 @@
     T('studio-t').textContent = d.title;
     T('studio-w').textContent = d.words ? '“' + d.words + '”' : '';
     T('studio-a').textContent = d.about || '';
-    T('studio-m').textContent = d.meta + '  ·  ' + (pos + 1) + ' of ' + list.length;
+    let where = (pos + 1) + ' of ' + list.length;
+    if (d.series) { const s = inSeries(d.series); where = d.series + ' ' + (s.indexOf(list[pos]) + 1) + ' of ' + s.length + '  ·  ' + where; }
+    T('studio-m').textContent = d.meta + '  ·  ' + where;
     history.replaceState(null, '', '#' + d.id);   // a link to this one drawing
   }
   function stop() { clearInterval(timer); timer = null; dlg.classList.remove('playing'); dlg.querySelector('[data-toggle]').textContent = '▶ Play'; }
@@ -225,10 +253,19 @@
   });
   document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => {
     document.querySelectorAll('[data-filter]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-    const f = b.dataset.filter;
+    const f = b.dataset.filter, name = b.dataset.name;
+    // a series is shown in story order (oldest first); everything else newest first
+    (f === 'series' ? [...inSeries(name), ...gridOrder.filter(t => t.dataset.series !== name)] : gridOrder)
+      .forEach(t => grid.appendChild(t));
     grid.querySelectorAll('.tile').forEach(t => {
-      t.hidden = !(f === 'all' || t.dataset.kind === f || (f === 'paper' && t.dataset.medium !== 'digital'));
+      t.hidden = !(f === 'all' || (f === 'series' ? t.dataset.series === name : t.dataset.kind === f)
+                   || (f === 'paper' && t.dataset.medium !== 'digital'));
     });
+    const note = document.getElementById('studio-series-note');
+    if (note) {
+      note.hidden = f !== 'series';
+      if (f === 'series') note.textContent = name + ': ' + inSeries(name).length + ' drawings, oldest first.';
+    }
   }));
 })();
 </script>

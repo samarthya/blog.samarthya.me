@@ -42,6 +42,11 @@ Tips:
 - She is the artist, so everything shown on the page speaks as her, in the first person ("my", "I"):
   `words` is a line she says about the drawing (shown in quotes), `about` is the story behind it
   ("My take on ...", not "Her take on ...").
+- **Series** group drawings that belong together. Each series gets a 📚 chip under the filters (biggest first),
+  a badge on its cards, and "2 of 4" in the viewer; choosing a series shows it oldest first. The name must match
+  exactly ("Sab Jholmaal hai", not "Sab Jholmal hai"). In use: Sprunki crew, The snack table, Wenda and Gray,
+  My Little Pony, Pony friends, Miraculous, Sacred drawings, Sab Jholmaal hai, Sisters. Leave `series: ""` for a
+  one-off.
 - **Stories in frames** (like "The snack table"): give each frame the same `series`, number the titles
   ("..., 1", "..., 2"), and keep the entries in story order in the file. Drawings with the same date are shown in
   file order.
