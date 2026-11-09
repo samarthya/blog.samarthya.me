@@ -1,0 +1,64 @@
+{{/* /bhanuni/ (content/bhanuni/index.md, layout: bhanuni): holding page that bhanuni.in redirects to
+   until the gallery has its own site. Self-contained styles; no photos, first name only. */}}
+{{ define "main" }}
+<style>
+  .studio { --ink:#1f2937; --soft:#6b7280; --card:#fffaf0; --edge:#f3d9a4;
+            max-width: 44rem; margin: 0 auto; text-align: center; color: var(--ink); }
+  .dark .studio { --ink:#f3f4f6; --soft:#cbd5e1; --card:#1f2937; --edge:#475569; }
+  .studio h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 800; line-height: 1.15; margin: .75rem 0 .5rem; }
+  .studio .sub { color: var(--soft); font-size: 1.15rem; margin: 0 0 1.5rem; }
+  .studio svg { width: 100%; height: auto; max-width: 560px; }
+  .studio .note { margin: 1.5rem auto 0; padding: 1rem 1.25rem; max-width: 32rem; border-radius: 14px;
+                  background: var(--card); border: 2px dashed var(--edge); font-size: 1.05rem; }
+  .studio .wiggle { transform-origin: 300px 330px; animation: wig 3s ease-in-out infinite; }
+  @keyframes wig { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+  @media (prefers-reduced-motion: reduce) { .studio .wiggle { animation: none; } }
+</style>
+<article class="studio">
+  <svg viewBox="0 0 600 420" role="img" aria-labelledby="studio-t">
+    <title id="studio-t">An easel holding a sheet of paper with a half-drawn sun, a house and the words "coming soon", with crayons and a paint palette beside it</title>
+    <defs>
+      <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="2" fill="#f59e0b" opacity=".18"/>
+      </pattern>
+    </defs>
+    <rect width="600" height="420" rx="24" fill="url(#dots)"/>
+    <!-- easel -->
+    <g stroke="#a16207" stroke-width="12" stroke-linecap="round">
+      <line x1="300" y1="40" x2="190" y2="400"/><line x1="300" y1="40" x2="410" y2="400"/>
+      <line x1="300" y1="60" x2="300" y2="390"/>
+    </g>
+    <rect x="160" y="300" width="280" height="16" rx="6" fill="#854d0e"/>
+    <!-- paper -->
+    <g class="wiggle">
+      <rect x="175" y="70" width="250" height="230" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="3"/>
+      <circle cx="225" cy="120" r="24" fill="#fde047"/>
+      <g stroke="#facc15" stroke-width="5" stroke-linecap="round">
+        <line x1="225" y1="84" x2="225" y2="72"/><line x1="261" y1="120" x2="273" y2="120"/>
+        <line x1="250" y1="95" x2="259" y2="86"/><line x1="250" y1="145" x2="259" y2="154" stroke-dasharray="4 6"/>
+      </g>
+      <path d="M300 205 l45 -40 l45 40 z" fill="#f87171"/>
+      <rect x="312" y="205" width="66" height="50" fill="#93c5fd"/>
+      <rect x="337" y="225" width="16" height="30" fill="#1d4ed8"/>
+      <path d="M190 262 q40 -18 80 0 t80 0" fill="none" stroke="#4ade80" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8"/>
+      <text x="300" y="288" text-anchor="middle" font-family="Comic Sans MS, Segoe Print, Chalkboard, cursive"
+            font-size="22" fill="#7c3aed">coming soon…</text>
+    </g>
+    <!-- crayons -->
+    <g transform="translate(455 330) rotate(-20)">
+      <rect width="90" height="16" rx="4" fill="#ef4444"/><path d="M90 0 l16 8 l-16 8 z" fill="#b91c1c"/>
+      <rect y="24" width="90" height="16" rx="4" fill="#3b82f6"/><path d="M90 24 l16 8 l-16 8 z" fill="#1d4ed8"/>
+      <rect y="48" width="90" height="16" rx="4" fill="#22c55e"/><path d="M90 48 l16 8 l-16 8 z" fill="#15803d"/>
+    </g>
+    <!-- palette -->
+    <g transform="translate(40 300)">
+      <path d="M60 0 C110 0 130 40 110 60 C95 75 70 60 60 80 C50 100 0 95 0 55 C0 20 25 0 60 0 z" fill="#fcd34d" stroke="#b45309" stroke-width="3"/>
+      <circle cx="35" cy="30" r="9" fill="#ef4444"/><circle cx="65" cy="20" r="9" fill="#3b82f6"/>
+      <circle cx="92" cy="38" r="9" fill="#22c55e"/><circle cx="28" cy="62" r="9" fill="#a855f7"/>
+    </g>
+  </svg>
+  <h1>{{ .Title }}</h1>
+  <p class="sub">{{ .Description }}</p>
+  <div class="note">{{ .Content }}</div>
+</article>
+{{ end }}
