@@ -67,6 +67,7 @@ def yaml_entry(i, d):
             f"  inspired_by: \"\"\n"
             f"  series: \"\"\n"
             f"  words: \"\"\n"
+            f"  about: \"\"\n"
             f"  featured: false\n"
             f"  publish: false\n")
 

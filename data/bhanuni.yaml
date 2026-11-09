@@ -8,6 +8,7 @@
 #   inspired_by  for fan art: the show, game or book it comes from
 #   series       pictures that belong together share a series name (shown in order of date)
 #   words        one line in her own words (shown under the picture)
+#   about        optional note on what is happening in it, e.g. a frame of a story (shown in the viewer)
 #   featured     true: shown in the "favourites" row at the top
 #   publish      true once she says it can go up; false keeps it off the site
 
@@ -19,6 +20,7 @@
   inspired_by: "Rat-A-Tat"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -30,6 +32,7 @@
   inspired_by: "Rat-A-Tat"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -41,6 +44,7 @@
   inspired_by: "Rat-A-Tat"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -52,6 +56,7 @@
   inspired_by: "Hatsune Miku"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -63,6 +68,7 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -74,6 +80,7 @@
   inspired_by: "My Little Pony, KPop Demon Hunters"
   series: ""
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -85,6 +92,7 @@
   inspired_by: "Rat-A-Tat, Miraculous"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -96,6 +104,7 @@
   inspired_by: "Rat-A-Tat, The Powerpuff Girls"
   series: ""
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -107,6 +116,7 @@
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -118,6 +128,7 @@
   inspired_by: "My Little Pony"
   series: "Sisters"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -129,6 +140,7 @@
   inspired_by: "Final Fantasy"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -140,6 +152,7 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -151,6 +164,7 @@
   inspired_by: ""
   series: "Sisters"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -162,6 +176,7 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -173,6 +188,7 @@
   inspired_by: "The Baby-Sitters Club, My Little Pony"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -184,6 +200,7 @@
   inspired_by: "My Little Pony"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -195,6 +212,7 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -206,6 +224,7 @@
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -217,6 +236,7 @@
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -228,6 +248,7 @@
   inspired_by: "My Little Pony"
   series: "Pony friends"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -239,6 +260,7 @@
   inspired_by: "Miraculous"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -250,6 +272,7 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -261,6 +284,7 @@
   inspired_by: "My Little Pony"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -272,17 +296,19 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
 - id: hnzxzv
-  title: "The glowing mask"
+  title: "Akumatized!"
   date: 2026-06-01
   medium: digital
-  kind: original
-  inspired_by: ""
+  kind: fan-art
+  inspired_by: "Miraculous"
   series: ""
   words: ""
+  about: "Her own character in a Miraculous storyline, at the moment the akuma takes hold and the glowing mask appears."
   featured: false
   publish: true
 
@@ -294,6 +320,7 @@
   inspired_by: "Miraculous"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -305,6 +332,7 @@
   inspired_by: "Sprunki"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -316,6 +344,7 @@
   inspired_by: ""
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -327,6 +356,7 @@
   inspired_by: "Gremlins, Sprunki"
   series: ""
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -338,6 +368,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -349,6 +380,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -360,6 +392,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -371,6 +404,7 @@
   inspired_by: "Sprunki, Wednesday"
   series: "Wenda and Gray"
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -382,6 +416,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
+  about: ""
   featured: true
   publish: true
 
@@ -393,6 +428,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -404,6 +440,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -415,6 +452,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -426,6 +464,7 @@
   inspired_by: "Rat-A-Tat, Sprunki"
   series: "Sprunki crew"
   words: ""
+  about: ""
   featured: false
   publish: true
 
@@ -437,6 +476,7 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
+  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 1: Colonel and Larry sit down to a bucket of fried chicken."
   featured: false
   publish: true
 
@@ -448,6 +488,7 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
+  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 2: the mice turn up at the table."
   featured: false
   publish: true
 
@@ -459,6 +500,7 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
+  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 3: a scuffle, and the bucket vanishes in a cloud of scribbles."
   featured: false
   publish: true
 
@@ -470,5 +512,6 @@
   inspired_by: "Rat-A-Tat"
   series: "The snack table"
   words: ""
+  about: "Her take on an anecdote, told in four frames: the mice steal the chicken. 4: the mice make off with the chicken while Colonel and Larry stare."
   featured: false
   publish: true

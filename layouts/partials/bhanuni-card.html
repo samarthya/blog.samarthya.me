@@ -10,12 +10,13 @@
   {{ $title := $a.title | default "Untitled" }}
   {{ $alt := printf "%s, a %s drawing%s" $title $a.medium (cond (ne $a.inspired_by "") (printf " of characters from %s" $a.inspired_by) "") }}
   <button type="button" class="tile" data-id="{{ $a.id }}" data-kind="{{ $a.kind }}" data-medium="{{ $a.medium }}"
-          data-big="{{ $big.RelPermalink }}" data-title="{{ $title }}" data-words="{{ $a.words }}"
+          data-big="{{ $big.RelPermalink }}" data-title="{{ $title }}" data-words="{{ $a.words }}" data-about="{{ $a.about }}"
           data-meta="{{ $meta }}" data-alt="{{ $alt }}">
     <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $alt }}"
          loading="lazy" decoding="async">
     <span class="cap"><span class="t">{{ $title }}</span><span class="m">{{ $meta }}</span>
-      {{ with $a.words }}<span class="m">“{{ . }}”</span>{{ end }}</span>
+      {{ with $a.words }}<span class="m">“{{ . }}”</span>{{ end }}
+      {{ with $a.about }}<span class="m about">{{ . }}</span>{{ end }}</span>
   </button>
 {{ else }}
   {{ warnf "bhanuni: no image content/bhanuni/art/%s.jpg for %q" $a.id $a.title }}
