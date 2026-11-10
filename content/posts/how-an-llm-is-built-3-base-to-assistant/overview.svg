@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Post-training Kimi K2 in four columns. Fine-tuning: 3,000+ real MCP tools and 20,000+ synthetic tools, thousands of agents and tasks, an LLM judge with rubrics, tens of thousands of worked examples. Reinforcement learning: a try, grade, update loop with verifiable rewards (10,000+ sandboxes) and self-critique rubrics, guarded by a token budget, PTX loss and temperature decay. Evaluation: SWE-bench Verified 65.8, GPQA-Diamond 75.1, ACEBench 76.5, LiveCodeBench v6 53.7, AIME 2025 49.5. Release: base and instruct checkpoints in block-FP8, about 1 TB, modified MIT licence, served with vLLM, SGLang, KTransformers or TensorRT-LLM.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.55"><stop offset="0" stop-color="#a78bfa" stop-opacity="0.22"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="vglow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#a78bfa" flood-opacity="0.7"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="70" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">HOW AN LLM IS BUILT · 3</text>
+  <text x="60" y="120" fill="#ffffff" font-size="46" font-weight="800">From base model to assistant</text>
+  <text x="60" y="156" fill="#cbd5e1" font-size="21">Show it, let it practise, grade it, measure it, ship it</text>
+<rect x="60" y="190" width="252" height="410" rx="14" fill="url(#card)" stroke="#a78bfa" stroke-width="1" filter="url(#shadow)"/>
+  <text x="78" y="220" fill="#a78bfa" font-size="14" font-weight="800" text-anchor="start">6 · FINE-TUNING</text>
+  <line x1="314" y1="395.0" x2="334" y2="395.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="336" y="190" width="252" height="410" rx="14" fill="url(#card)" stroke="#22d3ee" stroke-width="1" filter="url(#shadow)"/>
+  <text x="354" y="220" fill="#22d3ee" font-size="14" font-weight="800" text-anchor="start">7 · REINFORCEMENT</text>
+  <line x1="590" y1="395.0" x2="610" y2="395.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="612" y="190" width="252" height="410" rx="14" fill="url(#card)" stroke="#f97316" stroke-width="1" filter="url(#shadow)"/>
+  <text x="630" y="220" fill="#f97316" font-size="14" font-weight="800" text-anchor="start">8 · EVALUATION</text>
+  <line x1="866" y1="395.0" x2="886" y2="395.0" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="888" y="190" width="252" height="410" rx="14" fill="url(#card)" stroke="#22c55e" stroke-width="1" filter="url(#shadow)"/>
+  <text x="906" y="220" fill="#22c55e" font-size="14" font-weight="800" text-anchor="start">9 · RELEASE</text>
+  <rect x="78" y="240" width="216" height="54" rx="10" fill="#a78bfa" fill-opacity="0.1" stroke="#a78bfa" stroke-opacity="0.6"/>
+  <text x="92" y="264" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">3,000+</text><text x="92" y="284" fill="#ddd6fe" font-size="13" font-weight="400" text-anchor="start">real MCP tools</text>
+  <rect x="87" y="306" width="198" height="54" rx="10" fill="#a78bfa" fill-opacity="0.15000000000000002" stroke="#a78bfa" stroke-opacity="0.6"/>
+  <text x="101" y="330" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">20,000+</text><text x="101" y="350" fill="#ddd6fe" font-size="13" font-weight="400" text-anchor="start">synthetic tools</text>
+  <rect x="96" y="372" width="180" height="54" rx="10" fill="#a78bfa" fill-opacity="0.2" stroke="#a78bfa" stroke-opacity="0.6"/>
+  <text x="110" y="396" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">1000s</text><text x="110" y="416" fill="#ddd6fe" font-size="13" font-weight="400" text-anchor="start">agents + tasks</text>
+  <rect x="105" y="438" width="162" height="54" rx="10" fill="#a78bfa" fill-opacity="0.25" stroke="#a78bfa" stroke-opacity="0.6"/>
+  <text x="119" y="462" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">rubric</text><text x="119" y="482" fill="#ddd6fe" font-size="13" font-weight="400" text-anchor="start">LLM judge keeps</text>
+  <rect x="114" y="504" width="144" height="54" rx="10" fill="#a78bfa" fill-opacity="0.30000000000000004" stroke="#a78bfa" stroke-opacity="0.6"/>
+  <text x="128" y="528" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">10,000s</text><text x="128" y="548" fill="#ddd6fe" font-size="13" font-weight="400" text-anchor="start">worked examples</text>
+  <circle cx="462.0" cy="330" r="62" fill="none" stroke="#22d3ee" stroke-width="3" stroke-dasharray="5 7"/>
+  <rect x="428.0" y="254" width="68" height="28" rx="14" fill="#0b1020" stroke="#22d3ee"/><text x="462.0" y="273" fill="#a5f3fc" font-size="13" font-weight="700" text-anchor="middle">try</text>
+  <rect x="482.0" y="347" width="68" height="28" rx="14" fill="#0b1020" stroke="#22d3ee"/><text x="516.0" y="366" fill="#a5f3fc" font-size="13" font-weight="700" text-anchor="middle">grade</text>
+  <rect x="374.0" y="347" width="68" height="28" rx="14" fill="#0b1020" stroke="#22d3ee"/><text x="408.0" y="366" fill="#a5f3fc" font-size="13" font-weight="700" text-anchor="middle">update</text>
+  <text x="354" y="442" fill="#e2e8f0" font-size="13" font-weight="400" text-anchor="start">Verifiable: tests, maths, format</text><text x="354" y="462" fill="#22d3ee" font-size="13" font-weight="700" text-anchor="start">10,000+ sandboxes at once</text>
+  <text x="354" y="490" fill="#e2e8f0" font-size="13" font-weight="400" text-anchor="start">Rubrics: self-critique</text><text x="354" y="510" fill="#22d3ee" font-size="13" font-weight="700" text-anchor="start">no “Good question!”</text>
+  <rect x="354" y="530" width="104" height="24" rx="12" fill="#fca5a5" fill-opacity="0.18" stroke="#fca5a5"/><text x="406.0" y="547" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">token budget</text><rect x="464" y="530" width="106" height="24" rx="12" fill="#fca5a5" fill-opacity="0.18" stroke="#fca5a5"/><text x="517.0" y="547" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">PTX loss</text>
+  <rect x="354" y="562" width="216" height="24" rx="12" fill="#fca5a5" fill-opacity="0.18" stroke="#fca5a5"/><text x="462.0" y="579" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">temperature decay</text>
+  <text x="630" y="248" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">SWE-bench Verified</text>
+  <rect x="630" y="256" width="170" height="16" rx="4" fill="#334155"/><rect x="630" y="256" width="112" height="16" rx="4" fill="#f97316"/>
+  <text x="808" y="270" fill="#fdba74" font-size="14" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">65.8</text>
+  <text x="630" y="310" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">GPQA-Diamond</text>
+  <rect x="630" y="318" width="170" height="16" rx="4" fill="#334155"/><rect x="630" y="318" width="128" height="16" rx="4" fill="#f97316"/>
+  <text x="808" y="332" fill="#fdba74" font-size="14" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">75.1</text>
+  <text x="630" y="372" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">ACEBench</text>
+  <rect x="630" y="380" width="170" height="16" rx="4" fill="#334155"/><rect x="630" y="380" width="130" height="16" rx="4" fill="#f97316"/>
+  <text x="808" y="394" fill="#fdba74" font-size="14" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">76.5</text>
+  <text x="630" y="434" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">LiveCodeBench v6</text>
+  <rect x="630" y="442" width="170" height="16" rx="4" fill="#334155"/><rect x="630" y="442" width="91" height="16" rx="4" fill="#f97316"/>
+  <text x="808" y="456" fill="#fdba74" font-size="14" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">53.7</text>
+  <text x="630" y="496" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">AIME 2025</text>
+  <rect x="630" y="504" width="170" height="16" rx="4" fill="#334155"/><rect x="630" y="504" width="84" height="16" rx="4" fill="#f97316"/>
+  <text x="808" y="518" fill="#fdba74" font-size="14" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace">49.5</text>
+  <text x="630" y="568" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">weak spots: too many tokens,</text><text x="630" y="586" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">unneeded tool calls</text>
+  <text x="906" y="254" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start">Base + Instruct</text>
+  <text x="906" y="274" fill="#86efac" font-size="13" font-weight="400" text-anchor="start">both checkpoints</text>
+  <text x="906" y="310" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start">block-FP8</text>
+  <text x="906" y="330" fill="#86efac" font-size="13" font-weight="400" text-anchor="start">≈ 1 byte / parameter</text>
+  <text x="906" y="366" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start">≈ 1 TB</text>
+  <text x="906" y="386" fill="#86efac" font-size="13" font-weight="400" text-anchor="start">≥ 13 × 80 GB GPUs</text>
+  <text x="906" y="422" fill="#ffffff" font-size="17" font-weight="800" text-anchor="start">modified MIT</text>
+  <text x="906" y="442" fill="#86efac" font-size="13" font-weight="400" text-anchor="start">big products must show “Kimi K2”</text>
+  <text x="906" y="462" fill="#86efac" font-size="13" font-weight="400" text-anchor="start">(100M users or $20M a month)</text>
+  <text x="906" y="530" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace">vLLM · SGLang</text><text x="906" y="550" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace">KTransformers · TensorRT-LLM</text>
+  <text x="906" y="582" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">temperature 0.6</text>
+</svg>
