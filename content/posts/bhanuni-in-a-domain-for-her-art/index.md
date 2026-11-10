@@ -260,10 +260,10 @@ receiving mail servers what to do with such mail.
 
 | Term | What it means |
 |---|---|
-| **SPF** (`v=spf1 …`) | A TXT record listing which servers may send mail for the domain. |
+| **SPF** (`v=spf1 …`) | A TXT record listing which servers may send mail for the domain. ( **S**ender **P**olicy **F**ramework) |
 | **`-all`** | The last word of the SPF list: `all` matches every other sender and `-` means [*fail*](https://www.rfc-editor.org/rfc/rfc7208.html#section-2.6.4), an explicit "not authorised". `v=spf1 -all` therefore reads "nobody may send mail as me". (`~all`, *softfail*, is only a weak hint.) |
-| **DKIM** | A signature a sending server adds to each message, checked against a public key in DNS. An empty key says "nothing I send is signed". |
-| **DMARC** (`_dmarc` TXT) | Ties SPF and DKIM together and tells receivers what to do when both checks fail. |
+| **DKIM** | A signature a sending server adds to each message, checked against a public key in DNS. An empty key says "nothing I send is signed". (**D**omain**K**eys **I**dentified **M**ail)|
+| **DMARC** (`_dmarc` TXT) | Ties SPF and DKIM together and tells receivers what to do when both checks fail. (Domain-based Message Authentication Reporting and Conformance) |
 | **`p=`** | The DMARC policy: [`none`](https://www.rfc-editor.org/rfc/rfc7489.html#section-6.3) (just watch), `quarantine` (treat as suspicious, e.g. spam folder) or `reject` (refuse it outright). `p=reject` is the strongest. |
 | **`sp=`** | The same policy for subdomains (`anything.bhanuni.in`). Without it, subdomains follow `p=`. |
 | **`rua=`** | Optional: an address that receives daily summary reports. Not used here. |
