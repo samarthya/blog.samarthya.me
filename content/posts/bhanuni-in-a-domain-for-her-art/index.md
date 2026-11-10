@@ -16,7 +16,7 @@ In 2019 I booked a domain in my daughter's name, `bhanuni`, and then did nothing
 
 {{< alert "circle-info" >}}
 New to RDAP, SPF, DMARC or a proxied record? Every term in this post is explained in plain words in
-[Keywords](#keywords) at the end.
+[Keywords](/posts/bhanuni-in-a-domain-for-her-art/#keywords) at the end.
 {{< /alert >}}
 
 ## What I wanted
