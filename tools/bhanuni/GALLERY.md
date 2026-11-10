@@ -1,5 +1,7 @@
 # Bhanuni's Studio: how to update the gallery
 
+**Publishing a new drawing?** Follow [STUDIO.md](STUDIO.md) step by step. This page is the reference.
+
 The gallery lives at <https://samarthya.me/bhanuni/> (and <https://bhanuni.in> redirects there).
 
 | What | Where |
@@ -75,12 +77,12 @@ step between frames, and Esc closes it.
 2. Run:
 
    ```bash
-   python -I tools/bhanuni/import_art.py "<that folder>"
+   tools\bhanuni\.venv\Scripts\python -I tools\bhanuni\import_art.py "<that folder>"
    ```
 
    It gives each new picture a random id, straightens it, scales it to at most 1800 px, **removes all hidden data
    (GPS location, camera, dates)** and adds an entry at the end of `data/bhanuni.yaml` with `publish: false`.
-   Files it has seen before are skipped, so running it twice is safe. (It needs Pillow: `pip install pillow`.)
+   Files it has seen before are skipped, so running it twice is safe. (It uses the Python environment in `tools/bhanuni/.venv`; STUDIO.md says how to create it.)
 3. Fill in the new entries (title, medium, kind, ...) and set `publish: true` for the ones she wants to show.
 
 The list of original file names is kept only on this PC in `tools/bhanuni/ids.local.csv` (git-ignored).

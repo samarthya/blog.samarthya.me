@@ -67,3 +67,4 @@ __pycache__/
 
 # Bhanuni gallery: original file names stay local
 /tools/bhanuni/ids.local.csv
+/tools/bhanuni/.venv/

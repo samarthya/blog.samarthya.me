@@ -1,6 +1,8 @@
 """Import drawings for Bhanuni's Studio (/bhanuni/).
 
-    python -I tools/bhanuni/import_art.py <folder with drawings> [--dry-run]
+    tools/bhanuni/.venv/Scripts/python -I tools/bhanuni/import_art.py <folder with drawings> [--dry-run]
+
+(see tools/bhanuni/STUDIO.md for the whole publishing routine)
 
 For every image (jpg/jpeg/png/webp) in the folder that has not been imported before:
   * gives it a random 6-character id (e.g. "k7f2qa"), so file names say nothing about the picture
