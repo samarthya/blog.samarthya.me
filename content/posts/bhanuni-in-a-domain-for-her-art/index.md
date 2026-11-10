@@ -3,7 +3,7 @@ title: "bhanuni.in: a domain, a redirect and a gallery that keeps her safe"
 date: 2026-11-09T17:25:11-05:00
 description: "How a domain bought for my daughter became the front door to her drawing gallery: why a redirect beat a new server, the Cloudflare steps and traps, and what I strip from every picture before it goes online."
 categories: ["technical"]
-tags: ["cloudflare", "dns", "security", "personal"]
+tags: ["cloudflare", "dns", "security", "personal", "gallery"]
 featureimage: "feature.png"
 draft: false
 ---
