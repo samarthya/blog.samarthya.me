@@ -9,7 +9,7 @@ draft: false
 ---
 
 {{< lead >}}
-In 2019 I booked a domain in my daughter's name, `bhanuni`, and then did nothing with it for six years. It sat in a drawer like a gift card. She now draws every day (ponies, Sprunki, Rat-A-Tat, weekend sessions in pencil), so the domain finally has a job: it opens her gallery. This post is how I wired it up, why I picked the boring option, and the precautions I take before any of her pictures go online.
+In 2019 I booked a domain in my daughter's name, `bhanuni.in`, and then did nothing with it for almost six years. It sat in a drawer like a gift card. She now draws every day (digitally & otherwise) (ponies - MLP, Sprunki, Rat-A-Tat, Sab Jholmaal hai and weekend sessions as part of a group), so the domain finally has a job: it opens her gallery. This post is all about how I wired it up, why I picked the boring option, and the precautions I take before any of her pictures go online.
 {{< /lead >}}
 
 ![Two lanes. Top: a browser asks for bhanuni.in, Cloudflare answers for the proxied placeholder 192.0.2.1 and a redirect rule sends a 302 to samarthya.me/bhanuni/ on GitHub Pages. Bottom: a drawing goes through the importer, which gives it a random id, strips GPS and EXIF, fixes rotation and resizes it to 1800 px before Hugo publishes a WebP copy; 42 drawings imported, 2 had GPS removed.](overview.svg "The redirect, and the importer every drawing goes through")
