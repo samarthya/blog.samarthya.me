@@ -72,6 +72,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          # GitHub Pages can stay in "syncing_files" for over 10 minutes on larger publishes.
+          # Avoid action-level timeout/cancel for otherwise healthy deploys.
+          timeout: 1800000
 
   # Tell the portfolio (samarthya.github.io) to rebuild, so its "Latest Blog Posts" list picks up this deploy.
   # Its build reads https://samarthya.me/latest.json, which the CDN caches for up to 10 minutes, so wait until
