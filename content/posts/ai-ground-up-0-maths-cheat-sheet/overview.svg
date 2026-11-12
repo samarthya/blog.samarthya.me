@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Maths cheat sheet: a vector (3, 4) with count 2 and size 5; two arrows with angle theta and cosine as a·b over the sizes; a 2 by 2 matrix rotating an arrow 90 degrees; a ticket search where dot product picks a long off-topic ticket (6) but cosine picks the duplicate (0.87)</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.55"><stop offset="0" stop-color="#d946ef" stop-opacity="0.18"/><stop offset="1" stop-color="#d946ef" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ef4444" flood-opacity="0.8"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="70" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI FROM THE GROUND UP · 0</text>
+  <text x="60" y="120" fill="#ffffff" font-size="46" font-weight="800">A maths cheat sheet</text>
+  <text x="60" y="156" fill="#cbd5e1" font-size="21">Vectors, size, cosine and matrices, before the series begins</text>
+<rect x="60" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#a78bfa" filter="url(#shadow)"/><text x="78" y="214" fill="#a78bfa" font-size="14" font-weight="800" text-anchor="start">1 · VECTOR</text>
+  <rect x="335" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22d3ee" filter="url(#shadow)"/><text x="353" y="214" fill="#22d3ee" font-size="14" font-weight="800" text-anchor="start">2 · DOT &amp; COSINE</text>
+  <rect x="610" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#f97316" filter="url(#shadow)"/><text x="628" y="214" fill="#f97316" font-size="14" font-weight="800" text-anchor="start">3 · MATRIX</text>
+  <rect x="885" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22c55e" filter="url(#shadow)"/><text x="903" y="214" fill="#22c55e" font-size="14" font-weight="800" text-anchor="start">4 · REAL USE</text>
+  <path d="M110 401 H280 M110 401 V251" stroke="#475569" stroke-width="2"/>
+  <path d="M110 401 H200 V281" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <line x1="110" y1="401" x2="200" y2="281" stroke="#a78bfa" stroke-width="3.5" marker-end="url(#arr)"/>
+  <text x="208" y="279" fill="#c4b5fd" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">(3, 4)</text>
+  <text x="155" y="419" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="middle">3</text><text x="210" y="343" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">4</text>
+  <text x="120" y="331" fill="#ffffff" font-size="14" font-weight="800" text-anchor="start">5</text>
+  <text x="78" y="444" fill="#e2e8f0" font-size="13" font-weight="400" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">len(a) = 2   count</text>
+  <text x="78" y="466" fill="#c4b5fd" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">‖a‖ = √(3²+4²) = 5  size</text>
+  <line x1="375" y1="371" x2="461" y2="248" stroke="#22d3ee" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="467.0364654526569" y="248.12719335665122" fill="#22d3ee" font-size="15" font-weight="800" text-anchor="start">a</text>
+  <line x1="375" y1="371" x2="530" y2="315" stroke="#a78bfa" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="536.0492824296749" y="314.5666763512647" fill="#a78bfa" font-size="15" font-weight="800" text-anchor="start">b</text>
+  <path d="M420 355 A48 48 0 0 0 403 332" stroke="#fbbf24" stroke-width="2" fill="none"/>
+  <text x="429" y="345" fill="#fbbf24" font-size="15" font-weight="800" text-anchor="start">θ</text>
+  <text x="353" y="408" fill="#67e8f9" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">cos θ = a·b / (‖a‖ ‖b‖)</text>
+  <text x="353" y="432" fill="#cbd5e1" font-size="12" font-weight="400" text-anchor="start">1 same · 0 unrelated · −1 opposite</text>
+  <text x="353" y="456" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">divide out size, keep direction</text>
+  <text x="632" y="252" fill="#fdba74" font-size="13" font-weight="700" text-anchor="start">rotate 90°</text>
+  <text x="632" y="284" fill="#ffffff" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">⎡ 0  −1 ⎤</text>
+  <text x="632" y="308" fill="#ffffff" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">⎣ 1   0 ⎦</text>
+  <text x="744" y="296" fill="#94a3b8" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">@</text>
+  <text x="768" y="284" fill="#e2e8f0" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">⎡1⎤</text><text x="768" y="308" fill="#e2e8f0" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">⎣0⎦</text>
+  <text x="810" y="296" fill="#94a3b8" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">=</text>
+  <text x="828" y="284" fill="#f97316" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">⎡0⎤</text><text x="828" y="308" fill="#f97316" font-size="17" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">⎣1⎦</text>
+  <path d="M640 411 H790 M680 431 V316" stroke="#475569" stroke-width="2"/>
+  <line x1="680" y1="411" x2="760" y2="411" stroke="#94a3b8" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="680" y1="411" x2="680" y2="331" stroke="#f97316" stroke-width="3.5" marker-end="url(#arr)"/>
+  <path d="M730 411 A50 50 0 0 0 680 361" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+  <text x="628" y="456" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">one dot product per row</text>
+  <text x="903" y="242" fill="#86efac" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">query: "pod crash restart"</text>
+  <text x="903" y="272" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">ticket</text><text x="979" y="272" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">dot</text><text x="1037" y="272" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">cosine</text>
+  <text x="903" y="300" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">T-101</text><text x="979" y="300" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">3</text><text x="1037" y="300" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.87</text>
+  <rect x="903" y="308" width="210" height="6" rx="4" fill="#334155"/><rect x="903" y="308" width="182.7" height="6" rx="4" fill="#22c55e"/>
+  <text x="1121" y="300" fill="#94a3b8" font-size="11" font-weight="400" text-anchor="end">the duplicate</text>
+  <text x="903" y="344" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">T-102</text><text x="979" y="344" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">6</text><text x="1037" y="344" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.41</text>
+  <rect x="903" y="352" width="210" height="6" rx="4" fill="#334155"/><rect x="903" y="352" width="86.1" height="6" rx="4" fill="#ef4444"/>
+  <text x="1121" y="344" fill="#94a3b8" font-size="11" font-weight="400" text-anchor="end">long log dump</text>
+  <text x="903" y="388" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">T-103</text><text x="979" y="388" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">0</text><text x="1037" y="388" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.00</text>
+  <rect x="903" y="396" width="210" height="6" rx="4" fill="#334155"/><rect x="903" y="396" width="2.0" height="6" rx="4" fill="#64748b"/>
+  <text x="1121" y="388" fill="#94a3b8" font-size="11" font-weight="400" text-anchor="end">kafka lag</text>
+  <text x="903" y="448" fill="#ef4444" font-size="13" font-weight="700" text-anchor="start">dot picks T-102 (size)</text>
+  <text x="903" y="470" fill="#22c55e" font-size="13" font-weight="700" text-anchor="start">cosine picks T-101 (meaning)</text>
+  <text x="600" y="540" fill="#ffffff" font-size="22" font-weight="800" text-anchor="middle" font-family="Consolas, Menlo, monospace" xml:space="preserve">a · b = ‖a‖ × ‖b‖ × cos θ</text>
+  <text x="600" y="572" fill="#cbd5e1" font-size="15" font-weight="400" text-anchor="middle">normalise once, and the plain dot product is the cosine</text>
+</svg>
