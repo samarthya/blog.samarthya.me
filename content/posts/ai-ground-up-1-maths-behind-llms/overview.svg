@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>The four pieces of maths in an LLM. Vectors: cat and dog point the same way (similarity 0.99), node points elsewhere (0.12). Matrix multiplication: input times weights equals output, about 2 n cubed operations, one Kimi K2 expert layer is 7,168 by 2,048, about 14.7 million weights. Softmax: logits 6, 3.5 and 3 become probabilities 0.88, 0.07 and 0.04. Gradients: a ball rolls down a loss curve to w = 2, loss 30 to 0.02 in 10 steps. Below: attention, softmax of Q times K transposed over root d, times V; twice the context means four times the attention work.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.55"><stop offset="0" stop-color="#d946ef" stop-opacity="0.18"/><stop offset="1" stop-color="#d946ef" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ef4444" flood-opacity="0.8"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="70" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI FROM THE GROUND UP · 1</text>
+  <text x="60" y="120" fill="#ffffff" font-size="46" font-weight="800">The maths behind an LLM</text>
+  <text x="60" y="156" fill="#cbd5e1" font-size="21">Four ideas, repeated billions of times</text>
+<rect x="60" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#a78bfa" filter="url(#shadow)"/><text x="78" y="214" fill="#a78bfa" font-size="14" font-weight="800" text-anchor="start">1 · VECTORS</text>
+  <rect x="335" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22d3ee" filter="url(#shadow)"/><text x="353" y="214" fill="#22d3ee" font-size="14" font-weight="800" text-anchor="start">2 · MATRIX MULTIPLY</text>
+  <rect x="610" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#f97316" filter="url(#shadow)"/><text x="628" y="214" fill="#f97316" font-size="14" font-weight="800" text-anchor="start">3 · SOFTMAX</text>
+  <rect x="885" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22c55e" filter="url(#shadow)"/><text x="903" y="214" fill="#22c55e" font-size="14" font-weight="800" text-anchor="start">4 · GRADIENTS</text>
+  <path d="M100 416 H290 M100 416 V246" stroke="#475569" stroke-width="2"/>
+  <line x1="100" y1="416" x2="179" y2="289" stroke="#a78bfa" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="145.48788963498072" y="284.79278557653606" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="start">cat</text>
+  <line x1="100" y1="416" x2="192" y2="298" stroke="#a78bfa" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="202.34922129884876" y="305.7983869589917" fill="#a78bfa" font-size="13" font-weight="700" text-anchor="start">dog</text>
+  <line x1="100" y1="416" x2="258" y2="388" stroke="#ef4444" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="267.5692404819533" y="384.21629157329113" fill="#ef4444" font-size="13" font-weight="700" text-anchor="start">node</text>
+  <text x="78" y="448" fill="#c4b5fd" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">cat·dog 0.99   cat·node 0.12</text>
+  <text x="78" y="470" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">meaning = direction</text>
+  <rect x="357" y="246" width="17" height="17" rx="3" fill="#22d3ee" fill-opacity="0.25"/><rect x="377" y="246" width="17" height="17" rx="3" fill="#22d3ee" fill-opacity="0.55"/><rect x="397" y="246" width="17" height="17" rx="3" fill="#22d3ee" fill-opacity="0.35"/><rect x="417" y="246" width="17" height="17" rx="3" fill="#22d3ee" fill-opacity="0.65"/><text x="445" y="261" fill="#fff" font-size="20" font-weight="800" text-anchor="start">×</text>
+  <rect x="461" y="236" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.25"/><rect x="481" y="236" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.55"/><rect x="501" y="236" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.35"/><rect x="521" y="236" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.65"/><rect x="461" y="256" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.45"/><rect x="481" y="256" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.25"/><rect x="501" y="256" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.55"/><rect x="521" y="256" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.35"/><rect x="461" y="276" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.65"/><rect x="481" y="276" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.45"/><rect x="501" y="276" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.25"/><rect x="521" y="276" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.55"/><rect x="461" y="296" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.35"/><rect x="481" y="296" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.65"/><rect x="501" y="296" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.45"/><rect x="521" y="296" width="17" height="17" rx="3" fill="#a78bfa" fill-opacity="0.25"/><text x="549" y="281" fill="#fff" font-size="20" font-weight="800" text-anchor="start">=</text>
+  <rect x="565" y="246" width="17" height="17" rx="3" fill="#22c55e" fill-opacity="0.25"/>
+  <text x="353" y="354" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">input @ weights = output</text>
+  <text x="353" y="386" fill="#a5f3fc" font-size="13" font-weight="400" text-anchor="start">n×n by n×n ≈ 2·n³ operations</text>
+  <text x="353" y="408" fill="#a5f3fc" font-size="13" font-weight="400" text-anchor="start">double n → 8× the work</text>
+  <text x="353" y="448" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">one K2 expert layer:</text>
+  <text x="353" y="470" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">7,168 × 2,048 ≈ 14.7M weights</text>
+  <text x="628" y="246" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Paris</text>
+  <text x="628" y="268" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">logit 6</text>
+  <rect x="714" y="256" width="110" height="14" rx="4" fill="#334155"/><rect x="714" y="256" width="96.8" height="14" rx="4" fill="#f97316"/><text x="832" y="268" fill="#fdba74" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.88</text>
+  <text x="628" y="308" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">London</text>
+  <text x="628" y="330" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">logit 3.5</text>
+  <rect x="714" y="318" width="110" height="14" rx="4" fill="#334155"/><rect x="714" y="318" width="7.7" height="14" rx="4" fill="#f97316"/><text x="832" y="330" fill="#fdba74" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.07</text>
+  <text x="628" y="370" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">the</text>
+  <text x="628" y="392" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">logit 3</text>
+  <rect x="714" y="380" width="110" height="14" rx="4" fill="#334155"/><rect x="714" y="380" width="4.4" height="14" rx="4" fill="#f97316"/><text x="832" y="392" fill="#fdba74" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.04</text>
+  <text x="628" y="448" fill="#fdba74" font-size="14" font-weight="700" text-anchor="start">eˢᶜᵒʳᵉ ÷ total</text>
+  <text x="628" y="470" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">positive, and sums to 1</text>
+  <polyline points="915,235 917,240 919,245 921,250 923,254 925,259 927,264 929,268 931,272 933,277 935,281 937,285 939,289 941,293 943,297 945,301 947,305 949,308 951,312 953,315 955,319 957,322 959,325 961,329 963,332 965,335 967,337 969,340 971,343 973,346 975,348 977,351 979,353 981,355 983,358 985,360 987,362 989,364 991,366 993,367 995,369 997,371 999,372 1001,374 1003,375 1005,377 1007,378 1009,379 1011,380 1013,381 1015,382 1017,383 1019,383 1021,384 1023,384 1025,385 1027,385 1029,386 1031,386 1033,386 1035,386 1037,386 1039,386 1041,386 1043,385 1045,385 1047,384 1049,384 1051,383 1053,383 1055,382 1057,381 1059,380 1061,379 1063,378 1065,377 1067,375 1069,374 1071,372 1073,371 1075,369 1077,367 1079,366 1081,364 1083,362 1085,360 1087,358 1089,355 1091,353 1093,351 1095,348 1097,346 1099,343 1101,340 1103,337 1105,335 1107,332 1109,329 1111,325 1113,322 1115,319" fill="none" stroke="#22c55e" stroke-width="3"/>
+  <circle cx="915" cy="235" r="6" fill="#fde047" fill-opacity="0.4"/>
+  <circle cx="951" cy="312" r="7" fill="#fde047" fill-opacity="0.6000000000000001"/>
+  <circle cx="999" cy="372" r="8" fill="#fde047" fill-opacity="0.8"/>
+  <circle cx="1033" cy="386" r="9" fill="#fde047" fill-opacity="1.0"/>
+  <circle cx="1035" cy="386" r="10" fill="#fde047"/><text x="1035" y="366" fill="#fde047" font-size="13" font-weight="800" text-anchor="middle">w = 2</text>
+  <text x="903" y="414" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start">step against the slope</text>
+  <text x="903" y="436" fill="#86efac" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">loss 30 → 0.02 in 10 steps</text>
+  <text x="903" y="470" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">chain rule = backpropagation</text>
+  <rect x="60" y="506" width="1080" height="80" rx="14" fill="#0b1020" stroke="#d946ef" stroke-opacity="0.7"/>
+  <text x="84" y="540" fill="#f0abfc" font-size="13" font-weight="800" text-anchor="start">ATTENTION USES ALL FOUR</text>
+  <text x="84" y="570" fill="#ffffff" font-size="24" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">softmax( Q · Kᵀ / √d ) · V</text>
+  <text x="1116" y="540" fill="#cbd5e1" font-size="13" font-weight="400" text-anchor="end">every token compared with every token</text>
+  <text x="1116" y="568" fill="#fca5a5" font-size="15" font-weight="700" text-anchor="end">2× the context → 4× the attention work</text>
+</svg>
