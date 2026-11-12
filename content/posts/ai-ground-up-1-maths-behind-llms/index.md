@@ -1,6 +1,6 @@
 ---
 title: "AI from the ground up, part 1: the maths behind an LLM"
-date: 2026-11-11T22:42:00-05:00
+date: 2026-11-12T17:31:00-05:00
 description: "The four pieces of maths every large language model runs on (vectors, matrix multiplication, softmax and gradients), each explained in plain words with a few lines of Python you can run, and tied back to a real model."
 featureimage: "feature.png"
 categories: ["technical"]

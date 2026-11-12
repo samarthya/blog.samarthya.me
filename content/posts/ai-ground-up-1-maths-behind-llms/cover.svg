@@ -1,87 +1,133 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <title>Anime illustration: a boy with blue hair and glasses holding a pencil, beside the four ideas: vectors (cat and dog similarity 0.99), matrix multiplication (about 2 n cubed operations), softmax (0.88, 0.07, 0.04) and gradients (w from 0 to 2); chips read softmax(QKᵀ/√d)·V and 2× context = 4× attention</title>
-  <defs>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5d0fe"/><stop offset="0.65" stop-color="#fae8ff"/><stop offset="1" stop-color="#fdf4ff"/></linearGradient>
-<radialGradient id="glow" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
-<linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe6d2"/><stop offset="1" stop-color="#fbd1b5"/></linearGradient>
-<linearGradient id="hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="0.6" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
-<linearGradient id="iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.55" stop-color="#2f7fd6"/><stop offset="1" stop-color="#6fe0e8"/></linearGradient>
-<linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000"/></linearGradient>
-<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa4b5"/><stop offset="0.45" stop-color="#4b5563"/><stop offset="1" stop-color="#1f2937"/></linearGradient>
-<linearGradient id="robot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#b8c4d6"/></linearGradient>
-<linearGradient id="qmark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff176"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
-<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
-<filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2a1d5c" flood-opacity="0.28"/></filter>
-<clipPath id="eyeL"><ellipse cx="540" cy="266" rx="38" ry="50"/></clipPath>
-<clipPath id="eyeR"><ellipse cx="664" cy="266" rx="38" ry="50"/></clipPath>
-<symbol id="spark" viewBox="-10 -10 20 20" overflow="visible"><path d="M0 -10 Q1.2 -1.2 10 0 Q1.2 1.2 0 10 Q-1.2 1.2 -10 0 Q-1.2 -1.2 0 -10Z" fill="#ffffff"/></symbol>
+<title>Anime illustration: a boy with silver-blue hair and glasses, in a navy blazer, beside a glowing matrix and the four ideas: vectors (cat and dog similarity 0.99), matrix multiplication (about 2 n cubed operations), softmax (0.88, 0.07, 0.04) and gradients (w from 0 to 2); chips read softmax(QKᵀ/√d)·V and 2× context = 4× attention</title>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="0.55" stop-color="#fae8ff"/><stop offset="1" stop-color="#fff7ed"/></linearGradient>
+  <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+  <filter id="blur40" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="blur2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#3b0764" flood-opacity="0.18"/></filter>
+  <filter id="figshadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="6" dy="10" stdDeviation="12" flood-color="#2e1065" flood-opacity="0.22"/></filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix values="0 0 0 0 0.2  0 0 0 0 0.1  0 0 0 0 0.3  0 0 0 0.09 0"/></filter>
+  <linearGradient id="ray" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.86"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.70"/></linearGradient>
+  <linearGradient id="dglass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e1b4b" stop-opacity="0.94"/><stop offset="1" stop-color="#0f172a" stop-opacity="0.94"/></linearGradient>
+  <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a21caf"/><stop offset="1" stop-color="#a21caf" stop-opacity="0.55"/></linearGradient>
 </defs>
-  <rect width="1200" height="630" fill="url(#sky)"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
-<text x="604" y="166" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#a21caf">The maths behind an LLM</text>
-  <g filter="url(#drop)">
-    <rect x="600" y="184" width="560" height="58" rx="14" fill="#ffffff"/>
-    <rect x="600" y="184" width="14" height="58" rx="7" fill="#ef4444"/>
-    <text x="630" y="221" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Vectors</text>
-    <text x="1142" y="221" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#ef4444">cat·dog 0.99</text>
+<rect width="1200" height="630" fill="url(#sky)"/>
+<circle cx="1050" cy="90" r="210" fill="#c4b5fd" opacity="0.55" filter="url(#blur40)"/>
+<circle cx="110" cy="560" r="220" fill="#a5f3fc" opacity="0.45" filter="url(#blur40)"/>
+<circle cx="720" cy="610" r="170" fill="#f0abfc" opacity="0.45" filter="url(#blur40)"/>
+<g opacity="0.55"><path d="M-40 -20 L260 -20 L760 630 L520 630Z" fill="url(#ray)" opacity="0.35"/><path d="M300 -20 L380 -20 L900 630 L820 630Z" fill="url(#ray)" opacity="0.25"/><path d="M480 -20 L520 -20 L1080 630 L1040 630Z" fill="url(#ray)" opacity="0.2"/></g>
+<circle cx="300" cy="280" r="300" fill="url(#halo)"/>
+<circle cx="80" cy="110" r="26" fill="#ffffff" opacity="0.35" filter="url(#blur2)"/><circle cx="80" cy="110" r="26" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
+<circle cx="140" cy="520" r="18" fill="#ffffff" opacity="0.3" filter="url(#blur2)"/><circle cx="140" cy="520" r="18" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5"/>
+<circle cx="520" cy="80" r="14" fill="#ffffff" opacity="0.4" filter="url(#blur2)"/><circle cx="520" cy="80" r="14" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5"/>
+<circle cx="560" cy="560" r="30" fill="#ffffff" opacity="0.22" filter="url(#blur2)"/><circle cx="560" cy="560" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5"/>
+<circle cx="1120" cy="70" r="22" fill="#ffffff" opacity="0.35" filter="url(#blur2)"/><circle cx="1120" cy="70" r="22" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
+<circle cx="1160" cy="560" r="34" fill="#ffffff" opacity="0.25" filter="url(#blur2)"/><circle cx="1160" cy="560" r="34" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5"/>
+<circle cx="610" cy="330" r="9" fill="#ffffff" opacity="0.5" filter="url(#blur2)"/><circle cx="610" cy="330" r="9" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
+<circle cx="70" cy="330" r="12" fill="#ffffff" opacity="0.4" filter="url(#blur2)"/><circle cx="70" cy="330" r="12" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1.5"/>
+<circle cx="980" cy="600" r="14" fill="#ffffff" opacity="0.35" filter="url(#blur2)"/><circle cx="980" cy="600" r="14" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
+<circle cx="860" cy="40" r="10" fill="#ffffff" opacity="0.45" filter="url(#blur2)"/><circle cx="860" cy="40" r="10" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1.5"/>
+<circle cx="455" cy="140" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="500" cy="210" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="430" cy="90" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="590" cy="470" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="50" cy="220" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="230" cy="60" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="1010" cy="120" r="2.2" fill="#ffffff" opacity="0.9"/>
+<circle cx="700" cy="600" r="2.2" fill="#ffffff" opacity="0.9"/>
+<defs>
+  <linearGradient id="fhair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c7d2fe"/><stop offset="0.45" stop-color="#7c8fc9"/><stop offset="1" stop-color="#3b4a7a"/></linearGradient>
+  <linearGradient id="fhairback" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c8fc9"/><stop offset="1" stop-color="#3b4a7a"/></linearGradient>
+  <linearGradient id="fskin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe8d9"/><stop offset="1" stop-color="#f5c6ad"/></linearGradient>
+  <linearGradient id="fout" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#334155"/><stop offset="1" stop-color="#1e293b"/></linearGradient>
+  <clipPath id="fface"><path d="M212 240 C210 318 238 378 300 414 C362 378 390 318 388 240 C388 168 350 140 300 140 C250 140 212 168 212 240Z"/></clipPath>
+</defs>
+<g filter="url(#figshadow)">
+<path d="M196 262 C178 150 236 100 300 100 C364 100 422 150 404 262 C406 300 404 336 396 368 L384 344 L372 376 L228 376 L216 344 L204 368 C196 336 194 300 196 262Z" fill="url(#fhairback)" stroke="#3b4a7a" stroke-width="2" stroke-linejoin="round"/>
+<path d="M84 640 C84 560 110 512 200 492 L250 480 L350 480 L400 492 C490 512 516 560 516 640Z" fill="url(#fout)" stroke="#1e293b" stroke-width="2"/>
+<path d="M262 462 L300 528 L338 462 L356 474 L300 556 L244 474Z" fill="#f8fafc"/>
+<path d="M292 530 L308 530 L314 600 L300 618 L286 600Z" fill="#22d3ee"/><path d="M290 518 L310 518 L306 534 L294 534Z" fill="#22d3ee"/>
+<path d="M244 474 L300 556 L270 640 L214 640 C226 570 232 520 244 474Z" fill="#1e293b" opacity="0.55"/><path d="M356 474 L300 556 L330 640 L386 640 C374 570 368 520 356 474Z" fill="#1e293b" opacity="0.35"/>
+<path d="M244 474 L300 556 M356 474 L300 556" stroke="#1e293b" stroke-width="3" fill="none"/><circle cx="300" cy="590" r="0" fill="none"/><circle cx="252" cy="600" r="6" fill="#1e293b"/><circle cx="252" cy="600" r="2.5" fill="#ffffff" opacity="0.5"/>
+<path d="M200 486 C240 470 360 470 400 486 C380 520 220 520 200 486Z" fill="#000000" opacity="0.10" filter="url(#blur6)"/>
+<path d="M370 480 C436 504 482 552 492 630" stroke="#ffffff" stroke-opacity="0.18" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M268 380 L266 470 C288 484 312 484 334 470 L332 380Z" fill="url(#fskin)"/><path d="M268 392 C286 428 314 428 332 392 L333 448 C312 460 288 460 267 448Z" fill="#e7a993" opacity="0.55"/>
+<ellipse cx="212" cy="300" rx="12" ry="22" fill="#f5c6ad"/><ellipse cx="388" cy="300" rx="12" ry="22" fill="#f5c6ad"/>
+<path d="M212 240 C210 318 238 378 300 414 C362 378 390 318 388 240 C388 168 350 140 300 140 C250 140 212 168 212 240Z" fill="url(#fskin)" stroke="#e7a993" stroke-width="1.8"/>
+<g clip-path="url(#fface)"><path d="M212 300 C220 360 250 396 300 414 C262 392 236 356 226 300Z" fill="#f5c6ad" opacity="0.7"/><path d="M206 252 Q211 244 222 278 Q231 238 234 216 Q235 228 246 262 Q255 222 258 222 Q261 244 272 278 Q281 238 286 208 Q287 220 298 254 Q307 214 310 214 Q325 238 322 272 Q317 232 336 212 Q351 226 348 260 Q343 220 360 220 Q377 244 374 278 Q369 238 394 252 L400 120 L200 120Z" fill="#e7a993" opacity="0.5" filter="url(#blur2)"/></g>
+<ellipse cx="246" cy="338" rx="24" ry="10" fill="#ff8fa3" opacity="0.45" filter="url(#blur6)"/><path d="M234 342 l6 -8 M243 342 l6 -8 M252 342 l6 -8" stroke="#f472b6" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+<ellipse cx="354" cy="338" rx="24" ry="10" fill="#ff8fa3" opacity="0.45" filter="url(#blur6)"/><path d="M342 342 l6 -8 M351 342 l6 -8 M360 342 l6 -8" stroke="#f472b6" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+<g transform="translate(258 292) scale(1.1)"><defs>
+    <clipPath id="eLc"><path d="M-31 -3 C-27 -24 -2 -33 19 -24 C28 -18 29 -5 25 6 C19 22 1 29 -13 25 C-24 21 -31 11 -31 -3Z"/></clipPath>
+    <linearGradient id="eLi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e1065"/><stop offset="0.5" stop-color="#7c3aed"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient>
+  </defs>
+  <path d="M-31 -3 C-27 -24 -2 -33 19 -24 C28 -18 29 -5 25 6 C19 22 1 29 -13 25 C-24 21 -31 11 -31 -3Z" fill="#fffdfb"/>
+  <g clip-path="url(#eLc)">
+    <ellipse cx="-1" cy="3" rx="19.5" ry="26" fill="url(#eLi)"/>
+    <ellipse cx="-1" cy="3" rx="19.5" ry="26" fill="none" stroke="#2e1065" stroke-width="2"/>
+    <path d="M-15 14 C-8 24 8 24 15 12 C10 18 -8 20 -15 14Z" fill="#c4b5fd" opacity="0.9"/>
+    <ellipse cx="-1" cy="5" rx="8.5" ry="12" fill="#0b0a17"/>
+    <path d="M-34 -30 L32 -30 L32 -10 C14 -24 -14 -22 -34 -4Z" fill="#2e1065" opacity="0.38"/>
+    <ellipse cx="-8" cy="-7" rx="6.5" ry="8.5" fill="#ffffff"/>
+    <circle cx="8" cy="13" r="3.2" fill="#ffffff"/>
+    <circle cx="4" cy="-10" r="1.8" fill="#ffffff" opacity="0.85"/>
   </g>
-  <g filter="url(#drop)">
-    <rect x="600" y="252" width="560" height="58" rx="14" fill="#ffffff"/>
-    <rect x="600" y="252" width="14" height="58" rx="7" fill="#eab308"/>
-    <text x="630" y="289" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Matrix multiply</text>
-    <text x="1142" y="289" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#eab308">≈ 2·n³ ops</text>
+  <path d="M-38 0 C-33 -27 -3 -40 22 -27 C26 -24 28 -20 27 -15 C6 -31 -22 -25 -31 -1 Z" fill="#1e1b2e"/>
+  <path d="M-31 -3 L-44 -11 L-35 -14Z M-29 -10 L-41 -20 L-31 -19Z" fill="#1e1b2e"/>
+  <path d="M-13 25 C0 29 14 22 22 9" stroke="#1e1b2e" stroke-width="1.6" fill="none" opacity="0.55" stroke-linecap="round"/>
+  <path d="M-27 -32 C-12 -42 10 -40 21 -32" stroke="#1e1b2e" stroke-width="1.4" fill="none" opacity="0.3" stroke-linecap="round"/></g>
+<g transform="translate(342 292) scale(-1.1 1.1)"><defs>
+    <clipPath id="eRc"><path d="M-31 -3 C-27 -24 -2 -33 19 -24 C28 -18 29 -5 25 6 C19 22 1 29 -13 25 C-24 21 -31 11 -31 -3Z"/></clipPath>
+    <linearGradient id="eRi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e1065"/><stop offset="0.5" stop-color="#7c3aed"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient>
+  </defs>
+  <path d="M-31 -3 C-27 -24 -2 -33 19 -24 C28 -18 29 -5 25 6 C19 22 1 29 -13 25 C-24 21 -31 11 -31 -3Z" fill="#fffdfb"/>
+  <g clip-path="url(#eRc)">
+    <ellipse cx="-1" cy="3" rx="19.5" ry="26" fill="url(#eRi)"/>
+    <ellipse cx="-1" cy="3" rx="19.5" ry="26" fill="none" stroke="#2e1065" stroke-width="2"/>
+    <path d="M-15 14 C-8 24 8 24 15 12 C10 18 -8 20 -15 14Z" fill="#c4b5fd" opacity="0.9"/>
+    <ellipse cx="-1" cy="5" rx="8.5" ry="12" fill="#0b0a17"/>
+    <path d="M-34 -30 L32 -30 L32 -10 C14 -24 -14 -22 -34 -4Z" fill="#2e1065" opacity="0.38"/>
+    <ellipse cx="-8" cy="-7" rx="6.5" ry="8.5" fill="#ffffff"/>
+    <circle cx="8" cy="13" r="3.2" fill="#ffffff"/>
+    <circle cx="4" cy="-10" r="1.8" fill="#ffffff" opacity="0.85"/>
   </g>
-  <g filter="url(#drop)">
-    <rect x="600" y="320" width="560" height="58" rx="14" fill="#ffffff"/>
-    <rect x="600" y="320" width="14" height="58" rx="7" fill="#06b6d4"/>
-    <text x="630" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Softmax</text>
-    <text x="1142" y="357" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#06b6d4">0.88 · 0.07 · 0.04</text>
-  </g>
-  <g filter="url(#drop)">
-    <rect x="600" y="388" width="560" height="58" rx="14" fill="#ffffff"/>
-    <rect x="600" y="388" width="14" height="58" rx="7" fill="#a855f7"/>
-    <text x="630" y="425" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#1f2937">Gradients</text>
-    <text x="1142" y="425" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="700" fill="#a855f7">w: 0 → 2</text>
-  </g>
-  <g filter="url(#drop)" transform="rotate(0 712.5 500)">
-    <rect x="600" y="478" width="225" height="44" rx="22" fill="#a21caf"/>
-    <text x="712.5" y="507" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="800" fill="#ffffff">softmax(QKᵀ/√d)·V</text>
-  </g>
-  <g filter="url(#drop)" transform="rotate(0 994.5 500)">
-    <rect x="837" y="478" width="315" height="44" rx="22" fill="#a21caf"/>
-    <text x="994.5" y="507" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="18" font-weight="800" fill="#ffffff">2× context = 4× attention</text>
-  </g>
-  <g filter="url(#drop)" transform="rotate(0 765.0 88)">
-    <rect x="600" y="66" width="330" height="44" rx="22" fill="#a21caf"/>
-    <text x="765.0" y="95" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">AI from the ground up · 1</text>
-  </g><defs><linearGradient id="khair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient><linearGradient id="kout" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef3c7"/><stop offset="1" stop-color="#d97706"/></linearGradient><linearGradient id="kskin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde3cf"/><stop offset="1" stop-color="#f2c4a3"/></linearGradient></defs>
-  <path d="M90 640 C96 500 150 450 220 440 L330 440 C400 450 454 500 460 640Z" fill="url(#kout)" filter="url(#drop)"/><path d="M240 436 L310 436 L300 476 L250 476Z" fill="#e8b496"/><path d="M220 446 C250 490 300 490 330 446" stroke="#000000" stroke-width="6" fill="none" opacity="0.18"/>
-  <path d="M180 250 C180 146 370 146 370 250 C370 330 322 396 275 410 C228 396 180 330 180 250Z" fill="url(#kskin)" filter="url(#drop)"/>
-  <ellipse cx="214" cy="330" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/><ellipse cx="336" cy="330" rx="22" ry="10" fill="#ff8fa3" opacity="0.5" filter="url(#soft)"/>
-  
-  <defs><clipPath id="kL"><ellipse cx="230" cy="282" rx="28" ry="34"/></clipPath><linearGradient id="kLg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
-  <ellipse cx="230" cy="282" rx="28" ry="34" fill="#ffffff"/>
-  <g clip-path="url(#kL)">
-    <ellipse cx="240" cy="282" rx="21.0" ry="25.5" fill="url(#kLg)"/>
-    <ellipse cx="240" cy="280" rx="9.450000000000001" ry="12.75" fill="#111827"/>
-    <circle cx="232.65" cy="271.8" r="6.72" fill="#ffffff"/>
-    <circle cx="247.35" cy="290.925" r="2.8000000000000003" fill="#ffffff"/>
-  </g>
-  <ellipse cx="230" cy="282" rx="28" ry="34" fill="none" stroke="#1f2937" stroke-width="4"/>
-  <defs><clipPath id="kR"><ellipse cx="320" cy="282" rx="28" ry="34"/></clipPath><linearGradient id="kRg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs>
-  <ellipse cx="320" cy="282" rx="28" ry="34" fill="#ffffff"/>
-  <g clip-path="url(#kR)">
-    <ellipse cx="330" cy="282" rx="21.0" ry="25.5" fill="url(#kRg)"/>
-    <ellipse cx="330" cy="280" rx="9.450000000000001" ry="12.75" fill="#111827"/>
-    <circle cx="322.65" cy="271.8" r="6.72" fill="#ffffff"/>
-    <circle cx="337.35" cy="290.925" r="2.8000000000000003" fill="#ffffff"/>
-  </g>
-  <ellipse cx="320" cy="282" rx="28" ry="34" fill="none" stroke="#1f2937" stroke-width="4"/>
-  <path d="M200 236 C214 226 240 226 254 236 M296 236 C310 226 336 226 350 236" stroke="#1d4ed8" stroke-width="7" fill="none" stroke-linecap="round"/>
-  <g fill="none" stroke="#1f2937" stroke-width="5"><rect x="190" y="248" width="80" height="68" rx="20"/><rect x="280" y="248" width="80" height="68" rx="20"/><path d="M270 276 L280 276"/></g>
-  <path d="M256 356 C266 370 290 370 300 356" stroke="#9f1239" stroke-width="5" fill="none" stroke-linecap="round"/>
-  <path d="M170 262 C156 170 220 120 280 122 C340 124 394 166 380 262 C370 220 350 196 320 186 C290 210 240 222 200 216 C190 230 180 246 176 262Z" fill="url(#khair)"/>
-  <path d="M400 500 C430 470 445 440 450 412" stroke="url(#kout)" stroke-width="48" fill="none" stroke-linecap="round"/>
-  <g filter="url(#drop)" transform="rotate(35 450 392)"><rect x="436" y="192" width="30" height="180" fill="#a21caf"/><path d="M436 372 L451 414 L466 372Z" fill="#fde68a"/><rect x="436" y="176" width="30" height="20" rx="4" fill="#f9a8d4"/></g>
-  <circle cx="450" cy="392" r="27" fill="url(#kskin)" stroke="#d99b7a" stroke-width="2.5"/><use href="#spark" x="40" y="70" width="24" height="24"/><use href="#spark" x="560" y="40" width="18" height="18"/><use href="#spark" x="1165" y="600" width="22" height="22"/>
+  <path d="M-38 0 C-33 -27 -3 -40 22 -27 C26 -24 28 -20 27 -15 C6 -31 -22 -25 -31 -1 Z" fill="#1e1b2e"/>
+  <path d="M-31 -3 L-44 -11 L-35 -14Z M-29 -10 L-41 -20 L-31 -19Z" fill="#1e1b2e"/>
+  <path d="M-13 25 C0 29 14 22 22 9" stroke="#1e1b2e" stroke-width="1.6" fill="none" opacity="0.55" stroke-linecap="round"/>
+  <path d="M-27 -32 C-12 -42 10 -40 21 -32" stroke="#1e1b2e" stroke-width="1.4" fill="none" opacity="0.3" stroke-linecap="round"/></g>
+<path d="M302 318 L298 336 L305 338" stroke="#e7a993" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M290 366 Q300 371 310 366" stroke="#9f1239" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<g fill="#ffffff" fill-opacity="0.12" stroke="#1e1b2e" stroke-width="3.2"><rect x="218" y="258" width="80" height="66" rx="22"/><rect x="302" y="258" width="80" height="66" rx="22"/></g><path d="M298 284 Q300 280 302 284 M218 278 L206 274 M382 278 L394 274" stroke="#1e1b2e" stroke-width="3" fill="none"/><path d="M230 270 L250 262 M314 270 L334 262" stroke="#ffffff" stroke-width="3" opacity="0.8" stroke-linecap="round"/>
+<path d="M206 236 Q211 228 222 262 Q231 222 234 200 Q235 212 246 246 Q255 206 258 206 Q261 228 272 262 Q281 222 286 192 Q287 204 298 238 Q307 198 310 198 Q325 222 322 256 Q317 216 336 196 Q351 210 348 244 Q343 204 360 204 Q377 228 374 262 Q369 222 394 236 C410 150 362 104 300 104 C238 104 190 150 206 236Z" fill="url(#fhair)" stroke="#3b4a7a" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M206 236 C196 280 198 290 214 330 C218 280 222 300 236 262Z" fill="url(#fhair)"/><path d="M394 236 C404 280 402 290 386 330 C382 280 378 300 364 262Z" fill="url(#fhair)"/><path d="M206 236 C196 280 198 290 214 330 M394 236 C404 280 402 290 386 330" stroke="#3b4a7a" stroke-width="1.8" fill="none"/>
+<path d="M278 120 Q273 176 246 238" stroke="#3b4a7a" stroke-width="1.4" fill="none" opacity="0.22"/>
+<path d="M299 120 Q299 168 298 230" stroke="#3b4a7a" stroke-width="1.4" fill="none" opacity="0.22"/>
+<path d="M319 120 Q324 174 348 236" stroke="#3b4a7a" stroke-width="1.4" fill="none" opacity="0.22"/>
+<path d="M228 176 Q300 120 372 176 Q300 150 228 176Z" fill="#ffffff" opacity="0.30" filter="url(#blur2)"/>
+<path d="M236 168 Q300 128 364 168" stroke="#c7d2fe" stroke-width="2" fill="none" opacity="0.7"/>
+</g><g transform="translate(540 200)"><circle r="74" fill="#ffffff" opacity="0.35"/><circle r="74" fill="none" stroke="#a21caf" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 6"/><g filter="url(#glow)"><rect x="-42" y="-42" width="18" height="18" rx="4" fill="#a21caf" opacity="0.25"/><rect x="-20" y="-42" width="18" height="18" rx="4" fill="#a21caf" opacity="0.70"/><rect x="2" y="-42" width="18" height="18" rx="4" fill="#a21caf" opacity="0.55"/><rect x="24" y="-42" width="18" height="18" rx="4" fill="#a21caf" opacity="0.40"/><rect x="-42" y="-20" width="18" height="18" rx="4" fill="#a21caf" opacity="0.40"/><rect x="-20" y="-20" width="18" height="18" rx="4" fill="#a21caf" opacity="0.25"/><rect x="2" y="-20" width="18" height="18" rx="4" fill="#a21caf" opacity="0.70"/><rect x="24" y="-20" width="18" height="18" rx="4" fill="#a21caf" opacity="0.55"/><rect x="-42" y="2" width="18" height="18" rx="4" fill="#a21caf" opacity="0.55"/><rect x="-20" y="2" width="18" height="18" rx="4" fill="#a21caf" opacity="0.40"/><rect x="2" y="2" width="18" height="18" rx="4" fill="#a21caf" opacity="0.25"/><rect x="24" y="2" width="18" height="18" rx="4" fill="#a21caf" opacity="0.70"/><rect x="-42" y="24" width="18" height="18" rx="4" fill="#a21caf" opacity="0.70"/><rect x="-20" y="24" width="18" height="18" rx="4" fill="#a21caf" opacity="0.55"/><rect x="2" y="24" width="18" height="18" rx="4" fill="#a21caf" opacity="0.40"/><rect x="24" y="24" width="18" height="18" rx="4" fill="#a21caf" opacity="0.25"/></g></g><text x="640" y="92" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="3.5" fill="#a21caf">AI FROM THE GROUND UP · 1</text><rect x="640" y="104" width="56" height="3" rx="1.5" fill="#a21caf"/><g filter="url(#shadow)"><rect x="640" y="128" width="510" height="366" rx="26" fill="url(#glass)" stroke="#ffffff" stroke-width="2"/></g>
+<rect x="641" y="129" width="508" height="40" rx="25" fill="#ffffff" opacity="0.35"/>
+<text x="674" y="184" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#1e1b2e">The maths behind an LLM</text>
+<line x1="674" y1="214" x2="1116" y2="214" stroke="#1e1b2e" stroke-opacity="0.09" stroke-width="1.5"/>
+<circle cx="694" cy="249" r="17" fill="none" stroke="#a21caf" stroke-width="2"/><text x="694" y="255" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#a21caf">1</text>
+<text x="728" y="257" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1e1b2e">Vectors</text>
+<text x="1116" y="257" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#a21caf">cat·dog 0.99</text>
+<line x1="674" y1="284" x2="1116" y2="284" stroke="#1e1b2e" stroke-opacity="0.09" stroke-width="1.5"/>
+<circle cx="694" cy="319" r="17" fill="none" stroke="#a21caf" stroke-width="2"/><text x="694" y="325" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#a21caf">2</text>
+<text x="728" y="327" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1e1b2e">Matrix multiply</text>
+<text x="1116" y="327" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#a21caf">≈ 2·n³ ops</text>
+<line x1="674" y1="354" x2="1116" y2="354" stroke="#1e1b2e" stroke-opacity="0.09" stroke-width="1.5"/>
+<circle cx="694" cy="389" r="17" fill="none" stroke="#a21caf" stroke-width="2"/><text x="694" y="395" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#a21caf">3</text>
+<text x="728" y="397" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1e1b2e">Softmax</text>
+<text x="1116" y="397" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#a21caf">0.88 · 0.07 · 0.04</text>
+<line x1="674" y1="424" x2="1116" y2="424" stroke="#1e1b2e" stroke-opacity="0.09" stroke-width="1.5"/>
+<circle cx="694" cy="459" r="17" fill="none" stroke="#a21caf" stroke-width="2"/><text x="694" y="465" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#a21caf">4</text>
+<text x="728" y="467" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1e1b2e">Gradients</text>
+<text x="1116" y="467" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="21" font-weight="700" fill="#a21caf">w: 0 → 2</text><rect x="640" y="516" width="216" height="40" rx="20" fill="#ffffff" fill-opacity="0.75" stroke="#a21caf" stroke-opacity="0.55" stroke-width="1.5"/><text x="748.0" y="542" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="17" font-weight="700" fill="#a21caf">softmax(QKᵀ/√d)·V</text>
+<rect x="868" y="516" width="300" height="40" rx="20" fill="#ffffff" fill-opacity="0.75" stroke="#a21caf" stroke-opacity="0.55" stroke-width="1.5"/><text x="1018.0" y="542" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="17" font-weight="700" fill="#a21caf">2× context = 4× attention</text>
 </svg>
