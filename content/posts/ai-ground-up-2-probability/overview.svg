@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Probability in machine learning in four panels. Bayes' rule: of 21 alerts in 1,000 sessions, 1 is a real attack and 20 are false, so P(attack given alert) is 4.7% for a detector with 99% detection and 2% false alarms. Next-token distribution for 'The capital of France is': Paris 85%, London 7%, the 4%, a 3%, Lyon 2%. Loss is minus log p: 4.61 at p = 0.01 down to 0.11 at p = 0.9. Sampling: temperature 0.5 gives Paris 99%, 1.0 gives 85%, 1.5 gives 67%; top-p 0.9 keeps only Paris and London. Below: the chain rule of probability for 'the cat sat', and confident is not correct.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.55"><stop offset="0" stop-color="#d946ef" stop-opacity="0.18"/><stop offset="1" stop-color="#d946ef" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ef4444" flood-opacity="0.8"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="70" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI FROM THE GROUND UP · 2</text>
+  <text x="60" y="120" fill="#ffffff" font-size="46" font-weight="800">Probability, the language of ML</text>
+  <text x="60" y="156" fill="#cbd5e1" font-size="21">Every prediction is a probability; every answer is a choice</text>
+<rect x="60" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#a78bfa" filter="url(#shadow)"/><text x="78" y="214" fill="#a78bfa" font-size="14" font-weight="800" text-anchor="start">BAYES' RULE</text>
+  <rect x="335" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22d3ee" filter="url(#shadow)"/><text x="353" y="214" fill="#22d3ee" font-size="14" font-weight="800" text-anchor="start">NEXT-TOKEN DISTRIBUTION</text>
+  <rect x="610" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#f97316" filter="url(#shadow)"/><text x="628" y="214" fill="#f97316" font-size="14" font-weight="800" text-anchor="start">LOSS = −log p</text>
+  <rect x="885" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22c55e" filter="url(#shadow)"/><text x="903" y="214" fill="#22c55e" font-size="14" font-weight="800" text-anchor="start">SAMPLING</text>
+  <text x="78" y="244" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">1,000 sessions, alerts:</text>
+  <circle cx="90" cy="272" r="10" fill="#ef4444" filter="url(#rglow)"/>
+  <circle cx="120" cy="272" r="10" fill="#475569"/>
+  <circle cx="150" cy="272" r="10" fill="#475569"/>
+  <circle cx="180" cy="272" r="10" fill="#475569"/>
+  <circle cx="210" cy="272" r="10" fill="#475569"/>
+  <circle cx="240" cy="272" r="10" fill="#475569"/>
+  <circle cx="270" cy="272" r="10" fill="#475569"/>
+  <circle cx="90" cy="302" r="10" fill="#475569"/>
+  <circle cx="120" cy="302" r="10" fill="#475569"/>
+  <circle cx="150" cy="302" r="10" fill="#475569"/>
+  <circle cx="180" cy="302" r="10" fill="#475569"/>
+  <circle cx="210" cy="302" r="10" fill="#475569"/>
+  <circle cx="240" cy="302" r="10" fill="#475569"/>
+  <circle cx="270" cy="302" r="10" fill="#475569"/>
+  <circle cx="90" cy="332" r="10" fill="#475569"/>
+  <circle cx="120" cy="332" r="10" fill="#475569"/>
+  <circle cx="150" cy="332" r="10" fill="#475569"/>
+  <circle cx="180" cy="332" r="10" fill="#475569"/>
+  <circle cx="210" cy="332" r="10" fill="#475569"/>
+  <circle cx="240" cy="332" r="10" fill="#475569"/>
+  <circle cx="270" cy="332" r="10" fill="#475569"/>
+  <text x="78" y="372" fill="#fca5a5" font-size="13" font-weight="700" text-anchor="start">● 1 real attack</text><text x="190" y="372" fill="#94a3b8" font-size="13" font-weight="700" text-anchor="start">● 20 false alarms</text>
+  <text x="78" y="408" fill="#cbd5e1" font-size="13" font-weight="400" text-anchor="start">detector 99% / 2% false</text>
+  <text x="78" y="448" fill="#e2e8f0" font-size="15" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">P(attack | alert)</text>
+  <text x="78" y="474" fill="#c4b5fd" font-size="22" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">= 4.7%</text>
+  <text x="353" y="244" fill="#cbd5e1" font-size="12" font-weight="400" text-anchor="start">“The capital of France is …”</text>
+  <text x="353" y="279" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Paris</text><rect x="419" y="266" width="120" height="16" rx="4" fill="#334155"/><rect x="419" y="266" width="102.0" height="16" rx="4" fill="#22d3ee"/><text x="549" y="279" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">85%</text>
+  <text x="353" y="317" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">London</text><rect x="419" y="304" width="120" height="16" rx="4" fill="#334155"/><rect x="419" y="304" width="8.4" height="16" rx="4" fill="#22d3ee"/><text x="549" y="317" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">7%</text>
+  <text x="353" y="355" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">the</text><rect x="419" y="342" width="120" height="16" rx="4" fill="#334155"/><rect x="419" y="342" width="4.8" height="16" rx="4" fill="#22d3ee"/><text x="549" y="355" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">4%</text>
+  <text x="353" y="393" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">a</text><rect x="419" y="380" width="120" height="16" rx="4" fill="#334155"/><rect x="419" y="380" width="3.6" height="16" rx="4" fill="#22d3ee"/><text x="549" y="393" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">3%</text>
+  <text x="353" y="431" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">Lyon</text><rect x="419" y="418" width="120" height="16" rx="4" fill="#334155"/><rect x="419" y="418" width="2.4" height="16" rx="4" fill="#22d3ee"/><text x="549" y="431" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">2%</text>
+  <text x="353" y="470" fill="#94a3b8" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">P(next | text so far)</text>
+  <path d="M640 246 V396 H840" stroke="#475569" stroke-width="2" fill="none"/>
+  <polyline points="642,249 644,271 646,284 648,293 650,300 652,306 654,311 656,315 658,319 660,323 662,326 664,328 666,331 668,333 670,335 672,338 674,339 676,341 678,343 680,345 682,346 684,348 686,349 688,350 690,352 692,353 694,354 696,355 698,356 700,358 702,359 704,360 706,361 708,362 710,362 712,363 714,364 716,365 718,366 720,367 722,368 724,368 726,369 728,370 730,371 732,371 734,372 736,373 738,373 740,374 742,375 744,375 746,376 748,376 750,377 752,377 754,378 756,379 758,379 760,380 762,380 764,381 766,381 768,382 770,382 772,383 774,383 776,384 778,384 780,385 782,385 784,386 786,386 788,386 790,387 792,387 794,388 796,388 798,388 800,389 802,389 804,390 806,390 808,390 810,391 812,391 814,392 816,392 818,392 820,393 822,393 824,393 826,394 828,394 830,394 832,395 834,395 836,395 838,396 840,396" fill="none" stroke="#f97316" stroke-width="3"/>
+  <circle cx="820" cy="393" r="5" fill="#fde047"/>
+  <circle cx="740" cy="374" r="5" fill="#fde047"/>
+  <circle cx="660" cy="323" r="5" fill="#fde047"/>
+  <circle cx="642" cy="249" r="5" fill="#fde047"/>
+  <text x="648" y="256" fill="#fde047" font-size="12" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">4.61</text><text x="830" y="384" fill="#fde047" font-size="12" font-weight="700" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">0.11</text>
+  <text x="740.0" y="414" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="middle">p given to the right token →</text>
+  <text x="628" y="448" fill="#fdba74" font-size="13" font-weight="700" text-anchor="start">confident and wrong costs most</text>
+  <text x="628" y="470" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">perplexity = e^(average loss)</text>
+  <text x="903" y="258" fill="#86efac" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">T 0.5</text>
+  <rect x="975" y="232" width="26" height="44" rx="3" fill="#22c55e" fill-opacity="0.9"/>
+  <rect x="1009" y="274" width="26" height="2" rx="3" fill="#22c55e" fill-opacity="0.7"/>
+  <rect x="1043" y="274" width="26" height="2" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <text x="1081" y="272" fill="#86efac" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">99%</text>
+  <text x="903" y="320" fill="#86efac" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">T 1.0</text>
+  <rect x="975" y="301" width="26" height="37" rx="3" fill="#22c55e" fill-opacity="0.9"/>
+  <rect x="1009" y="335" width="26" height="3" rx="3" fill="#22c55e" fill-opacity="0.7"/>
+  <rect x="1043" y="336" width="26" height="2" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <text x="1081" y="334" fill="#86efac" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">85%</text>
+  <text x="903" y="382" fill="#86efac" font-size="13" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">T 1.5</text>
+  <rect x="975" y="371" width="26" height="29" rx="3" fill="#22c55e" fill-opacity="0.9"/>
+  <rect x="1009" y="394" width="26" height="6" rx="3" fill="#22c55e" fill-opacity="0.7"/>
+  <rect x="1043" y="396" width="26" height="4" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <text x="1081" y="396" fill="#86efac" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">67%</text>
+  <text x="903" y="438" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start">top-p 0.9 → Paris, London</text>
+  <text x="903" y="462" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">banana can't be sampled</text>
+  <rect x="60" y="506" width="1080" height="80" rx="14" fill="#0b1020" stroke="#d946ef" stroke-opacity="0.7"/>
+  <text x="84" y="540" fill="#f0abfc" font-size="13" font-weight="800" text-anchor="start">THE CHAIN RULE OF PROBABILITY</text>
+  <text x="84" y="570" fill="#ffffff" font-size="20" font-weight="800" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">P(the cat sat) = P(the) × P(cat | the) × P(sat | the cat)</text>
+  <text x="1116" y="568" fill="#fca5a5" font-size="16" font-weight="800" text-anchor="end">confident ≠ correct</text>
+</svg>
