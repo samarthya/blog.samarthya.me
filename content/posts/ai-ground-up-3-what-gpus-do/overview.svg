@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>What GPUs do for AI in four panels. CPU versus GPU: four large cores and a cache against a grid of small cores organised in SMs, blocks and warps of 32; Python loops versus NumPy hundreds to thousands of times faster. Tensor cores: H100 dense TFLOPS on a log scale, FP64 34, TF32 495, BF16 990, FP8 1,980, so FP8 is about 60 times FP64; Rubin reaches 35 PFLOPS NVFP4. The memory wall: 990 TFLOPS over 3.35 TB/s means about 295 operations per byte to stay busy, but writing a token is about 1 per byte, so one H100 tops out near 209 tokens per second for an 8B 16-bit model, 838 at 4-bit, 24 for 70B. Scale out: a Vera Rubin NVL72 rack of 72 GPUs with 20.7 TB of HBM4. Below: the main optimisation is moving less data.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.55"><stop offset="0" stop-color="#d946ef" stop-opacity="0.18"/><stop offset="1" stop-color="#d946ef" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ef4444" flood-opacity="0.8"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="70" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI FROM THE GROUND UP · 3</text>
+  <text x="60" y="120" fill="#ffffff" font-size="46" font-weight="800">What GPUs actually do</text>
+  <text x="60" y="156" fill="#cbd5e1" font-size="21">Thousands of simple cores, limited by how fast memory feeds them</text>
+<rect x="60" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#a78bfa" filter="url(#shadow)"/><text x="78" y="214" fill="#a78bfa" font-size="14" font-weight="800" text-anchor="start">CPU vs GPU</text>
+  <rect x="335" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22d3ee" filter="url(#shadow)"/><text x="353" y="214" fill="#22d3ee" font-size="14" font-weight="800" text-anchor="start">TENSOR CORES · FORMATS</text>
+  <rect x="610" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#ef4444" filter="url(#shadow)"/><text x="628" y="214" fill="#ef4444" font-size="14" font-weight="800" text-anchor="start">THE MEMORY WALL</text>
+  <rect x="885" y="186" width="255" height="300" rx="14" fill="url(#card)" stroke="#22c55e" filter="url(#shadow)"/><text x="903" y="214" fill="#22c55e" font-size="14" font-weight="800" text-anchor="start">SCALE OUT</text>
+  <rect x="78" y="234" width="44" height="44" rx="8" fill="#a78bfa" fill-opacity="0.6"/>
+  <rect x="130" y="234" width="44" height="44" rx="8" fill="#a78bfa" fill-opacity="0.6"/>
+  <rect x="78" y="286" width="44" height="44" rx="8" fill="#a78bfa" fill-opacity="0.6"/>
+  <rect x="130" y="286" width="44" height="44" rx="8" fill="#a78bfa" fill-opacity="0.6"/>
+  <rect x="78" y="338" width="96" height="30" rx="6" fill="#475569"/><text x="126" y="358" fill="#e2e8f0" font-size="12" font-weight="700" text-anchor="middle">cache</text>
+  <text x="126" y="390" fill="#c4b5fd" font-size="14" font-weight="800" text-anchor="middle">CPU</text>
+  <rect x="192" y="234" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="210" y="234" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="228" y="234" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="246" y="234" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="264" y="234" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="282" y="234" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="192" y="248" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="210" y="248" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="228" y="248" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="246" y="248" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="264" y="248" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="282" y="248" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="192" y="262" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="210" y="262" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="228" y="262" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="246" y="262" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="264" y="262" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="282" y="262" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="192" y="276" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="210" y="276" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="228" y="276" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="246" y="276" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="264" y="276" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="282" y="276" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="192" y="290" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="210" y="290" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="228" y="290" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="246" y="290" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="264" y="290" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="282" y="290" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="192" y="304" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="210" y="304" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="228" y="304" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="246" y="304" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="264" y="304" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="282" y="304" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="192" y="318" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="210" y="318" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="228" y="318" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="246" y="318" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="264" y="318" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="282" y="318" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="192" y="332" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="210" y="332" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="228" y="332" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="246" y="332" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="264" y="332" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="282" y="332" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="192" y="346" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="210" y="346" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="228" y="346" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="246" y="346" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="264" y="346" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="282" y="346" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="192" y="360" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="210" y="360" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <rect x="228" y="360" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.65"/>
+  <rect x="246" y="360" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.35"/>
+  <rect x="264" y="360" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.44999999999999996"/>
+  <rect x="282" y="360" width="14" height="10" rx="2" fill="#22d3ee" fill-opacity="0.55"/>
+  <text x="244" y="390" fill="#a5f3fc" font-size="14" font-weight="800" text-anchor="middle">GPU</text>
+  <text x="78" y="426" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="start">SMs → blocks → warps of 32</text>
+  <text x="78" y="448" fill="#94a3b8" font-size="13" font-weight="400" text-anchor="start">same instruction, own data</text>
+  <text x="78" y="472" fill="#c4b5fd" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">loops vs NumPy: 100s–1,000s×</text>
+  <text x="353" y="255" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">FP64</text><rect x="405" y="242" width="120" height="16" rx="4" fill="#334155"/><rect x="405" y="242" width="54.1" height="16" rx="4" fill="#22d3ee"/><text x="573" y="255" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">34</text>
+  <text x="353" y="299" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">TF32</text><rect x="405" y="286" width="120" height="16" rx="4" fill="#334155"/><rect x="405" y="286" width="95.2" height="16" rx="4" fill="#22d3ee"/><text x="573" y="299" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">495</text>
+  <text x="353" y="343" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">BF16</text><rect x="405" y="330" width="120" height="16" rx="4" fill="#334155"/><rect x="405" y="330" width="105.8" height="16" rx="4" fill="#22d3ee"/><text x="573" y="343" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">990</text>
+  <text x="353" y="387" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">FP8</text><rect x="405" y="374" width="120" height="16" rx="4" fill="#334155"/><rect x="405" y="374" width="116.4" height="16" rx="4" fill="#22d3ee"/><text x="573" y="387" fill="#a5f3fc" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">1,980</text>
+  <text x="353" y="424" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">H100 dense TFLOPS (log scale)</text>
+  <text x="353" y="448" fill="#a5f3fc" font-size="15" font-weight="800" text-anchor="start">FP8 ≈ 60× FP64</text>
+  <text x="353" y="472" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="start">Rubin: NVFP4 35 PFLOPS</text>
+  <text x="628" y="242" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">990 TFLOPS ÷ 3.35 TB/s</text>
+  <text x="628" y="266" fill="#fca5a5" font-size="13" font-weight="700" text-anchor="start">≈ 295 ops per byte to keep busy</text>
+  <text x="628" y="292" fill="#cbd5e1" font-size="13" font-weight="400" text-anchor="start">writing 1 token ≈ 1 op/byte</text>
+  <text x="628" y="327" fill="#e2e8f0" font-size="12" font-weight="600" text-anchor="start">8B 16-bit</text><rect x="706" y="314" width="100" height="16" rx="4" fill="#334155"/><rect x="706" y="314" width="23.2" height="16" rx="4" fill="#ef4444"/><text x="848" y="327" fill="#fca5a5" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">209</text>
+  <text x="628" y="367" fill="#e2e8f0" font-size="12" font-weight="600" text-anchor="start">8B 4-bit</text><rect x="706" y="354" width="100" height="16" rx="4" fill="#334155"/><rect x="706" y="354" width="93.1" height="16" rx="4" fill="#ef4444"/><text x="848" y="367" fill="#fca5a5" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">838</text>
+  <text x="628" y="407" fill="#e2e8f0" font-size="12" font-weight="600" text-anchor="start">70B 16-bit</text><rect x="706" y="394" width="100" height="16" rx="4" fill="#334155"/><rect x="706" y="394" width="2.7" height="16" rx="4" fill="#ef4444"/><text x="848" y="407" fill="#fca5a5" font-size="13" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">24</text>
+  <text x="628" y="448" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">max tokens/s on one H100</text>
+  <text x="628" y="472" fill="#fca5a5" font-size="13" font-weight="700" text-anchor="start">speed ≈ bandwidth ÷ weight bytes</text>
+  <rect x="905" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="923" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="941" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="959" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="977" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="995" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1013" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1031" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1049" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1067" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1085" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1103" y="234" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="905" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="923" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="941" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="959" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="977" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="995" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="1013" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1031" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="1049" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1067" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="1085" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1103" y="252" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="905" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="923" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="941" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="959" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="977" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="995" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1013" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1031" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1049" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1067" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1085" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1103" y="270" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="905" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="923" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="941" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="959" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="977" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="995" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="1013" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1031" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="1049" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1067" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="1085" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1103" y="288" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="905" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="923" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="941" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="959" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="977" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="995" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1013" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1031" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1049" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1067" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1085" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1103" y="306" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="905" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="923" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="941" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="959" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="977" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="995" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="1013" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1031" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <rect x="1049" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.4"/>
+  <rect x="1067" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.5"/>
+  <rect x="1085" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.6000000000000001"/>
+  <rect x="1103" y="324" width="14" height="14" rx="3" fill="#22c55e" fill-opacity="0.7000000000000001"/>
+  <text x="903" y="362" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="start">Vera Rubin NVL72: 72 GPUs</text>
+  <text x="903" y="386" fill="#86efac" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">20.7 TB HBM4 · 1,400 TB/s</text>
+  <text x="903" y="410" fill="#86efac" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">NVLink 216 TB/s in total</text>
+  <text x="903" y="448" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">H100: 80 GB · NVLink 900 GB/s</text>
+  <text x="903" y="472" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">Rubin GPU: 288 GB · 19.2 TB/s</text>
+  <rect x="60" y="506" width="1080" height="80" rx="14" fill="#0b1020" stroke="#d946ef" stroke-opacity="0.7"/>
+  <text x="84" y="540" fill="#f0abfc" font-size="13" font-weight="800" text-anchor="start">THE MAIN OPTIMISATION IS MOVING LESS DATA</text>
+  <text x="84" y="570" fill="#ffffff" font-size="18" font-weight="700" text-anchor="start">quantise · batch · Mixture-of-Experts · FlashAttention (3× GPT-2 training)</text>
+</svg>
