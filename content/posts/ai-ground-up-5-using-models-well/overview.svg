@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Segoe UI, system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+  <title>Using models effectively as seven steps in a loop: 1 define success and a test set, 2 pick the cheapest model and effort that passes, 3 write a clear brief with role, rules and examples, 4 give the right context, 5 ask for a JSON schema rather than prose, 6 cut cost with caching, batching and effort, 7 plan for failure with stop reasons and validation, then measure again. Below left, an evaluation harness scores 75%, with the Kibana and deploy tickets failing and becoming rules. Below right, input prices per million tokens: Haiku 5.5 $0.10 for classification, Sonnet 5.5 $2, Opus 5.5 $4 as the default, Fable 5.2 $8 for the hardest tasks; cache reads at 0.1× input or less and batches at 50% off.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.55"><stop offset="0" stop-color="#d946ef" stop-opacity="0.18"/><stop offset="1" stop-color="#d946ef" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ef4444" flood-opacity="0.8"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#dots)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="60" y="70" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI FROM THE GROUND UP · 5</text>
+  <text x="60" y="120" fill="#ffffff" font-size="46" font-weight="800">Using models effectively</text>
+  <text x="60" y="156" fill="#cbd5e1" font-size="21">Measure, brief, constrain, and measure again</text>
+<rect x="60" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#a78bfa" filter="url(#shadow)"/>
+  <circle cx="84" cy="222" r="13" fill="#a78bfa"/><text x="84" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">1</text>
+  <text x="74" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Define, test</text><text x="74" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">a test set + a score</text>
+  <line x1="203" y1="250" x2="215" y2="250" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="216" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#22d3ee" filter="url(#shadow)"/>
+  <circle cx="240" cy="222" r="13" fill="#22d3ee"/><text x="240" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">2</text>
+  <text x="230" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Model &amp; effort</text><text x="230" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">cheapest that passes</text>
+  <line x1="359" y1="250" x2="371" y2="250" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="372" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#f97316" filter="url(#shadow)"/>
+  <circle cx="396" cy="222" r="13" fill="#f97316"/><text x="396" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">3</text>
+  <text x="386" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Clear brief</text><text x="386" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">role · rules · examples</text>
+  <line x1="515" y1="250" x2="527" y2="250" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="528" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#d97706" filter="url(#shadow)"/>
+  <circle cx="552" cy="222" r="13" fill="#d97706"/><text x="552" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">4</text>
+  <text x="542" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Right context</text><text x="542" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">the facts, and only those</text>
+  <line x1="671" y1="250" x2="683" y2="250" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="684" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#22c55e" filter="url(#shadow)"/>
+  <circle cx="708" cy="222" r="13" fill="#22c55e"/><text x="708" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">5</text>
+  <text x="698" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Structure</text><text x="698" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">JSON schema, not prose</text>
+  <line x1="827" y1="250" x2="839" y2="250" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="840" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#ec4899" filter="url(#shadow)"/>
+  <circle cx="864" cy="222" r="13" fill="#ec4899"/><text x="864" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">6</text>
+  <text x="854" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Cut cost</text><text x="854" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">cache · batch · effort</text>
+  <line x1="983" y1="250" x2="995" y2="250" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="996" y="196" width="142" height="108" rx="14" fill="url(#card)" stroke="#ef4444" filter="url(#shadow)"/>
+  <circle cx="1020" cy="222" r="13" fill="#ef4444"/><text x="1020" y="227" fill="#0b1020" font-size="14" font-weight="800" text-anchor="middle">7</text>
+  <text x="1010" y="262" fill="#ffffff" font-size="15" font-weight="800" text-anchor="start">Plan for failure</text><text x="1010" y="286" fill="#cbd5e1" font-size="11" font-weight="400" text-anchor="start">stop reasons · validate</text>
+  <path d="M1067.0 308 C1067.0 346 130 346 130 312" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arr)"/>
+  <text x="600" y="360" fill="#cbd5e1" font-size="14" font-weight="700" text-anchor="middle">measure again after every change</text>
+  <rect x="60" y="384" width="520" height="210" rx="14" fill="url(#card)" stroke="#334155" filter="url(#shadow)"/>
+  <circle cx="84" cy="406" r="6" fill="#ef4444"/>
+  <circle cx="102" cy="406" r="6" fill="#f59e0b"/>
+  <circle cx="120" cy="406" r="6" fill="#22c55e"/>
+  <text x="320" y="411" fill="#94a3b8" font-size="13" font-weight="600" text-anchor="middle" font-family="Consolas, Menlo, monospace" xml:space="preserve">eval.py</text>
+  <text x="84" y="446" fill="#86efac" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">ok   kubernetes &lt;- kubernetes  Pods stuck in CrashLoop…</text>
+  <text x="84" y="476" fill="#86efac" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">ok   kafka      &lt;- kafka       Kafka consumer lag…</text>
+  <text x="84" y="506" fill="#fca5a5" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">BAD  elastic    &lt;- other       Kibana dashboards time out</text>
+  <text x="84" y="536" fill="#fca5a5" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">BAD  other      &lt;- kubernetes  Deploy the new pricing page</text>
+  <text x="84" y="566" fill="#fde047" font-size="13" font-weight="600" text-anchor="start" font-family="Consolas, Menlo, monospace" xml:space="preserve">accuracy: 75%   → the failures become the rules</text>
+  <rect x="604" y="384" width="536" height="210" rx="14" fill="url(#card)" stroke="#334155" filter="url(#shadow)"/><text x="622" y="412" fill="#e2e8f0" font-size="14" font-weight="800" text-anchor="start">MATCH THE MODEL TO THE JOB (input $ per million tokens)</text>
+  <text x="624" y="445" fill="#ffffff" font-size="14" font-weight="700" text-anchor="start">Haiku 5.5</text><rect x="724" y="432" width="124" height="16" rx="4" fill="#334155"/><rect x="724" y="432" width="2.0" height="16" rx="4" fill="#22d3ee"/><text x="904" y="445" fill="#a5f3fc" font-size="14" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">$0.10</text><text x="918" y="445" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">classify, extract, route</text>
+  <text x="624" y="483" fill="#ffffff" font-size="14" font-weight="700" text-anchor="start">Sonnet 5.5</text><rect x="724" y="470" width="124" height="16" rx="4" fill="#334155"/><rect x="724" y="470" width="31.0" height="16" rx="4" fill="#22d3ee"/><text x="904" y="483" fill="#a5f3fc" font-size="14" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">$2</text><text x="918" y="483" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">speed + intelligence</text>
+  <text x="624" y="521" fill="#ffffff" font-size="14" font-weight="700" text-anchor="start">Opus 5.5</text><rect x="724" y="508" width="124" height="16" rx="4" fill="#334155"/><rect x="724" y="508" width="62.0" height="16" rx="4" fill="#22d3ee"/><text x="904" y="521" fill="#a5f3fc" font-size="14" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">$4</text><text x="918" y="521" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">the default for most work</text>
+  <text x="624" y="559" fill="#ffffff" font-size="14" font-weight="700" text-anchor="start">Fable 5.2</text><rect x="724" y="546" width="124" height="16" rx="4" fill="#334155"/><rect x="724" y="546" width="124.0" height="16" rx="4" fill="#22d3ee"/><text x="904" y="559" fill="#a5f3fc" font-size="14" font-weight="800" text-anchor="end" font-family="Consolas, Menlo, monospace" xml:space="preserve">$8</text><text x="918" y="559" fill="#94a3b8" font-size="12" font-weight="400" text-anchor="start">hardest, longest tasks</text>
+  <text x="624" y="584" fill="#f9a8d4" font-size="13" font-weight="700" text-anchor="start">cache reads ≤ 0.1× input · batch 50% off</text>
+</svg>
