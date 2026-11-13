@@ -16,11 +16,9 @@ timeline:
   - { date: "", kind: "next", title: "What's next", text: "Every new post and daily entry lands on the [home page](/) and in the [daily log](/daily/)." }
 ---
 
-Welcome to my personal portal: a running showcase of the things I build, learn and break,
-at work and in my own time. Think of it as a trophy shelf that keeps growing.
+Welcome to my portal: a running showcase of the things I learn, tinker, build and break at work and in my own time. Think of it as a trophy shelf that keeps growing.
 
-On **10 October 2026** my WordPress blog was hacked. Some of six years of writing, the images,
-files and videos, is gone for good, and that still stings. But it also cleared the ground.
+On **10 October 2026** my WordPress blog was hacked. Some of six years of writing, the images, files and videos, is gone for good, and that still stings. But it also cleared the ground.
 I recovered what I could, moved everything to Hugo, and started again with something simpler.
 
-**Go down, get up again.** That's what this site is about.
+**Go down, but Get up again.** That's what this site is about.
