@@ -132,8 +132,6 @@ Being honest about the trophy shelf means listing the empty spots too. I looked 
 4. **No WAF rules of my own.** Cloudflare already sees and blocks a lot without being asked
    ([About 4]({{< relref "/posts/about-site-4-who-is-knocking" >}})). I want a few weeks of data before I write
    rules.
-5. **Account hygiene.** 2FA on the Cloudflare account and the registrar comes before any of the above. Whoever
-   controls those two controls the site *and* the mail.
 
 ## Takeaways
 
