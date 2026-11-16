@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare, plainly, part 3: the free tier, and what you should do with it"
+title: "Cloudflare Part 3: the free tier, and what you should do with it"
 date: 2026-11-16T16:21:00+00:00
 description: "What Cloudflare's free plan really includes, with the numbers (5 WAF rules, 1 rate-limit rule, 10 redirect and 10 cache rules, 50 Zero Trust users), and a checklist in the order I'd do it, with the two settings that can lock you out."
 categories: ["technical"]
