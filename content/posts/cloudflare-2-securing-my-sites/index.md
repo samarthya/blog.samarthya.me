@@ -1,7 +1,7 @@
 ---
-title: "Cloudflare, plainly, part 2: how it secured my two sites"
+title: "Cloudflare Part 2: how it secured my two sites"
 date: 2026-11-16T14:21:00+00:00
-description: "What Cloudflare actually does for samarthya.me and bhanuni.in after the hack: a cleaned-up zone, mail on its own name, redirects at the edge, strict TLS to a host I don't trust, a domain with no server, and the gaps I haven't closed yet."
+description: "What Cloudflare actually does for my domain after the hack: a cleaned-up zone, mail on its own name, redirects at the edge, strict TLS to a host I don't trust, a domain with no server, and the gaps I haven't closed yet."
 categories: ["technical"]
 tags: ["cloudflare", "dns", "tls", "security", "email"]
 series: ["Cloudflare, plainly"]
