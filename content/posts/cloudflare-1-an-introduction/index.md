@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare, plainly, part 1: an introduction"
+title: "Cloudflare Part 1: an introduction"
 date: 2026-11-16T12:19:00+00:00
 description: "What Cloudflare actually is, in plain words: the domain's phone book, a proxy that answers as your site, and an edge in 348 cities. The orange and grey clouds, and what each one changes."
 categories: ["technical"]
@@ -18,10 +18,7 @@ series is about what that desk does, how it protected my two domains, and what y
 
 ![A visitor reaches the origin two ways. Orange cloud, proxied: through the Cloudflare edge, present in 348 cities, which answers DNS and handles TLS, cache, rules and the WAF. Grey cloud, DNS only: straight to the origin.](overview.svg "Two ways to reach a site: through the front desk, or around it")
 
-I've used Cloudflare for a month now, for samarthya.me since
-[the blog moved after the hack]({{< relref "/posts/rebuilding-4-moving-the-domain" >}}) and for
-[bhanuni.in]({{< relref "/posts/bhanuni-in-a-domain-for-her-art" >}}). Earlier posts showed single steps. This
-series puts them together, starting with the basics.
+I've used Cloudflare for a month now, for samarthya.me since [the blog moved after the hack]({{< relref "/posts/rebuilding-4-moving-the-domain" >}}) and for [bhanuni.in]({{< relref "/posts/bhanuni-in-a-domain-for-her-art" >}}). Earlier posts showed single steps. This series puts them together, starting with the basics.
 
 ## Words used in this post
 
