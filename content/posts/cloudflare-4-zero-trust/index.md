@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare, plainly, part 4: an introduction to zero trust"
+title: "Cloudflare Part 4: an introduction to zero trust"
 date: 2026-11-16T18:21:00+00:00
 description: "Zero trust in plain words: why being 'on the network' stopped meaning anything, what NIST means by it, and how Cloudflare's free plan (Access, Tunnel, 50 users) puts a login in front of an app that has no open port."
 categories: ["technical"]
