@@ -11,6 +11,7 @@ The gallery lives at <https://samarthya.me/bhanuni/> (and <https://bhanuni.in> r
 | The page | `layouts/_default/bhanuni.html`, `layouts/partials/bhanuni-card.html` |
 | Page title and description | `content/bhanuni/index.md` |
 | Importer | `tools/bhanuni/import_art.py` |
+| Hearts (♥ in the viewer, counts on the tiles) | `tools/bhanuni/hearts/` (see its README); switched on by `heartsApi` in `content/bhanuni/index.md` |
 
 Every drawing has a random 6-letter **id** (for example `8xms7k`). The id is both the file name and the key in
 `data/bhanuni.yaml`.

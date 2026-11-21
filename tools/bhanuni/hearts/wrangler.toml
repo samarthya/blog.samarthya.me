@@ -1,0 +1,14 @@
+# Cloudflare Worker that counts hearts for Bhanuni's Studio. See tools/bhanuni/hearts/README.md.
+name = "bhanuni-hearts"
+main = "src/worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = false                      # no *.workers.dev address; only the custom domain below
+
+routes = [
+  { pattern = "hearts.bhanuni.in", custom_domain = true }
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bhanuni-hearts"
+database_id = "93f20197-0667-45a2-98cc-fee18acd3f40"

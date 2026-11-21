@@ -9,6 +9,7 @@ showAuthor: false
 showTableOfContents: false
 showBreadcrumbs: false
 sharingLinks: false
+heartsApi: "https://hearts.bhanuni.in"   # the hearts counter (tools/bhanuni/hearts); remove to hide the hearts
 build:
   list: never   # not a post: keep it out of RSS, lists, search and the sitemap
   render: always

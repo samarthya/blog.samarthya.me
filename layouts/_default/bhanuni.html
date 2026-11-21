@@ -97,6 +97,13 @@
   .viewer .info .w { font-style: italic; margin: .2rem 0; color: #fde68a; }
   .viewer .info .a { color: #e5e7eb; margin: .2rem auto 0; max-width: 46rem; }
   .viewer .info .m { color: #cbd5e1; font-size: .9rem; margin: .2rem 0 0; }
+  .viewer .heart { margin: .3rem 0 0; border: 1px solid #f9a8d4; border-radius: 999px; background: transparent; color: #fbcfe8;
+                   font-size: 1rem; font-weight: 700; padding: .2rem .9rem; cursor: pointer; }
+  .viewer .heart[aria-pressed="true"] { background: #db2777; border-color: #db2777; color: #fff; cursor: default; }
+  .viewer .heart.pop { animation: pop .35s ease; }
+  @keyframes pop { 50% { transform: scale(1.25); } }
+  @media (prefers-reduced-motion: reduce) { .viewer .heart.pop { animation: none; } }
+  .tile .hearts { color: #db2777; font-weight: 700; }
   .viewer .nav { position: absolute; top: 50%; transform: translateY(-50%); width: 3rem; height: 3rem; border-radius: 50%;
                  border: 0; background: rgba(0, 0, 0, .55); color: #fff; font-size: 1.6rem; cursor: pointer; }
   .viewer .prev { left: .75rem; } .viewer .next { right: .75rem; }
@@ -164,13 +171,13 @@
   <p class="foot">Every drawing here is mine. Fan art is my take on characters I love; they belong to their creators.</p>
 </article>
 
-<dialog class="viewer" id="studio-viewer" aria-label="Drawing viewer">
+<dialog class="viewer" id="studio-viewer" aria-label="Drawing viewer"{{ with .Params.heartsApi }} data-hearts="{{ . }}"{{ end }}>
   <button type="button" class="toggle" data-toggle>▶ Play</button>
   <button type="button" class="close" data-close>✕ Close</button>
   <div class="stage"><img alt="" id="studio-img"></div>
   <button type="button" class="nav prev" data-step="-1" aria-label="Previous drawing">‹</button>
   <button type="button" class="nav next" data-step="1" aria-label="Next drawing">›</button>
-  <div class="info"><h3 id="studio-t"></h3><p class="w" id="studio-w"></p><p class="a" id="studio-a"></p><p class="m" id="studio-m"></p></div>
+  <div class="info"><h3 id="studio-t"></h3><button type="button" class="heart" id="studio-heart" hidden aria-pressed="false"></button><p class="w" id="studio-w"></p><p class="a" id="studio-a"></p><p class="m" id="studio-m"></p></div>
 </dialog>
 
 <script>
@@ -185,6 +192,51 @@
   // a series reads oldest first; same-date drawings keep their file order (stories in frames)
   const inSeries = name => gridOrder.filter(t => t.dataset.series === name)
     .map((t, i) => [t, i]).sort((a, b) => a[0].dataset.date.localeCompare(b[0].dataset.date) || a[1] - b[1]).map(x => x[0]);
+  // Hearts: one per drawing per browser (remembered in localStorage), counted by a tiny Worker that stores
+  // nothing but the drawing id and a number. If the Worker is unreachable, the hearts simply stay hidden.
+  const hearts = (() => {
+    const api = dlg.dataset.hearts, btn = document.getElementById('studio-heart');
+    let counts = null;
+    const KEY = 'studio-hearts';
+    const mine = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
+    const remember = id => { try { localStorage.setItem(KEY, JSON.stringify([...new Set([...mine(), id])])); } catch {} };
+    const label = (n, on) => (on ? '♥ ' : '♡ ') + (n ? n : '') + (on ? '' : ' Love it');
+    function tiles() {
+      document.querySelectorAll('.studio .tile').forEach(t => {
+        let s = t.querySelector('.hearts'); const n = counts[t.dataset.id] || 0;
+        if (!n) { s?.remove(); return; }
+        if (!s) { s = document.createElement('span'); s.className = 'm hearts'; t.querySelector('.cap').appendChild(s); }
+        s.textContent = '♥ ' + n;
+      });
+    }
+    function render(id) {
+      if (!counts) return;
+      const on = mine().includes(id);
+      btn.hidden = false; btn.dataset.id = id;
+      btn.setAttribute('aria-pressed', String(on));
+      btn.textContent = label(counts[id] || 0, on);
+      btn.setAttribute('aria-label', on ? 'You loved this drawing' : 'Give this drawing a heart');
+    }
+    async function give() {
+      const id = btn.dataset.id;
+      if (!id || mine().includes(id)) return;
+      remember(id); counts[id] = (counts[id] || 0) + 1; render(id); tiles();
+      btn.classList.remove('pop'); void btn.offsetWidth; btn.classList.add('pop');
+      try {
+        const r = await fetch(api + '/hearts/' + id, { method: 'POST' });
+        if (r.ok) { counts[id] = (await r.json()).n; render(id); tiles(); }
+      } catch {}
+    }
+    if (api) {
+      btn.addEventListener('click', give);
+      fetch(api + '/hearts').then(r => r.ok ? r.json() : null).then(c => {
+        if (!c) return;
+        counts = c; tiles();
+        if (dlg.open && list[pos]) render(list[pos].dataset.id);
+      }).catch(() => {});
+    }
+    return { render };
+  })();
   function show(i) {
     pos = (i + list.length) % list.length;
     const d = list[pos].dataset;
@@ -196,6 +248,7 @@
     if (d.series) { const s = inSeries(d.series); where = d.series + ' ' + (s.indexOf(list[pos]) + 1) + ' of ' + s.length + '  ·  ' + where; }
     T('studio-m').textContent = d.meta + '  ·  ' + where;
     history.replaceState(null, '', '#' + d.id);   // a link to this one drawing
+    hearts.render(d.id);
   }
   function stop() { clearInterval(timer); timer = null; dlg.classList.remove('playing'); dlg.querySelector('[data-toggle]').textContent = '▶ Play'; }
   function play() {
