@@ -238,7 +238,8 @@ def part4():
           "denies by default; the free plan covers 50 users.", b)
 
 
-part1()
-part2()
-part3()
-part4()
+if __name__ == "__main__":
+    part1()
+    part2()
+    part3()
+    part4()

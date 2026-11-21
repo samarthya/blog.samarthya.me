@@ -246,6 +246,10 @@ def holo(kind, accent, x=540, y=200):
         "check": "".join(f'<rect x="-46" y="{-44 + i * 30}" width="20" height="20" rx="5" fill="none" stroke="{c}" stroke-width="2.5"/>'
                          f'<path d="M-42 {-34 + i * 30} l5 6 l9 -12" stroke="{"#22c55e" if i != 2 else "#f97316"}" stroke-width="3" fill="none" stroke-linecap="round"/>'
                          f'<rect x="-16" y="{-38 + i * 30}" width="{56 - (i % 2) * 14}" height="8" rx="4" fill="{c}" opacity="0.45"/>' for i in range(3)),
+        "hearts": f'<path d="M0 34 C-40 6 -46 -22 -26 -34 C-14 -41 -3 -35 0 -25 C3 -35 14 -41 26 -34 C46 -22 40 6 0 34Z" fill="{c}"/>'
+                  + "".join(f'<path transform="translate({hx} {hy}) scale({hs})" d="M0 10 C-12 2 -14 -6 -8 -10 C-4 -12 -1 -10 0 -7 C1 -10 4 -12 8 -10 C14 -6 12 2 0 10Z" fill="{hc}"/>'
+                            for hx, hy, hs, hc in [(-52, -40, 1.0, "#f9a8d4"), (50, -48, 1.3, "#ffffff"), (54, 22, 0.8, "#f9a8d4")])
+                  + f'<path d="M-22 -18 C-18 -26 -10 -28 -6 -24" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>',
     }[kind]
     return (f'<g transform="translate({x} {y})">'
             f'<circle r="74" fill="#ffffff" opacity="0.35"/><circle r="74" fill="none" stroke="{c}" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 6"/>'
