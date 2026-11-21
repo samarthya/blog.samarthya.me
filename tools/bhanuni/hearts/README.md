@@ -48,3 +48,19 @@ mise exec -- npx wrangler d1 execute bhanuni-hearts --remote --command "DELETE F
 
 Free plan limits (Workers: 100,000 requests a day; D1: 100,000 writes a day) are far above what a family gallery
 needs.
+
+## Reactions on blog posts
+
+The same Worker counts 👍 / 👎 / ❤️ under every post, instead of comments. It uses a second table, `reactions`
+(post slug, kind, count), and accepts a reaction only for a post that is in the live `sitemap.xml`. A browser can
+pick one reaction per post.
+
+| Piece | Where |
+|---|---|
+| The buttons | `layouts/partials/comments.html` (Blowfish shows it because `showComments = true` in `config/_default/params.toml`) |
+| Switch it on or off | `reactionsApi` in `config/_default/params.toml` |
+
+```bash
+mise exec -- npx wrangler d1 execute bhanuni-hearts --remote --command "SELECT * FROM reactions ORDER BY n DESC"
+mise exec -- npx wrangler d1 execute bhanuni-hearts --remote --command "DELETE FROM reactions WHERE slug = 'my-post'"
+```

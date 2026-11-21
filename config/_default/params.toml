@@ -43,6 +43,10 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v11.next.forgejo.org"
 
+# Like / dislike / heart under each post (layouts/partials/comments.html), counted by the Worker in
+# tools/bhanuni/hearts. Remove this line to hide them.
+reactionsApi = "https://hearts.bhanuni.in"
+
 [languageRedirect]
   enabled = false # Enable client-side language redirects for multilingual sites.
   storageKey = "blowfish_preferred_language" # localStorage key for manual language selections.
@@ -81,6 +85,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDate = true
   showViews = false
   showLikes = false
+  showComments = true # there are no comments: this renders the reactions in layouts/partials/comments.html
   showDateOnlyInArticle = false
   showDateUpdated = true
   showAuthor = true

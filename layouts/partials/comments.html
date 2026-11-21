@@ -1,0 +1,67 @@
+{{/* Reactions instead of comments: like, dislike, heart. Counts come from the Worker in tools/bhanuni/hearts.
+     Blowfish renders this partial when params.article.showComments is true; it only does anything on a post
+     and when params.reactionsApi is set. One reaction per post per browser (remembered in localStorage). */}}
+{{ with site.Params.reactionsApi }}
+{{ if eq $.Section "posts" }}
+<div class="reactions" data-api="{{ . }}" data-slug="{{ path.Base $.RelPermalink }}" hidden>
+  <p class="reactions-ask">Was this useful?</p>
+  <div class="reactions-row" role="group" aria-label="React to this post">
+    <button type="button" data-kind="like" aria-pressed="false" title="Like"><span aria-hidden="true">👍</span> <span class="n"></span><span class="sr">Like</span></button>
+    <button type="button" data-kind="dislike" aria-pressed="false" title="Dislike"><span aria-hidden="true">👎</span> <span class="n"></span><span class="sr">Dislike</span></button>
+    <button type="button" data-kind="heart" aria-pressed="false" title="Loved it"><span aria-hidden="true">❤️</span> <span class="n"></span><span class="sr">Loved it</span></button>
+  </div>
+</div>
+<style>
+  .reactions { margin: 1rem 0 .5rem; }
+  .reactions-ask { margin: 0 0 .5rem; font-size: .9rem; color: rgb(var(--color-neutral-500)); }
+  .reactions-row { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .reactions button {
+    display: inline-flex; align-items: center; gap: .35rem; padding: .3rem .8rem; border-radius: 999px;
+    border: 1px solid rgb(var(--color-neutral-300)); background: transparent; font-size: .95rem; cursor: pointer;
+    color: rgb(var(--color-neutral-700)); transition: transform .15s, border-color .15s, background .15s;
+  }
+  .dark .reactions button { border-color: rgb(var(--color-neutral-600)); color: rgb(var(--color-neutral-300)); }
+  .reactions button:hover:not(:disabled) { border-color: rgb(var(--color-primary-500)); }
+  .reactions button[aria-pressed="true"] { border-color: rgb(var(--color-primary-500)); background: rgba(var(--color-primary-500), .15); }
+  .reactions button:disabled:not([aria-pressed="true"]) { opacity: .55; cursor: default; }
+  .reactions button.pop { transform: scale(1.15); }
+  .reactions .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  @media (prefers-reduced-motion: reduce) { .reactions button { transition: none; } .reactions button.pop { transform: none; } }
+</style>
+<script>
+(() => {
+  const box = document.querySelector('.reactions[data-slug]');
+  const api = box.dataset.api, slug = box.dataset.slug, KEY = 'post-reactions';
+  const buttons = [...box.querySelectorAll('button')];
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
+  const save = (m) => { try { localStorage.setItem(KEY, JSON.stringify(m)); } catch {} };
+  let counts = {};
+
+  function render() {
+    const mine = load()[slug];
+    for (const b of buttons) {
+      const k = b.dataset.kind;
+      b.querySelector('.n').textContent = counts[k] || '';
+      b.setAttribute('aria-pressed', String(mine === k));
+      b.disabled = !!mine;          // one reaction per post per browser
+    }
+  }
+
+  buttons.forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.kind, mine = load();
+    if (mine[slug]) return;
+    mine[slug] = k; save(mine);
+    counts[k] = (counts[k] || 0) + 1; render();
+    b.classList.add('pop'); setTimeout(() => b.classList.remove('pop'), 180);
+    fetch(api + '/reactions/' + slug + '/' + k, { method: 'POST' })
+      .then(r => r.ok ? r.json() : null).then(d => { if (d) { counts[k] = d.n; render(); } }).catch(() => {});
+  }));
+
+  fetch(api + '/reactions/' + slug)
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(d => { counts = d; render(); box.hidden = false; })
+    .catch(() => {});               // counter unreachable: show nothing rather than broken buttons
+})();
+</script>
+{{ end }}
+{{ end }}
