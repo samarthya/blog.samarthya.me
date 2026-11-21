@@ -1,5 +1,5 @@
 ---
-title: "MITRE ATT&CK, plainly: tactics, technique IDs and a cheat card for each tactic"
+title: "MITRE ATT&CK: tactics, technique IDs and a cheat card for each tactic"
 date: 2026-10-21T19:30:00-04:00
 description: "A short introduction to MITRE ATT&CK for people who build software: how to read an ID like T1552.001, the 15 Enterprise tactics in v20 (including the new Stealth and Defense Impairment), a cheat card for each, and how developers can use it."
 categories: ["technical", "ssdlc"]

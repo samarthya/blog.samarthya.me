@@ -1,4 +1,4 @@
-"""Banners for the "Cloudflare, plainly" series: smooth, technical illustrations (no anime, at the user's request).
+"""Banners for the "Cloudflare" series: smooth, technical illustrations (no anime, at the user's request).
 
 Each post gets one overview.svg (1200x630) that is embedded in the body and rendered to feature.png for cards and
 social previews. Shared look: a deep navy gradient, two soft blurred light blobs, a faint dot grid, glass cards with
@@ -44,7 +44,7 @@ def backdrop(blobs):
 
 
 def heading(part, title, sub):
-    return (f'<text x="60" y="76" fill="{ORANGE}" font-size="17" font-weight="700" letter-spacing="3.5">CLOUDFLARE, PLAINLY · {part}</text>'
+    return (f'<text x="60" y="76" fill="{ORANGE}" font-size="17" font-weight="700" letter-spacing="3.5">CLOUDFLARE · {part}</text>'
             f'<text x="60" y="128" fill="{INK}" font-size="46" font-weight="800">{esc(title)}</text>'
             f'<text x="60" y="166" fill="{SOFT}" font-size="21">{esc(sub)}</text>')
 

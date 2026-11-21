@@ -1,5 +1,5 @@
 ---
-title: "OWASP Top 10:2025, plainly: the ten risks and a cheat card for each"
+title: "OWASP Top 10:2025: the ten risks and a cheat card for each"
 date: 2026-10-20T19:30:00-04:00
 description: "A short introduction to the OWASP Top 10:2025 for people who build software: what the list is and is not, what changed since 2021, why each category matters, and ten cheat cards to keep next to your keyboard."
 categories: ["technical", "ssdlc"]
@@ -146,7 +146,7 @@ the rest.
   *attacker does* with it. The two meet in my
   [SSDLC post]({{< relref "/posts/ssdlc-in-the-age-of-ai-exploits" >}}), where each pipeline level is tagged with
   both, and are introduced together in
-  [MITRE ATT&CK, plainly]({{< relref "/posts/mitre-attack-explained" >}}).
+  [MITRE ATT&CK]({{< relref "/posts/mitre-attack-explained" >}}).
 
 ## What scanners cover, and what they miss
 

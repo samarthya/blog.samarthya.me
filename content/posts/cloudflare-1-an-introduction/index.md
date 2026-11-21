@@ -4,7 +4,7 @@ date: 2026-11-16T12:19:00+00:00
 description: "What Cloudflare actually is, in plain words: the domain's phone book, a proxy that answers as your site, and an edge in 348 cities. The orange and grey clouds, and what each one changes."
 categories: ["technical"]
 tags: ["cloudflare", "dns", "tls", "security"]
-series: ["Cloudflare, plainly"]
+series: ["Cloudflare"]
 series_order: 1
 featureimage: "feature.png"
 draft: false

@@ -4,7 +4,7 @@ date: 2026-11-16T18:21:00+00:00
 description: "Zero trust in plain words: why being 'on the network' stopped meaning anything, what NIST means by it, and how Cloudflare's free plan (Access, Tunnel, 50 users) puts a login in front of an app that has no open port."
 categories: ["technical"]
 tags: ["cloudflare", "security", "zero-trust", "networking"]
-series: ["Cloudflare, plainly"]
+series: ["Cloudflare"]
 series_order: 4
 featureimage: "feature.png"
 draft: false
@@ -78,7 +78,7 @@ through Cloudflare, after a policy says yes.
 The [free plan](https://www.cloudflare.com/plans/sase-zero-trust.md) covers **up to 50 users**, with logs kept for
 up to 24 hours. That's far more than a household needs.
 
-### Policies, plainly
+### Policies
 
 An Access policy has an action (**Allow**, **Block**, **Bypass** or **Service Auth**) and rules that combine like
 logic:

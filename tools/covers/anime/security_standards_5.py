@@ -1,4 +1,4 @@
-"""Anime cover for "Security standards, plainly, part 5: CVE, CWE, NVD and CVSS", refined style (refined.py).
+"""Anime cover for "Security standards, part 5: CVE, CWE, NVD and CVSS", refined style (refined.py).
 
 Character: a girl with a dark auburn ponytail, green eyes and a gold earring, in a navy blazer with a red tie,
 beside glowing severity bars (CVSS is the ruler), with the four names and their jobs on a glass panel.
@@ -23,7 +23,7 @@ body = (R.figure("ponytail", ("#b45309", "#7c2d12", "#3b0f06"), ("#14532d", "#16
                  outfit=("#1e3a8a", "#172554"), shirt="#f8fafc", acc="#fbbf24", earring=True, tie=ACCENT,
                  mouth="smile")
         + R.holo("bars", ACCENT)
-        + R.kicker(PX, 92, "Security standards, plainly · 5", ACCENT)
+        + R.kicker(PX, 92, "Security standards · 5", ACCENT)
         + panel
         + R.chips(PX, PY + h + 22, ["CVSS v2 → 3.1 → 4.0", "severity ≠ risk"], ACCENT))
 

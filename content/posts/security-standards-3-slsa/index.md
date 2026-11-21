@@ -1,10 +1,10 @@
 ---
-title: "Security standards, plainly, part 3: SLSA v1.2"
+title: "Security standards, part 3: SLSA v1.2"
 date: 2026-10-24T19:30:00-04:00
 description: "SLSA (Supply-chain Levels for Software Artifacts) in plain words: provenance as a receipt for a build, the Build and Source tracks and their levels, a two-step GitHub example, and what it protects against."
 categories: ["technical", "ssdlc"]
 tags: ["security", "devops", "ci", "sdlc"]
-series: ["Security standards, plainly"]
+series: ["Security standards"]
 series_order: 3
 featureimage: "feature.png"
 draft: false

@@ -29,7 +29,7 @@
   <rect width="1200" height="630" fill="url(#glow)"/>
 
   <!-- Heading -->
-  <text x="60" y="78" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI, PLAINLY · MODEL WEIGHTS</text>
+  <text x="60" y="78" fill="#fca5a5" font-size="18" font-weight="700" letter-spacing="3">AI · MODEL WEIGHTS</text>
   <text x="60" y="132" fill="#ffffff" font-size="50" font-weight="800">What model weights are</text>
   <text x="60" y="172" fill="#cbd5e1" font-size="22">From one neuron's three numbers to 30.5 billion of them in a 19 GB file.</text>
 
