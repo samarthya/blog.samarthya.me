@@ -46,7 +46,7 @@ Tips:
   ("My take on ...", not "Her take on ...").
 - **Series** group drawings that belong together. Each series gets a 📚 chip under the filters (biggest first),
   a badge on its cards, and "2 of 4" in the viewer; choosing a series shows it oldest first. The name must match
-  exactly ("Sab Jholmaal hai", not "Sab Jholmal hai"). In use: Sprunki crew, The snack table, Wenda and Gray,
+  exactly ("Sab Jholmaal hai", not "Sab Jholmal hai"). In use: Sprunki crew, Chocobo crew, The snack table, Wenda and Gray,
   My Little Pony, Pony friends, Miraculous, Sacred drawings, Sab Jholmaal hai, Sisters. Leave `series: ""` for a
   one-off.
 - **Stories in frames** (like "The snack table"): give each frame the same `series`, number the titles

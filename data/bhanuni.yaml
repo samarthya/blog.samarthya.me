@@ -516,3 +516,75 @@
   about: "The three mice ate it all! The Doggy brothers are mad and sad!"
   featured: false
   publish: true
+
+- id: c93dhk
+  title: "Chocobo"
+  date: 2026-11-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Chocobo, Sprunki"
+  series: "Chocobo crew"
+  words: "Chocobo GP"
+  about: "He is cure happy and the best character to play with!"
+  featured: false
+  publish: true
+
+- id: f8swdt
+  title: "Shiroma"
+  date: 2026-11-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Chocobo, Sprunki"
+  series: "Chocobo crew"
+  words: ""
+  about: "She is a kind hearted white Mage!"
+  featured: false
+  publish: true
+
+- id: asbn88
+  title: "Behemoth"
+  date: 2026-11-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Chocobo, Sprunki"
+  series: "Chocobo crew"
+  words: ""
+  about: "When he gets angry, things get destroyed! I like it the way he lifts his ride and runs."
+  featured: false
+  publish: true
+
+- id: 4q72pz
+  title: "Atla"
+  date: 2026-11-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Chocobo, Sprunki"
+  series: "Chocobo crew"
+  words: ""
+  about: "I do not know much about this character; but I like to play with it sometimes."
+  featured: false
+  publish: true
+
+- id: 6u2zuk
+  title: "Clair"
+  date: 2026-11-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Chocobo, Sprunki"
+  series: "Chocobo crew"
+  words: ""
+  about: "I like his speed and is an interesting character from the Chocobo universe."
+  featured: false
+  publish: true
+
+- id: c2zkva
+  title: "Cid"
+  date: 2026-11-20
+  medium: digital
+  kind: fan-art
+  inspired_by: "Chocobo, Sprunki"
+  series: "Chocobo crew"
+  words: ""
+  about: "A mysterious character from the Chocobo universe. I like his style and is an interesting character."
+  featured: false
+  publish: true
