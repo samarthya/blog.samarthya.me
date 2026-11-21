@@ -1,0 +1,4 @@
+# wrangler local state (holds the Cloudflare account id and name)
+.wrangler/
+# keep the table definition, despite the repo-wide *.sql rule
+!schema.sql
